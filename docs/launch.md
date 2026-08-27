@@ -29,7 +29,7 @@ anchors (all found and correctly classified), 34 displayed representatives
 reviewed by hand with zero clearly-wrong labels. That is a validation set, not
 a census — search coverage and taxonomy overlap are documented limitations.
 
-Repo: https://github.com/skillvariants/skillvariants
+Repo: https://github.com/ppplkmvvb/skillvariants
 
 ## Reddit / developer communities
 
@@ -46,14 +46,14 @@ hooked me: the same debugging skill exists as a 4-phase methodology, a 5-step
 loop with an added stop rule, and a German translation with restructured
 phases — all discoverable from one URL.
 
-https://github.com/skillvariants/skillvariants
+https://github.com/ppplkmvvb/skillvariants
 
 ## X / short post
 
 Agent Skills don't just get copied — they get compressed, wrapped, rerouted,
 and specialized. I built a CLI to explore those variants across GitHub:
 paste a SKILL.md URL, get mutation patterns with representative diffs.
-Deterministic, no LLM. https://github.com/skillvariants/skillvariants
+Deterministic, no LLM. https://github.com/ppplkmvvb/skillvariants
 
 ---
 

@@ -86,7 +86,7 @@ pipx install skillvariants
 skillvariants related <SKILL.md-url>
 
 # from source
-pipx install git+https://github.com/skillvariants/skillvariants.git
+pipx install git+https://github.com/ppplkmvvb/skillvariants.git
 ```
 
 GitHub Code Search needs authentication, either:
@@ -175,12 +175,13 @@ contributions — see [`CONTRIBUTING.md`](CONTRIBUTING.md) and the
 
 ## Credits / research inspiration
 
-Built on the public Agent Skills ecosystems around
-[obra/superpowers](https://github.com/obra/superpowers) (MIT) and
-[anthropics/skills](https://github.com/anthropics/skills), whose permissive or
-referenced skill texts made this line of research possible. Bundled test
-fixtures carry their own licenses — see
-[`research/fixture-audit.md`](research/fixture-audit.md).
+Inspired by public Agent Skills ecosystems including
+[obra/superpowers](https://github.com/obra/superpowers) and
+[anthropics/skills](https://github.com/anthropics/skills).
+
+Third-party test fixture redistribution was reviewed separately.
+No `anthropics/skills` Skill text is bundled because no repository
+license was found at audit time. See [`research/fixture-audit.md`](research/fixture-audit.md).
 
 ## License
 

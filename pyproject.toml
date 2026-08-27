@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skillvariants"
-version = "0.1.0"
+version = "0.1.1"
 description = "Explore copies and mutation patterns of AI Agent Skills across GitHub."
 readme = "README.md"
 license = { text = "Apache-2.0" }
@@ -36,9 +36,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/skillvariants/skillvariants"
-Issues = "https://github.com/skillvariants/skillvariants/issues"
-Changelog = "https://github.com/skillvariants/skillvariants/blob/main/CHANGELOG.md"
+Repository = "https://github.com/ppplkmvvb/skillvariants"
+Issues = "https://github.com/ppplkmvvb/skillvariants/issues"
+Changelog = "https://github.com/ppplkmvvb/skillvariants/blob/main/CHANGELOG.md"
 
 [project.scripts]
 skillvariants = "skillvariants.cli:app"

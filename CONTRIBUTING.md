@@ -24,7 +24,7 @@ template when applicable.
 Requires Python 3.11+.
 
 ```bash
-git clone https://github.com/skillvariants/skillvariants.git
+git clone https://github.com/ppplkmvvb/skillvariants.git
 cd skillvariants
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate

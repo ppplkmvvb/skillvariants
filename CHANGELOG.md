@@ -2,6 +2,12 @@
 
 All notable changes to SkillVariants are documented here.
 
+## 0.1.1
+
+- Fix public source-install repository URL
+- Clarify third-party fixture licensing language
+- Publish installable PyPI package
+
 ## 0.1.0
 
 - Inspect public Agent Skills
