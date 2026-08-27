@@ -1,0 +1,106 @@
+
+FRONTEND-DESIGN
+Candidate matches found: 300
+
+  Exact copies              12
+  Unique related variants   189
+  Detected mutation archetypes 5
+  Mutation groups           68
+  Unclassified variants     10 files / 15 occurrences
+
+COMPACT REWRITES
+14 groups · 58 unique variants · 125 occurrences
+─────────────────────────────────────────────
+escoffier-labs/solos-cookbook
+  relatedness: 0.49
+  1 variant file(s) in group
+  length changed by -72%
+  18 headings added/removed
+
+zszz3/AgentRecall
+  relatedness: 0.46
+  1 variant file(s) in group
+  length changed by -75%
+  10 headings added/removed
+
+OpenBMB/PilotDeck
+  relatedness: 0.36
+  1 variant file(s) in group
+  length changed by -86%
+  8 headings added/removed
+  shell commands +0/-1
+
+EXPANDED GUIDANCE
+4 groups · 4 unique variants · 4 occurrences
+─────────────────────────────────────────────
+Houseofmvps/ultraship
+  relatedness: 0.47
+  1 variant file(s) in group
+  +8 new sections
+
+luongnv89/skills
+  relatedness: 0.51
+  1 variant file(s) in group
+  +17 new sections
+
+julianoczkowski/designer-skills
+  relatedness: 0.49
+  1 variant file(s) in group
+  +14 new sections
+
+ROUTING SPECIALIZATIONS
+9 groups · 15 unique variants · 18 occurrences
+─────────────────────────────────────────────
+diegosouzapw/awesome-omni-skills
+  relatedness: 0.47
+  1 variant file(s) in group
+  new routing-boundary language
+  +5 cross-skill references
+  routing evidence: heading: Related Skills
+  routing evidence: owns
+  routing evidence: related skills
+
+gvkhosla/compound-engineering-pi
+  relatedness: 0.50
+  1 variant file(s) in group
+  new routing-boundary language
+  +3 cross-skill references
+  routing evidence: do not use
+
+studio-jami/jami-studio
+  relatedness: 0.51
+  1 variant file(s) in group
+  new routing-boundary language
+  routing evidence: heading: Related Skills
+  routing evidence: owns
+  routing evidence: related skills
+
+WORKFLOW SPECIALIZATIONS
+33 groups · 46 unique variants · 67 occurrences
+─────────────────────────────────────────────
+lxyeternal/MalSkillBench
+  relatedness: 0.49
+  1 variant file(s) in group
+  workflow structure reworked (+6/-6 sections)
+
+Necaifia/RepublicOS
+  relatedness: 0.50
+  1 variant file(s) in group
+  workflow structure reworked (+6/-6 sections)
+
+byerlikaya/claude-starter-kit
+  relatedness: 0.44
+  1 variant file(s) in group
+  workflow structure reworked (+6/-6 sections)
+
+COMPATIBILITY WRAPPERS
+1 groups · 1 unique variants · 1 occurrences
+─────────────────────────────────────────────
+Rain120/qq-music-api
+  relatedness: 0.45
+  1 variant file(s) in group
+  canonical pointer -> ../../.skills/frontend-design/SKILL.md
+  wrapper language: canonical skill
+  wrapper language: compatibility wrapper
+  body size 6 lines
+

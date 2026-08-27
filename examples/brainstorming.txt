@@ -1,0 +1,78 @@
+
+BRAINSTORMING
+Candidate matches found: 300
+
+  Exact copies              0
+  Unique related variants   199
+  Detected mutation archetypes 3
+  Mutation groups           90
+  Unclassified variants     8 files / 9 occurrences
+
+COMPACT REWRITES
+33 groups · 42 unique variants · 58 occurrences
+─────────────────────────────────────────────
+hnb-rabear/hnb-rabear.github.io
+  relatedness: 0.52
+  1 variant file(s) in group
+  length changed by -82%
+  15 headings added/removed
+  shell commands +0/-3
+
+reidemeister94/development-skills
+  relatedness: 0.52
+  1 variant file(s) in group
+  length changed by -92%
+  10 headings added/removed
+  shell commands +0/-3
+
+krone9/pi-superpowers
+  relatedness: 0.52
+  1 variant file(s) in group
+  length changed by -93%
+  13 headings added/removed
+  shell commands +0/-3
+
+ROUTING SPECIALIZATIONS
+11 groups · 14 unique variants · 15 occurrences
+─────────────────────────────────────────────
+doviettung96/apk-tool
+  relatedness: 0.80
+  1 variant file(s) in group, 2 occurrences
+  new routing-boundary language
+  routing evidence: do not use
+  routing evidence: owns
+
+aAAaqwq/AGI-Super-Team
+  relatedness: 0.40
+  3 variant file(s) in group
+  new routing-boundary language
+  +3 cross-skill references
+  routing evidence: heading: Related Skills
+  routing evidence: related skills
+
+diegosouzapw/awesome-omni-skills
+  relatedness: 0.50
+  2 variant file(s) in group
+  new routing-boundary language
+  routing evidence: heading: Related Skills
+  routing evidence: owns
+  routing evidence: related skills
+
+WORKFLOW SPECIALIZATIONS
+38 groups · 94 unique variants · 168 occurrences
+─────────────────────────────────────────────
+Fattastic/khawi-s-companion-2a2808cd
+  relatedness: 0.75
+  1 variant file(s) in group
+  workflow structure reworked (+10/-7 sections)
+
+himmelreich-it/agent-skill-converter
+  relatedness: 0.68
+  1 variant file(s) in group
+  workflow structure reworked (+9/-7 sections)
+
+modimihir07/agentic-os
+  relatedness: 0.55
+  1 variant file(s) in group
+  workflow structure reworked (+6/-9 sections)
+

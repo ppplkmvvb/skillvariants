@@ -1,0 +1,35 @@
+name: Classification / false-positive report
+description: A relatedness hit, archetype label, or representative choice looks wrong.
+labels: [classification]
+body:
+  - type: input
+    id: target_url
+    attributes:
+      label: Target SKILL.md URL
+    validations:
+      required: true
+  - type: input
+    id: candidate_url
+    attributes:
+      label: Candidate SKILL.md URL
+    validations:
+      required: true
+  - type: input
+    id: actual_archetype
+    attributes:
+      label: Archetype shown by the tool
+    validations:
+      required: true
+  - type: input
+    id: expected_archetype
+    attributes:
+      label: Archetype you expected (or "unrelated")
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you think this is wrong?
+      description: Quote the specific passages that support your view.
+    validations:
+      required: true

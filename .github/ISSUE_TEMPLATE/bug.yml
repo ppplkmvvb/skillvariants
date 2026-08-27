@@ -1,0 +1,35 @@
+name: Bug report
+description: Something broke, errored, or produced obviously wrong output.
+labels: [bug]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command run
+      placeholder: skillvariants related https://github.com/.../SKILL.md
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Paste terminal output (redact anything private).
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Related mode
+      options: ["mutations", "closest", "inspect/compare", "other"]
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Environment check
+      options:
+        - label: I ran the latest version and removed `.cache/skillvariants/` before retrying

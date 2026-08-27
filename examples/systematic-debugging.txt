@@ -1,0 +1,96 @@
+
+SYSTEMATIC-DEBUGGING
+Candidate matches found: 272
+
+  Exact copies              0
+  Unique related variants   175
+  Detected mutation archetypes 4
+  Mutation groups           85
+  Unclassified variants     8 files / 8 occurrences
+
+COMPACT REWRITES
+34 groups · 38 unique variants · 54 occurrences
+─────────────────────────────────────────────
+GuicedEE/ai-rules
+  relatedness: 0.58
+  1 variant file(s) in group
+  length changed by -91%
+  18 headings added/removed
+  shell commands +0/-3
+
+DYAI2025/Plumbline
+  relatedness: 0.52
+  1 variant file(s) in group
+  length changed by -96%
+  15 headings added/removed
+  shell commands +0/-3
+
+Archive228/loopkit
+  relatedness: 0.54
+  1 variant file(s) in group
+  length changed by -85%
+  17 headings added/removed
+  shell commands +0/-3
+
+EXPANDED GUIDANCE
+5 groups · 46 unique variants · 106 occurrences
+─────────────────────────────────────────────
+HiAi-gg/hiai-opencode
+  relatedness: 0.90
+  1 variant file(s) in group
+  +28 new sections
+
+magnus919/agent-skills
+  relatedness: 0.70
+  1 variant file(s) in group
+  +41 new sections
+
+MezbahSaif/HermesBench
+  relatedness: 0.67
+  1 variant file(s) in group
+  +37 new sections
+
+ROUTING SPECIALIZATIONS
+8 groups · 18 unique variants · 22 occurrences
+─────────────────────────────────────────────
+bg-szy/TOP-SKILLS
+  relatedness: 0.82
+  1 variant file(s) in group
+  new routing-boundary language
+  +6 cross-skill references
+  routing evidence: heading: Related Skills
+  routing evidence: related skills
+
+coco-research/coco
+  relatedness: 0.99
+  11 variant file(s) in group, 15 occurrences
+  new routing-boundary language
+  +1 cross-skill references
+  routing evidence: related skills
+
+markmals/workbench
+  relatedness: 0.75
+  1 variant file(s) in group
+  new routing-boundary language
+  +1 cross-skill references
+  routing evidence: heading: Related skills
+  routing evidence: related skills
+
+WORKFLOW SPECIALIZATIONS
+30 groups · 40 unique variants · 49 occurrences
+─────────────────────────────────────────────
+arn0ld87/skills-public-archive
+  relatedness: 0.54
+  1 variant file(s) in group
+  workflow structure reworked (+13/-15 sections)
+
+lec77/skillvm-data
+  relatedness: 0.65
+  1 variant file(s) in group
+  workflow structure reworked (+6/-14 sections)
+
+sammcj/agentic-coding
+  relatedness: 0.44
+  1 variant file(s) in group
+  workflow structure reworked (+9/-15 sections)
+
