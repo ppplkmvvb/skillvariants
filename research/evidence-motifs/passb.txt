@@ -1,0 +1,148 @@
+{
+ "coverage": {
+  "add-feedback-loop-rule": {
+   "coverage": "EXISTING",
+   "note": "heading-name match (feedback loop)",
+   "support_groups": 4,
+   "detected_on_support": 0.75,
+   "precision_approx": null
+  },
+  "add-one-hypothesis-at-a-time": {
+   "coverage": "PARTIAL",
+   "note": "heading/phrase detector",
+   "support_groups": 4,
+   "detected_on_support": 0.5,
+   "precision_approx": null
+  },
+  "add-red-flags-and-anti-pattern-guard": {
+   "coverage": "EXISTING",
+   "note": "heading-name match (red flags / anti-pattern)",
+   "support_groups": 4,
+   "detected_on_support": 1.0,
+   "precision_approx": null
+  },
+  "add-routing-boundary-use-case": {
+   "coverage": "EXISTING",
+   "note": "routing boundary phrases",
+   "support_groups": 4,
+   "detected_on_support": 0.75,
+   "precision_approx": null
+  },
+  "add-stop-or-escalation-after-repeated-failed-fixes": {
+   "coverage": "PARTIAL",
+   "note": "heading turnover + phrase detector",
+   "support_groups": 9,
+   "detected_on_support": 1.0,
+   "precision_approx": null
+  },
+  "explicitly-declare-purposes-goals": {
+   "coverage": "EXISTING",
+   "note": "heading-name match (purpose/goals)",
+   "support_groups": 3,
+   "detected_on_support": 0.6666666666666666,
+   "precision_approx": null
+  },
+  "localize-skill-references": {
+   "coverage": "NO",
+   "note": "n/a",
+   "support_groups": 2,
+   "detected_on_support": null,
+   "precision_approx": null
+  },
+  "preserve-root-cause-first-while-compressing": {
+   "coverage": "EXISTING",
+   "note": "ALL-CAPS rule preservation + length delta",
+   "support_groups": 5,
+   "detected_on_support": 1.0,
+   "precision_approx": null
+  },
+  "project-specific-environment-commands": {
+   "coverage": "EXISTING",
+   "note": "command delta + project phrase regex",
+   "support_groups": 8,
+   "detected_on_support": 0.125,
+   "precision_approx": null
+  },
+  "require-reproduction-before-fixing": {
+   "coverage": "PARTIAL",
+   "note": "reproduction phrase detector",
+   "support_groups": 5,
+   "detected_on_support": 1.0,
+   "precision_approx": null
+  },
+  "restructure-phases-or-named-workflow": {
+   "coverage": "PARTIAL",
+   "note": "heading turnover + phase-name diff",
+   "support_groups": 9,
+   "detected_on_support": 1.0,
+   "precision_approx": null
+  },
+  "route-completion-verification-to-separate-skill": {
+   "coverage": "EXISTING",
+   "note": "cross-skill ref delta + routing signals",
+   "support_groups": 5,
+   "detected_on_support": 0.2,
+   "precision_approx": null
+  },
+  "translate-language-variant": {
+   "coverage": "NO",
+   "note": "n/a",
+   "support_groups": 2,
+   "detected_on_support": null,
+   "precision_approx": null
+  }
+ },
+ "worth": {
+  "route-completion-verification-to-separate-skill": {
+   "YES": 4,
+   "PARTIAL": 1
+  },
+  "project-specific-environment-commands": {
+   "PARTIAL": 4,
+   "YES": 2,
+   "MAYBE": 2
+  },
+  "require-reproduction-before-fixing": {
+   "PARTIAL": 2,
+   "MAYBE": 3
+  },
+  "add-one-hypothesis-at-a-time": {
+   "PARTIAL": 2,
+   "YES": 2
+  },
+  "add-red-flags-and-anti-pattern-guard": {
+   "YES": 3,
+   "PARTIAL": 1
+  },
+  "restructure-phases-or-named-workflow": {
+   "MAYBE": 4,
+   "PARTIAL": 3,
+   "YES": 2
+  },
+  "add-routing-boundary-use-case": {
+   "YES": 3,
+   "MAYBE": 1
+  },
+  "localize-skill-references": {
+   "YES": 1,
+   "PARTIAL": 1
+  },
+  "add-stop-or-escalation-after-repeated-failed-fixes": {
+   "YES": 9
+  },
+  "add-feedback-loop-rule": {
+   "YES": 4
+  },
+  "explicitly-declare-purposes-goals": {
+   "PARTIAL": 3
+  },
+  "preserve-root-cause-first-while-compressing": {
+   "YES": 4,
+   "PARTIAL": 1
+  },
+  "translate-language-variant": {
+   "PARTIAL": 1,
+   "MAYBE": 1
+  }
+ }
+}

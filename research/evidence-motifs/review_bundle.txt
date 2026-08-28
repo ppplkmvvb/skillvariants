@@ -1,0 +1,764 @@
+### G1 asta-nguyen/openez-graph | .agents/skills/superpowers-systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] expanded-guidance | sim=0.99 rel=1.00 members=41 occ=101
+  len=+0.07 hdr(+0/-0) cmds(+0/-0) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=[] wrapper=[]
+  + [] - []
+  ADD: ++ | | Excuse                                       | Reality                                                       | | -------------------------------------------- | -------------------------------------------------------------
+  REM: -- | | Excuse | Reality | | |--------|---------|
+  body: # Systematic Debugging ## Overview **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of this process is violating the spirit of debugging.** ## The Iron Law ``` NO FIXES WI
+
+### G2 coco-research/coco | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=1.00 rel=0.99 members=11 occ=15
+  len=+0.05 hdr(+1/-0) cmds(+0/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['related skills'] wrapper=[]
+  + [] - []
+  ADD: ++ | **Announce at start:** "Systematic Debugging skill activated." | Random fixes waste time and create new bugs. Quick patches mask underlying issues.
+  REM: -- | - Use the `superpowers:verification-before-completion` skill before claiming success | - "Ultra-think this" - Question fundamentals, not just symptoms
+  body: # Systematic Debugging ## Overview **Announce at start:** "Systematic Debugging skill activated." Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attemptin
+
+### G3 eastreams/loong | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.83 rel=0.75 members=11 occ=16
+  len=+0.08 hdr(+34/-4) cmds(+2/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', '1. Read Error Messages Carefully', '2. Reproduce Consistently']
+  routing=[] wrapper=[]
+  + ['pytest', 'python'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Someone wants it fixed NOW (systematic is faster than thrashing)
+  REM: -- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G4 pratikrath126/ai-image-detector | .agent/kit-skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.49 rel=0.46 members=5 occ=17
+  len=-0.77 hdr(+20/-13) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'Overview', '4-Phase Debugging Process', 'Phase 1: Reproduce', 'Reproduction Steps', 'Reproduction Rate', 'Phase 2: Isolate', 'Isolation Questions']
+  routing=[] wrapper=[]
+  + [] - ['make']
+  ADD: ++ | > Source: obra/superpowers | This skill provides a structured approach to debugging that prevents random guessing and ensures problems are 
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging > Source: obra/superpowers ## Overview This skill provides a structured approach to debugging that prevents random guessing and ensures problems are properly understood before solving. ## 4-Phase Debugging Process ###
+
+### G5 MadAppGang/claude-code | plugins/dev/skills/discipline/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] expanded-guidance | sim=0.49 rel=0.47 members=2 occ=2
+  len=+0.89 hdr(+56/-13) cmds(+2/-1) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'Red Flags (Violation Indicators)', 'Key Concepts', '1. Root Cause vs. Symptom', '2. Data Flow Tracing', '3. Hypothesis-Driven Debugging', '4. Fix Verification']
+  routing=[] wrapper=[]
+  + ['go', 'python'] - ['make']
+  ADD: ++ | **Iron Law:** "NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST" | Use this skill when:
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **Iron Law:** "NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST" ## When to Use Use this skill when: - A test fails and you need to understand why - An error is thrown and you need to find the cause - A feature behaves
+
+### G6 Ibrahim-3d/orchestrator-supaconductor | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.97 rel=0.95 members=1 occ=1
+  len=-0.19 hdr(+0/-3) cmds(+0/-0) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['related skills'] wrapper=[]
+  + [] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | 1. **read_file Error Messages Carefully**
+  REM: -- | 1. **Read Error Messages Carefully** | - Read stack traces completely
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G7 skeletorflet/opencode-supreme-setup | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.85 rel=0.85 members=1 occ=1
+  len=-0.80 hdr(+1/-6) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | 1. Read Error Messages Carefully - don't skip past errors
+  REM: -- | **Violating the letter of this process is violating the spirit of debugging.** | ```
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law NO FIXES WI
+
+### G8 itseffi/agentic-os | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.95 rel=0.86 members=1 occ=1
+  len=-0.67 hdr(+1/-5) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'Red Flags - STOP and Follow Process']
+  routing=['do not use'] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes. | - If not reproducible, gather more data
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes. ## The Iron Law ``` NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST ``` If you haven't completed Phase 1, you cannot propose
+
+### G9 earchibald/vsc-superpowers | .agents/skills/investigate/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.95 rel=0.94 members=1 occ=1
+  len=-0.15 hdr(+2/-1) cmds(+0/-1) refs(+0)
+  headings=['Skill: systematic-debugging', 'Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis']
+  routing=['related skills'] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | # Skill: systematic-debugging | ---
+  REM: -- | **WHEN system has multiple components (CI → build → signing, API → service → database):** | **BEFORE proposing fixes, add diagnostic instrumentation:**
+  body: # Skill: systematic-debugging --- name: systematic-debugging description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes --- # Systematic Debugging ## Overview Random fixes waste time and create 
+
+### G10 aiskillstore/marketplace | skills/asmayaseen/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.79 rel=0.77 members=1 occ=1
+  len=-0.41 hdr(+6/-5) cmds(+1/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'Red Flags - STOP and Follow Process']
+  routing=[] wrapper=[]
+  + ['python'] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ---
+  REM: -- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXES WITHOUT RO
+
+### G11 coctostan/pi-superpowers-plus | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.89 rel=0.89 members=1 occ=1
+  len=-0.22 hdr(+2/-3) cmds(+0/-0) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['related skills'] wrapper=[]
+  + [] - []
+  ADD: ++ | > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix w | Random fixes waste time and create new bugs. Quick patches mask underlying issues.
+  REM: -- | Use for ANY technical issue: | - Test failures
+  body: > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix with `/skill:verification-before-completion`. # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick
+
+### G12 HiAi-gg/hiai-opencode | skills/general/SKILL.md | url=? | [g.dominant_type=primary] expanded-guidance | sim=0.99 rel=0.90 members=1 occ=1
+  len=+1.11 hdr(+28/-0) cmds(+2/-0) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['related skills'] wrapper=[]
+  + ['node', 'npm'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Use the `test-driven-development` skill for writing proper failing tests
+  REM: -- | - Use the `superpowers:test-driven-development` skill for writing proper failing tests | - Use the `superpowers:verification-before-completion` skill before claiming success
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G13 riddopic/cc-tools | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.94 rel=0.95 members=1 occ=1
+  len=-0.29 hdr(+0/-2) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation']
+  routing=['related skills'] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | Use for ANY technical issue: test failures, bugs, unexpected behavior, performance problems, build failures, i
+  REM: -- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXES WITHOUT RO
+
+### G14 MikeCheng1208/BattleTree | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.64 rel=0.70 members=1 occ=1
+  len=-0.02 hdr(+21/-3) cmds(+2/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['related skills'] wrapper=[]
+  + ['npm', 'sh'] - []
+  ADD: ++ | Random fixes waste time and mask underlying issues. **Core principle:** ALWAYS find root cause before attempti | `NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST`
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging ## Overview Random fixes waste time and mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law `NO FIXES WITHOUT ROOT CAUSE INVESTIGATION
+
+### G15 LiGoldragon/Mentci-AI | .pi/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.82 rel=0.85 members=1 occ=1
+  len=+0.04 hdr(+3/-3) cmds(+1/-0) refs(+0)
+  headings=['Repo-Local Nix Purity Rule', 'Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis']
+  routing=['related skills'] wrapper=[]
+  + ['node'] - []
+  ADD: ++ | > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix w | ## Repo-Local Nix Purity Rule
+  REM: -- | Use for ANY technical issue: | - Test failures
+  body: > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix with `/skill:verification-before-completion`. ## Repo-Local Nix Purity Rule - Treat every repository as a self-contained world duri
+
+### G16 markmals/workbench | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.70 rel=0.75 members=1 occ=1
+  len=-0.10 hdr(+6/-6) cmds(+0/-1) refs(+1)
+  headings=['Systematic Debugging', 'The Iron Law', 'When to use', 'The four phases', 'Phase 1: Root cause investigation', 'Phase 2: Pattern analysis', 'Phase 3: Hypothesis and minimal test', 'Phase 4: Implementation']
+  routing=['heading: Related skills', 'related skills'] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. Always find the root cause  | **Lifted from superpowers' systematic-debugging skill.** Slimmed; the four-phase structure is unchanged.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Random fixes waste time and create new bugs. Quick patches mask underlying issues. Always find the root cause **before** attempting a fix. **Lifted from superpowers' systematic-debugging skill.** Slimmed; the four-pha
+
+### G17 bg-szy/TOP-SKILLS | skills/agent-skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.97 rel=0.82 members=1 occ=1
+  len=+0.28 hdr(+7/-1) cmds(+0/-0) refs(+6)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  + [] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | See skills/root-cause-tracing for backward tracing technique
+  REM: -- | See `root-cause-tracing.md` in this directory for the complete backward tracing technique. | - Use the `superpowers:test-driven-development` skill for writing proper failing tests
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G18 5DLabsInc/cto | tests/cli-invocation/config/skills-rex/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.95 rel=0.81 members=1 occ=1
+  len=-0.43 hdr(+2/-3) cmds(+0/-1) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Log what data enters component
+  REM: -- | **Violating the letter of this process is violating the spirit of debugging.** | - You don't fully understand the issue
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXE
+
+### G19 aiskillstore/marketplace | skills/codingcossack/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.89 rel=0.76 members=1 occ=2
+  len=-0.54 hdr(+3/-9) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'Escalation: 3+ Failed Fixes', 'Red Flags → STOP and Return to Phase 1', "Human Signals You're Off Track"]
+  routing=['related skills'] wrapper=[]
+  + [] - ['make']
+  ADD: ++ | **Core principle:** Find root cause before attempting fixes. Symptom fixes are failure. | ## Phase 1: Root Cause Investigation
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **Core principle:** Find root cause before attempting fixes. Symptom fixes are failure. ``` NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST ``` ## Phase 1: Root Cause Investigation **BEFORE attempting ANY fix:** 1. **
+
+### G20 7757/Fan-Browser-Agent | skills/software-development/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.81 rel=0.67 members=1 occ=1
+  len=+0.28 hdr(+36/-4) cmds(+3/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'The Feedback Loop Rule', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', '1. Read Error Messages Carefully']
+  routing=[] wrapper=[]
+  + ['go', 'pytest', 'python'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ```
+  REM: -- | ``` | ```
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G21 David-Li0406/meta-skill-evloving | skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-15/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.84 rel=0.80 members=1 occ=1
+  len=-0.73 hdr(+5/-10) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Hypothesis Formation', 'Phase 3: Minimal Fix', 'Phase 4: Verification']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **Use ESPECIALLY when:**
+  REM: -- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXES WITHOUT RO
+
+### G22 MezbahSaif/HermesBench | Case1_Qwen/datasets/variants/tasks/skills/software-development/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] expanded-guidance | sim=0.82 rel=0.67 members=1 occ=1
+  len=+0.46 hdr(+37/-4) cmds(+4/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'The Feedback Loop Rule', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', '1. Read Error Messages Carefully']
+  routing=[] wrapper=[]
+  + ['curl', 'go', 'pytest', 'python'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ## The Feedback Loop Rule
+  REM: -- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G23 magnus919/agent-skills | systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] expanded-guidance | sim=0.80 rel=0.70 members=1 occ=1
+  len=+0.76 hdr(+41/-4) cmds(+3/-0) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', '1. Read Error Messages Carefully', '2. Reproduce Consistently']
+  routing=[] wrapper=[]
+  + ['pip', 'pytest', 'python'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **ESPECIALLY when:**
+  REM: -- | **Violating the letter of this process is violating the spirit of debugging.** | **Use this ESPECIALLY when:**
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXE
+
+### G24 Frostthejack/hermes-tailscale-rw | profiles/orchestrator/skills/software-development/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.83 rel=0.68 members=1 occ=1
+  len=+0.56 hdr(+44/-4) cmds(+4/-0) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', '1. Read Error Messages Carefully', '2. Reproduce Consistently']
+  routing=['route to'] wrapper=[]
+  + ['npx', 'pipx', 'pytest', 'python'] - []
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Someone wants it fixed NOW (systematic is faster than thrashing)
+  REM: -- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. **Violating the letter of t
+
+### G25 RBraga01/a-team | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.82 rel=0.77 members=1 occ=2
+  len=-0.75 hdr(+5/-10) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'The Four Phases (Must Complete in Order)', 'Phase 1: Root Cause Investigation (MANDATORY)', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'When 3+ Fixes Fail']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Quick patches mask underlying issues. Systematic debugging is FASTER than thrashing. | ## The Four Phases (Must Complete in Order)
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## The Iron Law ``` NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST ``` Quick patches mask underlying issues. Systematic debugging is FASTER than thrashing. ## The Four Phases (Must Complete in Order) ### Phase 1: Roo
+
+### G26 FradSer/dotclaude | superpowers/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.69 rel=0.65 members=1 occ=1
+  len=+0.42 hdr(+11/-7) cmds(+1/-1) refs(+1)
+  headings=['Systematic Debugging', 'Slash-command Usage', 'Recommended: run wrapped in `/goal`', 'CRITICAL: Bail-Out Check (run before Phase 1)', 'Overview', 'CRITICAL: The Iron Law', 'When to Apply', 'The Four Phases']
+  routing=['related skills'] wrapper=[]
+  + ['sh'] - ['make']
+  ADD: ++ | ## Slash-command Usage | Invoked via `/superpowers:systematic-debugging "<symptom>"` or auto-loaded by other skills when bug-fix langua
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging ## Slash-command Usage Invoked via `/superpowers:systematic-debugging "<symptom>"` or auto-loaded by other skills when bug-fix language is detected. **When invoked as a slash command**: capture `$ARGUMENTS` as the sym
+
+### G27 diegosouzapw/awesome-omni-skill | skills/development/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.70 rel=0.72 members=1 occ=1
+  len=-0.64 hdr(+0/-4) cmds(+0/-1) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **Goal:** Understand WHAT is happening and WHERE.
+  REM: -- | **Violating the letter of this process is violating the spirit of debugging.** | - Manager wants it fixed NOW (systematic is faster than thrashing)
+  body: # Systematic Debugging ## Overview Random fixes waste time and create new bugs. Quick patches mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXE
+
+### G28 apenlor/opencode-expert-mode | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.72 rel=0.74 members=1 occ=1
+  len=-0.76 hdr(+5/-7) cmds(+0/-2) refs(+1)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  + [] - ['bash', 'git']
+  ADD: ++ | Random fixes waste time and mask underlying issues. **Core principle:** Find root cause before attempting any  | Use for ANY technical issue. **Especially** when under time pressure, when you've already tried multiple fixes
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging ## Overview Random fixes waste time and mask underlying issues. **Core principle:** Find root cause before attempting any fix. Symptom fixes are failure. ## The Iron Law ``` NO FIXES WITHOUT ROOT CAUSE INVESTIGATION F
+
+### G29 bostonaholic/rpikit | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.61 rel=0.62 members=1 occ=1
+  len=-0.34 hdr(+18/-8) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'Purpose', 'The Iron Law', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | Find the root cause before attempting fixes. Symptom fixes are failure. | ## Purpose
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Find the root cause before attempting fixes. Symptom fixes are failure. ## Purpose Debugging without methodology wastes time and creates new bugs. Random fixes address symptoms, not causes. This skill enforces systema
+
+### G30 tmdgusya/engineering-discipline | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.55 rel=0.58 members=1 occ=1
+  len=-0.17 hdr(+17/-13) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'Hard Gates', 'When To Use', 'Required Output Contract', 'Workflow', 'Phase 1. Define The Problem', 'Phase 2. Reproduce Or Instrument', 'Phase 3. Gather Evidence']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git']
+  ADD: ++ | A strict debugging workflow. Use when dealing with bugs, test failures, or unexpected behavior. | Three core purposes:
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging A strict debugging workflow. Use when dealing with bugs, test failures, or unexpected behavior. Three core purposes: 1. Fix the cause, not the symptom. 2. Prevent guess-based fixes. 3. Lock the failure with a test bef
+
+### G31 jh941213/my-cc-harness | skills_en/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.71 rel=0.70 members=1 occ=1
+  len=-0.75 hdr(+4/-11) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'The four phases (complete each before the next)', 'Phase 1: Root cause investigation', 'Phase 2: Pattern analysis', 'Phase 3: Hypothesis and test', 'Phase 4: Implementation', 'The 3-failures rule', 'Red flags (any of these thoughts → STOP, back to Phase 1)']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | **Iron law: no fixes without root-cause investigation. Fixing symptoms is failure.** | The simpler the bug looks, the more urgent the situation, the more this process matters — systematic debugging
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **Iron law: no fixes without root-cause investigation. Fixing symptoms is failure.** The simpler the bug looks, the more urgent the situation, the more this process matters — systematic debugging is faster than guess-
+
+### G32 tranhieutt/software_development_department | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.57 rel=0.55 members=1 occ=1
+  len=-0.10 hdr(+24/-13) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Purpose', 'Iron Law', 'When To Use', 'Workflow', '1. Capture the Symptom', '2. Build the Feedback Loop First', '3. Reproduce or Bound the Failure']
+  routing=['route to'] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Purpose | `systematic-debugging` prevents guess-and-check fixes. It requires the agent to
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Purpose `systematic-debugging` prevents guess-and-check fixes. It requires the agent to understand and verify the root cause before changing code. Use it for any technical issue before proposing or implementing a f
+
+### G33 Bbeierle12/Skill-MCP-Claude | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.69 rel=0.68 members=1 occ=1
+  len=-0.65 hdr(+26/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Core Principle', 'Phase 1: Understand the Problem', 'Gather Information', 'Reproduce Consistently', 'Check the Obvious First', 'Phase 2: Root Cause Tracing', 'Backward Tracing Technique']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Core Principle | **Don't guess. Investigate systematically.**
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Core Principle **Don't guess. Investigate systematically.** After 3 failed fix attempts, STOP and question the architecture. ## Phase 1: Understand the Problem ### Gather Information 1. What is the expected behavio
+
+### G34 majiayu000/claude-skill-registry | skills/data/pop-systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.70 rel=0.62 members=1 occ=1
+  len=-0.52 hdr(+6/-8) cmds(+0/-2) refs(+1)
+  headings=['Systematic Debugging', 'The Iron Law', 'When to Use', 'Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis & Testing', 'Phase 4: Implementation']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | Random fixes waste time. Quick patches mask issues. | **Core principle:** ALWAYS find root cause before fixes. Symptom fixes are failure.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Random fixes waste time. Quick patches mask issues. **Core principle:** ALWAYS find root cause before fixes. Symptom fixes are failure. ## The Iron Law ``` NO FIXES WITHOUT ROOT CAUSE INVESTIGATION ``` ## When to Use 
+
+### G35 PytaichukBohdan/AndriiPresentation | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.56 rel=0.54 members=1 occ=2
+  len=-0.16 hdr(+13/-11) cmds(+1/-1) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'The Iron Law', 'The Debugging Flow', 'Step 1: REPRODUCE', 'Step 2: ISOLATE', 'Step 3: UNDERSTAND', 'Step 4: FIX']
+  routing=[] wrapper=[]
+  + ['go'] - ['bash']
+  ADD: ++ | Debug systematically. Understand before fixing. One change at a time. | **Core principle:** A bug fixed without understanding is a bug waiting to return.
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging ## Overview Debug systematically. Understand before fixing. One change at a time. **Core principle:** A bug fixed without understanding is a bug waiting to return. ## The Iron Law ``` NO FIX WITHOUT UNDERSTANDING THE 
+
+### G36 VidyaBodepudi/Code-Skills | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.58 rel=0.56 members=1 occ=1
+  len=-0.32 hdr(+6/-9) cmds(+0/-1) refs(+0)
+  headings=['Overview', 'When to Use', 'Process', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis & Testing', 'Phase 4: Implementation', 'Escalation Rule']
+  routing=[] wrapper=[]
+  + [] - ['make']
+  ADD: ++ | Systematic debugging prevents the #1 agent anti-pattern: guessing at fixes. Instead of trying random changes a | - When a test fails and the cause isn't immediately obvious
+  REM: -- | # Systematic Debugging | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: ## Overview Systematic debugging prevents the #1 agent anti-pattern: guessing at fixes. Instead of trying random changes and hoping something works, this skill enforces a scientific method — observe, hypothesize, test, confirm — that finds 
+
+### G37 aiskillstore/marketplace | skills/dmjgilbert/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.67 rel=0.66 members=1 occ=2
+  len=-0.74 hdr(+4/-9) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis Testing', 'Phase 4: Implementation', 'Red Flags - STOP Immediately']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | **ALWAYS find root cause before attempting fixes. Symptom fixes are failure.** | - Encountering bugs or test failures
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **ALWAYS find root cause before attempting fixes. Symptom fixes are failure.** ## When to Use - Encountering bugs or test failures - Unexpected behavior in code - Before proposing any fix ## The Four Phases ### Phase 
+
+### G38 yimwoo/hotl-plugin | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.73 rel=0.70 members=1 occ=1
+  len=-0.91 hdr(+6/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Four Phases', 'Phase 1: Reproduce', 'Phase 2: Understand', 'Phase 3: Hypothesize', 'Phase 4: Fix and Verify', 'Red Flags']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Four Phases | ### Phase 1: Reproduce
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Four Phases ### Phase 1: Reproduce - Get a minimal, reliable reproduction - Never fix what you can't reproduce ### Phase 2: Understand - Read the error message fully — the answer is often there - Trace the call pat
+
+### G39 lec77/skillvm-data | skill-variants/targeted/opencode/qwen3.5-397b/bug-fixing/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.63 rel=0.65 members=1 occ=1
+  len=-0.83 hdr(+6/-14) cmds(+1/-2) refs(+0)
+  headings=['Systematic Debugging', 'Process (follow in order)', 'Step 1: Read the Error', 'Step 2: Understand the Code', 'Step 3: Identify the Root Cause', 'Step 4: Fix and Verify', 'Rules']
+  routing=[] wrapper=[]
+  + ['go'] - ['bash', 'git']
+  ADD: ++ | **NEVER guess at fixes. ALWAYS find the root cause first.** | ## Process (follow in order)
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **NEVER guess at fixes. ALWAYS find the root cause first.** ## Process (follow in order) ### Step 1: Read the Error - Read error messages, stack traces, and test output COMPLETELY - Note exact line numbers, file paths
+
+### G40 sabahattink/antigravity-fullstack-hq | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.49 rel=0.47 members=1 occ=1
+  len=-0.09 hdr(+29/-14) cmds(+2/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Scientific Method Applied to Bugs', 'Step 1: Reproduce Reliably', 'Note the exact conditions:', '- Input / request body', '- Environment (local / staging / prod)', '- User account or data state', '- Frequency (always / sometimes / once)']
+  routing=['owns'] wrapper=[]
+  + ['curl', 'node'] - ['make']
+  ADD: ++ | ## The Scientific Method Applied to Bugs | ```
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## The Scientific Method Applied to Bugs ``` 1. OBSERVE — Reproduce the issue reliably 2. HYPOTHESIZE — Form the simplest explanation consistent with symptoms 3. PREDICT — "If my hypothesis is correct, then X should b
+
+### G41 Threat-Vector-Security/guardian-agent | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] routing-specialization | sim=0.57 rel=0.60 members=1 occ=1
+  len=-0.65 hdr(+6/-13) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Overview / When to Use', 'Process', 'Common Rationalizations', 'Red Flags', 'Verification', 'Supporting References', 'Related Skills']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Overview / When to Use | Do not guess. Find the root cause before changing code, config, or prompts. No fixes without investigation fir
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Overview / When to Use Do not guess. Find the root cause before changing code, config, or prompts. No fixes without investigation first. If you have not reproduced the issue, read the errors, and traced where the b
+
+### G42 c-kick/hnl-agent-skills | systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.57 rel=0.55 members=1 occ=1
+  len=-0.50 hdr(+12/-10) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'Core Principle', 'The Four-Phase Framework', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'Red Flags - Process Violations']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | ## Core Principle | **NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.**
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Core Principle **NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.** Never apply symptom-focused patches that mask underlying problems. Understand WHY something fails before attempting to fix it. ## The Four-Phase F
+
+### G43 majiayu000/spellbook | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.56 rel=0.57 members=1 occ=1
+  len=-0.60 hdr(+9/-9) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'Core Principle', 'The Four Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis and Testing', 'Phase 4: Implementation', 'The 3-Fix Rule']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git']
+  ADD: ++ | > From [obra/superpowers](https://github.com/obra/superpowers) | ## Core Principle
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging > From [obra/superpowers](https://github.com/obra/superpowers) ## Core Principle **NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST** Random fixes create new bugs. Understanding must precede solutions. ## The Four Phas
+
+### G44 arn0ld87/skills-public-archive | skills/agents/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.43 rel=0.54 members=1 occ=1
+  len=-0.41 hdr(+13/-15) cmds(+0/-1) refs(+0)
+  headings=['Systematisches Debugging', 'Überblick', 'Das Eiserne Gesetz', 'Die vier Phasen', 'Phase 1: Ursachen-Analyse', 'Phase 2: Muster-Analyse', 'Phase 3: Hypothese und Tests', 'Phase 4: Implementierung']
+  routing=[] wrapper=[]
+  + [] - ['make']
+  ADD: ++ | # Systematisches Debugging | ## Überblick
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematisches Debugging ## Überblick Zufällige Fixes verschwenden Zeit und erzeugen neue Bugs. Schnelle Patches verdecken zugrundeliegende Probleme. **Kernprinzip:** IMMER Ursache finden bevor Fixes versucht werden. Symptom-Fixes sind Ve
+
+### G45 erclx/aitk | claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.64 rel=0.58 members=1 occ=1
+  len=-0.69 hdr(+8/-14) cmds(+0/-1) refs(+0)
+  headings=['Systematic debugging', 'The rule', 'Phase 1: investigate', 'Phase 2: find the pattern', 'Phase 3: hypothesize and test', 'Phase 4: fix', 'Three-fix circuit breaker', 'Red flags that mean "return to phase 1"']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | # Systematic debugging | Random fixes waste time and create new bugs. Before proposing any fix, complete the four phases below in order
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic debugging Random fixes waste time and create new bugs. Before proposing any fix, complete the four phases below in order. ## The rule No fixes without root-cause investigation first. If phase 1 is incomplete, no fix may be prop
+
+### G46 CUBETIQ/cubis-foundry | workflows/workflows/agent-environment-setup/platforms/claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.53 rel=0.48 members=1 occ=1
+  len=-0.30 hdr(+13/-14) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging Methodology', 'Purpose', 'When to Use', 'Instructions', 'Output Format', 'Debugging Report', 'Defect Summary', 'Reproduction Steps']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | # Systematic Debugging Methodology | ## Purpose
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic Debugging Methodology ## Purpose Provide a disciplined, evidence-based framework for diagnosing and resolving software defects. This skill replaces ad-hoc "change and pray" debugging with a structured process that converges on 
+
+### G47 communitiesuk/prsdb-webapp | .github/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.46 rel=0.55 members=1 occ=1
+  len=-0.62 hdr(+6/-12) cmds(+1/-1) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'The Four Phases', 'Phase 1: Reproduce and Observe', 'Phase 2: Gather Evidence', 'Phase 3: Form and Test Hypothesis', 'Phase 4: Fix and Verify', 'Using the Debugger']
+  routing=[] wrapper=[]
+  + ['powershell'] - ['git']
+  ADD: ++ | **Core principle:** Find root cause before attempting fixes. Symptom fixes are | failure.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging **Core principle:** Find root cause before attempting fixes. Symptom fixes are failure. ## When to Use Use for ANY technical issue: test failures, bugs, unexpected behaviour, build failures, integration issues. Use ES
+
+### G48 ArchieIndian/openclaw-superpowers | skills/core/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.71 rel=0.61 members=1 occ=1
+  len=-0.92 hdr(+4/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Phase 1: Understand the Error', 'Phase 2: Hypothesize', 'Phase 3: Test Hypotheses', 'Phase 4: Fix and Verify']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Never guess at fixes. Find the root cause first. | ## Phase 1: Understand the Error
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Never guess at fixes. Find the root cause first. ## Phase 1: Understand the Error - Read the full error message - Note the exact file, line, error type - Reproduce the error reliably - Write: 'The error is: [exact err
+
+### G49 AlexAI-MCP/hermes-CCC | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.50 rel=0.47 members=1 occ=1
+  len=-0.33 hdr(+22/-14) cmds(+1/-1) refs(+0)
+  headings=['Systematic Debugging', 'Purpose', 'Activation Signals', 'Debugging Phases', 'Phase 1: Stabilize The Report', 'Phase 2: Reproduce The Failure', 'Phase 3: Narrow The Surface Area', 'Phase 4: Instrument The System']
+  routing=[] wrapper=[]
+  + ['pytest'] - ['make']
+  ADD: ++ | ## Purpose | - Prevent guess-driven bug fixing.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Purpose - Prevent guess-driven bug fixing. - Turn a vague failure into a proved root cause. - Separate symptom collection from patching. - Minimize regressions while repairing defects. - Leave behind a reproducible
+
+### G50 Tcuzzo/HydraAgent_public | skills/systematic_debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.69 rel=0.61 members=1 occ=1
+  len=-0.98 hdr(+0/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Trace every joined mechanism end-to-end before proposing a fix. Verify against live code and runtime state. Fi
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Trace every joined mechanism end-to-end before proposing a fix. Verify against live code and runtime state. Fix root cause, never symptoms.
+
+### G51 taracodlabs/aiden | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.48 rel=0.49 members=1 occ=1
+  len=-0.52 hdr(+12/-13) cmds(+3/-2) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'How to Use', 'Phase 1: Reproduce reliably', 'Phase 2: Isolate the failure', 'git bisect to find the breaking commit', 'git will checkout commits — test each, then:', 'Repeat until git identifies the culprit commit']
+  routing=[] wrapper=[]
+  + ['node', 'powershell', 'python'] - ['bash', 'make']
+  ADD: ++ | A structured four-phase process for diagnosing software bugs: **Reproduce → Isolate → Hypothesize → Verify**.  | - User reports a bug or unexpected behavior without an obvious cause
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging A structured four-phase process for diagnosing software bugs: **Reproduce → Isolate → Hypothesize → Verify**. Prevents guessing and ensures you find the root cause, not just a workaround. ## When to Use - User reports
+
+### G52 erfanzar/Xerxes-Agents | xerxes/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.48 rel=0.47 members=1 occ=1
+  len=-0.44 hdr(+7/-14) cmds(+2/-2) refs(+0)
+  headings=['Systematic Debugging', 'Operating rules', 'Production tool forms', '1. Reproduce', '2. Trace the root cause', '3. Test one hypothesis', '4. Fix narrowly', '5. Verify and report']
+  routing=[] wrapper=[]
+  + ['bun', 'python'] - ['bash', 'make']
+  ADD: ++ | Use this workflow for bugs, failed tests, build errors, performance regressions, | and unexpected production behavior. Scale the depth to the problem, but keep the
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Use this workflow for bugs, failed tests, build errors, performance regressions, and unexpected production behavior. Scale the depth to the problem, but keep the order: **reproduce -> trace -> hypothesize -> fix -> ve
+
+### G53 GuicedEE/ai-rules | skills/.curated/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.50 rel=0.58 members=1 occ=1
+  len=-0.91 hdr(+4/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Core Rule', 'Workflow', 'When stuck', 'References']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Always investigate root cause before proposing fixes. | ## Core Rule
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Always investigate root cause before proposing fixes. ## Core Rule No fixes without root-cause investigation. ## Workflow 1) **Reproduce**: capture exact steps and error output. 2) **Localize**: find the smallest fail
+
+### G54 SethGammon/Citadel | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.51 rel=0.46 members=1 occ=1
+  len=-0.46 hdr(+12/-14) cmds(+1/-2) refs(+0)
+  headings=['/systematic-debugging — Root Cause Before Fix', 'Orientation', 'Protocol', 'Phase 1: OBSERVATION & REPRODUCTION', 'Phase 2: HYPOTHESIS & VERIFICATION', 'Phase 3: ROOT CAUSE ANALYSIS', 'Phase 4: IMPLEMENTATION', 'Emergency Stop Rule']
+  routing=["don't use"] wrapper=[]
+  + ['go'] - ['bash', 'make']
+  ADD: ++ | # /systematic-debugging — Root Cause Before Fix | ## Orientation
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # /systematic-debugging — Root Cause Before Fix ## Orientation **Use when:** root cause is unknown and premature fixes keep failing -- enforces observe -> hypothesize -> verify before touching code. **Don't use when:** root cause is already
+
+### G55 hnb-rabear/RCore | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.47 rel=0.53 members=1 occ=1
+  len=-0.75 hdr(+2/-10) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'The Iron Law', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis & Testing', 'Phase 4: Implementation', 'Red Flags — STOP']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | > Adapted from [superpowers:systematic-debugging](https://github.com/obra/superpowers) | NEVER guess at fixes. Find the root cause FIRST.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging > Adapted from [superpowers:systematic-debugging](https://github.com/obra/superpowers) ## The Iron Law ``` NEVER guess at fixes. Find the root cause FIRST. ``` Surface symptoms ≠ root cause. Resist the urge to change 
+
+### G56 jed72/compass | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.47 rel=0.48 members=1 occ=1
+  len=-0.51 hdr(+6/-14) cmds(+1/-2) refs(+0)
+  headings=['Systematic Debugging', 'Phase 1 - Root cause investigation', 'Phase 2 - Pattern analysis', 'Phase 3 - Single-hypothesis test', 'Phase 4 - Fix through a failing test', 'The escape clause - three failed fixes means the framing is wrong', 'Anti-patterns']
+  routing=[] wrapper=[]
+  + ['go'] - ['bash', 'git']
+  ADD: ++ | A test failed and you did not expect it to. The reflex is to change something | plausible and re-run. That reflex is why debugging sessions get long: each
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging A test failed and you did not expect it to. The reflex is to change something plausible and re-run. That reflex is why debugging sessions get long: each attempted fix is a guess, guesses do not accumulate into underst
+
+### G57 baphuongna/pi-crew | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.53 rel=0.47 members=1 occ=1
+  len=-0.50 hdr(+11/-15) cmds(+0/-2) refs(+1)
+  headings=['systematic-debugging', 'Invocation — Read Before Debugging', 'Refuse Gate — Do NOT Proceed Without These', 'Four Phases', '1. Root Cause Investigation', '2. Pattern Analysis', '3. Hypothesis and Test — Falsify First', '4. Implementation']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'make']
+  ADD: ++ | # systematic-debugging | Core principle: no fixes without root-cause investigation first. Symptom patches create new bugs and hide the 
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # systematic-debugging Core principle: no fixes without root-cause investigation first. Symptom patches create new bugs and hide the real failure. Distilled from detailed reads of systematic-debugging, root-cause tracing, TDD, and error-ana
+
+### G58 Archive228/loopkit | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.52 rel=0.54 members=1 occ=1
+  len=-0.85 hdr(+3/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'The loop', 'Stop conditions', 'Output']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | The single most expensive agent failure: seeing an error and immediately generating a | "fix" based on the error type, without reading what actually happened. Don't.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging The single most expensive agent failure: seeing an error and immediately generating a "fix" based on the error type, without reading what actually happened. Don't. ## The loop 1. **Read the whole error.** The entire m
+
+### G59 sammcj/agentic-coding | Skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] workflow-specialization | sim=0.51 rel=0.44 members=1 occ=1
+  len=-0.49 hdr(+9/-15) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging with Fagan Inspection', 'Process Overview', 'Phase 1: Initial Overview', 'Phase 2: Systematic Inspection', 'Phase 3: Root Cause Analysis', 'Phase 4: Solution & Verification', 'Important Guidelines', 'Final Output']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | # Systematic Debugging with Fagan Inspection | This skill applies a modified Fagan Inspection methodology for systematic problem resolution when facing compl
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic Debugging with Fagan Inspection This skill applies a modified Fagan Inspection methodology for systematic problem resolution when facing complex problems or stubborn bugs that have resisted multiple fix attempts. ## Process Ove
+
+### G60 David-Li0406/meta-skill-evloving | skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-53/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.57 rel=0.49 members=1 occ=1
+  len=-0.72 hdr(+9/-15) cmds(+0/-1) refs(+0)
+  headings=['What I Do', 'When to Use Me', 'The 4-Phase Process', 'Phase 1: REPRODUCE', 'Phase 2: ISOLATE', 'Phase 3: IDENTIFY', 'Phase 4: FIX & VERIFY', 'Anti-Patterns']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | ## What I Do | - Guide systematic root cause analysis
+  REM: -- | # Systematic Debugging | ## Overview
+  body: ## What I Do - Guide systematic root cause analysis - Prevent shotgun debugging (random changes hoping something works) - Document findings for future reference - Ensure fixes actually solve the problem ## When to Use Me Use this skill when
+
+### G61 RakuenSoftware/aimee | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.50 rel=0.53 members=1 occ=1
+  len=-0.93 hdr(+0/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Start with evidence, not guesses. | 1. Reproduce the failure with the smallest command, input, or trace available.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Start with evidence, not guesses. 1. Reproduce the failure with the smallest command, input, or trace available. 2. Read the failing path until you can explain where expected state diverges from actual state. 3. Form 
+
+### G62 metaspartan/cybara | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.51 rel=0.50 members=1 occ=1
+  len=-0.82 hdr(+3/-14) cmds(+0/-1) refs(+0)
+  headings=['Systematic Debugging', 'The loop', 'Anti-patterns to avoid', 'When stuck']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | A disciplined loop that finds the true root cause before changing code. Skipping it is the #1 cause of "fixes" | ## The loop
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging A disciplined loop that finds the true root cause before changing code. Skipping it is the #1 cause of "fixes" that regress or don't hold. ## The loop 1. **Reproduce reliably.** Get a minimal, repeatable repro (comman
+
+### G63 DYAI2025/Plumbline | config/claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.59 rel=0.52 members=1 occ=1
+  len=-0.96 hdr(+1/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Loop']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Loop | 1. Reproduce the failure with the smallest exact command.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Loop 1. Reproduce the failure with the smallest exact command. 2. Capture expected vs actual behavior. 3. Form one hypothesis at a time. 4. Add instrumentation or a focused test to falsify it. 5. Apply the smallest
+
+### G64 DDS-Solutions/AI-TadPole-OS | .agent/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.46 rel=0.45 members=1 occ=1
+  len=-0.61 hdr(+21/-13) cmds(+1/-1) refs(+0)
+  headings=['Systematic Debugging', 'Overview', '4-Phase Debugging Process', 'Phase 1: Reproduce & Tighten Feedback Loop', 'Feedback Loop Quality Criteria', 'Reproduction Gate Sign-off', 'Phase 2: Isolate & Discriminative Probe', 'Isolation & Discriminative Probing']
+  routing=[] wrapper=[]
+  + ['curl'] - ['make']
+  ADD: ++ | > [!IMPORTANT] | > **AI Context & Knowledge Heritage**
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: > [!IMPORTANT] > **AI Context & Knowledge Heritage** > - **Subsystem**: Agent Skills Registry / systematic-debugging > - **Architecture**: `@docs ARCHITECTURE:Documentation` > - **Failure Path**: Information drift, legacy terminology, or do
+
+### G65 majiayu000/claude-skill-registry-data | development/unknown-a5c-ai-babysitter-25/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.54 rel=0.50 members=1 occ=1
+  len=-0.88 hdr(+3/-12) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Overview', 'When to Use', 'Process', 'Key Rules', 'Tool Use']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Structured approach to investigating and resolving defects using hypothesis-driven methodology rather than tri | - Step verification fails during implementation
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging ## Overview Structured approach to investigating and resolving defects using hypothesis-driven methodology rather than trial-and-error. ## When to Use - Step verification fails during implementation - Unexpected behav
+
+### G66 muyen/vibe-to-prod | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.46 rel=0.46 members=1 occ=1
+  len=-0.69 hdr(+20/-15) cmds(+1/-1) refs(+1)
+  headings=['Systematic Debugging Skill', 'When to Activate', '4-Phase Debugging Process', 'Phase 1: REPRODUCE', 'Phase 2: ISOLATE', 'Phase 3: IDENTIFY ROOT CAUSE', 'Phase 4: FIX AND VERIFY', 'Debugging Commands']
+  routing=[] wrapper=[]
+  + ['go'] - ['make']
+  ADD: ++ | # Systematic Debugging Skill | Apply structured 4-phase debugging to find root causes, not just symptoms.
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic Debugging Skill Apply structured 4-phase debugging to find root causes, not just symptoms. ## When to Activate This skill should activate when: - User reports a bug or unexpected behavior - Error messages or stack traces appear
+
+### G67 ericbusboom/dotconfig | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.50 rel=0.47 members=1 occ=1
+  len=-0.75 hdr(+7/-13) cmds(+0/-1) refs(+1)
+  headings=['Systematic Debugging Skill', 'Trigger Conditions', 'The Four Phases', 'Phase 1: Evidence Gathering', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis Testing', 'Phase 4: Root Cause Fix', 'Three-Attempt Cap']
+  routing=[] wrapper=[]
+  + [] - ['bash']
+  ADD: ++ | # Systematic Debugging Skill | A structured debugging protocol that replaces ad hoc fix attempts.
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic Debugging Skill A structured debugging protocol that replaces ad hoc fix attempts. When something breaks, follow this protocol instead of making rapid guesses. ## Trigger Conditions - A test that was passing starts failing - An
+
+### G68 byerlikaya/claude-starter-kit | plugin/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.44 rel=0.43 members=1 occ=1
+  len=-0.59 hdr(+5/-14) cmds(+1/-1) refs(+2)
+  headings=['Systematic Debugging', 'The loop (do them in order — skipping a step is why bugs come back)', 'Checklist', 'Anti-patterns (each is guess-driven patching wearing a disguise)', 'Techniques by symptom', 'Invariant rules']
+  routing=[] wrapper=[]
+  + ['go'] - ['bash']
+  ADD: ++ | <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside | Claude Code's budget (1% of the context window) — an overflowing listing gets descriptions
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside Claude Code's budget (1% of the context window) — an overflowing listing gets descriptions truncated or dropped, whic
+
+### G69 New1Direction/korgex | src/skills_builtin/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.56 rel=0.50 members=1 occ=1
+  len=-0.90 hdr(+0/-15) cmds(+0/-3) refs(+0)
+  headings=[]
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | Resist the urge to guess-and-patch. A bug you can't reproduce isn't fixed. | 1. **Reproduce reliably.** Find the smallest, deterministic way to trigger it.
+  REM: -- | # Systematic Debugging | ## Overview
+  body: Resist the urge to guess-and-patch. A bug you can't reproduce isn't fixed. 1. **Reproduce reliably.** Find the smallest, deterministic way to trigger it. Capture the exact error/output. If you can't reproduce it, gather more signal before c
+
+### G70 aiskillstore/marketplace | skills/doyajin174/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.34 rel=0.50 members=1 occ=2
+  len=-0.83 hdr(+14/-11) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Core Principle', 'Mandatory Phases', 'Phase 1: Root Cause Investigation', 'Phase 2: Pattern Analysis', 'Phase 3: Hypothesis Testing', 'Phase 4: Implementation', 'Critical Rules']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | 버그, 테스트 실패, 예상치 못한 동작에 대한 체계적 디버깅 방법론입니다. | ## Core Principle
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging 버그, 테스트 실패, 예상치 못한 동작에 대한 체계적 디버깅 방법론입니다. ## Core Principle > **"ALWAYS find root cause before attempting fixes. Symptom fixes are failure."** ## Mandatory Phases ### Phase 1: Root Cause Investigation ``` 1. 에러 메시지 정확
+
+### G71 tien226anh/agents-assistant-kit | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.45 rel=0.44 members=1 occ=1
+  len=-0.65 hdr(+8/-13) cmds(+1/-2) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', '⚠️ Command Safety', 'Workflow', 'Step 1: Root Cause Tracing', 'Step 2: Defense in Depth', 'Step 3: Condition-Based Waiting', 'Step 4: Fix and Verify']
+  routing=[] wrapper=[]
+  + ['go'] - ['bash', 'git']
+  ADD: ++ | Deep-dive debugging techniques for hard bugs that resist normal troubleshooting. Use this when `debug-assistan | - You've tried `debug-assistant` but the bug persists
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Deep-dive debugging techniques for hard bugs that resist normal troubleshooting. Use this when `debug-assistant` hasn't resolved the issue. ## When to Use - You've tried `debug-assistant` but the bug persists - The ro
+
+### G72 funky-eyes/best-copilot | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.48 rel=0.50 members=1 occ=1
+  len=-0.94 hdr(+2/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Loop', 'Rules']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | ## Loop | 1. Capture the exact failure and reproduction path.
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## Loop 1. Capture the exact failure and reproduction path. 2. Map observed behavior to expected behavior. 3. Generate ranked hypotheses. 4. Run the cheapest falsification check. 5. Narrow scope to files/components. 6
+
+### G73 yywmrz/antigravity-superpowers | skills-en/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.49 rel=0.46 members=1 occ=1
+  len=-0.82 hdr(+11/-15) cmds(+1/-3) refs(+1)
+  headings=['Systematic Debugging Skill', 'Core Principles', '4-Phase Debugging Process', 'Phase 1: Collect Evidence', 'Phase 2: Form Hypotheses', 'Phase 3: Verify Hypotheses', 'Phase 4: Fix and Verify', 'Debugging Techniques']
+  routing=[] wrapper=[]
+  + ['python'] - ['bash', 'git', 'make']
+  ADD: ++ | # Systematic Debugging Skill | Follow a structured debugging process, avoid blind guessing.
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic Debugging Skill Follow a structured debugging process, avoid blind guessing. ## Core Principles - **Evidence First** - Based on logs and data, not intuition - **One Variable at a Time** - Change only one thing at a time - **Doc
+
+### G74 meta-secret/meta-secret-core | .ai/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.49 rel=0.48 members=1 occ=2
+  len=-0.89 hdr(+14/-14) cmds(+0/-3) refs(+1)
+  headings=['Systematic Debugging', 'Goals', 'Hard rules', 'Read first', 'Workflow', 'Symptoms', 'Observations', 'Hypotheses']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | You debug problems using root-cause analysis. | ## Goals
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging You debug problems using root-cause analysis. ## Goals - separate symptoms from causes - generate plausible hypotheses - evaluate evidence - identify the most likely root cause - propose the smallest meaningful fix or
+
+### G75 spencerpauly/awesome-cursor-skills | resources/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.43 rel=0.42 members=1 occ=2
+  len=-0.66 hdr(+11/-14) cmds(+3/-1) refs(+0)
+  headings=['Systematic Debugging', 'The Process', '1. Reproduce', '2. Isolate', 'Git checks out the midpoint — test it', 'Repeat until it finds the first bad commit', '3. Hypothesize', '4. Test the Hypothesis']
+  routing=[] wrapper=[]
+  + ['curl', 'go', 'node'] - ['make']
+  ADD: ++ | Debug methodically instead of randomly changing code. | ## The Process
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Debug methodically instead of randomly changing code. ## The Process ### 1. Reproduce Before anything else, reproduce the bug reliably: - Get the exact steps to trigger the issue - Note the expected vs actual behavior
+
+### G76 eng-cc/oasis7 | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.43 rel=0.45 members=1 occ=1
+  len=-0.81 hdr(+5/-13) cmds(+1/-2) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'Core Workflow', 'Preferred Tactics', 'Oasis7-Specific Surfaces', 'Output Rules', 'Guardrails']
+  routing=[] wrapper=[]
+  + ['sh'] - ['bash', 'make']
+  ADD: ++ | Use this skill before proposing or applying a fix for: | - failing tests
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## When to Use Use this skill before proposing or applying a fix for: - failing tests - broken scripts - runtime regressions - UI behavior mismatches - unexpected command output ## Core Workflow 1. Reproduce the failu
+
+### G77 vstorm-co/pydantic-deepagents | apps/cli/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.43 rel=0.42 members=1 occ=2
+  len=-0.70 hdr(+12/-14) cmds(+1/-3) refs(+0)
+  headings=['Systematic Debugging', 'The Debugging Loop', 'Step 1: Reproduce', 'Step 2: Isolate', 'Step 3: Diagnose', 'Read the error message carefully', 'Add minimal instrumentation', 'Step 4: Fix']
+  routing=[] wrapper=[]
+  + ['python'] - ['bash', 'git', 'make']
+  ADD: ++ | A structured approach to finding and fixing bugs. | ## The Debugging Loop
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging A structured approach to finding and fixing bugs. ## The Debugging Loop ``` 1. REPRODUCE → 2. ISOLATE → 3. DIAGNOSE → 4. FIX → 5. VERIFY ``` Never skip steps. Never guess-and-check repeatedly. ## Step 1: Reproduce - R
+
+### G78 vrennat/developersDevelopers | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.40 rel=0.46 members=1 occ=1
+  len=-0.86 hdr(+2/-14) cmds(+1/-3) refs(+0)
+  headings=['Systematic Debugging', 'Procedure', 'Example']
+  routing=[] wrapper=[]
+  + ['bun'] - ['bash', 'git', 'make']
+  ADD: ++ | Fires when execution produces a real failure: a test error, a stack trace, a non-zero exit code, or output tha | ## Procedure
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging Fires when execution produces a real failure: a test error, a stack trace, a non-zero exit code, or output that contradicts the expected behavior. Does NOT fire when the user mentions a bug abstractly without evidence
+
+### G79 kodi/topchester-agent | skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.45 rel=0.46 members=1 occ=1
+  len=-0.93 hdr(+2/-13) cmds(+0/-2) refs(+0)
+  headings=['Systematic Debugging', 'When to Use', 'Procedure', 'Verification']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git']
+  ADD: ++ | Use when something fails, flakes, regresses, or behaves differently between environments. | ## Procedure
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging ## When to Use Use when something fails, flakes, regresses, or behaves differently between environments. ## Procedure 1. Reproduce or inspect the exact failure output, log, artifact, or trace the user provided. 2. Ide
+
+### G80 charlieviettq/awesome-agent-skill | .claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.40 rel=0.42 members=1 occ=1
+  len=-0.80 hdr(+10/-13) cmds(+0/-3) refs(+0)
+  headings=['Systematic debugging', 'Iron law', 'When to use', 'When not to use', 'Four phases', '1. Reproduce', '2. Compare', '3. Hypothesize']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | # Systematic debugging | ## Iron law
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic debugging ## Iron law No fixes without a **reproduced** failure and a **testable hypothesis**. After three failed fix attempts, question architecture or assumptions. ## When to use - Intermittent or unclear failures - Prior "qu
+
+### G81 tridentsof/antigravity-dev-kit | .agents/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.45 rel=0.41 members=1 occ=1
+  len=-0.80 hdr(+10/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic Debugging', 'Debugging Flow', 'Questions to Ask', 'Reproduce', 'Isolate', 'Identify', 'Error Pattern Analysis', 'Logging Strategy']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | > Find root causes, not just symptoms. | ---
+  REM: -- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+  body: # Systematic Debugging > Find root causes, not just symptoms. --- ## Debugging Flow ``` 1. REPRODUCE → Can you trigger the bug? 2. ISOLATE → Where exactly does it fail? 3. IDENTIFY → What is the root cause? 4. FIX → Minimal change to solve 
+
+### G82 dshakes/compass | claude/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.43 rel=0.42 members=1 occ=1
+  len=-0.84 hdr(+3/-14) cmds(+0/-3) refs(+0)
+  headings=['Systematic debugging', 'The method', "Red flags — you're not debugging, you're flailing", 'Done means']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | # Systematic debugging | Fix the cause, not the symptom — and prove the cause before you touch code.
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Systematic debugging Fix the cause, not the symptom — and prove the cause before you touch code. ## The method 1. **Reproduce** — get a reliable, minimal repro (a failing test is ideal). No repro → no fix. 2. **Hypothesize** — one specifi
+
+### G83 gabrielmoreira/agent-skills-mirror | mirrors/repos/Dokhacgiakhoa@Agent-Skills-4-Vibe-Coding-CLI/.agent/skills/systematic-debugging/SKILL.md | url=? | [g.dominant_type=primary] compact-rewrite | sim=0.45 rel=0.44 members=1 occ=1
+  len=-0.94 hdr(+7/-13) cmds(+0/-3) refs(+5)
+  headings=['Systematic Debugging', 'Overview', '4-Phase Debugging Process', '🧠 Knowledge Modules (Fractal Skills)', '1. [Phase 1: Reproduce](./sub-skills/phase-1-reproduce.md)', '2. [Phase 2: Isolate](./sub-skills/phase-2-isolate.md)', '3. [Phase 3: Understand](./sub-skills/phase-3-understand.md)', '4. [The 5 Whys](./sub-skills/the-5-whys.md)']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | > Source: obra/superpowers | This skill provides a structured approach to debugging that prevents random guessing and ensures problems are 
+  REM: -- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**
+  body: # Systematic Debugging > Source: obra/superpowers ## Overview This skill provides a structured approach to debugging that prevents random guessing and ensures problems are properly understood before solving. ## 4-Phase Debugging Process ## 
+
+### G84 AtharvaMate/autoskill | scripts/author-skill.md | url=? | [g.dominant_type=primary] no-label | sim=0.54 rel=0.39 members=1 occ=1
+  len=+0.26 hdr(+43/-12) cmds(+4/-1) refs(+10)
+  headings=['Skill Authoring Agent', 'Your Task', "Input You'll Receive", 'SKILL.md Format', 'Title', 'Overview', 'Checklist', 'Red Flags']
+  routing=[] wrapper=[]
+  + ['go', 'pnpm', 'pytest', 'python'] - ['bash']
+  ADD: ++ | # Skill Authoring Agent | You are authoring a SKILL.md file for a Claude Code skill based on an observed user pattern.
+  REM: -- | **Violating the letter of this process is violating the spirit of debugging.** | ## When to Use
+  body: # Skill Authoring Agent You are authoring a SKILL.md file for a Claude Code skill based on an observed user pattern. ## Your Task Generate a production-grade skill that: 1. **Routes reliably** — the description triggers automatically when t
+
+### G85 vamseeachanta/workspace-hub | .claude/skills/_archive/development/systematic-debugging/error-handling/SKILL.md | url=? | [g.dominant_type=primary] no-label | sim=0.58 rel=0.38 members=1 occ=1
+  len=-0.96 hdr(+1/-15) cmds(+0/-3) refs(+0)
+  headings=['Error Handling', 'Error Handling']
+  routing=[] wrapper=[]
+  + [] - ['bash', 'git', 'make']
+  ADD: ++ | # Error Handling | ## Error Handling
+  REM: -- | # Systematic Debugging | ## Overview
+  body: # Error Handling ## Error Handling | Situation | Action | |-----------|--------| | Cannot reproduce | Gather more context, check environment differences | | Multiple potential causes | Isolate and test each separately | | Fix breaks other t

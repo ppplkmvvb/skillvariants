@@ -1,0 +1,165 @@
+{
+ "qualifying": {
+  "restructure-phases-or-named-workflow": [
+   9,
+   8,
+   10
+  ],
+  "add-stop-or-escalation-after-repeated-failed-fixes": [
+   9,
+   9,
+   11
+  ],
+  "project-specific-environment-commands": [
+   8,
+   8,
+   23
+  ],
+  "route-completion-verification-to-separate-skill": [
+   5,
+   5,
+   19
+  ],
+  "require-reproduction-before-fixing": [
+   5,
+   5,
+   21
+  ],
+  "add-one-hypothesis-at-a-time": [
+   4,
+   4,
+   5
+  ],
+  "add-red-flags-and-anti-pattern-guard": [
+   4,
+   4,
+   6
+  ],
+  "add-routing-boundary-use-case": [
+   4,
+   4,
+   5
+  ],
+  "add-feedback-loop-rule": [
+   4,
+   4,
+   4
+  ],
+  "explicitly-declare-purposes-goals": [
+   3,
+   3,
+   4
+  ],
+  "preserve-root-cause-first-while-compressing": [
+   3,
+   3,
+   4
+  ]
+ },
+ "table": [
+  [
+   "restructure-phases-or-named-workflow",
+   9,
+   8,
+   10,
+   "22%",
+   "PASS"
+  ],
+  [
+   "add-stop-or-escalation-after-repeated-failed-fixes",
+   9,
+   9,
+   11,
+   "11%",
+   "PASS"
+  ],
+  [
+   "project-specific-environment-commands",
+   8,
+   8,
+   23,
+   "12%",
+   "PASS"
+  ],
+  [
+   "route-completion-verification-to-separate-skill",
+   5,
+   5,
+   19,
+   "20%",
+   "PASS"
+  ],
+  [
+   "require-reproduction-before-fixing",
+   5,
+   5,
+   21,
+   "20%",
+   "PASS"
+  ],
+  [
+   "add-one-hypothesis-at-a-time",
+   4,
+   4,
+   5,
+   "25%",
+   "PASS"
+  ],
+  [
+   "add-red-flags-and-anti-pattern-guard",
+   4,
+   4,
+   6,
+   "25%",
+   "PASS"
+  ],
+  [
+   "add-routing-boundary-use-case",
+   4,
+   4,
+   5,
+   "50%",
+   "PASS"
+  ],
+  [
+   "add-feedback-loop-rule",
+   4,
+   4,
+   4,
+   "25%",
+   "PASS"
+  ],
+  [
+   "explicitly-declare-purposes-goals",
+   3,
+   3,
+   4,
+   "33%",
+   "PASS"
+  ],
+  [
+   "preserve-root-cause-first-while-compressing",
+   3,
+   3,
+   4,
+   "33%",
+   "PASS"
+  ],
+  [
+   "localize-skill-references",
+   2,
+   2,
+   2,
+   "50%",
+   "no"
+  ],
+  [
+   "translate-language-variant",
+   2,
+   2,
+   3,
+   "50%",
+   "no"
+  ]
+ ]
+}
