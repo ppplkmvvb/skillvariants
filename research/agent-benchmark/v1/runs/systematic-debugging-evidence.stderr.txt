@@ -1,0 +1,13 @@
+┌───────────────────── Traceback (most recent call last) ─────────────────────┐
+│ G:\PROJECT\skillvariants\src\skillvariants\cli.py:304 in evidence           │
+│                                                                             │
+│   301 │   target_hash = sha256(normalize_for_hash(target_doc.raw))          │
+│   302 │                                                                     │
+│   303 │   gated = [row for row in pool if row.relatedness >=                │
+│       MIN_RELATEDNESS]                                                      │
+│ > 304 │   groups = group_variants(gated)                                    │
+│   305 │                                                                     │
+│   306 │   from collections import Counter                                   │
+│   307                                                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+NameError: name 'group_variants' is not defined

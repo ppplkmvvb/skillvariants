@@ -1,0 +1,2615 @@
+{
+  "schema_version": "1",
+  "target": {
+    "repository": "obra/superpowers",
+    "path": "skills/brainstorming/SKILL.md",
+    "ref": "main",
+    "direct_skill_url": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+    "name": "brainstorming",
+    "normalized_hash": "7de1fd7444541192260b3caf4ae248ef1508f7925ad9f1bebf7149e65c85f5e8"
+  },
+  "summary": {
+    "candidate_count": 300,
+    "related_variant_count": 199,
+    "exact_copy_count": 0,
+    "mutation_group_count": 90,
+    "broad_archetype_counts": {
+      "no-label": 8,
+      "workflow-specialization": 38,
+      "compact-rewrite": 33,
+      "routing-specialization": 11
+    }
+  },
+  "groups": [
+    {
+      "group_id": 1,
+      "repository": "stefaniuk/loadout",
+      "path": ".github/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/stefaniuk/loadout/blob/main/.github/skills/brainstorming/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.985,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.028,
+        "headings_added": 1,
+        "headings_removed": 0,
+        "commands_added": [
+          "sh"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.1,
+        "placeholder_signal": 0.016
+      },
+      "added_excerpt": "++ | ## Workflow Mode Guard | Use this skill only when the active local workflow mode is `superpowers`.",
+      "removed_excerpt": "--"
+    },
+    {
+      "group_id": 2,
+      "repository": "ivfarias/ceo",
+      "path": ".ai/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ivfarias/ceo/blob/main/.ai/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.792,
+      "member_count": 29,
+      "occurrence_count": 63,
+      "structural_signals": {
+        "length_delta": -0.852,
+        "headings_added": 3,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.111,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 3,
+      "repository": "artubss/SKILLS-CLAUDE-CODE",
+      "path": "favorites/brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/artubss/SKILLS-CLAUDE-CODE/blob/master/favorites/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.878,
+      "member_count": 22,
+      "occurrence_count": 55,
+      "structural_signals": {
+        "length_delta": -0.315,
+        "headings_added": 3,
+        "headings_removed": 4,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.778,
+        "placeholder_signal": 0.025
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user h",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 4,
+      "repository": "Number-Pii/organisation",
+      "path": "Teams/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Number-Pii/organisation/blob/main/Teams/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.466,
+      "member_count": 9,
+      "occurrence_count": 20,
+      "structural_signals": {
+        "length_delta": -0.679,
+        "headings_added": 18,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Purpose | Turn raw ideas into **clear, validated designs and specifications**",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 5,
+      "repository": "gabrielmoreira/agent-skills-mirror",
+      "path": "mirrors/repos/beita6969@ScienceClaw/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/gabrielmoreira/agent-skills-mirror/blob/main/mirrors/repos/beita6969@ScienceClaw/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.85,
+      "member_count": 8,
+      "occurrence_count": 12,
+      "structural_signals": {
+        "length_delta": -0.707,
+        "headings_added": 4,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 6,
+      "repository": "aAAaqwq/AGI-Super-Team",
+      "path": "skills/sp-brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aAAaqwq/AGI-Super-Team/blob/main/skills/sp-brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.399,
+      "member_count": 3,
+      "occurrence_count": 3,
+      "structural_signals": {
+        "length_delta": -0.826,
+        "headings_added": 9,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 3,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.455,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 7,
+      "repository": "diegosouzapw/awesome-omni-skills",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/diegosouzapw/awesome-omni-skills/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.496,
+      "member_count": 2,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.167,
+        "headings_added": 38,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "heading: Related Skills",
+          "owns",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.179,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | This public intake copy packages `plugins/antigravity-awesome-skills-claude/skills/brainstorming` from `https://github.com/sickn33/antigravity-awesome-skills` i",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 8,
+      "repository": "galyarderlabs/galyarder-design",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/galyarderlabs/galyarder-design/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.448,
+      "member_count": 2,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.947,
+        "headings_added": 5,
+        "headings_removed": 9,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.556,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # brainstorming | > Curated from @obra.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 9,
+      "repository": "derHaken/SuperAntigravity",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/derHaken/SuperAntigravity/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.801,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.621,
+        "headings_added": 5,
+        "headings_removed": 5,
+        "commands_added": [
+          "npm"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.111,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 10,
+      "repository": "openteams-lab/openteams",
+      "path": "assets/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/openteams-lab/openteams/blob/main/assets/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.851,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.435,
+        "headings_added": 4,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -2,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.027
+      },
+      "added_excerpt": "++ | ## OpenTeams-only availability | This skill is part of the OpenTeams workflow and is only available when the current input prompt starts with:",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 11,
+      "repository": "denolfe/dotfiles",
+      "path": "pi/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/denolfe/dotfiles/blob/main/pi/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.745,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.32,
+        "headings_added": 6,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.1,
+        "placeholder_signal": 0.021
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user h",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 12,
+      "repository": "doviettung96/apk-tool",
+      "path": ".codex/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/doviettung96/apk-tool/blob/main/.codex/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.803,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.291,
+        "headings_added": 3,
+        "headings_removed": 4,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -2,
+        "routing_signals": [
+          "do not use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.778,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Help turn ideas into an approved Beads-ready design through natural collaborative dialogue. | In this template, `brainstorming` is the primary discuss stage. Use it to lock intent, separate decisions from assumptions, and identify any factual unknowns ea",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 13,
+      "repository": "mrkhachaturov/rkstack",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/mrkhachaturov/rkstack/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.703,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.3,
+        "headings_added": 24,
+        "headings_removed": 5,
+        "commands_added": [
+          "bash",
+          "cargo",
+          "docker",
+          "node",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.036,
+        "placeholder_signal": 0.012
+      },
+      "added_excerpt": "++ | <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly --> | <!-- Regenerate: just build -->",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 14,
+      "repository": "hainamchung/agent-assistant",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/hainamchung/agent-assistant/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.76,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.56,
+        "headings_added": 4,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.026
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user h",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 15,
+      "repository": "kyaulabs/prism",
+      "path": "packages/prism-core/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/kyaulabs/prism/blob/main/packages/prism-core/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.646,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.1,
+        "headings_added": 7,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "sh"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.3,
+        "placeholder_signal": 0.014
+      },
+      "added_excerpt": "++ | Turn ideas into fully formed designs through natural collaborative dialogue. | Start by understanding the current project context, then ask questions one at a",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 16,
+      "repository": "djwmobley/pipeline",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/djwmobley/pipeline/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.638,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.084,
+        "headings_added": 4,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.111,
+        "placeholder_signal": 0.066
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine | the idea. Once you understand what you're building, present the design and get user approval.",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 17,
+      "repository": "ericgandrade/claude-superskills",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ericgandrade/claude-superskills/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.736,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.618,
+        "headings_added": 10,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.071,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Purpose | ## When to Use",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 18,
+      "repository": "Fattastic/khawi-s-companion-2a2808cd",
+      "path": ".agent/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Fattastic/khawi-s-companion-2a2808cd/blob/main/.agent/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.748,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.715,
+        "headings_added": 10,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.417,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## When to use this skill | Help turn ideas into fully formed designs and specs through natural",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 19,
+      "repository": "semaes111/PROYECTO-SKILLS",
+      "path": "09-SKILLS-UTILIDADES/brainstorming-diseno-colaborativo-SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/semaes111/PROYECTO-SKILLS/blob/main/09-SKILLS-UTILIDADES/brainstorming-diseno-colaborativo-SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.744,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.872,
+        "headings_added": 1,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.889,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user h",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 20,
+      "repository": "coctostan/pi-superpowers-plus",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/coctostan/pi-superpowers-plus/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.734,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.786,
+        "headings_added": 4,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > **Related skills:** Consider `/skill:using-git-worktrees` to set up an isolated workspace, then `/skill:writing-plans` for implementation planning. | ## Overview",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 21,
+      "repository": "Benkapner/claude-code-basecamp",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Benkapner/claude-code-basecamp/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.735,
+      "member_count": 1,
+      "occurrence_count": 3,
+      "structural_signals": {
+        "length_delta": -0.877,
+        "headings_added": 4,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Help turn ideas into fully formed designs through collaborative dialogue. | When this skill activates, present a design before writing code. The design can be short (a few sentences for simple projects) — scale it to the complexity of t",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 22,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/creative/brainstormiong/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/creative/brainstormiong/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.701,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.752,
+        "headings_added": 3,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.111,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 23,
+      "repository": "lidge-jun/cli-jaw-skills",
+      "path": "brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/lidge-jun/cli-jaw-skills/blob/main/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.727,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.919,
+        "headings_added": 4,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Goal | Clarify requirements and produce a design before jumping to code. Reduces wasted work from unexamined assumptions.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 24,
+      "repository": "brunob54/superpowers-orchestrator",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/brunob54/superpowers-orchestrator/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.549,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.205,
+        "headings_added": 11,
+        "headings_removed": 7,
+        "commands_added": [
+          "cargo",
+          "docker"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.385,
+        "placeholder_signal": 0.017
+      },
+      "added_excerpt": "++ | # Brainstorming | Turn rough requests into an approved design before implementation.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 25,
+      "repository": "mengsi16/plan-for-all",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/mengsi16/plan-for-all/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.57,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.284,
+        "headings_added": 15,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns",
+          "route to"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.053,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Help turn ideas into an approved product/design specification through natural collaborative dialogue. | This skill is the customer-facing convergence layer. It plays the role that a strong product manager or solution designer would play when talking to a client or",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 26,
+      "repository": "itseffi/agentic-os",
+      "path": ".agents/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/itseffi/agentic-os/blob/main/.agents/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.694,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.865,
+        "headings_added": 5,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this before any creative work - creating features, building components, adding functionality, or modifying behavior. | ## Overview",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 27,
+      "repository": "JsonLee12138/prompts",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/JsonLee12138/prompts/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.669,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.732,
+        "headings_added": 7,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.3,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Turn ideas into clear, approved brainstorming documents through collaborative dialogue.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 28,
+      "repository": "himmelreich-it/agent-skill-converter",
+      "path": "out/junie/skills/superpowers/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/himmelreich-it/agent-skill-converter/blob/main/out/junie/skills/superpowers/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.675,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.848,
+        "headings_added": 9,
+        "headings_removed": 7,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.455,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | ### Phase 1: Context Exploration",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 29,
+      "repository": "ahippelainen/claude-loadout",
+      "path": "claude/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ahippelainen/claude-loadout/blob/main/claude/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.67,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.898,
+        "headings_added": 3,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Turn ideas into a clear design through focused dialogue before any implementation. | Do NOT write any code or take any implementation action until you have presented a design and the user has approved it.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 30,
+      "repository": "jh941213/my-cc-harness",
+      "path": "skills_en/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/jh941213/my-cc-harness/blob/main/skills_en/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.669,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.873,
+        "headings_added": 3,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.182
+      },
+      "added_excerpt": "++ | # Brainstorming (design before code) | Turn ideas into a settled design through natural dialogue, and only then implement.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 31,
+      "repository": "AntonyKervazoCanut/gba_translator",
+      "path": ".ollama/skills/brainstorming/SKILL.md",
+      "ref": "unbound",
+      "direct_skill_url": "https://github.com/AntonyKervazoCanut/gba_translator/blob/unbound/.ollama/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.616,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.786,
+        "headings_added": 4,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the d | Do NOT write any code, create any script, or modify any file until you have presented a design and the user has approved it.",
+      "removed_excerpt": "-- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a"
+    },
+    {
+      "group_id": 32,
+      "repository": "Vpr99/agent-setup",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Vpr99/agent-setup/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.6,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.76,
+        "headings_added": 10,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.417,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Help turn ideas into fully formed designs and specs through natural",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 33,
+      "repository": "golfballnut/mcmforge",
+      "path": "companies/mcm-forge/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/golfballnut/mcmforge/blob/main/companies/mcm-forge/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.665,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.992,
+        "headings_added": 0,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Explores user intent, requirements and design before implementation. Referenced from Anthropic's superpowers skill set.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 34,
+      "repository": "Allura-Ecosystem/Allura_Memory",
+      "path": ".opencode/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Allura-Ecosystem/Allura_Memory/blob/main/.opencode/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.609,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.78,
+        "headings_added": 12,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.538,
+        "placeholder_signal": 0.037
+      },
+      "added_excerpt": "++ | Turn ideas into fully formed designs through collaborative dialogue. Produce specs that trace to the Blueprint's B#/F# requirements. | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user h",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 35,
+      "repository": "apenlor/opencode-expert-mode",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/apenlor/opencode-expert-mode/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.606,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.85,
+        "headings_added": 6,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Turn ideas into fully formed designs through collaborative dialogue. Understand the project context, ask clarifying questions, explore approaches, and present a",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 36,
+      "repository": "letitbk/claude-academic-setup",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/letitbk/claude-academic-setup/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.591,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.72,
+        "headings_added": 12,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.357,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Help turn ideas into fully formed designs and specs through structured, interactive questioning using the **AskUserQuestion tool**.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 37,
+      "repository": "casius-connect/vibe-briefing-skills",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/casius-connect/vibe-briefing-skills/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.616,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.936,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming: ideas into designs | ## Process",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 38,
+      "repository": "truongnat/rnui",
+      "path": ".agents/skills/brainstorming/SKILL.md",
+      "ref": "develop",
+      "direct_skill_url": "https://github.com/truongnat/rnui/blob/develop/.agents/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.415,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.099,
+        "headings_added": 58,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -2,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.155,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Mục Đích",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 39,
+      "repository": "xiaocai-admin-2001/SkillForest-opencode",
+      "path": "skills/sp-brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/xiaocai-admin-2001/SkillForest-opencode/blob/main/skills/sp-brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.582,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.832,
+        "headings_added": 10,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.417,
+        "placeholder_signal": 0.043
+      },
+      "added_excerpt": "++ | Turn rough requests into approved design decisions and a concrete spec. | ## Core Rule",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 40,
+      "repository": "xenitV1/claude-code-maestro",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/xenitV1/claude-code-maestro/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.492,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.49,
+        "headings_added": 30,
+        "headings_removed": 9,
+        "commands_added": [
+          "npm"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.3,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | <domain_overview> | # 💡 BRAINSTORMING: DESIGN BEFORE CODE",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 41,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "planning/brainstorming-datorresb-vibecoding-starter/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/planning/brainstorming-datorresb-vibecoding-starter/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.497,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.544,
+        "headings_added": 12,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.357,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Turn rough ideas into a validated design/spec through short, collaborative dialogue.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 42,
+      "repository": "sthiermann/stn-skills",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/sthiermann/stn-skills/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.46,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.685,
+        "headings_added": 25,
+        "headings_removed": 9,
+        "commands_added": [
+          "node"
+        ],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.36,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Overview",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 43,
+      "repository": "tenecsson/playbooks",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tenecsson/playbooks/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.57,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.917,
+        "headings_added": 0,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Turn an open request into an approved design before coding. | Use this when:",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 44,
+      "repository": "bharat3645/The-Ideal-Harness",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/bharat3645/The-Ideal-Harness/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.564,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.926,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Do NOT write code, scaffold a project, or edit files during this skill. The only output is an agreed design. Implementation begins only after the user explicitl",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 45,
+      "repository": "redpanda-data/ui-harness",
+      "path": "brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/redpanda-data/ui-harness/blob/main/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.564,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.944,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | **GATE: no code, no files, no impl until design presented and approved.**",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 46,
+      "repository": "cheetahbyte/dotfiles",
+      "path": "agents/.agents/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/cheetahbyte/dotfiles/blob/main/agents/.agents/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.498,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.644,
+        "headings_added": 3,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Turn feature ideas into implementable technical designs without duplicating requirements elicitation. | **Brainstorming owns:** exploring the existing system, separating facts from decisions, delegating user-owned decisions to Grill Me, evaluating technical approa",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 47,
+      "repository": "B4san/AC-framework",
+      "path": "framework/make_your_own/.amazonq/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/B4san/AC-framework/blob/main/framework/make_your_own/.amazonq/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.461,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.479,
+        "headings_added": 27,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming - Comprehensive Question Generation | Surface unknowns, challenge assumptions, and explore the problem space BEFORE committing to a solution.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 48,
+      "repository": "JetBrains/thinkrail",
+      "path": "packages/pi-thinkrail-workflow/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/JetBrains/thinkrail/blob/main/packages/pi-thinkrail-workflow/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.502,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.653,
+        "headings_added": 5,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.556,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Brainstorm before you build",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 49,
+      "repository": "myths-labs/muse",
+      "path": "skills/toolkit/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/myths-labs/muse/blob/main/skills/toolkit/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.531,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.784,
+        "headings_added": 16,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.412,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming — Reframe Before You Build | *Inspired by gstack's /office-hours. Upgraded to output standardized design docs.*",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 50,
+      "repository": "hnb-rabear/hnb-rabear.github.io",
+      "path": ".agents/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/hnb-rabear/hnb-rabear.github.io/blob/main/.agents/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.523,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.82,
+        "headings_added": 9,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Adapted from [superpowers:brainstorming](https://github.com/obra/superpowers) | ## The Iron Rule",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 51,
+      "repository": "modimihir07/agentic-os",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/modimihir07/agentic-os/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.549,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.95,
+        "headings_added": 6,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Description",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 52,
+      "repository": "manyrocks/venture",
+      "path": "templates/.claude/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/manyrocks/venture/blob/main/templates/.claude/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.538,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.902,
+        "headings_added": 3,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Help the user turn an idea into a clear design spec through collaborative dialogue. Stay strategic. Do not write production code.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 53,
+      "repository": "aiskillstore/marketplace",
+      "path": "skills/dyai2025/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/dyai2025/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.464,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.578,
+        "headings_added": 12,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": -1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.357,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 54,
+      "repository": "drbothen/vsdd-factory",
+      "path": "plugins/vsdd-factory/skills/brainstorming/SKILL.md",
+      "ref": "develop",
+      "direct_skill_url": "https://github.com/drbothen/vsdd-factory/blob/develop/plugins/vsdd-factory/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.458,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.554,
+        "headings_added": 18,
+        "headings_removed": 9,
+        "commands_added": [
+          "node"
+        ],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Hard Gate | Do NOT skip to brief creation, spec writing, or any implementation activity. The brainstorming report MUST be written and the human MUST select a direction befo",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 55,
+      "repository": "mraakashshah/oro",
+      "path": ".claude/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/mraakashshah/oro/blob/main/.claude/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.517,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.815,
+        "headings_added": 7,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.556,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Develop an evidence-based design through focused dialogue. Match the depth of the process to the decision's scope and reversibility. | ## Workflow",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 56,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "planning/brainstorming-mattjefferson-agents/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/planning/brainstorming-mattjefferson-agents/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.468,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.626,
+        "headings_added": 19,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.474,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | This skill provides detailed process knowledge for effective brainstorming sessions that clarify **WHAT** to build before diving into **HOW** to build it.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 57,
+      "repository": "qq1030655828/modhanhui",
+      "path": ".opencode/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/qq1030655828/modhanhui/blob/main/.opencode/skills/brainstorming/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.537,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.962,
+        "headings_added": 3,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Use when | Use this when requirements are incomplete, ambiguous, or need to be turned into an implementable design.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 58,
+      "repository": "incubyte/ai-plugins",
+      "path": "bee/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/incubyte/ai-plugins/blob/main/bee/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.448,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.572,
+        "headings_added": 15,
+        "headings_removed": 9,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "do not use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.6,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | **Deferred Tool Loading:** If deferred tools have not been loaded yet, call `ToolSearch` with query `\"select:AskUserQuestion,WebSearch,WebFetch\"` to load them. ",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 59,
+      "repository": "RudyB3N8/antigravity-skills",
+      "path": "brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/RudyB3N8/antigravity-skills/blob/master/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.447,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.569,
+        "headings_added": 6,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Générer des idées vers des Designs (Brainstorming) | Cette compétence permet de transformer des idées vagues en designs complets et en spécifications grâce à un dialogue collaboratif naturel avec l'utilisateur.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 60,
+      "repository": "stvhay/pi-setup",
+      "path": "pi/agent/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/stvhay/pi-setup/blob/main/pi/agent/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.462,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.652,
+        "headings_added": 17,
+        "headings_removed": 8,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [
+          "do not use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.389,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Turn an idea into an approved design before implementation. Scale ceremony to risk; do not skip the approval gate. | At start, read shared conventions if needed:",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 61,
+      "repository": "krone9/pi-superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/krone9/pi-superpowers/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.523,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.927,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Use this when the user's request is open-ended (\"build X\", \"design Y\", \"what should we do about Z\") and the requirements are not yet pinned down.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 62,
+      "repository": "discountedcookie/10x-mapmaster",
+      "path": ".opencode/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/discountedcookie/10x-mapmaster/blob/main/.opencode/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.497,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.835,
+        "headings_added": 14,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.643,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Refine rough ideas into concrete designs through iterative questioning.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 63,
+      "repository": "reidemeister94/development-skills",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/reidemeister94/development-skills/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.516,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.917,
+        "headings_added": 1,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.111,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Interview the user relentlessly about every aspect of this until we reach a shared understanding. Walk down each branch of the decision tree, resolving dependen",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 64,
+      "repository": "jttd3v/public-cms",
+      "path": ".claude/skills/brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/jttd3v/public-cms/blob/master/.claude/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.45,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.625,
+        "headings_added": 26,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.346,
+        "placeholder_signal": 0.027
+      },
+      "added_excerpt": "++ | # Brainstorming & Planning — CAMII CMS | ## Purpose",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 65,
+      "repository": "tomevault-io/tomes",
+      "path": "sandgardenhq--sgai/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tomevault-io/tomes/blob/main/sandgardenhq--sgai/skills/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.447,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.664,
+        "headings_added": 9,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -1,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.455,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 66,
+      "repository": "korallis/Droidz",
+      "path": "droidz_installer/payloads/droid_cli/default/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/korallis/Droidz/blob/main/droidz_installer/payloads/droid_cli/default/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.506,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.937,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming - Idea Refinement | ## When to use this skill",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 67,
+      "repository": "bg-szy/TOP-SKILLS",
+      "path": "skills/marketplace/brainstorming__skills-dmjgilbert-brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/bg-szy/TOP-SKILLS/blob/master/skills/marketplace/brainstorming__skills-dmjgilbert-brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.478,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.807,
+        "headings_added": 24,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.375,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming & Design Refinement | Transform rough ideas into validated designs through structured Socratic dialogue before any implementation begins.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 68,
+      "repository": "yywmrz/antigravity-superpowers",
+      "path": "skills-en/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/yywmrz/antigravity-superpowers/blob/main/skills-en/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.494,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.925,
+        "headings_added": 8,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.889,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming Skill | Conduct design discussions and requirement clarification before any coding work.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 69,
+      "repository": "David-Li0406/meta-skill-evloving",
+      "path": "skill-flow/data/skills-refined-36k/skillsmp/brainstorming-55/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-36k/skillsmp/brainstorming-55/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.475,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.84,
+        "headings_added": 10,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.9,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming: Conversation Techniques | ## Purpose",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 70,
+      "repository": "majiayu000/spellbook",
+      "path": "skills/brainstorming.SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/spellbook/blob/main/skills/brainstorming.SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.459,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.779,
+        "headings_added": 16,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.562,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | > From [obra/superpowers](https://github.com/obra/superpowers)",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 71,
+      "repository": "vamseeachanta/workspace-hub",
+      "path": ".claude/skills/_internal/workflows/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/vamseeachanta/workspace-hub/blob/main/.claude/skills/_internal/workflows/brainstorming/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.446,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.728,
+        "headings_added": 22,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.409,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Overview",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 72,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "other/brainstorming-arbiterforge-codearbiter/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/other/brainstorming-arbiterforge-codearbiter/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.415,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.609,
+        "headings_added": 7,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "route to"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.778,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # brainstorming | Refine the idea before it touches code. Routed to by `/feature` (before `tdd`) and by `/sprint` (the planning front).",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 73,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/creative/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/creative/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.49,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.932,
+        "headings_added": 6,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Overview",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 74,
+      "repository": "LucaDominici/arbiter",
+      "path": "src/templates/claude/skills/brainstorming/SKILL.md.ejs",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/LucaDominici/arbiter/blob/main/src/templates/claude/skills/brainstorming/SKILL.md.ejs",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.472,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.874,
+        "headings_added": 10,
+        "headings_removed": 9,
+        "commands_added": [
+          "bash",
+          "gh"
+        ],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.9,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming Skill | Activate when the user asks to brainstorm, explore options, think through a design, or gather ideas before implementation.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 75,
+      "repository": "ArchieIndian/openclaw-superpowers",
+      "path": "skills/core/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ArchieIndian/openclaw-superpowers/blob/main/skills/core/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.491,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.96,
+        "headings_added": 5,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Before implementing anything non-trivial, brainstorm first.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 76,
+      "repository": "Yassimba/loom",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Yassimba/loom/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.467,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.852,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Turn a fuzzy idea into a clear direction through conversation. Brainstorming answers **what are we trying to do?** — *how will we build it?* belongs to `grill-w",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 77,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/design/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/design/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.456,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.813,
+        "headings_added": 31,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.29,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Core Principle",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 78,
+      "repository": "tapway/tapway-superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/tapway/tapway-superpowers/blob/master/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.441,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.785,
+        "headings_added": 12,
+        "headings_removed": 9,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.75,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Skill: Brainstorming | **When to invoke:** Before writing any code for a new feature, architecture decision, or complex bug. If there's even a 1% chance this applies, invoke it.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 79,
+      "repository": "VinhHoang03/Handigo-Platform",
+      "path": ".agents/skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/VinhHoang03/Handigo-Platform/blob/main/.agents/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.41,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.713,
+        "headings_added": 19,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.474,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming & Communication Protocol | > **MANDATORY:** Use for complex/vague requests, new features, updates.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 80,
+      "repository": "KpG782/3D_Portfolio",
+      "path": ".claude/skills/brainstorming/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/KpG782/3D_Portfolio/blob/master/.claude/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.436,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.884,
+        "headings_added": 9,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | Generate a real spread of options, stress-test them, and converge on a",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 81,
+      "repository": "IHiter-2026-Wheeled-Bipedal-Soldier/Wheeled_Bipedal_Shared_CC_Config",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/IHiter-2026-Wheeled-Bipedal-Soldier/Wheeled_Bipedal_Shared_CC_Config/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.452,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.975,
+        "headings_added": 3,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming | ## Workflow",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 82,
+      "repository": "MaxFerAlten/tenderclaw",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/MaxFerAlten/tenderclaw/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.41,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.85,
+        "headings_added": 7,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.778,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming — Design-First HARD-GATE | ## HARD-GATE RULE",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 83,
+      "repository": "modbender/skill-library-mcp",
+      "path": "data/brainstorming-2/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/modbender/skill-library-mcp/blob/main/data/brainstorming-2/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.42,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.876,
+        "headings_added": 16,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go"
+        ],
+        "cross_skill_ref_delta": -3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.562,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming Skill | ## When to Use",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 84,
+      "repository": "dxc-danny/superpowers-cn",
+      "path": "skills/brainstorming/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/dxc-danny/superpowers-cn/blob/main/skills/brainstorming/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.372,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.724,
+        "headings_added": 8,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.889,
+        "placeholder_signal": 0.025
+      },
+      "added_excerpt": "++ | # 将想法 brainstorming 成设计 | 通过自然协作对话帮助将想法转化为完全形成的设计和规格。",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 85,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/analysis/brainstorming-research-ideas-ihatesea69-hieunghi-ai-skills/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/analysis/brainstorming-research-ideas-ihatesea69-hieunghi-ai-skills/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.367,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": 0.233,
+        "headings_added": 20,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.45,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Research Idea Brainstorming | Structured frameworks for discovering the next research idea. This skill provides ten complementary ideation lenses that help researchers move from vague curios",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 86,
+      "repository": "Agentic-Engineering-Agency/agentic-pm-kit",
+      "path": "skills/pm-kit/brainstorming-lab/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/Agentic-Engineering-Agency/agentic-pm-kit/blob/master/skills/pm-kit/brainstorming-lab/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.365,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.208,
+        "headings_added": 5,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.556,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Adapted from bmad-method:bmad-brainstorming (MIT, © 2025 BMad Code, LLC). See THIRD_PARTY_NOTICES.md. | ## When to use",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 87,
+      "repository": "CellCog/skills",
+      "path": "skills/brainstorming-strategy-cellcog/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/CellCog/skills/blob/main/skills/brainstorming-strategy-cellcog/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.366,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.407,
+        "headings_added": 18,
+        "headings_removed": 9,
+        "commands_added": [
+          "npx",
+          "pip",
+          "python"
+        ],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [
+          "don't use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming & Strategy - Your Alfred for Complex Ideas | **Complex ideas need iteration, not conversation.** Think → Do → Review → Repeat.",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 88,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/data/brainstorming-ideas/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/data/brainstorming-ideas/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.353,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.335,
+        "headings_added": 27,
+        "headings_removed": 8,
+        "commands_added": [
+          "bash"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Transform vague ideas into fully-formed designs through structured collaborative dialogue. | **Use TodoWrite** to track these 7 phases:",
+      "removed_excerpt": "-- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work"
+    },
+    {
+      "group_id": 89,
+      "repository": "lemieux/rfc-skills",
+      "path": "skills/brainstorming-rfc/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/lemieux/rfc-skills/blob/main/skills/brainstorming-rfc/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.377,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.496,
+        "headings_added": 21,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": -4,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.318,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # RFC Ideation | ## Overview",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    },
+    {
+      "group_id": 90,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "product/brainstorming-features/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/product/brainstorming-features/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.349,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.387,
+        "headings_added": 25,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "git",
+          "go",
+          "make"
+        ],
+        "cross_skill_ref_delta": -5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.36,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Brainstorming Features | ## Overview",
+      "removed_excerpt": "-- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue."
+    }
+  ]
+}

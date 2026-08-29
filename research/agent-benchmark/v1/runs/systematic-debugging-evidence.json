@@ -1,0 +1,2487 @@
+{
+  "schema_version": "1",
+  "target": {
+    "repository": "obra/superpowers",
+    "path": "skills/systematic-debugging/SKILL.md",
+    "ref": "main",
+    "direct_skill_url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+    "name": "systematic-debugging",
+    "normalized_hash": "9080c23db452715d0f77cea8f465e5041fd683f39ccfdb9bf6a65e702bf42c2e"
+  },
+  "summary": {
+    "candidate_count": 272,
+    "related_variant_count": 175,
+    "exact_copy_count": 0,
+    "mutation_group_count": 85,
+    "broad_archetype_counts": {
+      "expanded-guidance": 5,
+      "routing-specialization": 8,
+      "workflow-specialization": 30,
+      "compact-rewrite": 34,
+      "no-label": 8
+    }
+  },
+  "groups": [
+    {
+      "group_id": 1,
+      "repository": "asta-nguyen/openez-graph",
+      "path": ".agents/skills/superpowers-systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/asta-nguyen/openez-graph/blob/main/.agents/skills/superpowers-systematic-debugging/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.997,
+      "member_count": 41,
+      "occurrence_count": 101,
+      "structural_signals": {
+        "length_delta": 0.067,
+        "headings_added": 0,
+        "headings_removed": 0,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | | Excuse                                       | Reality                                                                 | | | -------------------------------------------- | ----------------------------------------------------------------------- |",
+      "removed_excerpt": "-- | | Excuse | Reality | | |--------|---------|"
+    },
+    {
+      "group_id": 2,
+      "repository": "coco-research/coco",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/coco-research/coco/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.988,
+      "member_count": 11,
+      "occurrence_count": 15,
+      "structural_signals": {
+        "length_delta": 0.052,
+        "headings_added": 1,
+        "headings_removed": 0,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.062,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **Announce at start:** \"Systematic Debugging skill activated.\" | Random fixes waste time and create new bugs. Quick patches mask underlying issues.",
+      "removed_excerpt": "-- | - Use the `superpowers:verification-before-completion` skill before claiming success | - \"Ultra-think this\" - Question fundamentals, not just symptoms"
+    },
+    {
+      "group_id": 3,
+      "repository": "eastreams/loong",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "rewrite",
+      "direct_skill_url": "https://github.com/eastreams/loong/blob/rewrite/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.753,
+      "member_count": 11,
+      "occurrence_count": 16,
+      "structural_signals": {
+        "length_delta": 0.078,
+        "headings_added": 34,
+        "headings_removed": 4,
+        "commands_added": [
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.844,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Someone wants it fixed NOW (systematic is faster than thrashing)",
+      "removed_excerpt": "-- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation"
+    },
+    {
+      "group_id": 4,
+      "repository": "pratikrath126/ai-image-detector",
+      "path": ".agent/kit-skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/pratikrath126/ai-image-detector/blob/main/.agent/kit-skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.464,
+      "member_count": 5,
+      "occurrence_count": 17,
+      "structural_signals": {
+        "length_delta": -0.766,
+        "headings_added": 20,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Source: obra/superpowers | This skill provides a structured approach to debugging that prevents random guessing and ensures problems are properly understood before solving.",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 5,
+      "repository": "MadAppGang/claude-code",
+      "path": "plugins/dev/skills/discipline/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/MadAppGang/claude-code/blob/main/plugins/dev/skills/discipline/systematic-debugging/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.475,
+      "member_count": 2,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": 0.888,
+        "headings_added": 56,
+        "headings_removed": 13,
+        "commands_added": [
+          "go",
+          "python"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.19,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **Iron Law:** \"NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST\" | Use this skill when:",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 6,
+      "repository": "Ibrahim-3d/orchestrator-supaconductor",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/Ibrahim-3d/orchestrator-supaconductor/blob/master/skills/systematic-debugging/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.952,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.19,
+        "headings_added": 0,
+        "headings_removed": 3,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | 1. **read_file Error Messages Carefully**",
+      "removed_excerpt": "-- | 1. **Read Error Messages Carefully** | - Read stack traces completely"
+    },
+    {
+      "group_id": 7,
+      "repository": "skeletorflet/opencode-supreme-setup",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/skeletorflet/opencode-supreme-setup/blob/master/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.853,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.804,
+        "headings_added": 1,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.467,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | 1. Read Error Messages Carefully - don't skip past errors",
+      "removed_excerpt": "-- | **Violating the letter of this process is violating the spirit of debugging.** | ```"
+    },
+    {
+      "group_id": 8,
+      "repository": "itseffi/agentic-os",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/itseffi/agentic-os/blob/main/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.857,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.674,
+        "headings_added": 1,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.4,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes. | - If not reproducible, gather more data",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 9,
+      "repository": "earchibald/vsc-superpowers",
+      "path": ".agents/skills/investigate/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/earchibald/vsc-superpowers/blob/main/.agents/skills/investigate/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.944,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.147,
+        "headings_added": 2,
+        "headings_removed": 1,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.188,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Skill: systematic-debugging | ---",
+      "removed_excerpt": "-- | **WHEN system has multiple components (CI → build → signing, API → service → database):** | **BEFORE proposing fixes, add diagnostic instrumentation:**"
+    },
+    {
+      "group_id": 10,
+      "repository": "aiskillstore/marketplace",
+      "path": "skills/asmayaseen/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/asmayaseen/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.768,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.413,
+        "headings_added": 6,
+        "headings_removed": 5,
+        "commands_added": [
+          "python"
+        ],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.688,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ---",
+      "removed_excerpt": "-- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 11,
+      "repository": "coctostan/pi-superpowers-plus",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/coctostan/pi-superpowers-plus/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.895,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.223,
+        "headings_added": 2,
+        "headings_removed": 3,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix with `/skill:verification-before-completion`. | Random fixes waste time and create new bugs. Quick patches mask underlying issues.",
+      "removed_excerpt": "-- | Use for ANY technical issue: | - Test failures"
+    },
+    {
+      "group_id": 12,
+      "repository": "HiAi-gg/hiai-opencode",
+      "path": "skills/general/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/HiAi-gg/hiai-opencode/blob/main/skills/general/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.898,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 1.11,
+        "headings_added": 28,
+        "headings_removed": 0,
+        "commands_added": [
+          "node",
+          "npm"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.651,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Use the `test-driven-development` skill for writing proper failing tests",
+      "removed_excerpt": "-- | - Use the `superpowers:test-driven-development` skill for writing proper failing tests | - Use the `superpowers:verification-before-completion` skill before claiming success"
+    },
+    {
+      "group_id": 13,
+      "repository": "riddopic/cc-tools",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/riddopic/cc-tools/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.948,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.292,
+        "headings_added": 0,
+        "headings_removed": 2,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.133,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | Use for ANY technical issue: test failures, bugs, unexpected behavior, performance problems, build failures, integration issues.",
+      "removed_excerpt": "-- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 14,
+      "repository": "MikeCheng1208/BattleTree",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/MikeCheng1208/BattleTree/blob/main/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.704,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.015,
+        "headings_added": 21,
+        "headings_removed": 3,
+        "commands_added": [
+          "npm",
+          "sh"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.727,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and mask underlying issues. **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | `NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST`",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 15,
+      "repository": "LiGoldragon/Mentci-AI",
+      "path": ".pi/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/LiGoldragon/Mentci-AI/blob/main/.pi/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.854,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.037,
+        "headings_added": 3,
+        "headings_removed": 3,
+        "commands_added": [
+          "node"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.4,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > **Related skills:** Write a failing test for the bug with `/skill:test-driven-development`. Verify the fix with `/skill:verification-before-completion`. | ## Repo-Local Nix Purity Rule",
+      "removed_excerpt": "-- | Use for ANY technical issue: | - Test failures"
+    },
+    {
+      "group_id": 16,
+      "repository": "markmals/workbench",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/markmals/workbench/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.751,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.103,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "heading: Related skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.8,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. Always find the root cause **before** attempting a fix. | **Lifted from superpowers' systematic-debugging skill.** Slimmed; the four-phase structure is unchanged.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 17,
+      "repository": "bg-szy/TOP-SKILLS",
+      "path": "skills/agent-skills/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/bg-szy/TOP-SKILLS/blob/master/skills/agent-skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.822,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.281,
+        "headings_added": 7,
+        "headings_removed": 1,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 6,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.381,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | See skills/root-cause-tracing for backward tracing technique",
+      "removed_excerpt": "-- | See `root-cause-tracing.md` in this directory for the complete backward tracing technique. | - Use the `superpowers:test-driven-development` skill for writing proper failing tests"
+    },
+    {
+      "group_id": 18,
+      "repository": "5DLabsInc/cto",
+      "path": "tests/cli-invocation/config/skills-rex/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/5DLabsInc/cto/blob/main/tests/cli-invocation/config/skills-rex/systematic-debugging/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.808,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.425,
+        "headings_added": 2,
+        "headings_removed": 3,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Log what data enters component",
+      "removed_excerpt": "-- | **Violating the letter of this process is violating the spirit of debugging.** | - You don't fully understand the issue"
+    },
+    {
+      "group_id": 19,
+      "repository": "aiskillstore/marketplace",
+      "path": "skills/codingcossack/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/codingcossack/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.762,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.536,
+        "headings_added": 3,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.8,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **Core principle:** Find root cause before attempting fixes. Symptom fixes are failure. | ## Phase 1: Root Cause Investigation",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 20,
+      "repository": "7757/Fan-Browser-Agent",
+      "path": "skills/software-development/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/7757/Fan-Browser-Agent/blob/main/skills/software-development/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.672,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.281,
+        "headings_added": 36,
+        "headings_removed": 4,
+        "commands_added": [
+          "go",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.851,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ```",
+      "removed_excerpt": "-- | ``` | ```"
+    },
+    {
+      "group_id": 21,
+      "repository": "David-Li0406/meta-skill-evloving",
+      "path": "skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-15/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-15/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.799,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.729,
+        "headings_added": 5,
+        "headings_removed": 10,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **Use ESPECIALLY when:**",
+      "removed_excerpt": "-- | ## Overview | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 22,
+      "repository": "MezbahSaif/HermesBench",
+      "path": "Case1_Qwen/datasets/variants/tasks/skills/software-development/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/MezbahSaif/HermesBench/blob/main/Case1_Qwen/datasets/variants/tasks/skills/software-development/systematic-debugging/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.675,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.463,
+        "headings_added": 37,
+        "headings_removed": 4,
+        "commands_added": [
+          "curl",
+          "go",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.854,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | ## The Feedback Loop Rule",
+      "removed_excerpt": "-- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation"
+    },
+    {
+      "group_id": 23,
+      "repository": "magnus919/agent-skills",
+      "path": "systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/magnus919/agent-skills/blob/main/systematic-debugging/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.701,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.763,
+        "headings_added": 41,
+        "headings_removed": 4,
+        "commands_added": [
+          "pip",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.865,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **ESPECIALLY when:**",
+      "removed_excerpt": "-- | **Violating the letter of this process is violating the spirit of debugging.** | **Use this ESPECIALLY when:**"
+    },
+    {
+      "group_id": 24,
+      "repository": "Frostthejack/hermes-tailscale-rw",
+      "path": "profiles/orchestrator/skills/software-development/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Frostthejack/hermes-tailscale-rw/blob/main/profiles/orchestrator/skills/software-development/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.677,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.557,
+        "headings_added": 44,
+        "headings_removed": 4,
+        "commands_added": [
+          "npx",
+          "pipx",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "route to"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.873,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | - Someone wants it fixed NOW (systematic is faster than thrashing)",
+      "removed_excerpt": "-- | - Manager wants it fixed NOW (systematic is faster than thrashing) | ### Phase 1: Root Cause Investigation"
+    },
+    {
+      "group_id": 25,
+      "repository": "RBraga01/a-team",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/RBraga01/a-team/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.766,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.747,
+        "headings_added": 5,
+        "headings_removed": 10,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Quick patches mask underlying issues. Systematic debugging is FASTER than thrashing. | ## The Four Phases (Must Complete in Order)",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 26,
+      "repository": "FradSer/dotclaude",
+      "path": "superpowers/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/FradSer/dotclaude/blob/main/superpowers/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.653,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.424,
+        "headings_added": 11,
+        "headings_removed": 7,
+        "commands_added": [
+          "sh"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.947,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Slash-command Usage | Invoked via `/superpowers:systematic-debugging \"<symptom>\"` or auto-loaded by other skills when bug-fix language is detected.",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 27,
+      "repository": "diegosouzapw/awesome-omni-skill",
+      "path": "skills/development/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/diegosouzapw/awesome-omni-skill/blob/main/skills/development/systematic-debugging/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.721,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.639,
+        "headings_added": 0,
+        "headings_removed": 4,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.267,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and create new bugs. Quick patches mask underlying issues. | **Goal:** Understand WHAT is happening and WHERE.",
+      "removed_excerpt": "-- | **Violating the letter of this process is violating the spirit of debugging.** | - Manager wants it fixed NOW (systematic is faster than thrashing)"
+    },
+    {
+      "group_id": 28,
+      "repository": "apenlor/opencode-expert-mode",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/apenlor/opencode-expert-mode/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.739,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.761,
+        "headings_added": 5,
+        "headings_removed": 7,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.8,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time and mask underlying issues. **Core principle:** Find root cause before attempting any fix. Symptom fixes are failure. | Use for ANY technical issue. **Especially** when under time pressure, when you've already tried multiple fixes, or when you don't fully understand the issue.",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 29,
+      "repository": "bostonaholic/rpikit",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/bostonaholic/rpikit/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.622,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.34,
+        "headings_added": 18,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.04,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Find the root cause before attempting fixes. Symptom fixes are failure. | ## Purpose",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 30,
+      "repository": "tmdgusya/engineering-discipline",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tmdgusya/engineering-discipline/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.578,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.172,
+        "headings_added": 17,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.579,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A strict debugging workflow. Use when dealing with bugs, test failures, or unexpected behavior. | Three core purposes:",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 31,
+      "repository": "jh941213/my-cc-harness",
+      "path": "skills_en/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/jh941213/my-cc-harness/blob/main/skills_en/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.7,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.749,
+        "headings_added": 4,
+        "headings_removed": 11,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **Iron law: no fixes without root-cause investigation. Fixing symptoms is failure.** | The simpler the bug looks, the more urgent the situation, the more this process matters — systematic debugging is faster than guess-and-patch thrashing.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 32,
+      "repository": "tranhieutt/software_development_department",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tranhieutt/software_development_department/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.547,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.101,
+        "headings_added": 24,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "route to"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.423,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Purpose | `systematic-debugging` prevents guess-and-check fixes. It requires the agent to",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 33,
+      "repository": "Bbeierle12/Skill-MCP-Claude",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Bbeierle12/Skill-MCP-Claude/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.678,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.653,
+        "headings_added": 26,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.481,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Core Principle | **Don't guess. Investigate systematically.**",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 34,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/data/pop-systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/data/pop-systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.618,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.52,
+        "headings_added": 6,
+        "headings_removed": 8,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.933,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Random fixes waste time. Quick patches mask issues. | **Core principle:** ALWAYS find root cause before fixes. Symptom fixes are failure.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 35,
+      "repository": "PytaichukBohdan/AndriiPresentation",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/PytaichukBohdan/AndriiPresentation/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.544,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.163,
+        "headings_added": 13,
+        "headings_removed": 11,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.412,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Debug systematically. Understand before fixing. One change at a time. | **Core principle:** A bug fixed without understanding is a bug waiting to return.",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 36,
+      "repository": "VidyaBodepudi/Code-Skills",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/VidyaBodepudi/Code-Skills/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.565,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.323,
+        "headings_added": 6,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Systematic debugging prevents the #1 agent anti-pattern: guessing at fixes. Instead of trying random changes and hoping something works, this skill enforces a s | - When a test fails and the cause isn't immediately obvious",
+      "removed_excerpt": "-- | # Systematic Debugging | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 37,
+      "repository": "aiskillstore/marketplace",
+      "path": "skills/dmjgilbert/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/dmjgilbert/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.658,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.739,
+        "headings_added": 4,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.867,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **ALWAYS find root cause before attempting fixes. Symptom fixes are failure.** | - Encountering bugs or test failures",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 38,
+      "repository": "yimwoo/hotl-plugin",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/yimwoo/hotl-plugin/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.704,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.905,
+        "headings_added": 6,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Four Phases | ### Phase 1: Reproduce",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 39,
+      "repository": "lec77/skillvm-data",
+      "path": "skill-variants/targeted/opencode/qwen3.5-397b/bug-fixing/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/lec77/skillvm-data/blob/main/skill-variants/targeted/opencode/qwen3.5-397b/bug-fixing/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.652,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.825,
+        "headings_added": 6,
+        "headings_removed": 14,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **NEVER guess at fixes. ALWAYS find the root cause first.** | ## Process (follow in order)",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 40,
+      "repository": "sabahattink/antigravity-fullstack-hq",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/sabahattink/antigravity-fullstack-hq/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.472,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.091,
+        "headings_added": 29,
+        "headings_removed": 14,
+        "commands_added": [
+          "curl",
+          "node"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.433,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## The Scientific Method Applied to Bugs | ```",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 41,
+      "repository": "Threat-Vector-Security/guardian-agent",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Threat-Vector-Security/guardian-agent/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.6,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.654,
+        "headings_added": 6,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.267,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview / When to Use | Do not guess. Find the root cause before changing code, config, or prompts. No fixes without investigation first. If you have not reproduced the issue, read the",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 42,
+      "repository": "c-kick/hnl-agent-skills",
+      "path": "systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/c-kick/hnl-agent-skills/blob/master/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.549,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.501,
+        "headings_added": 12,
+        "headings_removed": 10,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.294,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Core Principle | **NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.**",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 43,
+      "repository": "majiayu000/spellbook",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/spellbook/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.571,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.599,
+        "headings_added": 9,
+        "headings_removed": 9,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > From [obra/superpowers](https://github.com/obra/superpowers) | ## Core Principle",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 44,
+      "repository": "arn0ld87/skills-public-archive",
+      "path": "skills/agents/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/arn0ld87/skills-public-archive/blob/main/skills/agents/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.537,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.408,
+        "headings_added": 13,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.867,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematisches Debugging | ## Überblick",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 45,
+      "repository": "erclx/aitk",
+      "path": "claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/erclx/aitk/blob/main/claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.582,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.692,
+        "headings_added": 8,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.467,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic debugging | Random fixes waste time and create new bugs. Before proposing any fix, complete the four phases below in order.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 46,
+      "repository": "CUBETIQ/cubis-foundry",
+      "path": "workflows/workflows/agent-environment-setup/platforms/claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/CUBETIQ/cubis-foundry/blob/main/workflows/workflows/agent-environment-setup/platforms/claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.48,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.298,
+        "headings_added": 13,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.8,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic Debugging Methodology | ## Purpose",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 47,
+      "repository": "communitiesuk/prsdb-webapp",
+      "path": ".github/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/communitiesuk/prsdb-webapp/blob/main/.github/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.555,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.62,
+        "headings_added": 6,
+        "headings_removed": 12,
+        "commands_added": [
+          "powershell"
+        ],
+        "commands_removed": [
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | **Core principle:** Find root cause before attempting fixes. Symptom fixes are | failure.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 48,
+      "repository": "ArchieIndian/openclaw-superpowers",
+      "path": "skills/core/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ArchieIndian/openclaw-superpowers/blob/main/skills/core/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.609,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.925,
+        "headings_added": 4,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Never guess at fixes. Find the root cause first. | ## Phase 1: Understand the Error",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 49,
+      "repository": "AlexAI-MCP/hermes-CCC",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/AlexAI-MCP/hermes-CCC/blob/master/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.467,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.325,
+        "headings_added": 22,
+        "headings_removed": 14,
+        "commands_added": [
+          "pytest"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.565,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Purpose | - Prevent guess-driven bug fixing.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 50,
+      "repository": "Tcuzzo/HydraAgent_public",
+      "path": "skills/systematic_debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Tcuzzo/HydraAgent_public/blob/main/skills/systematic_debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.613,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.982,
+        "headings_added": 0,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.933,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Trace every joined mechanism end-to-end before proposing a fix. Verify against live code and runtime state. Fix root cause, never symptoms.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 51,
+      "repository": "taracodlabs/aiden",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/taracodlabs/aiden/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.49,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.519,
+        "headings_added": 12,
+        "headings_removed": 13,
+        "commands_added": [
+          "node",
+          "powershell",
+          "python"
+        ],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A structured four-phase process for diagnosing software bugs: **Reproduce → Isolate → Hypothesize → Verify**. Prevents guessing and ensures you find the root ca | - User reports a bug or unexpected behavior without an obvious cause",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 52,
+      "repository": "erfanzar/Xerxes-Agents",
+      "path": "xerxes/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/erfanzar/Xerxes-Agents/blob/main/xerxes/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.467,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.436,
+        "headings_added": 7,
+        "headings_removed": 14,
+        "commands_added": [
+          "bun",
+          "python"
+        ],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.4,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this workflow for bugs, failed tests, build errors, performance regressions, | and unexpected production behavior. Scale the depth to the problem, but keep the",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 53,
+      "repository": "GuicedEE/ai-rules",
+      "path": "skills/.curated/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/GuicedEE/ai-rules/blob/master/skills/.curated/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.584,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.907,
+        "headings_added": 4,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Always investigate root cause before proposing fixes. | ## Core Rule",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 54,
+      "repository": "SethGammon/Citadel",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/SethGammon/Citadel/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.465,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.461,
+        "headings_added": 12,
+        "headings_removed": 14,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "don't use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.733,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # /systematic-debugging — Root Cause Before Fix | ## Orientation",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 55,
+      "repository": "hnb-rabear/RCore",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/hnb-rabear/RCore/blob/main/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.529,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.752,
+        "headings_added": 2,
+        "headings_removed": 10,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.8,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Adapted from [superpowers:systematic-debugging](https://github.com/obra/superpowers) | NEVER guess at fixes. Find the root cause FIRST.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 56,
+      "repository": "jed72/compass",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/jed72/compass/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.477,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.515,
+        "headings_added": 6,
+        "headings_removed": 14,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A test failed and you did not expect it to. The reflex is to change something | plausible and re-run. That reflex is why debugging sessions get long: each",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 57,
+      "repository": "baphuongna/pi-crew",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/baphuongna/pi-crew/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.469,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.503,
+        "headings_added": 11,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.733,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # systematic-debugging | Core principle: no fixes without root-cause investigation first. Symptom patches create new bugs and hide the real failure.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 58,
+      "repository": "Archive228/loopkit",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Archive228/loopkit/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.542,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.845,
+        "headings_added": 3,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.133,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | The single most expensive agent failure: seeing an error and immediately generating a | \"fix\" based on the error type, without reading what actually happened. Don't.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 59,
+      "repository": "sammcj/agentic-coding",
+      "path": "Skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/sammcj/agentic-coding/blob/main/Skills/systematic-debugging/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.444,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.488,
+        "headings_added": 9,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.6,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic Debugging with Fagan Inspection | This skill applies a modified Fagan Inspection methodology for systematic problem resolution when facing complex problems or stubborn bugs that have resisted mu",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 60,
+      "repository": "David-Li0406/meta-skill-evloving",
+      "path": "skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-53/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-53/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.492,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.725,
+        "headings_added": 9,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.6,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## What I Do | - Guide systematic root cause analysis",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 61,
+      "repository": "RakuenSoftware/aimee",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "testing",
+      "direct_skill_url": "https://github.com/RakuenSoftware/aimee/blob/testing/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.529,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.925,
+        "headings_added": 0,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.933,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Start with evidence, not guesses. | 1. Reproduce the failure with the smallest command, input, or trace available.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 62,
+      "repository": "metaspartan/cybara",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/metaspartan/cybara/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.501,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.822,
+        "headings_added": 3,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.133,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A disciplined loop that finds the true root cause before changing code. Skipping it is the #1 cause of \"fixes\" that regress or don't hold. | ## The loop",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 63,
+      "repository": "DYAI2025/Plumbline",
+      "path": "config/claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/DYAI2025/Plumbline/blob/main/config/claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.523,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.961,
+        "headings_added": 1,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Loop | 1. Reproduce the failure with the smallest exact command.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 64,
+      "repository": "DDS-Solutions/AI-TadPole-OS",
+      "path": ".agent/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/DDS-Solutions/AI-TadPole-OS/blob/main/.agent/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.445,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.609,
+        "headings_added": 21,
+        "headings_removed": 13,
+        "commands_added": [
+          "curl"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.478,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > [!IMPORTANT] | > **AI Context & Knowledge Heritage**",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 65,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "development/unknown-a5c-ai-babysitter-25/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/development/unknown-a5c-ai-babysitter-25/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.501,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.885,
+        "headings_added": 3,
+        "headings_removed": 12,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Structured approach to investigating and resolving defects using hypothesis-driven methodology rather than trial-and-error. | - Step verification fails during implementation",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 66,
+      "repository": "muyen/vibe-to-prod",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/muyen/vibe-to-prod/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.464,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.69,
+        "headings_added": 20,
+        "headings_removed": 15,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.75,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic Debugging Skill | Apply structured 4-phase debugging to find root causes, not just symptoms.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 67,
+      "repository": "ericbusboom/dotconfig",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/ericbusboom/dotconfig/blob/master/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.469,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.75,
+        "headings_added": 7,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic Debugging Skill | A structured debugging protocol that replaces ad hoc fix attempts.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 68,
+      "repository": "byerlikaya/claude-starter-kit",
+      "path": "plugin/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/byerlikaya/claude-starter-kit/blob/main/plugin/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.431,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.586,
+        "headings_added": 5,
+        "headings_removed": 14,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.267,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside | Claude Code's budget (1% of the context window) — an overflowing listing gets descriptions",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 69,
+      "repository": "New1Direction/korgex",
+      "path": "src/skills_builtin/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/New1Direction/korgex/blob/main/src/skills_builtin/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.499,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.895,
+        "headings_added": 0,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Resist the urge to guess-and-patch. A bug you can't reproduce isn't fixed. | 1. **Reproduce reliably.** Find the smallest, deterministic way to trigger it.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 70,
+      "repository": "aiskillstore/marketplace",
+      "path": "skills/doyajin174/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/doyajin174/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.501,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.835,
+        "headings_added": 14,
+        "headings_removed": 11,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.389,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | 버그, 테스트 실패, 예상치 못한 동작에 대한 체계적 디버깅 방법론입니다. | ## Core Principle",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 71,
+      "repository": "tien226anh/agents-assistant-kit",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tien226anh/agents-assistant-kit/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.436,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.653,
+        "headings_added": 8,
+        "headings_removed": 13,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.4,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Deep-dive debugging techniques for hard bugs that resist normal troubleshooting. Use this when `debug-assistant` hasn't resolved the issue. | - You've tried `debug-assistant` but the bug persists",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 72,
+      "repository": "funky-eyes/best-copilot",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/funky-eyes/best-copilot/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.498,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.942,
+        "headings_added": 2,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.067,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Loop | 1. Capture the exact failure and reproduction path.",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 73,
+      "repository": "yywmrz/antigravity-superpowers",
+      "path": "skills-en/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/yywmrz/antigravity-superpowers/blob/main/skills-en/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.465,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.819,
+        "headings_added": 11,
+        "headings_removed": 15,
+        "commands_added": [
+          "python"
+        ],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.733,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic Debugging Skill | Follow a structured debugging process, avoid blind guessing.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 74,
+      "repository": "meta-secret/meta-secret-core",
+      "path": ".ai/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/meta-secret/meta-secret-core/blob/main/.ai/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.479,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.891,
+        "headings_added": 14,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.867,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | You debug problems using root-cause analysis. | ## Goals",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 75,
+      "repository": "spencerpauly/awesome-cursor-skills",
+      "path": "resources/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.416,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.655,
+        "headings_added": 11,
+        "headings_removed": 14,
+        "commands_added": [
+          "curl",
+          "go",
+          "node"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Debug methodically instead of randomly changing code. | ## The Process",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 76,
+      "repository": "eng-cc/oasis7",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/eng-cc/oasis7/blob/main/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.45,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.811,
+        "headings_added": 5,
+        "headings_removed": 13,
+        "commands_added": [
+          "sh"
+        ],
+        "commands_removed": [
+          "bash",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this skill before proposing or applying a fix for: | - failing tests",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 77,
+      "repository": "vstorm-co/pydantic-deepagents",
+      "path": "apps/cli/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/vstorm-co/pydantic-deepagents/blob/main/apps/cli/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.417,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.702,
+        "headings_added": 12,
+        "headings_removed": 14,
+        "commands_added": [
+          "python"
+        ],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.733,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A structured approach to finding and fixing bugs. | ## The Debugging Loop",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 78,
+      "repository": "vrennat/developersDevelopers",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/vrennat/developersDevelopers/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.463,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.863,
+        "headings_added": 2,
+        "headings_removed": 14,
+        "commands_added": [
+          "bun"
+        ],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.067,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Fires when execution produces a real failure: a test error, a stack trace, a non-zero exit code, or output that contradicts the expected behavior. Does NOT fire | ## Procedure",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 79,
+      "repository": "kodi/topchester-agent",
+      "path": "skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/kodi/topchester-agent/blob/main/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.463,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.932,
+        "headings_added": 2,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use when something fails, flakes, regresses, or behaves differently between environments. | ## Procedure",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 80,
+      "repository": "charlieviettq/awesome-agent-skill",
+      "path": ".claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/charlieviettq/awesome-agent-skill/blob/main/.claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.423,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.801,
+        "headings_added": 10,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.533,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic debugging | ## Iron law",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 81,
+      "repository": "tridentsof/antigravity-dev-kit",
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tridentsof/antigravity-dev-kit/blob/main/.agents/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.414,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.802,
+        "headings_added": 10,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.6,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Find root causes, not just symptoms. | ---",
+      "removed_excerpt": "-- | ## Overview | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure."
+    },
+    {
+      "group_id": 82,
+      "repository": "dshakes/compass",
+      "path": "claude/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/dshakes/compass/blob/main/claude/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.421,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.839,
+        "headings_added": 3,
+        "headings_removed": 14,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.133,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Systematic debugging | Fix the cause, not the symptom — and prove the cause before you touch code.",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    },
+    {
+      "group_id": 83,
+      "repository": "gabrielmoreira/agent-skills-mirror",
+      "path": "mirrors/repos/Dokhacgiakhoa@Agent-Skills-4-Vibe-Coding-CLI/.agent/skills/systematic-debugging/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/gabrielmoreira/agent-skills-mirror/blob/main/mirrors/repos/Dokhacgiakhoa@Agent-Skills-4-Vibe-Coding-CLI/.agent/skills/systematic-debugging/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.441,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.937,
+        "headings_added": 7,
+        "headings_removed": 13,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 5,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Source: obra/superpowers | This skill provides a structured approach to debugging that prevents random guessing and ensures problems are properly understood before solving.",
+      "removed_excerpt": "-- | **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure. | **Violating the letter of this process is violating the spirit of debugging.**"
+    },
+    {
+      "group_id": 84,
+      "repository": "AtharvaMate/autoskill",
+      "path": "scripts/author-skill.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/AtharvaMate/autoskill/blob/main/scripts/author-skill.md",
+      "archetype": "no-label",
+      "relatedness": 0.388,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.258,
+        "headings_added": 43,
+        "headings_removed": 12,
+        "commands_added": [
+          "go",
+          "pnpm",
+          "pytest",
+          "python"
+        ],
+        "commands_removed": [
+          "bash"
+        ],
+        "cross_skill_ref_delta": 10,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.196,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Skill Authoring Agent | You are authoring a SKILL.md file for a Claude Code skill based on an observed user pattern.",
+      "removed_excerpt": "-- | **Violating the letter of this process is violating the spirit of debugging.** | ## When to Use"
+    },
+    {
+      "group_id": 85,
+      "repository": "vamseeachanta/workspace-hub",
+      "path": ".claude/skills/_archive/development/systematic-debugging/error-handling/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/vamseeachanta/workspace-hub/blob/main/.claude/skills/_archive/development/systematic-debugging/error-handling/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.379,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.961,
+        "headings_added": 1,
+        "headings_removed": 15,
+        "commands_added": [],
+        "commands_removed": [
+          "bash",
+          "git",
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.067,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Error Handling | ## Error Handling",
+      "removed_excerpt": "-- | # Systematic Debugging | ## Overview"
+    }
+  ]
+}

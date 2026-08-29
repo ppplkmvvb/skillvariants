@@ -1,0 +1,1632 @@
+{
+ "canonical_motifs": [
+  {
+   "label": "add-stop-or-escalation-after-repeated-failed-fixes",
+   "invariant": "Introduces an explicit termination, escalation, or reframing trigger tied to a counted number of failed fix attempts.",
+   "member_actions": [
+    "Add 3+ fixes fail escalation handler",
+    "Add The 3-Fix Rule",
+    "Add The 3-Fix Rule; preserve core principle while compressing",
+    "Add The 3-failures rule plus red-flag return to Phase 1",
+    "Add Three-Attempt Cap + trigger conditions",
+    "Add Three-fix circuit breaker + red flags as return-to-phase-1",
+    "Add escalation handler after three or more failed fixes",
+    "Add escalation rule after 3+ failed fixes",
+    "Add single-hypothesis test escape clause: 3 failed fixes = framing is wrong",
+    "Add stop-after-3-failed-attempts rule"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 19
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 25
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 31
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 43
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 45
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 67
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 56
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 33
+    }
+   ],
+   "rejected_near_misses": [
+    "Add trigger-context to iron-law phrasing"
+   ]
+  },
+  {
+   "label": "add-explicit-hard-gate-implementation-lock",
+   "invariant": "Adds an explicit, unavoidable prohibition on writing code or taking implementation action before approval.",
+   "member_actions": [
+    "Add explicit hard-gate implementation lock",
+    "Add explicit hard-gate implementation lock (repeated)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 29
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 30
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 50
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 82
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 84
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-ownership-or-handoff-boundary",
+   "invariant": "States what this skill owns versus what it delegates, or defines an explicit handoff boundary to another skill or pipeline stage.",
+   "member_actions": [
+    "Add agent-assignment output contract",
+    "Add ownership and required-output contract",
+    "Add ownership/delegation boundary",
+    "Add planner-handoff output boundary",
+    "Add related-skill routing (worktrees/plans)",
+    "Add scope split with other skills (what vs how)",
+    "Add single-output handoff (agreed design only)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 25
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 46
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 12
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 20
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 76
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 51
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-questioning-or-interaction-protocol",
+   "invariant": "Prescribes a concrete questioning/interaction protocol (one question at a time, tool usage, or question-count rules).",
+   "member_actions": [
+    "Add ask_questions tool-parameter contract",
+    "Add comprehensive question-generation analysis",
+    "Add conversation-technique protocol (one question/multiple choice/incremental validation)",
+    "Add conversation-techniques protocol (one question/multiple choice/incremental validation)",
+    "Add deep decision-tree interview protocol",
+    "Add interactive-questioning protocol (AskUserQuestion mandatory)",
+    "Add mandatory 3-questions enforcement gate",
+    "Add one-question-at-a-time dialogue rules",
+    "Add one-question-at-a-time iron law",
+    "Add one-question-at-a-time iron law + announce"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 37
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 62
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 79
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 47
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 63
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-context-gathering-before-design",
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "member_actions": [
+    "Add context-detection and authority hierarchy before design",
+    "Add context-gathering protocol before design direction",
+    "Add domain/architecture/security check gates (project-specific)",
+    "Add filesystem-first context + design doc template",
+    "Add project-conventions application in design",
+    "Add project-conventions application rules",
+    "Add project-document-first rules (DESIGN/PRD/GOAL)",
+    "Add project-specific context loading (PROJECT_CONTEXT.md)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 3
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 30
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 10
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 52
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 31
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 64
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-evaluation-or-review-gate",
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "member_actions": [
+    "Add design-system-first workflow (system before UI)",
+    "Add evaluation suite + delivery gate",
+    "Add evaluation suite and delivery gate",
+    "Add ordered levers hierarchy + invariant rules",
+    "Add ordered-levers hierarchy and invariant rules",
+    "Add review checklist + migration note",
+    "Add review checklist and migration note",
+    "Add verify + visual-discipline output contract"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 15
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 48
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 58
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 62
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 40
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-contract-scope-or-output-gates",
+   "invariant": "Defines an explicit contract for when the skill applies and what it produces (scope/trigger/guardrails/output format) in place of free-form work.",
+   "member_actions": [
+    "Add 4-step definition/constraint/implement/refine workflow",
+    "Add explicit inputs-to-gather-or-assume contract",
+    "Add machine-readable DESIGN.md contract before implementation",
+    "Add machine-readable design contract (DESIGN.md) before implementation",
+    "Add pre-implementation planning checklist",
+    "Add skill-scope contract (when-to-use/purpose/scope/included/excluded/inputs)",
+    "Add skill-scope contract (when-to-use/scope/included/exclude",
+    "Add trigger/do-not-use/output contract/guardrails",
+    "Add trigger/do-not-use/output-contract guardrails"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 49
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 52
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 41
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 54
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 8
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-framework-specific-design-rules",
+   "invariant": "Adds design or implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "member_actions": [
+    "Add React-specific design rules (context/decision-tree/60-30-10)",
+    "Add React/Next.js implementation rules",
+    "Add design tokens + Tailwind class-ordering + reuse-before-create",
+    "Add design tokens and Tailwind class ordering",
+    "Add design-system reuse-before-create rules",
+    "Add framework-specific design rules (shadcn/ui)",
+    "Add framework-specific implementation rules (React/Next.js)",
+    "Add technology-stack preferences and component-library priority",
+    "Add technology-stack priority ordering rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 13
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 17
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 29
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 57
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-project-specific-rules",
+   "invariant": "Adds design, debugging, or workflow rules grounded in this specific repository or product (its stack, files, or design language).",
+   "member_actions": [
+    "Add Spendly product-specific design language and stack rules",
+    "Add domain/architecture/security check gates (project-specific)",
+    "Add explicit per-command debugging guidance (npx/pipx)",
+    "Add given project-specific commands",
+    "Add mobile-first card pattern + Safari image rules + design-system doc link",
+    "Add mobile-first card pattern and Safari image handling",
+    "Add platform-specific rendering rules (mobile-first + Safari + design-system doc)",
+    "Add platform-specific rendering rules (mobile/safari + desig",
+    "Add platform-specific rendering rules (mobile/safari + design-system doc)",
+    "Add product-specific design language and stack rules (Spendly)",
+    "Add project-conventions application in design",
+    "Add project-conventions application rules",
+    "Add project-document-first rules (DESIGN/PRD/GOAL)",
+    "Add project-specific debugging commands",
+    "Add project-specific surfaces + guardrails with workflow",
+    "Add repo-local nix purity rule and route to related skills",
+    "Build as project-specific surfaces + guardrails with workflow",
+    "Given project-specific commands",
+    "Given project-specific; preserve iron law"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 3
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 15
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 24
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 31
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 64
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 52
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 23
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 85
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 80
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 76
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-domain-specific-design-rules",
+   "invariant": "Adds design rules specialized to a subject-matter domain (dashboards, finance).",
+   "member_actions": [
+    "Add dashboard/data-viz best practices (charts/trend lines)",
+    "Add domain-specific rules (data-viz/dashboard)",
+    "Add finance-domain design rules (data density, semantic color)",
+    "Add finance-domain-specific design rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 14
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 59
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "route-completion-verification-to-separate-skill",
+   "invariant": "Delegates final completion/verification checking to another named skill or a separate verification step.",
+   "member_actions": [
+    "Add Related Skills heading with cross-skill route",
+    "Add Related Skills routing to reporting/verification skills",
+    "Add dedicated Related Skills heading with 6 cross-skill refs",
+    "Add explicit Verification phase and Related Skills routing",
+    "Add superpowers cross-skill routing",
+    "Add verification gate before claiming completion",
+    "Route completion verification to a separate verification Skill",
+    "Route failing-test writing to TDD skill and verification to separate skill"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 11
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 2
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 17
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 28
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 41
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "require-reproduction-before-fixing",
+   "invariant": "Makes producing a reproduction (or explicit handling of non-reproducibility) a required, gated step before any fix.",
+   "member_actions": [
+    "Add evidence-not-guesses minimal repro command rule",
+    "Add reproduce-or-don't-fix rule",
+    "Add reproduce-or-don't-fix rule; unstructured but strong",
+    "Add reproduction gate sign-off + feedback-loop quality criteria",
+    "Require minimal reproducible case; never fix what you cannot reproduce",
+    "Split debugging into reproduce/isolate phases with quantitative rate"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 38
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 64
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 69
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 4
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-one-hypothesis-at-a-time",
+   "invariant": "Requires forming and testing exactly one hypothesis (or one change) at a time, with explicit falsification or instrumentation.",
+   "member_actions": [
+    "Add Evidence-First + One-Variable-at-a-Time core principles",
+    "Add hypothesis-driven data-flow tracing process",
+    "Add hypothesis-driven data-flow-traced process",
+    "Add instrument/photograph-instrument loop before hypothesizing",
+    "Add one-hypothesis-at-a-time + falsify via instrumentation",
+    "Add ranked-hypotheses + cheapest-falsification-check rule",
+    "Rewrite methodology as hypothesis-driven data-flow-traced process"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 63
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 72
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 83
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 5
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 73
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-red-flags-and-anti-pattern-guard",
+   "invariant": "Adds an explicit list of violation indicators or anti-patterns that signal the process itself is being violated.",
+   "member_actions": [
+    "Add Core Principle section with process-violation flags",
+    "Add anti-pattern catalogue and task-spec output",
+    "Add anti-patterns + when-stuck handler",
+    "Add checklist of anti-patterns + invariant rules",
+    "Add checklist of anti-patterns + techniques-by-symptom + invariant rules",
+    "Add explicit do/don't anti-pattern table",
+    "Add red flags as return-to-phase-1",
+    "Add red flags returning to Phase 1",
+    "Add red-flags-and-anti-pattern-guard",
+    "Add violation-indicator red flags",
+    "Anchor as anti-pattern guard and add escalation rule"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 5
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 19
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 36
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 42
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 48
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-feedback-loop-rule",
+   "invariant": "Elevates building/validating a feedback loop (reproduction plus instrumentation) into a named, mandatory rule.",
+   "member_actions": [
+    "Add Feedback Loop Rule and example-driven guidance (expanded)",
+    "Add The Feedback Loop Rule heading",
+    "Add feedback loop as named mandatory rule",
+    "Restructure around capture symptom / build feedback loop / reproduce or bound"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 20
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 22
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 32
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-diverge-converge-phase-split",
+   "invariant": "Structures the process as an explicit divergent-exploration phase followed by a convergent decision/presentation phase.",
+   "member_actions": [
+    "Add 5-phase structure (context exploration...design documentation)",
+    "Add 5-phase structure with design-documentation phase",
+    "Add explicit diverge/converge two-phase split",
+    "Add frame/diverge-quantity/pressure-test/recommend flow",
+    "Add frame/diverge/pressure-test/recommend flow",
+    "Add reframe-before-you-build phase"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 58
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 80
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 49
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 28
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-greenfield-vs-existing-path-split",
+   "invariant": "Adds a distinct path for greenfield work versus existing-codebase work.",
+   "member_actions": [
+    "Add existing-codebase-specific working rules",
+    "Add greenfield bootstrap path + domain-language register",
+    "Add greenfield bootstrap path and domain-language register",
+    "Add greenfield-project specialization path"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 9
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 15
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 21
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-environment-or-availability-guard",
+   "invariant": "Gates the skill's availability on an environment or workflow-state condition.",
+   "member_actions": [
+    "Add environment-availability (prompt-prefix) trigger guard",
+    "Add use-when/do-not-use boundary",
+    "Add when-to-use/when-not-to-use boundary",
+    "Add workflow-mode guard gate"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 1
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 10
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 26
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 43
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-stop-or-fallback-condition",
+   "invariant": "Adds explicit stop conditions or fallback behavior for when the process stalls or its assumptions fail.",
+   "member_actions": [
+    "Add mandatory brainstorming-report + red-flag stop",
+    "Add mandatory brainstorming-report and red-flag stop",
+    "Add phase-gate stops (BLOCK/STOP) + routed entry points",
+    "Add phase-gate stops (BLOCK/STOP) and routed entry points",
+    "Add stop conditions + fallback path",
+    "Add stop conditions and fallback path"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 35
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 54
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 72
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "restructure-phases-or-named-workflow",
+   "invariant": "Renames, reorders, or replaces the named phase structure of the methodology while preserving the same overall method. (broad)",
+   "member_actions": [
+    "Add 5-phase structure with design-documentation phase",
+    "Add 5-step loop never-skip rule",
+    "Add 5-step order with scale-depth-to-problem guidance",
+    "Add 7-phase todo structure + 5WH question framework",
+    "Add Debugging Commands section + 4-phase repro/isolate/identify/fix",
+    "Add Fagan Inspection methodology",
+    "Add RFC-shaped output with discovery questions",
+    "Add TBDs log + reporting model",
+    "Add TBDs log and reporting model",
+    "Add concrete numbered sub-steps inside each phase",
+    "Add context-gathering and feature-structure template",
+    "Add entry flag and frame/options/design-doc steps",
+    "Add explicit ordered steps Read-error/Understand-code/Identify-root-cause/Fix-and-verify",
+    "Add goal/design-review/after-approval structure",
+    "Add lite-output tier + bilingual adaptation",
+    "Add lite-output tier with bilingual adaptation",
+    "Add restate/options-min-3/evaluate/commit process",
+    "Add three-phase structure with approach comparison",
+    "Add trigger conditions and validate-in-sections",
+    "Add trigger-step design-document workflow",
+    "Add validation-criteria phase",
+    "Add when-to-trigger matrix and resources",
+    "Compact four-phase structure with sparse section removal",
+    "Force ordered steps Read-error/Understand-code/Identify-root-cause/Fix-and-verify",
+    "Import Fagan Inspection methodology as novel workflow",
+    "Rebuild as disciplined evidence framework with output format + debugging report",
+    "Rebuild as first-person What-I-Do phases REPRODUCE/ISOLATE/IDENTIFY/FIX",
+    "Reduce to 4 phases each with one focused action",
+    "Rename phases to Hypothesis Formation / Minimal Fix / Verification",
+    "Replace four phases with observed workflow + Hard Gates + output contract",
+    "Restructure to red-flags-stop process with mandatory phase ordering"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 21
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 10
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 30
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 48
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 52
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 39
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 59
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 60
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 46
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 66
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 77
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 3
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 7
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 28
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 70
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 83
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 74
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 75
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 68
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 90
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 89
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 16
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 23
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 65
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 38
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 66
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-brief-inference-or-ask-first-gate",
+   "invariant": "Adds a mandatory brief-inference or ask-before-assuming gate before any design work.",
+   "member_actions": [
+    "Add brief-inference pre-processing (read the room before anything)",
+    "Add brief-inference pre-processing (read the room first)",
+    "Add explicit inputs-to-gather-or-assume contract",
+    "Add huge mega-file with brief-inference mandator (absorber)",
+    "Add mandatory ask-before-assuming gate",
+    "Add name-your-confusion step with optional deep research",
+    "Add style-variant routing table and brief inference (in absorber mega-file)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 5
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 55
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 45
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 78
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 8
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-style-or-direction-pre-gate",
+   "invariant": "Adds a style/direction selection gate before any concrete design work.",
+   "member_actions": [
+    "Add extreme-tone commitment rule",
+    "Add style-selector pre-gate before any screen work",
+    "Add style-variant routing table and brief inference (in absorber mega-file)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 66
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 68
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 55
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-design-contract-artifact-before-code",
+   "invariant": "Requires producing a machine-readable design artifact before implementation starts.",
+   "member_actions": [
+    "Add machine-readable DESIGN.md contract before implementation",
+    "Add machine-readable design contract (DESIGN.md) before implementation"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 52
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-aesthetic-philosophy-library",
+   "invariant": "Adds a curated library of named aesthetic philosophies or design disciplines.",
+   "member_actions": [
+    "Add curated aesthetic-philosophy library",
+    "Add curated aesthetic-philosophy library (Rams/Swiss/Ma/Brutalist)",
+    "Add design/challenge mode split",
+    "Split skill into product/UX/visual design disciplines"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 24
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 44
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 45
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-bisect-or-isolation-procedure",
+   "invariant": "Adds a bisect or systematic isolation procedure for narrowing failure scope.",
+   "member_actions": [
+    "Add git bisect isolation workflow",
+    "Add git bisect workflow to isolate failure commit"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 51
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 75
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-install-or-repo-sync-rules",
+   "invariant": "Adds installation/bootstrap or repository-sync steps.",
+   "member_actions": [
+    "Add install instructions",
+    "Add install/bootstrap instructions",
+    "Add repo-sync-before-edits rule"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 19
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-provenance-attribution",
+   "invariant": "Adds explicit provenance, source, or license attribution for the adaptation.",
+   "member_actions": [
+    "Add attribution header to trimmed rewrite",
+    "Add facilitation-script/SME-invocation meta-layer with third-party notice",
+    "Add provenance/source annotations and thin wrapper",
+    "Add source/license attribution header + adaptation note",
+    "Add source/license attribution header and adaptation note",
+    "Explicitly cite lineage as Lifted-from-superpowers and slim"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 8
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 34
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 50
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 86
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 16
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-purposes-goals-statement",
+   "invariant": "Adds an explicit purpose/goals statement near the top defining what the skill achieves.",
+   "member_actions": [
+    "Add Key Rules + Tool Use sections",
+    "Add explicit Purpose section with goals",
+    "Add explicit purpose statement with scope",
+    "Add goals / hard rules / read-first structure",
+    "Add goals/hard-rules structure",
+    "Add purpose statement near top",
+    "Add purpose statement with three goals"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 29
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 74
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 65
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-accessibility-first-rules",
+   "invariant": "Adds accessibility-first or semantic-HTML scaffolding rules.",
+   "member_actions": [
+    "Add accessibility-first and semantic-HTML scaffolding rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 43
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-vue-specific-application",
+   "invariant": "Adapts the guidance to a specific framework application (Vue).",
+   "member_actions": [
+    "Adapt to framework-specific (Vue) application",
+    "Add Vue dimension-based fix workflow"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 64
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "translate-language-variant",
+   "invariant": "Translates the skill into another language with structural rework.",
+   "member_actions": [
+    "Add lite-output tier + bilingual adaptation",
+    "Add lite-output tier with bilingual adaptation",
+    "Korean-language rebuild; mandatory phases + critical rules",
+    "Translate and restructure to a distinct language variant",
+    "Translate bilingual",
+    "Translate bilingual and add decision-tree companion",
+    "Translate to Chinese with HARD-GATE",
+    "Translate to French with checklist/decision-tree/visual companion",
+    "Translate to German with restructured phases"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 44
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 70
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 84
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 59
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 38
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-mode-split",
+   "invariant": "Adds distinct operating modes within the skill.",
+   "member_actions": [
+    "Add design/challenge mode split"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 45
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-benchmark-or-intake-packaging",
+   "invariant": "Packages the skill for benchmark datasets or intake catalogs.",
+   "member_actions": [
+    "Add benchmark-dataset packaging",
+    "Add intake-copy packaging with routing headers"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 22
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 6
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "wrapped-template-rewrite",
+   "invariant": "Replaces the original persona/method framing with a generic guidelines template. (propagation signature)",
+   "member_actions": [
+    "Add 5-section flagship blueprint",
+    "Add goal/design-review/after-approval structure",
+    "Add session-detection preamble + completion status",
+    "Add session-detection preamble and completion status",
+    "Adopt anti-slop guidelines template",
+    "Adopt checklist/process-flow template (propagation)",
+    "Replace persona framing with generic anti-slop guidelines (template propagation)",
+    "Rewrite as persona/mentorship guide",
+    "Simplify to overview/process/after-design template (propagation)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 2
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 7
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 2
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 3
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 12
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 13
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 56
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 23
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-announcement-activation-gate",
+   "invariant": "Adds an announce/activate requirement at skill start.",
+   "member_actions": [
+    "Add activation signals + stabilize-report/narrow-surface/instrument phases",
+    "Add one-question-at-a-time iron law + announce",
+    "Add use-when/do-not-use boundary",
+    "Add when-to-activate trigger paragraph",
+    "Add when-to-use/when-not-to-use boundary",
+    "Require announcing activation before debugging"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 2
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 49
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 9
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 26
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 43
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-trigger-context-to-iron-law",
+   "invariant": "Adds trigger context to the iron-law statement.",
+   "member_actions": [
+    "Add trigger-context to iron-law phrasing"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 14
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-namespaced-reference-rewrite",
+   "invariant": "Rewrites namespaced skill references to unqualified local ones.",
+   "member_actions": [
+    "Swap superpowers:-style skill references to unqualified local references"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 12
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-selective-reading-or-tool-routing",
+   "invariant": "Adds selective-reading or MCP tool routing rules.",
+   "member_actions": [
+    "Add selective-reading tool routing"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 5
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-fusion-edition",
+   "invariant": "Fuses multiple source skills into a combined edition.",
+   "member_actions": [
+    "Fuse two source skills into combined edition"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 37
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-slash-command-wrapper",
+   "invariant": "Adds a slash-command invocation wrapper.",
+   "member_actions": [
+    "Add slash-command usage wrapper"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 26
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-bail-out-check",
+   "invariant": "Adds a bail-out check before the main phases.",
+   "member_actions": [
+    "Add Emergency Stop Rule + orientation with use/don't-use boundaries",
+    "Add bail-out check before Phase 1"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 26
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 54
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-invocation-refuse-gate",
+   "invariant": "Adds an invocation refuse-gate on missing prerequisites.",
+   "member_actions": [
+    "Add Invocation + Refuse Gate (do not proceed without prerequisites)",
+    "Add compact invoke/refuse gate"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 57
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-open-ended-trigger-handoff",
+   "invariant": "Adds an open-ended-request trigger and handoff.",
+   "member_actions": [
+    "Add open-ended-trigger and handoff"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 61
+    }
+   ],
+   "rejected_near_misses": [
+    "Add open-ended-trigger and handoff"
+   ]
+  },
+  {
+   "label": "add-when-to-activate-triggers",
+   "invariant": "Adds explicit when-to-activate triggers.",
+   "member_actions": [
+    "Add when-to-activate trigger paragraph"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 9
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-process-reorder-frame-before-system",
+   "invariant": "Reorders the workflow to frame the interface before the visual system.",
+   "member_actions": [
+    "Reorder workflow: frame interface before visual system"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 39
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-voiced-restructure-what-i-do",
+   "invariant": "Rewrites the phase structure in a first-person voice.",
+   "member_actions": [
+    "Rebuild as first-person What-I-Do phases REPRODUCE/ISOLATE/IDENTIFY/FIX"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 60
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-debugger-usage-handler",
+   "invariant": "Adds debugger-usage handling (Windows/PowerShell).",
+   "member_actions": [
+    "Add Using-the-Debugger handler (Windows/PowerShell)"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 47
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-activation-signals-and-phases",
+   "invariant": "Adds activation signals and stabilize/narrow/instrument phases.",
+   "member_actions": [
+    "Add activation signals + stabilize-report/narrow-surface/instrument phases"
+   ],
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 49
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-planning-checklist",
+   "invariant": "Adds a pre-implementation planning checklist.",
+   "member_actions": [
+    "Add pre-implementation planning checklist"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 54
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-scope-contract",
+   "invariant": "Adds a scope/inputs contract.",
+   "member_actions": [
+    "Add skill-scope contract (when-to-use/scope/included/exclude"
+   ],
+   "supporting_groups": [],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-numbered-iron-laws",
+   "invariant": "Adds numbered iron-law requirements.",
+   "member_actions": [
+    "Add numbered iron-law requirements"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 32
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-domain-reference-safety",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-benchmark-packaging",
+   "invariant": "Adds benchmark-dataset packaging.",
+   "member_actions": [
+    "Add benchmark-dataset packaging"
+   ],
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 22
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-rfc-output",
+   "invariant": "Adds an RFC-shaped output.",
+   "member_actions": [
+    "Add RFC-shaped output with discovery questions"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 89
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-facilitation-meta-layer",
+   "invariant": "Adds a facilitation meta-layer.",
+   "member_actions": [
+    "Add facilitation-script/SME-invocation meta-layer with third-party notice"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 86
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-tool-parameter-contract",
+   "invariant": "Adds a tool-parameter contract.",
+   "member_actions": [
+    "Add ask_questions tool-parameter contract",
+    "Add tool-parameter contract for ask_questions"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 41
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-entry-flag-steps",
+   "invariant": "Adds an entry flag and frame/options/design-doc steps.",
+   "member_actions": [
+    "Add entry flag and frame/options/design-doc steps"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 74
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-name-confusion-step",
+   "invariant": "Adds a confusion-naming step.",
+   "member_actions": [
+    "Add name-your-confusion step with optional deep research"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 78
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-domain-reference-and-safety",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-safety-boundary-rules",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-safety-boundary-domain-reference",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-safety-and-domain-rules",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-domain-safety-rules",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  },
+  {
+   "label": "add-domain-reference-rules",
+   "invariant": "Adds domain-reference lookup and safety-boundary rules.",
+   "member_actions": [
+    "Add domain-reference lookup and safety-boundary rules"
+   ],
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 81
+    }
+   ],
+   "rejected_near_misses": []
+  }
+ ]
+}

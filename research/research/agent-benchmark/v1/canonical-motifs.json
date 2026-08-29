@@ -1,0 +1,355 @@
+{
+ "audit_note": "one invariant per motif; supporting groups re-checked; rejected groups listed; no merging back to survive recurrence",
+ "canonical_motifs": [
+  {
+   "family": "systematic-debugging",
+   "label": "add-stop-or-escalation-after-repeated-failed-fixes",
+   "display_name": "Add stop or escalation after repeated failed fixes",
+   "invariant": "Introduces an explicit termination, escalation, or reframing trigger tied to a counted number of failed fix attempts.",
+   "supporting_groups": [
+    19,
+    25,
+    31,
+    33,
+    43,
+    45,
+    56,
+    58,
+    67
+   ],
+   "rejected_groups": [],
+   "group_count": 9
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "restructure-phases-or-named-workflow",
+   "display_name": "Restructure phases or named workflow",
+   "invariant": "Renames, reorders, or replaces the named phase structure of the methodology while preserving the same overall root-cause method. (broad)",
+   "supporting_groups": [
+    21,
+    25,
+    28,
+    30,
+    32,
+    33,
+    38,
+    39,
+    48
+   ],
+   "rejected_groups": [],
+   "group_count": 9
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "project-specific-environment-commands",
+   "display_name": "Add project-specific environment commands",
+   "invariant": "Adds commands, configuration, or environment checks specific to a particular repository, stack, or deployment context.",
+   "supporting_groups": [
+    3,
+    15,
+    17,
+    20,
+    24,
+    31,
+    66,
+    76
+   ],
+   "rejected_groups": [],
+   "group_count": 8
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "route-completion-verification-to-separate-skill",
+   "display_name": "Route completion verification to a separate skill",
+   "invariant": "Delegates final completion/verification checking to another named skill or a separate verification step instead of doing it inline.",
+   "supporting_groups": [
+    2,
+    11,
+    17,
+    28,
+    41
+   ],
+   "rejected_groups": [],
+   "group_count": 5
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "require-reproduction-before-fixing",
+   "display_name": "Require reproduction before fixing",
+   "invariant": "Makes producing a reproduction (or explicit handling of non-reproducibility) a required, gated step before any fix.",
+   "supporting_groups": [
+    4,
+    38,
+    55,
+    61,
+    69
+   ],
+   "rejected_groups": [],
+   "group_count": 5
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "preserve-root-cause-first-while-compressing",
+   "display_name": "Preserve root-cause-first while compressing",
+   "invariant": "Substantially shortens the document while explicitly retaining the root-cause-first governing rule.",
+   "supporting_groups": [
+    43,
+    53,
+    58,
+    62,
+    55
+   ],
+   "rejected_groups": [],
+   "group_count": 5
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "add-one-hypothesis-at-a-time",
+   "display_name": "Add one-hypothesis-at-a-time",
+   "invariant": "Requires forming and testing exactly one hypothesis (or one change) at a time, with explicit falsification or instrumentation.",
+   "supporting_groups": [
+    5,
+    63,
+    72,
+    83
+   ],
+   "rejected_groups": [],
+   "group_count": 4
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "add-red-flags-and-anti-pattern-guard",
+   "display_name": "Add red-flags and anti-pattern guard",
+   "invariant": "Adds an explicit list of violation indicators or anti-patterns that signal the process itself is being violated.",
+   "supporting_groups": [
+    5,
+    19,
+    36,
+    68
+   ],
+   "rejected_groups": [],
+   "group_count": 4
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "add-routing-boundary-use-case",
+   "display_name": "Add routing-boundary use-case",
+   "invariant": "Adds explicit boundaries declaring when the skill must not be used or when it must hand off.",
+   "supporting_groups": [
+    8,
+    26,
+    41,
+    54
+   ],
+   "rejected_groups": [],
+   "group_count": 4
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "add-feedback-loop-rule",
+   "display_name": "Add feedback-loop rule",
+   "invariant": "Elevates building/validating a feedback loop (reproduction plus instrumentation) into a named, mandatory rule.",
+   "supporting_groups": [
+    20,
+    22,
+    32
+   ],
+   "rejected_groups": [
+    33
+   ],
+   "group_count": 3
+  },
+  {
+   "family": "systematic-debugging",
+   "label": "explicitly-declare-purposes-goals",
+   "display_name": "Explicitly declare purposes/goals",
+   "invariant": "Adds an explicit purpose/goals statement near the top defining what the skill achieves.",
+   "supporting_groups": [
+    29,
+    49,
+    74
+   ],
+   "rejected_groups": [],
+   "group_count": 3
+  },
+  {
+   "family": "frontend-design",
+   "label": "add-framework-specific-design-rules",
+   "display_name": "Add framework-specific design rules",
+   "invariant": "Adds design/implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "supporting_groups": [
+    13,
+    17,
+    26,
+    29,
+    57
+   ],
+   "rejected_groups": [],
+   "group_count": 5
+  },
+  {
+   "family": "frontend-design",
+   "label": "add-evaluation-or-review-gate",
+   "display_name": "Add evaluation-or-review gate",
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "supporting_groups": [
+    15,
+    48,
+    58,
+    62,
+    40
+   ],
+   "rejected_groups": [],
+   "group_count": 5
+  },
+  {
+   "family": "frontend-design",
+   "label": "add-contract-scope-or-output-gates",
+   "display_name": "Add contract/scope/output gates",
+   "invariant": "Defines an explicit contract for when the skill applies and what it produces (scope/trigger/guardrails/output format) in place of free-form work.",
+   "supporting_groups": [
+    8,
+    36,
+    49,
+    52
+   ],
+   "rejected_groups": [
+    41,
+    54
+   ],
+   "group_count": 4
+  },
+  {
+   "family": "frontend-design",
+   "label": "add-project-specific-rules",
+   "display_name": "Add project-specific rules",
+   "invariant": "Adds design rules grounded in this specific repository or product (its stack, files, or design language).",
+   "supporting_groups": [
+    10,
+    20,
+    23
+   ],
+   "rejected_groups": [],
+   "group_count": 3
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-explicit-hard-gate-implementation-lock",
+   "display_name": "Add explicit hard-gate implementation lock",
+   "invariant": "Adds an explicit, unavoidable prohibition on writing code or taking implementation action before the design is approved.",
+   "supporting_groups": [
+    29,
+    30,
+    44,
+    50,
+    60,
+    82
+   ],
+   "rejected_groups": [],
+   "group_count": 6
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-ownership-or-handoff-boundary",
+   "display_name": "Add ownership-or-handoff boundary",
+   "invariant": "States what this skill owns versus what it delegates, or defines an explicit handoff boundary to another skill or pipeline stage.",
+   "supporting_groups": [
+    12,
+    20,
+    25,
+    46,
+    76,
+    51
+   ],
+   "rejected_groups": [],
+   "group_count": 6
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-questioning-or-interaction-protocol",
+   "display_name": "Add questioning-or-interaction protocol",
+   "invariant": "Prescribes a concrete questioning/interaction protocol (one question at a time, tool usage, or question-count rules). (broad)",
+   "supporting_groups": [
+    36,
+    37,
+    41,
+    62,
+    69,
+    79,
+    27
+   ],
+   "rejected_groups": [],
+   "group_count": 7
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-diverge-converge-phase-split",
+   "display_name": "Add diverge/converge phase split",
+   "invariant": "Structures the process as an explicit divergent-exploration phase followed by a convergent decision/presentation phase.",
+   "supporting_groups": [
+    6,
+    28,
+    49,
+    80
+   ],
+   "rejected_groups": [],
+   "group_count": 4
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-greenfield-vs-existing-path-split",
+   "display_name": "Add greenfield-vs-existing path split",
+   "invariant": "Adds a distinct path for greenfield work versus existing-codebase work.",
+   "supporting_groups": [
+    9,
+    15,
+    21
+   ],
+   "rejected_groups": [],
+   "group_count": 3
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-traceability-or-spec-output-rule",
+   "display_name": "Add traceability-or-spec-output rule",
+   "invariant": "Mandates a specific spec/artifact output structure or a traceability requirement the design must satisfy.",
+   "supporting_groups": [
+    32,
+    34
+   ],
+   "rejected_groups": [
+    17,
+    57
+   ],
+   "group_count": 2
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-environment-or-availability-guard",
+   "display_name": "Add environment-or-availability guard",
+   "invariant": "Gates the skill's availability on an environment or workflow-state condition.",
+   "supporting_groups": [
+    1,
+    10
+   ],
+   "rejected_groups": [
+    26
+   ],
+   "group_count": 2
+  },
+  {
+   "family": "brainstorming",
+   "label": "add-stop-or-fallback-condition",
+   "display_name": "Add stop-or-fallback condition",
+   "invariant": "Adds explicit stop conditions or fallback behavior for when the process stalls or its assumptions fail.",
+   "supporting_groups": [
+    35,
+    54
+   ],
+   "rejected_groups": [
+    72
+   ],
+   "group_count": 2
+  }
+ ]
+}

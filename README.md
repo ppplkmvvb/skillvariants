@@ -99,6 +99,25 @@ or an existing `gh` CLI login (`gh auth login`). If neither is present you get
 a short, actionable error. Fetched files are cached under `.cache/skillvariants/`
 (gitignored, no tokens stored, no telemetry).
 
+## Use it from your agent
+
+SkillVariants Core finds and structures the evidence. The Skill lets your
+agent interpret it.
+
+Install the bundled Agent Skill (`skills/skillvariants/`) into your agent's
+skills directory and prompt it:
+
+```text
+Study how this Skill has been adapted across GitHub:
+https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md
+```
+
+The agent runs the deterministic pipeline, analyzes mutation groups, and
+presents recurring adaptation motifs with real source links — under strict
+interpretation rules (observed fact vs interpretation vs user-specific
+suggestion, no ancestry claims, no frequency-as-quality). Details and
+validation status: [`docs/agent-skill.md`](docs/agent-skill.md).
+
 ## Mutation archetypes
 
 | Archetype | What it looks like |
@@ -118,6 +137,7 @@ provenance claims. Details: [`docs/archetypes.md`](docs/archetypes.md).
 ```bash
 skillvariants inspect  <url>            # frontmatter, body stats, signals
 skillvariants related  <url> [--mode mutations|closest] [--json]
+skillvariants evidence <url> --json     # agent-facing evidence payload
 skillvariants compare  <url-a> <url-b>  # similarity + structural changes + diff
 ```
 

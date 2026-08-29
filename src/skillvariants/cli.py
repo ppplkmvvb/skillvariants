@@ -24,6 +24,7 @@ from .ranking import (
     ArchetypeBucket,
     build_archetype_map,
     build_variant_row,
+    group_variants,
     representative_score,
     _archetype_signals,
 )
@@ -219,6 +220,167 @@ def _print_fetch_errors(pool_data: dict) -> None:
     if pool_data["fetch_errors"]:
         for error in pool_data["fetch_errors"][:5]:
             console.print(f"[yellow]SKIPPED[/yellow] {error}")
+
+
+_CACHE_DIR_STATE = Path(DEFAULT_CACHE_DIR)
+
+
+def _default_branch(repo_slug: str, cache: dict) -> str:
+    import subprocess
+
+    if repo_slug in cache:
+        return cache[repo_slug]
+    result = subprocess.run(
+        ["gh", "api", f"repos/{repo_slug}", "--jq", ".default_branch"],
+        capture_output=True, text=True, timeout=30,
+    )
+    branch = result.stdout.strip() or "main"
+    cache[repo_slug] = branch
+    return branch
+
+
+def _resolve_group_refs(group_rows: list[dict]) -> None:
+    """Resolve empty refs (older search caches) to each repo's default branch.
+
+    Memoized in-memory and persisted under the cache dir so reruns stay fast.
+    """
+    cache_path = _CACHE_DIR_STATE / "branches.json"
+    cache: dict = {}
+    if cache_path.exists():
+        try:
+            cache = json.loads(cache_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            cache = {}
+    changed = False
+    for row in group_rows:
+        if row["ref"]:
+            continue
+        repo = row["repository"]
+        try:
+            row["ref"] = _default_branch(repo, cache)
+            changed = True
+        except Exception as exc:  # keep evidence flowing; surface on the group
+            row["ref"] = "main"
+            row["ref_resolution_note"] = str(exc)[:200]
+    if changed:
+        try:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_text(json.dumps(cache), encoding="utf-8")
+        except OSError:
+            pass
+
+
+@app.command()
+def evidence(
+    url: str = typer.Argument(..., help="GitHub SKILL.md URL"),
+    max_pages: int = typer.Option(DEFAULT_MAX_PAGES, "--max-pages", min=1, max=10),
+    cache_dir: Path = typer.Option(DEFAULT_CACHE_DIR, "--cache-dir"),
+) -> None:
+    """Stable agent-facing evidence JSON (schema_version=1).
+
+    stdout carries only JSON; progress/warnings go to stderr. Every group
+    includes a direct SKILL.md URL so an agent can trace
+    group -> representative file -> exact GitHub source.
+    """
+    global _CACHE_DIR_STATE
+    _CACHE_DIR_STATE = cache_dir
+    import difflib
+
+    err_console = Console(file=sys.stderr)
+
+    try:
+        pool_data = _build_variant_pool(url, cache_dir, max_pages)
+    except (ValueError, GitHubError) as exc:
+        _exit_usage(exc)
+
+    pool = pool_data["pool"]
+    target_ref = parse_github_url(url)
+    from .features import extract_features
+    from .similarity import normalize_for_hash, sha256
+
+    target_doc = pool_data["target_doc"]
+    target_hash = sha256(normalize_for_hash(target_doc.raw))
+
+    gated = [row for row in pool if row.relatedness >= MIN_RELATEDNESS]
+    groups = group_variants(gated)
+
+    from collections import Counter
+
+    archetype_counts = Counter(g.dominant_type() for g in groups)
+
+    group_rows = []
+    for gid, group in enumerate(groups, start=1):
+        rep = group.representative
+        mf = rep.mutation_features
+        row = {
+            "group_id": gid,
+            "repository": rep.repo,
+            "path": rep.path,
+            "ref": rep.ref,
+            "direct_skill_url": "",
+            "archetype": group.dominant_type(),
+            "relatedness": round(rep.relatedness, 3),
+            "member_count": len(group.members),
+            "occurrence_count": group.member_count,
+            "structural_signals": {
+                "length_delta": round(mf.length_delta_ratio, 3),
+                "headings_added": mf.headings_added_count,
+                "headings_removed": mf.headings_removed_count,
+                "commands_added": mf.command_set_added,
+                "commands_removed": mf.command_set_removed,
+                "cross_skill_ref_delta": mf.cross_skill_ref_delta,
+                "routing_signals": rep.feats.routing_signals[:6],
+                "wrapper_signals": rep.feats.wrapper_signals[:6],
+                "workflow_structure_delta": round(mf.workflow_structure_delta, 3),
+                "placeholder_signal": round(rep.feats.placeholder_signal, 3),
+            },
+            "added_excerpt": "",
+            "removed_excerpt": "",
+        }
+        diff = list(difflib.unified_diff(
+            target_doc.body.splitlines(), rep.doc.body.splitlines(),
+            lineterm="", n=0))
+        added = [line[1:].strip()[:160] for line in diff
+                 if line.startswith("+") and line[1:].strip()]
+        removed = [line[1:].strip()[:160] for line in diff
+                   if line.startswith("-") and line[1:].strip()]
+        row["added_excerpt"] = " | ".join(added[:3])[:900]
+        row["removed_excerpt"] = " | ".join(removed[:3])[:900]
+        group_rows.append(row)
+
+    _resolve_group_refs(group_rows)
+    for row in group_rows:
+        row["direct_skill_url"] = (
+            f"https://github.com/{row['repository']}/blob/"
+            f"{row['ref']}/{row['path']}"
+        )
+
+    payload = {
+        "schema_version": "1",
+        "target": {
+            "repository": target_ref.repo_slug,
+            "path": target_ref.path,
+            "ref": target_ref.ref,
+            "direct_skill_url": (
+                f"https://github.com/{target_ref.repo_slug}/blob/"
+                f"{target_ref.ref}/{target_ref.path}"
+            ),
+            "name": pool_data["target"]["name"],
+            "normalized_hash": target_hash,
+        },
+        "summary": {
+            "candidate_count": pool_data["counts"]["candidates_total"],
+            "related_variant_count": pool_data["counts"]["unique_variants"],
+            "exact_copy_count": pool_data["counts"]["exact_copies_of_target"],
+            "mutation_group_count": len(groups),
+            "broad_archetype_counts": dict(archetype_counts),
+        },
+        "groups": group_rows,
+    }
+    emit_json(payload)
+    if pool_data["fetch_errors"]:
+        for error in pool_data["fetch_errors"][:5]:
+            err_console.print(f"[yellow]SKIPPED[/yellow] {error}")
 
 
 def _build_mutations_payload(pool_data: dict, limit: int) -> dict:

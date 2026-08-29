@@ -1,0 +1,1885 @@
+{
+  "schema_version": "1",
+  "target": {
+    "repository": "anthropics/skills",
+    "path": "skills/frontend-design/SKILL.md",
+    "ref": "main",
+    "direct_skill_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "name": "frontend-design",
+    "normalized_hash": "57cf1134b36c816ac2fc52f6a194948ccee4cbe79fe780ab365b73641b2b467a"
+  },
+  "summary": {
+    "candidate_count": 300,
+    "related_variant_count": 189,
+    "exact_copy_count": 12,
+    "mutation_group_count": 68,
+    "broad_archetype_counts": {
+      "body-copy-with-metadata-change": 1,
+      "compact-rewrite": 14,
+      "workflow-specialization": 33,
+      "routing-specialization": 9,
+      "no-label": 6,
+      "expanded-guidance": 4,
+      "compatibility-wrapper": 1
+    }
+  },
+  "groups": [
+    {
+      "group_id": 1,
+      "repository": "doordash-oss/agentic-orchestrator",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/doordash-oss/agentic-orchestrator/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "body-copy-with-metadata-change",
+      "relatedness": 1.0,
+      "member_count": 4,
+      "occurrence_count": 15,
+      "structural_signals": {
+        "length_delta": 0.0,
+        "headings_added": 0,
+        "headings_removed": 0,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "",
+      "removed_excerpt": ""
+    },
+    {
+      "group_id": 2,
+      "repository": "Microck/ordinary-claude-skills",
+      "path": "skills_all/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Microck/ordinary-claude-skills/blob/main/skills_all/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.488,
+      "member_count": 44,
+      "occurrence_count": 110,
+      "structural_signals": {
+        "length_delta": -0.503,
+        "headings_added": 2,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 3,
+      "repository": "panin-glitch/EatLock",
+      "path": "general skills/.codebuddy/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/panin-glitch/EatLock/blob/main/general skills/.codebuddy/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.519,
+      "member_count": 7,
+      "occurrence_count": 10,
+      "structural_signals": {
+        "length_delta": 0.136,
+        "headings_added": 13,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.462,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | ## Context Gathering Protocol",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 4,
+      "repository": "benjaminasterA/antigravity-awesome-skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/benjaminasterA/antigravity-awesome-skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.472,
+      "member_count": 7,
+      "occurrence_count": 19,
+      "structural_signals": {
+        "length_delta": -0.202,
+        "headings_added": 30,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.2,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design (Distinctive, Production-Grade) | You are a **frontend designer-engineer**, not a layout generator.",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 5,
+      "repository": "darthlinuxer/Agentic-Skills",
+      "path": ".cursor/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/darthlinuxer/Agentic-Skills/blob/main/.cursor/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.442,
+      "member_count": 7,
+      "occurrence_count": 10,
+      "structural_signals": {
+        "length_delta": 0.53,
+        "headings_added": 44,
+        "headings_removed": 6,
+        "commands_added": [
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "heading: Related Skills",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.136,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design System | > **🛠️ MCP Tools Available**:",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 6,
+      "repository": "diegosouzapw/awesome-omni-skills",
+      "path": "skills/frontend-design-v5/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/diegosouzapw/awesome-omni-skills/blob/main/skills/frontend-design-v5/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.363,
+      "member_count": 5,
+      "occurrence_count": 5,
+      "structural_signals": {
+        "length_delta": 0.868,
+        "headings_added": 51,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 6,
+        "routing_signals": [
+          "heading: Related Skills",
+          "owns",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.118,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design (Distinctive, Production-Grade) | ## Overview",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 7,
+      "repository": "space-ast/ast",
+      "path": ".claude/skills/frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/space-ast/ast/blob/master/.claude/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.488,
+      "member_count": 2,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.509,
+        "headings_added": 11,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Create distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aest | ## Design Thinking",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 8,
+      "repository": "archibate/dotfiles-opencode",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/archibate/dotfiles-opencode/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.477,
+      "member_count": 2,
+      "occurrence_count": 3,
+      "structural_signals": {
+        "length_delta": -0.463,
+        "headings_added": 14,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.429,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | Design and implement memorable frontend interfaces with a clear, intentional aesthetic. The output must be real, working code — not just mood boards. This skill",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 9,
+      "repository": "rahulgupta2018/ai-software-factory",
+      "path": "vendor-skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/rahulgupta2018/ai-software-factory/blob/main/vendor-skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.8,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.073,
+        "headings_added": 4,
+        "headings_removed": 0,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.4,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Overview | Approach this as the design lead at a small studio known for giving every client a visual identity",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single "
+    },
+    {
+      "group_id": 10,
+      "repository": "quocthinhthan/Portfolio",
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/quocthinhthan/Portfolio/blob/main/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.598,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.361,
+        "headings_added": 3,
+        "headings_removed": 2,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 0.714,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Approach this as a careful design pass for an existing personal portfolio, not a blank-canvas rebrand. Make deliberate choices about spacing, hierarchy, motion, | Read `.agents/PROJECT_CONTEXT.md` before making design changes. Treat this as a Vietnamese/English personal site for a backend-oriented software engineering stu",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single "
+    },
+    {
+      "group_id": 11,
+      "repository": "ecocee/skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ecocee/skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.519,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.02,
+        "headings_added": 15,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | A skill for building distinctive, production-grade frontend interfaces with | genuine aesthetic direction. Every output is intentional, cohesive, and",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 12,
+      "repository": "mrobbys/growth-landing-page",
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/mrobbys/growth-landing-page/blob/main/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.5,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.142,
+        "headings_added": 5,
+        "headings_removed": 6,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.833,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # PERSONA & TEACHING STYLE (BASE SYSTEM) | You are a Senior Software Engineer and an expert Technical Mentor. You strictly adhere to Clean Code, Software Architecture, Security, and industry Best Practic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 13,
+      "repository": "studio-jami/jami-studio",
+      "path": "templates/forms/.agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/studio-jami/jami-studio/blob/main/templates/forms/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.507,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.292,
+        "headings_added": 8,
+        "headings_removed": 5,
+        "commands_added": [
+          "go",
+          "pnpm"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "heading: Related Skills",
+          "owns",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.444,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with strong product judgment, excellent accessibili | The user may ask for a component, page, full app, dashboard, marketing surface, or restyle. Before coding, understand the audience and pick a direction that fit",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 14,
+      "repository": "ediktedrnd/dataviz-plugin",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ediktedrnd/dataviz-plugin/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.497,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.191,
+        "headings_added": 7,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.857,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 15,
+      "repository": "rongxinzy/RongxinAI",
+      "path": "SKILLs/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/rongxinzy/RongxinAI/blob/main/SKILLs/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.504,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.245,
+        "headings_added": 5,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.833,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 16,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/data/mobile-fronted/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/data/mobile-fronted/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.498,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.224,
+        "headings_added": 2,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 17,
+      "repository": "Everfern-AI/Everfern",
+      "path": "main/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Everfern-AI/Everfern/blob/main/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.501,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.277,
+        "headings_added": 7,
+        "headings_removed": 5,
+        "commands_added": [
+          "python"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.047
+      },
+      "added_excerpt": "++ | Use this skill whenever the task touches frontend appearance or interaction: building UI, editing app screens, improving UX, styling components, creating web ar | The goal is clean, intentional, production-grade UI that looks designed for the product, not generated from a generic template.",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 18,
+      "repository": "luongnv89/skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/luongnv89/skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.506,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.419,
+        "headings_added": 17,
+        "headings_removed": 5,
+        "commands_added": [
+          "bash",
+          "git"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.222,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Create distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aest | ## When to Use",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 19,
+      "repository": "thatrebeccarae/claude-marketing",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/thatrebeccarae/claude-marketing/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.472,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.137,
+        "headings_added": 23,
+        "headings_removed": 5,
+        "commands_added": [
+          "bash",
+          "git",
+          "npm"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.167,
+        "placeholder_signal": 0.02
+      },
+      "added_excerpt": "++ | Create distinctive, production-grade web interfaces that avoid generic AI aesthetics. | ## Install",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 20,
+      "repository": "tschuehly/lexware",
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tschuehly/lexware/blob/main/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.496,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.264,
+        "headings_added": 4,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 21,
+      "repository": "ShintaroaSuzuki/shintaroasuzuki-plugins",
+      "path": "plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/ShintaroaSuzuki/shintaroasuzuki-plugins/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.501,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.332,
+        "headings_added": 2,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 22,
+      "repository": "lxyeternal/MalSkillBench",
+      "path": "Dataset/Skills/malware/frontend-design__MIXED_B8/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/lxyeternal/MalSkillBench/blob/main/Dataset/Skills/malware/frontend-design__MIXED_B8/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.494,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.305,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "curl",
+          "node"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 23,
+      "repository": "pavanchanduri/expense-tracker",
+      "path": ".claude/skills/frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/pavanchanduri/expense-tracker/blob/master/.claude/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.443,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.126,
+        "headings_added": 12,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "don't use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Spendly UI Designer | You are designing frontend UI for **Spendly**, a personal expense tracker. Spendly is a Flask app with server-rendered Jinja2 templates, vanilla CSS, and a spri",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 24,
+      "repository": "julianoczkowski/designer-skills",
+      "path": "frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/julianoczkowski/designer-skills/blob/main/frontend-design/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.493,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.442,
+        "headings_added": 14,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.429,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with exceptional attention to aesthetic detail. | ## Example prompts",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 25,
+      "repository": "Necaifia/RepublicOS",
+      "path": ".skill-engine/store/agent-skills/cline/test/frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/Necaifia/RepublicOS/blob/master/.skill-engine/store/agent-skills/cline/test/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.503,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.364,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 26,
+      "repository": "roerohan/skills",
+      "path": "frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/roerohan/skills/blob/main/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.464,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.193,
+        "headings_added": 12,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.308,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | UI/UX principles for building well-designed, accessible, maintainable React interfaces. | **Context:** This skill assumes React as the UI layer, typically with a meta-framework (TanStack Start, Next.js, Remix, etc.) and a styling approach (Tailwind, ",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 27,
+      "repository": "julianromli/opencode-template",
+      "path": "skill/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/julianromli/opencode-template/blob/main/skill/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.5,
+      "member_count": 1,
+      "occurrence_count": 5,
+      "structural_signals": {
+        "length_delta": -0.352,
+        "headings_added": 3,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 28,
+      "repository": "David-Li0406/meta-skill-evloving",
+      "path": "skill-flow/data/skills-refined-autoskill-36k/skillsmp/frontend-design-69/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-autoskill-36k/skillsmp/frontend-design-69/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.494,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.376,
+        "headings_added": 9,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | <!-- Based on official Anthropic skill: https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md --> | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 29,
+      "repository": "YosemiteCrew/Yosemite-Crew",
+      "path": ".claude/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/YosemiteCrew/Yosemite-Crew/blob/main/.claude/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.449,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.189,
+        "headings_added": 14,
+        "headings_removed": 6,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "do not use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.429,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design System - Yosemite Crew | ## Description",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 30,
+      "repository": "gvkhosla/compound-engineering-pi",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/gvkhosla/compound-engineering-pi/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.497,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.73,
+        "headings_added": 27,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 3,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.143,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Guide creation of distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. This skill covers the full lifecycle: detect what exists,  | ## Authority Hierarchy",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 31,
+      "repository": "tim-smart/cheffect",
+      "path": ".agents/skills/frontend/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/tim-smart/cheffect/blob/main/.agents/skills/frontend/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.49,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.395,
+        "headings_added": 2,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 32,
+      "repository": "majiayu000/claude-skill-registry",
+      "path": "skills/design/frontend-design-smooth-operation-household-expense-tr/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/design/frontend-design-smooth-operation-household-expense-tr/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.466,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.384,
+        "headings_added": 27,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 3,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.143,
+        "placeholder_signal": 0.01
+      },
+      "added_excerpt": "++ | ## Core Principle | When building frontend interfaces, create distinctive, production-grade designs with intentional aesthetic direction. Avoid generic \"AI slop\" aesthetics that la",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 33,
+      "repository": "saberzou/agent-terrarium",
+      "path": "skills/superdesign/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/saberzou/agent-terrarium/blob/main/skills/superdesign/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.447,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.264,
+        "headings_added": 13,
+        "headings_removed": 6,
+        "commands_added": [
+          "npm"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.462,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | Use this skill when creating UI components, landing pages, dashboards, or any frontend design work.",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 34,
+      "repository": "TanNhatCMS/awesome-trae-agent",
+      "path": ".trae/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/TanNhatCMS/awesome-trae-agent/blob/main/.trae/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.499,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.468,
+        "headings_added": 5,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.833,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # frontend-design | > Adapted from Anthropic's official `frontend-design` skill for Open Design.",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 35,
+      "repository": "diegosouzapw/awesome-omni-skill",
+      "path": "skills/development/frontend-design-play-makers/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/diegosouzapw/awesome-omni-skill/blob/main/skills/development/frontend-design-play-makers/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.462,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.35,
+        "headings_added": 19,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.316,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | This skill is invoked when building web components, pages, or applications. It focuses on generating creative, polished code with attention to aesthetic details",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 36,
+      "repository": "samilozturk/agentlint",
+      "path": "skills/frontend/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/samilozturk/agentlint/blob/main/skills/frontend/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.45,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.297,
+        "headings_added": 24,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "npm",
+          "npx"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "don't use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Skill: Frontend Design | ## When to Use",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 37,
+      "repository": "Catsofsuffering/ccsm",
+      "path": "templates/skills/domains/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Catsofsuffering/ccsm/blob/main/templates/skills/domains/frontend-design/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.461,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.578,
+        "headings_added": 24,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design (Impeccable Fusion Edition) | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. It fuses [Impeccable](https://github.co",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 38,
+      "repository": "xsefirosus/sefi-agents",
+      "path": "plugins/sefi-core/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/xsefirosus/sefi-agents/blob/main/plugins/sefi-core/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.482,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.461,
+        "headings_added": 3,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design -- anti-slop craft | Craft skill backing the ui-ux-designer and the software-engineer above the API seam.",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 39,
+      "repository": "dangindev/antigravity-awesome-workspace-skill",
+      "path": "skill_library/everything-claude-code/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/dangindev/antigravity-awesome-workspace-skill/blob/main/skill_library/everything-claude-code/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.5,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.554,
+        "headings_added": 15,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.25,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this when the task is not just \"make it work\" but \"make it look designed.\" | This skill is for product pages, dashboards, app shells, components, or visual systems that need a clear point of view instead of generic AI-looking UI.",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 40,
+      "repository": "mohitagw15856/pm-claude-skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.469,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.44,
+        "headings_added": 8,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.75,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | AI-generated UI has a recognisable smell: default blues, five different paddings, everything the same visual weight, no states. This skill produces interfaces t",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 41,
+      "repository": "dawsonblock/agent_eval_skills_merged_clean",
+      "path": "agent-skills-curated/skills/web-and-frontend-development/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/dawsonblock/agent_eval_skills_merged_clean/blob/main/agent-skills-curated/skills/web-and-frontend-development/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.464,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.441,
+        "headings_added": 14,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.267,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Create memorable interfaces with clear artistic direction and production-ready implementation. | ## Scope",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 42,
+      "repository": "enbyaugust/zacs-claude-skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/enbyaugust/zacs-claude-skills/blob/master/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.471,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.485,
+        "headings_added": 12,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.308,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. | <when_to_use>",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 43,
+      "repository": "projectious-work/aibox",
+      "path": "context/templates/processkit/v0.26.18/context/skills/design/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/projectious-work/aibox/blob/main/context/templates/processkit/v0.26.18/context/skills/design/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.456,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 0.764,
+        "headings_added": 16,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.235,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | ## Intro | Good frontend design starts with semantic HTML, small",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 44,
+      "repository": "Houseofmvps/ultraship",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Houseofmvps/ultraship/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "expanded-guidance",
+      "relatedness": 0.473,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 1.107,
+        "headings_added": 8,
+        "headings_removed": 6,
+        "commands_added": [
+          "go"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.75,
+        "placeholder_signal": 0.018
+      },
+      "added_excerpt": "++ | This skill combines three disciplines: **product design** (does it solve the right problem?), **UX design** (can users accomplish their goals without friction?) | The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technic",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 45,
+      "repository": "dr4ken-soul/Mnemix",
+      "path": "FRONTEND_SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/dr4ken-soul/Mnemix/blob/master/FRONTEND_SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.559,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 21.114,
+        "headings_added": 141,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "go",
+          "npm",
+          "npx"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.043,
+        "placeholder_signal": 0.002
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | You are a senior frontend engineer and product designer. You build interfaces that feel premium, intentional and alive. You never produce generic AI output. Eve",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 46,
+      "repository": "baralmanish/AI-Agent-Skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/baralmanish/AI-Agent-Skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.466,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.545,
+        "headings_added": 4,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.5,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Create distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aest | ## Design Thinking",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 47,
+      "repository": "diegosouzapw/awesome-omni-skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/diegosouzapw/awesome-omni-skills/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.471,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 1.401,
+        "headings_added": 37,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 5,
+        "routing_signals": [
+          "heading: Related Skills",
+          "owns",
+          "related skills"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.162,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # frontend-design | ## Overview",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 48,
+      "repository": "byerlikaya/claude-starter-kit",
+      "path": "plugin/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/byerlikaya/claude-starter-kit/blob/main/plugin/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.44,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.495,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 2,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design (visual & UX quality) | <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 49,
+      "repository": "ceilf6/FrontAgent",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "develop",
+      "direct_skill_url": "https://github.com/ceilf6/FrontAgent/blob/develop/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.464,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.613,
+        "headings_added": 5,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this skill to produce frontend work that feels intentionally designed rather than generic. The goal is not maximalism by default. The goal is a clear visual | ## Trigger",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 50,
+      "repository": "escoffier-labs/solos-cookbook",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/escoffier-labs/solos-cookbook/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.49,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.72,
+        "headings_added": 13,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.286,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | > Attribution: inspired by Anthropic's `frontend-design` skill for Claude Code. This is a rewritten, trimmed-down variant, not the original. | Do not ship default-looking UI.",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 51,
+      "repository": "time-ofourlife/OCEAN-OF-NMIXX",
+      "path": ".codex_tmp/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/time-ofourlife/OCEAN-OF-NMIXX/blob/main/.codex_tmp/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.468,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.661,
+        "headings_added": 2,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this skill when the task is mainly frontend design, visual polish, or UI implementation quality. | The goal is to produce working code that feels deliberate and memorable rather than generic. Favor strong aesthetic choices, careful hierarchy, and high-quality",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 52,
+      "repository": "dlwlgus9125/EZPowers",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/dlwlgus9125/EZPowers/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.439,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.58,
+        "headings_added": 3,
+        "headings_removed": 5,
+        "commands_added": [
+          "npx",
+          "python"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Settle the UI contract before implementation. Produce a broad frontend artifact | and, for each independent visual brand, a machine-readable `DESIGN.md`.",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 53,
+      "repository": "xenitV1/claude-code-maestro",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/xenitV1/claude-code-maestro/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "workflow-specialization",
+      "relatedness": 0.411,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.466,
+        "headings_added": 5,
+        "headings_removed": 6,
+        "commands_added": [
+          "node"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.833,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | <domain_overview> | # Frontend Design System",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 54,
+      "repository": "benshapyro/cadre-devkit-claude",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/benshapyro/cadre-devkit-claude/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.452,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.674,
+        "headings_added": 11,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | Create distinctive, memorable user interfaces that avoid generic AI aesthetics.",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 55,
+      "repository": "anphuc2005/ImageSharpenAI",
+      "path": "ImageSharpenAI/.agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/anphuc2005/ImageSharpenAI/blob/main/ImageSharpenAI/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.498,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 10.018,
+        "headings_added": 122,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "git",
+          "go",
+          "npm",
+          "npx",
+          "yarn"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "do not use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.049,
+        "placeholder_signal": 0.003
+      },
+      "added_excerpt": "++ | > **Style variants & tools** — read the matching file only when the brief calls for it: | >",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 56,
+      "repository": "rahmanqolbi/portofolio-rhmnq",
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/rahmanqolbi/portofolio-rhmnq/blob/main/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.431,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.611,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Flagship Frontend Design Skill (Official Blueprint) | This skill guides the creation of distinctive, production-grade web interfaces that completely avoid the generic, boring, and sterile \"AI slop\" aesthetics. When",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 57,
+      "repository": "duyet/skills",
+      "path": "frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/duyet/skills/blob/master/frontend-design/SKILL.md",
+      "archetype": "routing-specialization",
+      "relatedness": 0.43,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": 1.544,
+        "headings_added": 39,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "npx"
+        ],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [
+          "don't use",
+          "owns"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.154,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with except | ## When to Invoke This Skill",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 58,
+      "repository": "zszz3/AgentRecall",
+      "path": "apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/zszz3/AgentRecall/blob/main/apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.456,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.755,
+        "headings_added": 5,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Create interfaces with a clear point of view instead of assembling familiar defaults. | ## Before coding",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 59,
+      "repository": "Abdullahmohammadaref/acar",
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "ref": "master",
+      "direct_skill_url": "https://github.com/Abdullahmohammadaref/acar/blob/master/.agents/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.412,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.575,
+        "headings_added": 8,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.75,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This skill guides the creation of production-grade financial interfaces that avoid \"generic dashboard\" aesthetics. It prioritizes data density, mathematical leg | ## Design Thinking for Finance",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 60,
+      "repository": "Marcus-Mok-GH/Summachat-V2",
+      "path": ".cursor/skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/Marcus-Mok-GH/Summachat-V2/blob/main/.cursor/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.48,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.969,
+        "headings_added": 3,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.571
+      },
+      "added_excerpt": "++ | ## Overview | Make the AI very good in frontend design, making it user, mobile, desktop and device friendly",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 61,
+      "repository": "IncomeStreamSurfer/claude-skills-collection",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/IncomeStreamSurfer/claude-skills-collection/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.418,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.706,
+        "headings_added": 9,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.667,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Skill | ## Core Principle",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 62,
+      "repository": "OpenBMB/PilotDeck",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/OpenBMB/PilotDeck/blob/main/skills/frontend-design/SKILL.md",
+      "archetype": "compact-rewrite",
+      "relatedness": 0.36,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.859,
+        "headings_added": 3,
+        "headings_removed": 5,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.333,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | Use this skill when creating or reviewing frontend UI where visual quality matters. | ## Workflow",
+      "removed_excerpt": "-- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has | ## Ground it in the subject"
+    },
+    {
+      "group_id": 63,
+      "repository": "Rain120/qq-music-api",
+      "path": "skills/frontend-design/SKILL.md",
+      "ref": "next",
+      "direct_skill_url": "https://github.com/Rain120/qq-music-api/blob/next/skills/frontend-design/SKILL.md",
+      "archetype": "compatibility-wrapper",
+      "relatedness": 0.45,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.97,
+        "headings_added": 0,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 3,
+        "routing_signals": [],
+        "wrapper_signals": [
+          "canonical skill",
+          "compatibility wrapper",
+          "frontmatter: canonical_skill"
+        ],
+        "workflow_structure_delta": 1.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | This is a project-facing compatibility wrapper. | - Canonical skill: `../../.skills/frontend-design/SKILL.md`",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 64,
+      "repository": "matteocervelli/llms",
+      "path": ".archive/frontend-design-system/skills/_archive/frontend-design-fix-vue/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/matteocervelli/llms/blob/main/.archive/frontend-design-system/skills/_archive/frontend-design-fix-vue/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.337,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.07,
+        "headings_added": 26,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.231,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Fix - Vue | ## Overview",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 65,
+      "repository": "phoroth/AGENTIC",
+      "path": "plugins/ecc/skills/frontend-design-direction/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/phoroth/AGENTIC/blob/main/plugins/ecc/skills/frontend-design-direction/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.399,
+      "member_count": 1,
+      "occurrence_count": 2,
+      "structural_signals": {
+        "length_delta": -0.494,
+        "headings_added": 6,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [],
+        "cross_skill_ref_delta": 1,
+        "routing_signals": [
+          "do not use"
+        ],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 2.0,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Direction | Use this skill when the work is not just making UI function, but making it feel",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 66,
+      "repository": "zangxin75/openclaw-skills",
+      "path": "frontend-design-ultimate/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/zangxin75/openclaw-skills/blob/main/frontend-design-ultimate/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.332,
+      "member_count": 1,
+      "occurrence_count": 3,
+      "structural_signals": {
+        "length_delta": 0.271,
+        "headings_added": 39,
+        "headings_removed": 6,
+        "commands_added": [
+          "bash",
+          "npm",
+          "npx",
+          "sh"
+        ],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.154,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Ultimate | Create distinctive, production-grade static sites from text requirements alone. No mockups, no Figma — just describe what you want and get bold, memorable desig",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 67,
+      "repository": "majiayu000/claude-skill-registry-data",
+      "path": "data/frontend-design-review/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/data/frontend-design-review/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.336,
+      "member_count": 1,
+      "occurrence_count": 3,
+      "structural_signals": {
+        "length_delta": 0.492,
+        "headings_added": 19,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.316,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Review | ## Overview",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    },
+    {
+      "group_id": 68,
+      "repository": "CUBETIQ/cubis-foundry",
+      "path": "workflows/workflows/agent-environment-setup/platforms/antigravity/skills/frontend-design-style-selector/SKILL.md",
+      "ref": "main",
+      "direct_skill_url": "https://github.com/CUBETIQ/cubis-foundry/blob/main/workflows/workflows/agent-environment-setup/platforms/antigravity/skills/frontend-design-style-selector/SKILL.md",
+      "archetype": "no-label",
+      "relatedness": 0.332,
+      "member_count": 1,
+      "occurrence_count": 1,
+      "structural_signals": {
+        "length_delta": -0.83,
+        "headings_added": 5,
+        "headings_removed": 6,
+        "commands_added": [],
+        "commands_removed": [
+          "make"
+        ],
+        "cross_skill_ref_delta": 0,
+        "routing_signals": [],
+        "wrapper_signals": [],
+        "workflow_structure_delta": 1.833,
+        "placeholder_signal": 0.0
+      },
+      "added_excerpt": "++ | # Frontend Design Style Selector | ## Purpose",
+      "removed_excerpt": "-- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has"
+    }
+  ]
+}

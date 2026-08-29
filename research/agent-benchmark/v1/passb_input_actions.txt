@@ -1,0 +1,212 @@
+distinct actions: 211
+  6  Add explicit hard-gate implementation lock
+  1  Require announcing activation before debugging
+  1  Route completion verification to a separate verification Skill
+  1  Add concrete numbered sub-steps inside each phase
+  1  Add project-specific debugging commands
+  1  Split debugging into reproduce/isolate phases with quantitative rate
+  1  Rewrite methodology as hypothesis-driven data-flow-traced process
+  1  Add violation-indicator red flags
+  1  Compact four-phase structure with sparse section removal
+  1  Add explicit routing boundary: do not use outside debugging
+  1  Restructure to red-flags-stop process with mandatory phase ordering
+  1  Route failing-test writing to TDD skill and verification to separate skill
+  1  Swap superpowers:-style skill references to unqualified local references
+  1  Add trigger-context to iron-law phrasing
+  1  Add repo-local nix purity rule and route to related skills
+  1  Explicitly cite lineage as Lifted-from-superpowers and slim
+  1  Add dedicated Related Skills heading with 6 cross-skill refs
+  1  Add escalation rule after 3+ failed fixes
+  1  Add red flags returning to Phase 1
+  1  Add The Feedback Loop Rule heading
+  1  Rename phases to Hypothesis Formation / Minimal Fix / Verification
+  1  Add Feedback Loop Rule and example-driven guidance (expanded)
+  1  Add expanded ESPECIALLY-when guidance + python tooling
+  1  Add explicit per-command debugging guidance (npx/pipx)
+  1  Add mandatory-phase-order enforcement marker
+  1  Add 3+ fixes fail escalation handler
+  1  Add slash-command usage wrapper
+  1  Add bail-out check before Phase 1
+  1  Add Related Skills heading with cross-skill route
+  1  Add explicit Purpose section with goals
+  1  Replace four phases with observed workflow + Hard Gates + output contract
+  1  Add The 3-failures rule plus red-flag return to Phase 1
+  1  Restructure around capture symptom / build feedback loop / reproduce or bound
+  1  Add stop-after-3-failed-attempts rule
+  1  Add check-the-obvious-first and backward tracing technique
+  1  Trim overview to shorter trigger; shorten iron law
+  1  Compress to 4-step flow REPRODUCE/ISOLATE/UNDERSTAND/FIX with one-change-at-a-time rule
+  1  Anchor as anti-pattern guard and add escalation rule
+  1  Require minimal reproducible case; never fix what you cannot reproduce
+  1  Force ordered steps Read-error/Understand-code/Identify-root-cause/Fix-and-verify
+  1  Frame as scientific method with OBSERVE/HYPOTHESIZE/PREDICT and environment-specific repro
+  1  Add explicit Verification phase and Related Skills routing
+  1  Add supporting references plus red flags
+  1  Add Core Principle section with process-violation flags
+  1  Add The 3-Fix Rule; preserve core principle while compressing
+  1  Translate and restructure to a distinct language variant
+  1  Add Three-fix circuit breaker + red flags as return-to-phase-1
+  1  Rebuild as disciplined evidence framework with output format + debugging report
+  1  Add Using-the-Debugger handler (Windows/PowerShell)
+  1  Reduce to 4 phases each with one focused action
+  1  Add activation signals + stabilize-report/narrow-surface/instrument phases
+  1  Add git bisect workflow to isolate failure commit
+  1  Add 5-step order with scale-depth-to-problem guidance
+  1  Compress into Core-Rule + Workflow + When-stuck; add stop-when-stuck rule
+  1  Add Emergency Stop Rule + orientation with use/don't-use boundaries
+  1  Adapt iron law into never-guess and resist-impulse
+  1  Add single-hypothesis test escape clause: 3 failed fixes = framing is wrong
+  1  Add Invocation + Refuse Gate (do not proceed without prerequisites)
+  1  Add stop conditions + 5-step loop; stop after bad guesses
+  1  Import Fagan Inspection methodology as novel workflow
+  1  Rebuild as first-person What-I-Do phases REPRODUCE/ISOLATE/IDENTIFY/FIX
+  1  Start with evidence-not-guesses; minimal repro command rule
+  1  Add disciplined loop + anti-patterns + when-stuck
+  1  Add one-hypothesis-at-a-time + falsify via instrumentation
+  1  Add reproduction gate sign-off + feedback-loop quality criteria
+  1  Add Key Rules + Tool Use sections
+  1  Add Debugging Commands section + 4-phase repro/isolate/identify/fix
+  1  Add Three-Attempt Cap + trigger conditions
+  1  Add checklist of anti-patterns + techniques-by-symptom + invariant rules with context-budg
+  1  Add reproduce-or-don't-fix rule; unstructured but strong
+  1  Korean-language rebuild; mandatory phases + critical rules
+  1  Route to debug-assistant escalation + command safety
+  1  Add ranked-hypotheses + cheapest-falsification-check rule
+  1  Add Evidence-First + One-Variable-at-a-Time core principles
+  1  Add goals / hard rules / read-first structure
+  1  Add git bisect isolation workflow
+  1  Build as project-specific surfaces + guardrails with workflow
+  1  Add 5-step loop never-skip rule
+  1  Add procedure + example; minimal
+  1  Minimal loop + output; evidence-first
+  1  Given project-specific; preserve iron law
+  1  Restructured workflow with explicit trigger
+  1  Evidence-gathering phase dedicated
+  1  Add instrument/photograph-instrument loop before hypothesizing
+  1  Compact with invoke/refuse gate
+  1  Given project-specific commands
+  1  Replace persona framing with generic anti-slop guidelines (template propagation)
+  1  Add context-gathering protocol before design direction
+  1  Add quantitative design-scoring formula (DFII)
+  1  Add mandatory ask-before-assuming gate
+  1  Add selective-reading tool routing
+  1  Add intake-copy packaging with routing headers
+  1  Adopt anti-slop guidelines template
+  1  Add explicit inputs-to-gather-or-assume contract
+  1  Add when-to-activate trigger paragraph
+  1  Add project-specific context loading (PROJECT_CONTEXT.md)
+  1  Convert process into explicit ordered steps with design-before-code gates
+  1  Rewrite as persona/mentorship guide
+  1  Add framework-specific design rules (shadcn/ui)
+  1  Add domain-specific rules (data-viz/dashboard)
+  1  Add evaluation suite and delivery gate
+  1  Add framework-specific implementation rules (React/Next.js)
+  1  Add mandatory repo-sync-before-edits rule
+  1  Add install instructions
+  1  Add platform-specific rendering rules (mobile/safari + design-system doc link)
+  1  Add benchmark-dataset packaging
+  1  Add product-specific design language and stack rules (Spendly)
+  1  Add curated aesthetic-philosophy library
+  1  Add decision-tree and spacing-system quick reference
+  1  Add design-system reuse-before-create rules
+  1  Add context-detection and authority hierarchy before design
+  1  Add numbered iron-law requirements
+  1  Add phase-0 design-thinking gate with do/don't table
+  1  Add source/license attribution header + adaptation note
+  1  Add skill-scope contract (when-to-use/scope/included/excluded/inputs)
+  1  Fuse two source skills into combined edition
+  1  Reorder workflow: frame interface before visual system
+  1  Add design-system-first workflow (system before UI)
+  1  Add 4-step definition/constraint/implement/refine workflow
+  1  Add accessibility-first and semantic-HTML scaffolding rules
+  1  Split skill into product/UX/visual design disciplines
+  1  Add huge mega-file with brief-inference mandator (absorber)
+  1  Add ordered-levers hierarchy and invariant rules
+  1  Add trigger/do-not-use/output-contract guardrails
+  1  Add attribution header to trimmed rewrite
+  1  Add machine-readable design contract (DESIGN.md) before implementation
+  1  Add pre-implementation planning checklist
+  1  Add style-variant routing table and brief inference (in absorber mega-file)
+  1  Add 5-section flagship blueprint
+  1  Add technology-stack priority ordering rules
+  1  Add verify + visual-discipline output contract
+  1  Add finance-domain-specific design rules
+  1  Add review checklist and migration note
+  1  Add canonical-path compatibility wrapper redirect
+  1  Adapt to framework-specific (Vue) application
+  1  Add extreme-tone commitment rule
+  1  Add style-selector pre-gate before any screen work
+  1  Add workflow-mode guard gate
+  1  Simplify to overview/process/after-design template (propagation)
+  1  Adopt checklist/process-flow template (propagation)
+  1  Add mandatory non-functional-requirements phase
+  1  Add explicit phase split with worktree handoff
+  1  Add provenance/source annotations and thin wrapper
+  1  Add greenfield-project specialization path
+  1  Add environment-availability (prompt-prefix) trigger guard
+  1  Add rationalization catalogue and post-violation recovery
+  1  Add planner-handoff output boundary
+  1  Add session-detection preamble and completion status
+  1  Add greenfield bootstrap path and domain-language register
+  1  Add TBDs log and reporting model
+  1  Add progress-tracking and when-to-use contract
+  1  Reorder to when-to-use/how-to-use structure
+  1  Add related-skill routing (worktrees/plans)
+  1  Add existing-codebase-specific working rules
+  1  Add goal/design-review/after-approval structure
+  1  Add multi-phase gates (hard gate/research gate/spec self-review)
+  1  Add ownership and required-output contract
+  1  Add when-to-use/when-not-to-use boundary
+  1  Add save-location rule and questioning rules
+  1  Add 5-phase structure with design-documentation phase
+  1  Add project-conventions application rules
+  1  Add problem/solution/user-stories spec structure
+  1  Add requirement-traceability hard rule (B#/F#)
+  1  Add stop conditions and fallback path
+  1  Add interactive-tool (AskUserQuestion) usage protocol
+  1  Add one-question-at-a-time dialogue rules
+  1  Add lite-output tier with bilingual adaptation
+  1  Add scale guard for process depth
+  1  Add tool-parameter contract for ask_questions
+  1  Add mandatory skill-chain and session-resumption protocol
+  1  Add use-when/do-not-use boundary
+  1  Add single-output handoff (agreed design only)
+  1  Add design/challenge mode split
+  1  Add ownership/delegation boundary
+  1  Add comprehensive question-generation analysis
+  1  Add anti-pattern catalogue and task-spec output
+  1  Add reframe-before-you-build phase
+  1  Add agent-assignment output contract
+  1  Add project-document-first rules (DESIGN/PRD/GOAL)
+  1  Add mandatory brainstorming-report and red-flag stop
+  1  Add proportional-depth scaling with premortem check
+  1  Add restate-goal and missing-constraints step
+  1  Add explicit diverge/converge two-phase split
+  1  Translate bilingual and add decision-tree companion
+  1  Add hard gate with filesystem-first context and design-doc template
+  1  Add open-ended-trigger and handoff
+  1  Add one-question-at-a-time iron law
+  1  Add deep decision-tree interview protocol
+  1  Add domain/architecture/security check gates (project-specific)
+  1  Add validation-criteria phase
+  1  Add when-to-trigger matrix and resources
+  1  Add trigger conditions and validate-in-sections
+  1  Add conversation-technique protocol (one question/multiple choice)
+  1  Add three-phase structure with approach comparison
+  1  Add related-skill routing and quick start
+  1  Add phase-gate stops (BLOCK/STOP) and routed entry points
+  1  Add purpose boundary vs research
+  1  Add entry flag and frame/options/design-doc steps
+  1  Add restate/options-min-3/evaluate/commit process
+  1  Add scope split with other skills (what vs how)
+  1  Add design-before-code-always core principle
+  1  Add name-your-confusion step with optional deep research
+  1  Add mandatory 3-questions enforcement gate
+  1  Add frame/diverge/pressure-test/recommend flow
+  1  Add domain-reference lookup and safety-boundary rules
+  1  Add trigger-step design-document workflow
+  1  Translate bilingual
+  1  Add facilitation-script/SME-invocation meta-layer with third-party notice
+  1  Add 7-phase todo structure with 5WH question framework
+  1  Add RFC-shaped output with discovery questions
+  1  Add context-gathering and feature-structure template
