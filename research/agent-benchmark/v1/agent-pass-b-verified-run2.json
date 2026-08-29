@@ -1,0 +1,1175 @@
+{
+ "run": "run2",
+ "results": [
+  {
+   "label": "add-stop-or-escalation-after-repeated-failed-fixes",
+   "family": "systematic-debugging",
+   "n_proposed": 8,
+   "precheck": [],
+   "invariant": "Introduces an explicit termination, escalation, or reframing trigger tied to a counted number of failed fix attempts.",
+   "behavior_signature": {
+    "trigger": "a counted number of failed fix attempts",
+    "action": "stop or escalate the loop",
+    "object": "debugging/iteration loop",
+    "outcome": "agent stops or escalates instead of continuing"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 19,
+     "decision": "YES",
+     "reason": "Escalation section explicitly triggered by 3+ failed fixes."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 25,
+     "decision": "YES",
+     "reason": "'When 3+ Fixes Fail' handler added."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 31,
+     "decision": "YES",
+     "reason": "Named 'The 3-failures rule' with return-to-phase-1."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 43,
+     "decision": "YES",
+     "reason": "'The 3-Fix Rule' added."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 45,
+     "decision": "YES",
+     "reason": "'Three-fix circuit breaker' with red flags."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 67,
+     "decision": "YES",
+     "reason": "'Three-Attempt Cap' with trigger conditions."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 56,
+     "decision": "YES",
+     "reason": "Escape clause reframing after 3 failed single-hypothesis tests."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 33,
+     "decision": "YES",
+     "reason": "Stop after 3 failed fix attempts added."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 8,
+   "verified_yes_repos": 8,
+   "max_single_repo_share": 0.125,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-explicit-hard-gate-implementation-lock",
+   "family": "brainstorming",
+   "n_proposed": 6,
+   "precheck": [],
+   "invariant": "Adds an explicit, unavoidable prohibition on writing code or taking implementation action before approval.",
+   "behavior_signature": {
+    "trigger": "before explicit design approval",
+    "action": "block implementation",
+    "object": "code-writing/implementation",
+    "outcome": "implementation only after gate"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 29,
+     "decision": "YES",
+     "reason": "HARD-GATE prohibits code before approval."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 30,
+     "decision": "YES",
+     "reason": "HARD GATE: no implementation until design approved."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44,
+     "decision": "YES",
+     "reason": "Single-output handoff."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 50,
+     "decision": "YES",
+     "reason": "Iron Rule: never start coding before approval."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 82,
+     "decision": "YES",
+     "reason": "HARD-GATE RULE with multiple gates."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 84,
+     "decision": "YES",
+     "reason": "HARD-GATE retained in translation."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 6,
+   "verified_yes_repos": 6,
+   "max_single_repo_share": 0.167,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-scope-or-trigger-contract",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-design-contract-artifact-before-code",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-context-gathering-before-design",
+   "family": "frontend-design",
+   "n_proposed": 6,
+   "precheck": [],
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "behavior_signature": {
+    "trigger": "task start",
+    "action": "gather or load project context first",
+    "object": "project context/conventions",
+    "outcome": "design decisions grounded in context"
+   },
+   "decision_detail": [
+    {
+     "family": "frontend-design",
+     "group_id": 3,
+     "decision": "YES",
+     "reason": "Context-gathering protocol precedes design."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 30,
+     "decision": "YES",
+     "reason": "Layer-0 context detection before design."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 10,
+     "decision": "YES",
+     "reason": "Reads PROJECT_CONTEXT.md before changes."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 52,
+     "decision": "YES",
+     "reason": "Reads DESIGN.md/PRD/GOAL first."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 31,
+     "decision": "YES",
+     "reason": "Project conventions applied during design."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 64,
+     "decision": "YES",
+     "reason": "Domain/architecture/security checks first."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 6,
+   "verified_yes_repos": 6,
+   "max_single_repo_share": 0.167,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-project-or-product-specific-design-rules",
+   "family": "systematic-debugging",
+   "n_proposed": 7,
+   "precheck": [],
+   "invariant": "Adds design or debugging rules grounded in this specific repository, product, or its design language.",
+   "behavior_signature": {
+    "trigger": "working in the target repo/product",
+    "action": "apply repo/product-specific rules",
+    "object": "design and workflow decisions",
+    "outcome": "output matches the specific project"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 3,
+     "decision": "YES",
+     "reason": "Adds python/pytest debugging commands."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 15,
+     "decision": "YES",
+     "reason": "Nix purity rule for this repo."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 24,
+     "decision": "YES",
+     "reason": "Per-tool npx/pipx debugging guidance."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 23,
+     "decision": "YES",
+     "reason": "Spendly-specific design language and stack."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 85,
+     "decision": "YES",
+     "reason": "Project-specific commands retained."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 80,
+     "decision": "YES",
+     "reason": "Project-specific rules with iron law."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 76,
+     "decision": "YES",
+     "reason": "Confirmed project-specific surfaces on re-read."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 7,
+   "verified_yes_repos": 7,
+   "max_single_repo_share": 0.143,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-platform-rendering-rules",
+   "family": "",
+   "n_proposed": 0,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-framework-specific-design-rules",
+   "family": "frontend-design",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Adds design or implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "behavior_signature": {
+    "trigger": "working within a named stack",
+    "action": "apply framework/stack-specific rules",
+    "object": "UI framework usage",
+    "outcome": "idiomatic, consistent output for that stack"
+   },
+   "decision_detail": [
+    {
+     "family": "frontend-design",
+     "group_id": 13,
+     "decision": "YES",
+     "reason": "shadcn/ui design rules."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 17,
+     "decision": "YES",
+     "reason": "React/Next.js implementation rules."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 29,
+     "decision": "YES",
+     "reason": "Design tokens + Tailwind ordering."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 57,
+     "decision": "YES",
+     "reason": "Stack priority ordering rules."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 4,
+   "verified_yes_repos": 4,
+   "max_single_repo_share": 0.25,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-vue-specific-application",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-evaluation-or-review-gate",
+   "family": "frontend-design",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "behavior_signature": {
+    "trigger": "work produced",
+    "action": "evaluate/review against defined criteria",
+    "object": "produced output",
+    "outcome": "delivery only after gate passes"
+   },
+   "decision_detail": [
+    {
+     "family": "frontend-design",
+     "group_id": 15,
+     "decision": "YES",
+     "reason": "Evaluation suite + delivery gate."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 48,
+     "decision": "YES",
+     "reason": "Ordered levers + checklist + invariants."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 58,
+     "decision": "YES",
+     "reason": "Verify step + output contract."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 62,
+     "decision": "YES",
+     "reason": "Review checklist added."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 4,
+   "verified_yes_repos": 4,
+   "max_single_repo_share": 0.25,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-design-system-first-workflow",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-aesthetic-philosophy-library",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "split-skill-into-design-disciplines",
+   "family": "frontend-design",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "route-completion-verification-to-separate-skill",
+   "family": "systematic-debugging",
+   "n_proposed": 5,
+   "precheck": [],
+   "invariant": "Delegates final completion/verification checking to another named skill or a separate verification step.",
+   "behavior_signature": {
+    "trigger": "fix implemented",
+    "action": "delegate verification to another skill/step",
+    "object": "completion/verification",
+    "outcome": "claims verified externally"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 11,
+     "decision": "YES",
+     "reason": "TDD and verification skill refs."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 2,
+     "decision": "YES",
+     "reason": "verification-before-completion routing."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 17,
+     "decision": "YES",
+     "reason": "Related Skills heading with 6 refs."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 28,
+     "decision": "YES",
+     "reason": "Related-skills routing present."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 41,
+     "decision": "YES",
+     "reason": "Verification phase added."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 5,
+   "verified_yes_repos": 5,
+   "max_single_repo_share": 0.2,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-domain-specific-design-rules",
+   "family": "frontend-design",
+   "n_proposed": 2,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "require-reproduction-before-fixing",
+   "family": "systematic-debugging",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Makes producing a reproduction (or explicit handling of non-reproducibility) a required, gated step before any fix.",
+   "behavior_signature": {
+    "trigger": "bug reported",
+    "action": "require reproduction first",
+    "object": "failure reproduction",
+    "outcome": "no fix without repro"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 38,
+     "decision": "YES",
+     "reason": "Reproduce/isolate with quantitative rate."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 64,
+     "decision": "YES",
+     "reason": "Reproduction gate sign-off."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 69,
+     "decision": "YES",
+     "reason": "Reproduce-or-don't-fix rule."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 4,
+     "decision": "YES",
+     "reason": "Reproduce/isolate phases."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 4,
+   "verified_yes_repos": 4,
+   "max_single_repo_share": 0.25,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-one-hypothesis-at-a-time",
+   "family": "systematic-debugging",
+   "n_proposed": 2,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-brief-inference-or-ask-first-gate",
+   "family": "frontend-design",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Adds a mandatory brief-inference or ask-before-assuming gate before any design work.",
+   "behavior_signature": {
+    "trigger": "ambiguous or incomplete brief",
+    "action": "infer the brief or ask",
+    "object": "task understanding",
+    "outcome": "no assumptions carried into design"
+   },
+   "decision_detail": [
+    {
+     "family": "frontend-design",
+     "group_id": 5,
+     "decision": "YES",
+     "reason": "ASK BEFORE ASSUMING gate."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 78,
+     "decision": "YES",
+     "reason": "Name-your-confusion step."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 8,
+     "decision": "YES",
+     "reason": "Inputs-to-gather contract."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-feedback-loop-rule",
+   "family": "systematic-debugging",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Elevates building/validating a feedback loop (reproduction plus instrumentation) into a named, mandatory rule.",
+   "behavior_signature": {
+    "trigger": "investigation phase",
+    "action": "build/validate a feedback loop",
+    "object": "repro + instrumentation",
+    "outcome": "evidence loop before hypotheses"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 20,
+     "decision": "YES",
+     "reason": "The Feedback Loop Rule heading."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 22,
+     "decision": "YES",
+     "reason": "Feedback Loop Rule with examples."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 32,
+     "decision": "YES",
+     "reason": "Build feedback loop first."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-red-flags-and-anti-pattern-guard",
+   "family": "systematic-debugging",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Adds an explicit list of violation indicators or anti-patterns that signal the process itself is being violated.",
+   "behavior_signature": {
+    "trigger": "process under way",
+    "action": "check violation indicators",
+    "object": "own process",
+    "outcome": "self-correction on violation"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 5,
+     "decision": "YES",
+     "reason": "Violation-indicator red flags."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 19,
+     "decision": "YES",
+     "reason": "Escalation section explicitly triggered by 3+ failed fixes."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 36,
+     "decision": "YES",
+     "reason": "Anti-pattern guard with escalation."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 42,
+     "decision": "YES",
+     "reason": "Core principle with violation flags."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 4,
+   "verified_yes_repos": 4,
+   "max_single_repo_share": 0.25,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-routing-boundary-use-case",
+   "family": "systematic-debugging",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Adds explicit boundaries declaring when the skill must not be used or when it must hand off.",
+   "behavior_signature": {
+    "trigger": "out-of-scope request",
+    "action": "decline or hand off",
+    "object": "skill applicability",
+    "outcome": "skill not used outside its boundary"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 8,
+     "decision": "YES",
+     "reason": "Do-not-use-outside-debugging boundary."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 54,
+     "decision": "YES",
+     "reason": "Emergency Stop + use boundaries."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 26,
+     "decision": "YES",
+     "reason": "Bail-out check before Phase 1."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 57,
+     "decision": "NO",
+     "reason": "Pure positive routing; no non-use boundary anywhere."
+    }
+   ],
+   "accepted": false,
+   "recurring": false,
+   "rejection_rate": 0.25,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [
+    57
+   ],
+   "status": "UNSTABLE"
+  },
+  {
+   "label": "add-questioning-or-interaction-protocol",
+   "family": "brainstorming",
+   "n_proposed": 7,
+   "precheck": [],
+   "invariant": "Prescribes a concrete questioning/interaction protocol (one question at a time, tool usage, or question-count rules).",
+   "behavior_signature": {
+    "trigger": "dialogue with user",
+    "action": "follow questioning protocol",
+    "object": "user interaction",
+    "outcome": "structured elicitation"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 41,
+     "decision": "YES",
+     "reason": "ask_questions tool contract."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 62,
+     "decision": "YES",
+     "reason": "One-question iron law."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 37,
+     "decision": "YES",
+     "reason": "One-at-a-time, multiple-choice preference."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 69,
+     "decision": "YES",
+     "reason": "Conversation techniques."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 79,
+     "decision": "YES",
+     "reason": "3-questions enforcement gate."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 47,
+     "decision": "YES",
+     "reason": "Comprehensive question generation."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 63,
+     "decision": "YES",
+     "reason": "Decision-tree interview."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 7,
+   "verified_yes_repos": 7,
+   "max_single_repo_share": 0.143,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-diverge-converge-phase-split",
+   "family": "brainstorming",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Structures the process as an explicit divergent-exploration phase followed by a convergent decision/presentation phase.",
+   "behavior_signature": {
+    "trigger": "ideation phase",
+    "action": "diverge then converge",
+    "object": "options/approaches",
+    "outcome": "explored spread before commitment"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 58,
+     "decision": "YES",
+     "reason": "Diverge/converge two phases."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 80,
+     "decision": "YES",
+     "reason": "Frame/diverge/pressure-test/recommend."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 49,
+     "decision": "YES",
+     "reason": "Reframe, explore, present, document."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-5-phase-structured-process",
+   "family": "brainstorming",
+   "n_proposed": 2,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-greenfield-vs-existing-path-split",
+   "family": "brainstorming",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Adds a distinct path for greenfield work versus existing-codebase work.",
+   "behavior_signature": {
+    "trigger": "project type detected",
+    "action": "branch greenfield vs existing path",
+    "object": "context exploration",
+    "outcome": "appropriate exploration depth"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 9,
+     "decision": "YES",
+     "reason": "Greenfield Projects path."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 15,
+     "decision": "YES",
+     "reason": "Strict-greenfield bootstrap path."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 21,
+     "decision": "YES",
+     "reason": "Existing-codebase working rules."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-ownership-or-handoff-boundary",
+   "family": "brainstorming",
+   "n_proposed": 7,
+   "precheck": [],
+   "invariant": "States what this skill owns versus what it delegates, or defines an explicit handoff boundary to another skill or pipeline stage.",
+   "behavior_signature": {
+    "trigger": "stage transition or scope question",
+    "action": "declare ownership/handoff",
+    "object": "stage responsibilities",
+    "outcome": "clean pipeline boundaries"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 25,
+     "decision": "YES",
+     "reason": "Owns + required output."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 46,
+     "decision": "YES",
+     "reason": "Brainstorming owns / delegates."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 12,
+     "decision": "YES",
+     "reason": "Planner handoff."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 20,
+     "decision": "YES",
+     "reason": "Worktrees/plans routing."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 76,
+     "decision": "YES",
+     "reason": "What vs how split with grill-with-docs."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44,
+     "decision": "YES",
+     "reason": "Single-output handoff."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 51,
+     "decision": "YES",
+     "reason": "Agent-assignment output."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 7,
+   "verified_yes_repos": 7,
+   "max_single_repo_share": 0.143,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-stop-or-fallback-condition",
+   "family": "brainstorming",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Adds explicit stop conditions or fallback behavior for when the process stalls or its assumptions fail.",
+   "behavior_signature": {
+    "trigger": "process stall or failed assumption",
+    "action": "stop or fall back",
+    "object": "brainstorming process",
+    "outcome": "documented fallback"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 35,
+     "decision": "YES",
+     "reason": "Stop Conditions + Fallbacks."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 54,
+     "decision": "YES",
+     "reason": "Report mandatory + red-flag STOP."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 72,
+     "decision": "YES",
+     "reason": "Phase gates BLOCK/STOP."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 3,
+   "verified_yes_repos": 3,
+   "max_single_repo_share": 0.333,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-when-not-to-use-boundary",
+   "family": "brainstorming",
+   "n_proposed": 3,
+   "precheck": [],
+   "invariant": "Adds explicit when-not-to-use boundaries for the skill.",
+   "behavior_signature": {
+    "trigger": "request outside skill purpose",
+    "action": "decline activation",
+    "object": "skill activation",
+    "outcome": "skill not invoked for wrong tasks"
+   },
+   "decision_detail": [
+    {
+     "family": "brainstorming",
+     "group_id": 26,
+     "decision": "YES",
+     "reason": "When to use / when not to use."
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 43,
+     "decision": "YES",
+     "reason": "Use when / do not use."
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 9,
+     "decision": "NO",
+     "reason": "Activation trigger only; no boundary language."
+    }
+   ],
+   "accepted": false,
+   "recurring": false,
+   "rejection_rate": 0.333,
+   "verified_yes_groups": 2,
+   "verified_yes_repos": 2,
+   "max_single_repo_share": 0.5,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [
+    9
+   ],
+   "status": "NON_RECURRING"
+  },
+  {
+   "label": "add-traceability-or-spec-output-rule",
+   "family": "brainstorming",
+   "n_proposed": 2,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-rationalization-and-recovery",
+   "family": "brainstorming",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-session-detection-preamble",
+   "family": "brainstorming",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-progress-tracking",
+   "family": "brainstorming",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "preserve-root-cause-first-while-compressing",
+   "family": "systematic-debugging",
+   "n_proposed": 5,
+   "precheck": [],
+   "invariant": "Substantially shortens the document while explicitly retaining the root-cause-first governing rule.",
+   "behavior_signature": {
+    "trigger": "compression edit",
+    "action": "shorten while keeping the iron law",
+    "object": "skill document",
+    "outcome": "brevity without losing the invariant"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 53,
+     "decision": "YES",
+     "reason": "Core rule retained while compressing."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 35,
+     "decision": "YES",
+     "reason": "4-step flow retains iron law."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 55,
+     "decision": "YES",
+     "reason": "Loop + stop conditions retain iron law."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 43,
+     "decision": "YES",
+     "reason": "'The 3-Fix Rule' added."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 34,
+     "decision": "YES",
+     "reason": "Trimmed overview retains iron law."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 5,
+   "verified_yes_repos": 5,
+   "max_single_repo_share": 0.2,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "replace-with-named-methodology",
+   "family": "systematic-debugging",
+   "n_proposed": 4,
+   "precheck": [],
+   "invariant": "Replaces the four-phase method with a different named methodology or scientific framing.",
+   "behavior_signature": {
+    "trigger": "method redesign",
+    "action": "adopt a named methodology",
+    "object": "debugging method",
+    "outcome": "different but equivalent method"
+   },
+   "decision_detail": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 59,
+     "decision": "YES",
+     "reason": "Fagan Inspection replaces phases."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 46,
+     "decision": "YES",
+     "reason": "Evidence framework with report output."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 5,
+     "decision": "YES",
+     "reason": "Violation-indicator red flags."
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 60,
+     "decision": "YES",
+     "reason": "What-I-Do phases rewrite."
+    }
+   ],
+   "accepted": true,
+   "recurring": true,
+   "rejection_rate": 0.0,
+   "verified_yes_groups": 4,
+   "verified_yes_repos": 4,
+   "max_single_repo_share": 0.25,
+   "uncertain_group_ids": [],
+   "rejected_group_ids": [],
+   "status": "ACCEPTED"
+  },
+  {
+   "label": "add-git-bisect-isolation",
+   "family": "systematic-debugging",
+   "n_proposed": 2,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  },
+  {
+   "label": "add-check-obvious-first-technique",
+   "family": "systematic-debugging",
+   "n_proposed": 1,
+   "precheck": [],
+   "status": "NON_RECURRING",
+   "decision_detail": []
+  }
+ ]
+}

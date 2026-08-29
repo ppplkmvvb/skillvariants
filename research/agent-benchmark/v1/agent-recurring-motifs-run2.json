@@ -1,0 +1,619 @@
+{
+ "run": "run2",
+ "recurring_motifs": [
+  {
+   "label": "add-stop-or-escalation-after-repeated-failed-fixes",
+   "invariant": "Introduces an explicit termination, escalation, or reframing trigger tied to a counted number of failed fix attempts.",
+   "behavior_signature": {
+    "trigger": "a counted number of failed fix attempts",
+    "action": "stop or escalate the loop",
+    "object": "debugging/iteration loop",
+    "outcome": "agent stops or escalates instead of continuing"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 8,
+   "verified_repositories": 8,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 19
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 25
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 31
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 43
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 45
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 67
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 56
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 33
+    }
+   ]
+  },
+  {
+   "label": "add-explicit-hard-gate-implementation-lock",
+   "invariant": "Adds an explicit, unavoidable prohibition on writing code or taking implementation action before approval.",
+   "behavior_signature": {
+    "trigger": "before explicit design approval",
+    "action": "block implementation",
+    "object": "code-writing/implementation",
+    "outcome": "implementation only after gate"
+   },
+   "family": "brainstorming",
+   "verified_groups": 6,
+   "verified_repositories": 6,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 29
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 30
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 50
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 82
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 84
+    }
+   ]
+  },
+  {
+   "label": "add-context-gathering-before-design",
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "behavior_signature": {
+    "trigger": "task start",
+    "action": "gather or load project context first",
+    "object": "project context/conventions",
+    "outcome": "design decisions grounded in context"
+   },
+   "family": "frontend-design",
+   "verified_groups": 6,
+   "verified_repositories": 6,
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 3
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 30
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 10
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 52
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 31
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 64
+    }
+   ]
+  },
+  {
+   "label": "add-project-or-product-specific-design-rules",
+   "invariant": "Adds design or debugging rules grounded in this specific repository, product, or its design language.",
+   "behavior_signature": {
+    "trigger": "working in the target repo/product",
+    "action": "apply repo/product-specific rules",
+    "object": "design and workflow decisions",
+    "outcome": "output matches the specific project"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 7,
+   "verified_repositories": 7,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 3
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 15
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 24
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 23
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 85
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 80
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 76
+    }
+   ]
+  },
+  {
+   "label": "add-framework-specific-design-rules",
+   "invariant": "Adds design or implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "behavior_signature": {
+    "trigger": "working within a named stack",
+    "action": "apply framework/stack-specific rules",
+    "object": "UI framework usage",
+    "outcome": "idiomatic, consistent output for that stack"
+   },
+   "family": "frontend-design",
+   "verified_groups": 4,
+   "verified_repositories": 4,
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 13
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 17
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 29
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 57
+    }
+   ]
+  },
+  {
+   "label": "add-evaluation-or-review-gate",
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "behavior_signature": {
+    "trigger": "work produced",
+    "action": "evaluate/review against defined criteria",
+    "object": "produced output",
+    "outcome": "delivery only after gate passes"
+   },
+   "family": "frontend-design",
+   "verified_groups": 4,
+   "verified_repositories": 4,
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 15
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 48
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 58
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 62
+    }
+   ]
+  },
+  {
+   "label": "route-completion-verification-to-separate-skill",
+   "invariant": "Delegates final completion/verification checking to another named skill or a separate verification step.",
+   "behavior_signature": {
+    "trigger": "fix implemented",
+    "action": "delegate verification to another skill/step",
+    "object": "completion/verification",
+    "outcome": "claims verified externally"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 5,
+   "verified_repositories": 5,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 11
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 2
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 17
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 28
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 41
+    }
+   ]
+  },
+  {
+   "label": "require-reproduction-before-fixing",
+   "invariant": "Makes producing a reproduction (or explicit handling of non-reproducibility) a required, gated step before any fix.",
+   "behavior_signature": {
+    "trigger": "bug reported",
+    "action": "require reproduction first",
+    "object": "failure reproduction",
+    "outcome": "no fix without repro"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 4,
+   "verified_repositories": 4,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 38
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 64
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 69
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 4
+    }
+   ]
+  },
+  {
+   "label": "add-brief-inference-or-ask-first-gate",
+   "invariant": "Adds a mandatory brief-inference or ask-before-assuming gate before any design work.",
+   "behavior_signature": {
+    "trigger": "ambiguous or incomplete brief",
+    "action": "infer the brief or ask",
+    "object": "task understanding",
+    "outcome": "no assumptions carried into design"
+   },
+   "family": "frontend-design",
+   "verified_groups": 3,
+   "verified_repositories": 3,
+   "supporting_groups": [
+    {
+     "family": "frontend-design",
+     "group_id": 5
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 78
+    },
+    {
+     "family": "frontend-design",
+     "group_id": 8
+    }
+   ]
+  },
+  {
+   "label": "add-feedback-loop-rule",
+   "invariant": "Elevates building/validating a feedback loop (reproduction plus instrumentation) into a named, mandatory rule.",
+   "behavior_signature": {
+    "trigger": "investigation phase",
+    "action": "build/validate a feedback loop",
+    "object": "repro + instrumentation",
+    "outcome": "evidence loop before hypotheses"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 3,
+   "verified_repositories": 3,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 20
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 22
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 32
+    }
+   ]
+  },
+  {
+   "label": "add-red-flags-and-anti-pattern-guard",
+   "invariant": "Adds an explicit list of violation indicators or anti-patterns that signal the process itself is being violated.",
+   "behavior_signature": {
+    "trigger": "process under way",
+    "action": "check violation indicators",
+    "object": "own process",
+    "outcome": "self-correction on violation"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 4,
+   "verified_repositories": 4,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 5
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 19
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 36
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 42
+    }
+   ]
+  },
+  {
+   "label": "add-questioning-or-interaction-protocol",
+   "invariant": "Prescribes a concrete questioning/interaction protocol (one question at a time, tool usage, or question-count rules).",
+   "behavior_signature": {
+    "trigger": "dialogue with user",
+    "action": "follow questioning protocol",
+    "object": "user interaction",
+    "outcome": "structured elicitation"
+   },
+   "family": "brainstorming",
+   "verified_groups": 7,
+   "verified_repositories": 7,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 41
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 62
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 37
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 69
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 79
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 47
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 63
+    }
+   ]
+  },
+  {
+   "label": "add-diverge-converge-phase-split",
+   "invariant": "Structures the process as an explicit divergent-exploration phase followed by a convergent decision/presentation phase.",
+   "behavior_signature": {
+    "trigger": "ideation phase",
+    "action": "diverge then converge",
+    "object": "options/approaches",
+    "outcome": "explored spread before commitment"
+   },
+   "family": "brainstorming",
+   "verified_groups": 3,
+   "verified_repositories": 3,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 58
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 80
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 49
+    }
+   ]
+  },
+  {
+   "label": "add-greenfield-vs-existing-path-split",
+   "invariant": "Adds a distinct path for greenfield work versus existing-codebase work.",
+   "behavior_signature": {
+    "trigger": "project type detected",
+    "action": "branch greenfield vs existing path",
+    "object": "context exploration",
+    "outcome": "appropriate exploration depth"
+   },
+   "family": "brainstorming",
+   "verified_groups": 3,
+   "verified_repositories": 3,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 9
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 15
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 21
+    }
+   ]
+  },
+  {
+   "label": "add-ownership-or-handoff-boundary",
+   "invariant": "States what this skill owns versus what it delegates, or defines an explicit handoff boundary to another skill or pipeline stage.",
+   "behavior_signature": {
+    "trigger": "stage transition or scope question",
+    "action": "declare ownership/handoff",
+    "object": "stage responsibilities",
+    "outcome": "clean pipeline boundaries"
+   },
+   "family": "brainstorming",
+   "verified_groups": 7,
+   "verified_repositories": 7,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 25
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 46
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 12
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 20
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 76
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 44
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 51
+    }
+   ]
+  },
+  {
+   "label": "add-stop-or-fallback-condition",
+   "invariant": "Adds explicit stop conditions or fallback behavior for when the process stalls or its assumptions fail.",
+   "behavior_signature": {
+    "trigger": "process stall or failed assumption",
+    "action": "stop or fall back",
+    "object": "brainstorming process",
+    "outcome": "documented fallback"
+   },
+   "family": "brainstorming",
+   "verified_groups": 3,
+   "verified_repositories": 3,
+   "supporting_groups": [
+    {
+     "family": "brainstorming",
+     "group_id": 35
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 54
+    },
+    {
+     "family": "brainstorming",
+     "group_id": 72
+    }
+   ]
+  },
+  {
+   "label": "preserve-root-cause-first-while-compressing",
+   "invariant": "Substantially shortens the document while explicitly retaining the root-cause-first governing rule.",
+   "behavior_signature": {
+    "trigger": "compression edit",
+    "action": "shorten while keeping the iron law",
+    "object": "skill document",
+    "outcome": "brevity without losing the invariant"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 5,
+   "verified_repositories": 5,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 53
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 35
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 55
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 43
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 34
+    }
+   ]
+  },
+  {
+   "label": "replace-with-named-methodology",
+   "invariant": "Replaces the four-phase method with a different named methodology or scientific framing.",
+   "behavior_signature": {
+    "trigger": "method redesign",
+    "action": "adopt a named methodology",
+    "object": "debugging method",
+    "outcome": "different but equivalent method"
+   },
+   "family": "systematic-debugging",
+   "verified_groups": 4,
+   "verified_repositories": 4,
+   "supporting_groups": [
+    {
+     "family": "systematic-debugging",
+     "group_id": 59
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 46
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 5
+    },
+    {
+     "family": "systematic-debugging",
+     "group_id": 60
+    }
+   ]
+  }
+ ]
+}

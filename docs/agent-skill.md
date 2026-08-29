@@ -48,12 +48,15 @@ skillvariants compare <url-a> <url-b> --json # structural diff of two skills
 
 ## Validation status
 
-The agent semantic layer was benchmarked against a frozen 243-group human
-baseline across three skill families
-([report](research/agent-benchmark/v1/agent-semantic-report.md)):
-meaningful-change agreement 100% (upper bound — same model authored the
-baseline), 86% of strong human motifs recovered, 0 fabricated sources, but
-26% of recurring agent motifs required splitting for over-merge. Consequence:
-the skill presents agent-consolidated motifs as **proposals validated by
-deterministic invariant checks**, and recurrence is always computed by
-SkillVariants code, never by the model.
+The semantic layer was benchmarked against a frozen 243-group human baseline
+across three skill families, then hardened with a consolidation guardrail
+(behavior-signature clustering + independent verifier + deterministic
+acceptance rules).
+
+Final guarded benchmark
+([report](research/agent-benchmark/v1/semantic-guardrail-report.md)):
+over-merge 0% (was 26%), evidence faithfulness 100% with 0 fabricated
+sources, high-confidence motif retention 89%, two-run stability 100%.
+Verdict: `SEMANTIC_GUARDRAIL_GO` — product-facing recurring motifs come only
+from clusters whose every supporting group passed the invariant verification;
+UNSTABLE or UNRESOLVED clusters are omitted, never broadened.

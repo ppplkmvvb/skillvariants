@@ -11,11 +11,15 @@ copies, groups near-clones, and produces structural diffs with source links.
 You are the **semantic analyst**: you interpret that evidence into concrete,
 recurring mutation motifs. You never invent facts the engine did not produce.
 
-## Prerequisites
+## Prerequisites & invocation rule
 
 ```bash
 uvx skillvariants --help        # or: pipx install skillvariants
 ```
+
+**Invocation rule:** if `skillvariants` is available on PATH, call it
+directly; otherwise use `uvx skillvariants ...`. The examples below use the
+`uvx` form because it works without installation.
 
 GitHub authentication is required for code search: `GITHUB_TOKEN` env var or
 `gh auth login`.
@@ -25,7 +29,7 @@ GitHub authentication is required for code search: `GITHUB_TOKEN` env var or
 1. **Collect evidence deterministically.** Run:
 
    ```bash
-   skillvariants evidence <SKILL.md-url> --json
+   uvx skillvariants evidence <SKILL.md-url> --json
    ```
 
    Everything you need is in the JSON: `target`, `summary` (counts only),
@@ -44,20 +48,30 @@ GitHub authentication is required for code search: `GITHUB_TOKEN` env var or
    "Preserve ... while ...". Never use vague labels ("shorter", "expanded",
    "better workflow"). A group may have zero motifs.
 
-5. **Consolidate only under strict invariants.** After all groups are
-   labeled, merge proposed motifs that are semantically equivalent and write
-   ONE invariant sentence per canonical motif, e.g.:
+5. **Consolidate by behavior equivalence, not topic similarity.** After all
+   groups are labeled, merge proposed motifs ONLY when every supporting
+   group can be truthfully described by the same concrete behavioral
+   invariant — never because they are about the same general idea. Each
+   canonical motif must carry:
 
-   > Introduces an explicit termination or escalation condition triggered by
-   > repeated failed attempts.
+   - one strict invariant sentence, and
+   - a behavior signature: `trigger`, `action`, `object`, `outcome`.
 
-   Then re-check EVERY supporting group against that invariant. Reject
-   near-misses. If a cluster mixes several ideas, split it.
+   VALID merge: "stop after 3 failed fixes" + "escalate after repeated
+   failed attempts" (one invariant: stop/escalation triggered by repeated
+   failure). INVALID merge: "add review checklist" + "require DESIGN.md
+   before implementation" (both about discipline, but different behaviors —
+   split them).
 
-6. **Let deterministic counts establish recurrence.** Count distinct
-   mutation groups and distinct repositories from the evidence payload. A
-   motif is recurring only at >= 3 groups AND >= 3 repositories with no
-   single repository providing more than half the groups. Use the wording:
+6. **Verify every supporting group, then let deterministic counts establish
+   recurrence.** Re-check each supporting group against the invariant
+   (YES / NO / UNCERTAIN); NO and UNCERTAIN groups are removed from
+   recurrence counting. If more than 20% of a cluster's groups are NO or
+   UNCERTAIN, the cluster is UNSTABLE: split it once along behavior lines
+   or omit it — never broaden the invariant to rescue it. A motif is
+   recurring only when >= 3 verified-YES groups from >= 3 repositories with
+   no single repository providing more than half the groups, computed by
+   deterministic code, not by the model. Use the wording:
 
    > Observed across 6 mutation groups in 6 repositories.
 
@@ -72,7 +86,7 @@ GitHub authentication is required for code search: `GITHUB_TOKEN` env var or
    reflect a desire to ..."), (c) user-specific suggestion — only when asked.
 
 9. **Compare representative variants when useful.** Use
-   `skillvariants compare <target-url> <variant-url> --json` for a
+   `uvx skillvariants compare <target-url> <variant-url> --json` for a
    structural diff of two specific files.
 
 10. **Only discuss applicability to the user's own Skill when explicitly
@@ -106,6 +120,8 @@ No scores. No "best variant". No "best practices".
 - Never fabricate or guess a URL; use `direct_skill_url` from the payload.
 - Never present project-specific adaptations as general patterns.
 - Never modify the user's Skill files; this skill is read-only analysis.
+
+Consolidation discipline in one line: PASS A is independent per group; PASS B clusters by behavior equivalence; every motif has one strict invariant; every supporting group is re-verified; uncertain groups do not count; recurrence comes from deterministic code; broad or unstable clusters are omitted, never rescued.
 
 Deep references: [evidence-schema.md](references/evidence-schema.md) and
 [interpretation-rules.md](references/interpretation-rules.md). A worked
