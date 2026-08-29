@@ -101,7 +101,7 @@ class TestPackageMetadata:
     def test_name_version_and_script(self) -> None:
         project = self._pyproject()
         assert project["name"] == "skillvariants"
-        assert project["version"] == "0.1.1"
+        assert project["version"] == "0.2.0"
         assert project["scripts"] == {"skillvariants": "skillvariants.cli:app"}
 
     def test_license_python_and_keywords(self) -> None:

@@ -1,0 +1,13 @@
+{
+ "readme_has_uvx_examples": true,
+ "readme_powershell_block": true,
+ "readme_capture_date": true,
+ "readme_no_ancestry_words": true,
+ "web_counts_match_artifacts": true,
+ "web_source_urls_exact": true,
+ "no_suppressed_leakage": true,
+ "compare_routes_resolve": true,
+ "web_static_assets": true,
+ "no_secrets_in_web_bundle": true,
+ "wheel_no_cache_or_fixtures": true
+}

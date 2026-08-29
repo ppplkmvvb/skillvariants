@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skillvariants"
-version = "0.1.1"
+version = "0.2.0"
 description = "Explore copies and mutation patterns of AI Agent Skills across GitHub."
 readme = "README.md"
 license = { text = "Apache-2.0" }

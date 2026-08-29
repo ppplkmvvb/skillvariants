@@ -1,62 +1,104 @@
-# Launch Copy (drafts — do not post automatically)
+# Launch drafts — v0.2 (do not post automatically)
+
+## GitHub release draft
+
+**Title:** SkillVariants v0.2.0 — Agent Study Runtime + Web Explorer
+
+**Body:**
+
+SkillVariants can now power an end-to-end Agent study of how a public Agent
+Skill has been adapted across GitHub.
+
+**What's new**
+
+- **Agent Study Runtime** — persistent, resumable study sessions
+  (`study-start` / `study-next` / `study-submit` / `study-report`) with
+  validated submissions, idempotent replays, and deterministic recurrence
+- **Installable Agent Skill** — copy `skills/skillvariants/` into your
+  agent's skills directory; the agent drives the whole study
+- **Agent-facing evidence JSON** — `skillvariants evidence <url> --json`
+- **Semantic consolidation guardrail** — behavior signatures, strict
+  invariants, independent verifier, deterministic acceptance (over-merge
+  0% in the guarded benchmark)
+- **Recurring adaptation reports** — accepted motifs with real source
+  implementations
+- **Web explorer** — static, precomputed studies for three families
+- **CLI UX** — cleaner help/errors, PowerShell-safe examples
+
+**How to try**
+
+```bash
+uvx skillvariants related   https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md
+```
+
+Or install the Agent Skill and ask your agent to study any public SKILL.md
+URL. Requires Python 3.11+ and GitHub auth (`GITHUB_TOKEN` / `gh auth login`).
+
+**Limitations** — code search is not a census; results change over time;
+recurrence is not quality; no ancestry is claimed. See docs/limitations.md.
 
 ## Hacker News
 
-**Title:** Show HN: SkillVariants – See how AI Agent Skills change across GitHub
+**Title:** Show HN: SkillVariants – your coding agent studies how Agent Skills evolve on GitHub
 
-**Body draft:**
+**Body:**
 
-I kept running into the same SKILL.md files in repo after repo. The copies
-were never identical, and the interesting part turned out to be *how people
-changed them*: a 280-line debugging methodology compressed into a 15-line
-loop with a "stop after three failed hypotheses" rule; a design skill turned
-into a five-line redirect pointing at a canonical copy; routing headers
-grafted on so one skill can hand off to others.
+I kept finding the same Agent Skill in repo after repo, but the interesting
+part was what people changed: a 280-line debugging methodology compressed
+into a 15-line loop with a "stop after 3 failed fixes" rule; a design skill
+reduced to a redirect pointing at a canonical copy; routing headers grafted
+on so skills can hand work to each other.
 
-SkillVariants is a CLI that automates that exploration: paste a public
-SKILL.md URL and it searches GitHub for same-name candidates, collapses exact
-and near copies into counts, gates out name-only collisions, classifies the
-rest into mutation patterns (compact rewrite / expanded guidance / routing /
-workflow / project specialization / compatibility wrapper), and shows up to
-three representative variants per pattern with deterministic evidence.
+SkillVariants is a deterministic CLI + Agent Skill. Paste a public SKILL.md
+URL and it searches GitHub for same-name candidates, collapses exact and
+near copies into counts, classifies the rest into mutation patterns, and -
+new in v0.2 - runs a resumable study runtime: the agent analyzes each group,
+consolidates motifs only under strict behavior-equivalence invariants, and
+an independent verifier re-checks every member before the tool computes
+recurrence. No hosted LLM; the engine never invents counts or URLs.
 
-Everything is deterministic regex + string-similarity work (RapidFuzz) — no
-LLM, no embeddings, no API beyond GitHub's. Every score emits its own evidence
-strings, and reruns over the same cached candidate set are byte-identical.
-
-Validation so far: three high-copy skill families, five known adaptation
-anchors (all found and correctly classified), 34 displayed representatives
-reviewed by hand with zero clearly-wrong labels. That is a validation set, not
-a census — search coverage and taxonomy overlap are documented limitations.
+Validation: three skill families, 243 human-audited mutation groups, five
+known adaptation anchors (all found and correctly classified), and a
+guardrail that cut semantic over-merges from 26% to 0%. Code search is not a
+census and no ancestry is claimed - limitations are documented.
 
 Repo: https://github.com/ppplkmvvb/skillvariants
 
-## Reddit / developer communities
+## Reddit draft
 
-**Angle draft:**
+I kept finding the same Agent Skill across many repositories - but the
+interesting part was how people changed it after copying it: compressed into
+checklists, wrapped as redirects, rerouted to sibling skills, specialized
+per project. v0.2 of my little tool runs the whole study from one prompt: it
+collapses the copy flood into counts, clusters what remains into recurring
+adaptation motifs (with a guardrail so clusters only survive when every
+member really implements the same behavior), and shows real source
+implementations. Deterministic engine, your own agent does the reasoning,
+nothing hosted.
 
-I kept finding the same Agent Skill across many repositories, but the
-interesting part was how people changed it after copying it — compressed,
-wrapped as redirects, rerouted to sibling skills, specialized per project.
-I built a small deterministic CLI to explore those variants from any SKILL.md
-URL: it collapses the copy flood into counts, buckets what remains into
-mutation patterns, and picks representative examples per pattern with
-evidence you can check yourself (no LLM involved). One real finding that
-hooked me: the same debugging skill exists as a 4-phase methodology, a 5-step
-loop with an added stop rule, and a German translation with restructured
-phases — all discoverable from one URL.
+One concrete finding: the same debugging skill exists as a 4-phase
+methodology, a 5-step loop with an added stop rule, and a German translation
+with restructured phases - all discoverable from one URL.
 
 https://github.com/ppplkmvvb/skillvariants
 
-## X / short post
+## X / LinkedIn short draft
 
-Agent Skills don't just get copied — they get compressed, wrapped, rerouted,
-and specialized. I built a CLI to explore those variants across GitHub:
-paste a SKILL.md URL, get mutation patterns with representative diffs.
-Deterministic, no LLM. https://github.com/ppplkmvvb/skillvariants
+Agent Skills get copied and adapted across GitHub, but it is hard to see
+what actually changed. SkillVariants turns those variants into recurring
+adaptations with real source implementations - driven by your coding agent,
+counted deterministically. https://github.com/ppplkmvvb/skillvariants
 
----
+## Demo asset checklist
 
-Notes: prefer leading with a concrete story (systematic-debugging family).
-Never claim ancestry ("the original"), safety, or completeness. Attach a real
-terminal screenshot/SVG when available.
+- [x] Real terminal SVG of `related --mode mutations`
+      (docs/assets/skillsvariants-related-demo.svg)
+- [ ] Agent conversation demo (screen recording; capture before launch)
+- [ ] Web explorer screenshot (home + motif detail)
+
+## Links
+
+- GitHub: https://github.com/ppplkmvvb/skillvariants
+- PyPI: https://pypi.org/project/skillvariants/
+- Web: (GitHub Pages URL after deploy)
+- v0.1.1 release: https://github.com/ppplkmvvb/skillvariants/releases/tag/v0.1.1

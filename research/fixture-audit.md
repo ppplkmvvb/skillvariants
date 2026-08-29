@@ -52,3 +52,15 @@ GitHub authentication.
 Upstream licenses can change. Re-run the audit before any major release:
 fetch each repo's `.license.spdx_id`, compare against this table, and re-check
 the upstream files if a fixture's content needs updating.
+
+## v0.2 re-audit (web data)
+
+The Web explorer bundles metadata only: motif invariants (authored by this
+project), behavior signatures, deterministic counts, repository/path/ref
+strings, exact GitHub URLs, and short diff excerpts (≤3 lines per side,
+≤160 chars per line) captured from public repos at study time. No
+third-party Skill body is redistributed in `web/` or in the Python package.
+The upstream licensing facts from the table above were re-checked and are
+unchanged. If any upstream repo changes or deletes a file (one observed
+case: `eastreams/loong` deleted its `rewrite` branch after capture), the
+explorer marks the source as changed rather than shipping stale content.
