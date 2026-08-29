@@ -1,0 +1,498 @@
+{
+ "schema_version": "1",
+ "family": "frontend-design",
+ "capture_note": "Counts captured 2026-08-29 from GitHub Code Search; GitHub results change over time.",
+ "target": {
+  "repository": "anthropics/skills",
+  "path": "skills/frontend-design/SKILL.md",
+  "ref": "main",
+  "direct_skill_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+  "name": "frontend-design",
+  "normalized_hash": "57cf1134b36c816ac2fc52f6a194948ccee4cbe79fe780ab365b73641b2b467a"
+ },
+ "summary": {
+  "groups_total": 68,
+  "groups_analyzed": 68,
+  "exact_copy_count": 0,
+  "accepted_motif_count": 3
+ },
+ "accepted_motifs": [
+  {
+   "label": "add-context-gathering-before-design",
+   "display_name": "add context gathering before design",
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "behavior_signature": {
+    "trigger": "task start",
+    "action": "gather or load project context first",
+    "object": "project context/conventions",
+    "outcome": "design decisions grounded in context"
+   },
+   "group_count": 3,
+   "repository_count": 3,
+   "what_changed": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "interpretation": "Documented in the family study.",
+   "tradeoff": "Documented in the family study.",
+   "representatives": [
+    {
+     "repository": "panin-glitch/EatLock",
+     "path": "general skills/.codebuddy/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/panin-glitch/EatLock/blob/main/general skills/.codebuddy/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.5644,
+       "char_ratio": 0.8802,
+       "heading_jaccard": 0.0,
+       "description_similarity": 0.5415,
+       "name_bonus": 0.32,
+       "score": 0.8595
+      },
+      "length_change": "+14%",
+      "workflow_headings": "6 -> 13 headings",
+      "detected_mutation": "workflow-specialization",
+      "text_diff_brief": [
+       "-# Frontend Design",
+       "+This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with excep",
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+## Context Gathering Protocol",
+       "-## Ground it in the subject",
+       "+Design skills produce generic output without project context. You MUST have confirmed design context before doing any design work.",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+**Required context** — every design skill needs at minimum:",
+       "+- **Target audience**: Who uses this product and in what context?",
+       "+- **Use cases**: What jobs are they trying to get done?",
+       "+- **Brand personality/tone**: How should the interface feel?",
+       "-## Design principles",
+       "+Individual skills may require additional context — check the skill's preparation section for specifics.",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+**CRITICAL**: You cannot infer this context by reading the codebase. Code tells you what was built, not who it's for or what it should feel like. Only the crea",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+**Gathering order:**",
+       "+1. **Check current instructions (instant)**: If your loaded instructions already contain a **Design Context** section, proceed immediately.",
+       "+2. **Check .impeccable.md (fast)**: If not in instructions, read `.impeccable.md` from the project root. If it exists and contains the required context, procee",
+       "+3. **Run teach-impeccable (REQUIRED)**: If neither source has context, you MUST run the teach-impeccable skill NOW before doing anything else. Do NOT skip this",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+---",
+       "-Leverage motion deliberately. Think about where and if animation can serve the subject: a page-load sequence, a scroll-triggered reveal, hover micro-interactio",
+       "+## Design Direction"
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "gvkhosla/compound-engineering-pi",
+     "path": "skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/gvkhosla/compound-engineering-pi/blob/main/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.5426,
+       "char_ratio": 0.578,
+       "heading_jaccard": 0.0303,
+       "description_similarity": 0.4706,
+       "name_bonus": 0.32,
+       "score": 0.782
+      },
+      "length_change": "+73%",
+      "workflow_headings": "6 -> 28 headings",
+      "detected_mutation": "routing-specialization",
+      "text_diff_brief": [
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "-",
+       "-## Ground it in the subject",
+       "-",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "-",
+       "-## Design principles",
+       "-",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "-",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "-",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "-",
+       "-Leverage motion deliberately. Think about where and if animation can serve the subject: a page-load sequence, a scroll-triggered reveal, hover micro-interactio",
+       "-",
+       "-Match complexity to the vision. Maximalist directions need elaborate execution; minimal directions need precision in spacing, type, and detail. Elegance is exe",
+       "-",
+       "-Consider written content carefully. Often a design brief may not contain real content, and it's up to you to come up with copy. Copy can make a design feel as ",
+       "-",
+       "-## Process: brainstorm, explore, plan, critique, build, critique again",
+       "-",
+       "-For calibration: AI-generated design right now clusters around three looks: (1) a warm cream background (near #F4F1EA) with a high-contrast serif display and a",
+       "-"
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "quocthinhthan/Portfolio",
+     "path": ".agents/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/quocthinhthan/Portfolio/blob/main/.agents/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.6041,
+       "char_ratio": 0.6389,
+       "heading_jaccard": 0.4444,
+       "description_similarity": 0.4958,
+       "name_bonus": 0.32,
+       "score": 0.8909
+      },
+      "length_change": "-36%",
+      "workflow_headings": "6 -> 7 headings",
+      "detected_mutation": "workflow-specialization",
+      "text_diff_brief": [
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+Approach this as a careful design pass for an existing personal portfolio, not a blank-canvas rebrand. Make deliberate choices about spacing, hierarchy, motion",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+Read `.agents/PROJECT_CONTEXT.md` before making design changes. Treat this as a Vietnamese/English personal site for a backend-oriented software engineering st",
+       "+",
+       "+If the request is vague, infer the smallest useful design goal from the current section. For example, improve scanability, make a project card clearer, make a ",
+       "+",
+       "+## Project fit",
+       "+",
+       "+Work with the existing structure first:",
+       "+",
+       "+- Keep section components in `components/` unless a shared UI primitive is clearly useful.",
+       "+- Keep portfolio content in `lib/data.ts` and translations in `lib/i18n.ts`.",
+       "+- Use `lucide-react`, `framer-motion`, Tailwind classes, and existing color variables before adding dependencies.",
+       "+- Preserve the dark `#020617` base and `#38bdf8` primary accent unless the task is explicitly a redesign.",
+       "+- Add one small signature detail at a time, such as a terminal label, progress line, glow, hover state, or scroll interaction.",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+For web designs, the hero is a thesis. In this project, the hero should quickly communicate the person, role, and engineering direction. Strengthen that messag",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+Typography carries the personality of the page. This portfolio currently uses Inter with strong weights and mono accents. Improve hierarchy through size, weigh",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+Structure is information. Section labels, dividers, badges, timelines, and cards should encode something true about the content. Use numbering only when order ",
+       "-Leverage motion deliberately. Think about where and if animation can serve the subject: a page-load sequence, a scroll-triggered reveal, hover micro-interactio",
+       "+Leverage motion deliberately. The project already uses Framer Motion, parallax, glows, hover states, and typewriter effects. Add motion only when it clarifies "
+      ]
+     },
+     "source_available": true
+    }
+   ]
+  },
+  {
+   "label": "add-framework-specific-design-rules",
+   "display_name": "add framework specific design rules",
+   "invariant": "Adds design or implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "behavior_signature": {
+    "trigger": "working within a named stack",
+    "action": "apply framework/stack-specific rules",
+    "object": "UI framework usage",
+    "outcome": "idiomatic, consistent output for that stack"
+   },
+   "group_count": 4,
+   "repository_count": 4,
+   "what_changed": "Adds rules tied to a concrete UI stack (shadcn/ui, React/Next.js, Tailwind tokens, stack priority).",
+   "interpretation": "Generic aesthetic guidance may not survive contact with a real component library.",
+   "tradeoff": "Couples the skill to a stack version.",
+   "representatives": [
+    {
+     "repository": "studio-jami/jami-studio",
+     "path": "templates/forms/.agents/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/studio-jami/jami-studio/blob/main/templates/forms/.agents/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.5292,
+       "char_ratio": 0.7738,
+       "heading_jaccard": 0.0714,
+       "description_similarity": 0.5253,
+       "name_bonus": 0.32,
+       "score": 0.8289
+      },
+      "length_change": "+29%",
+      "workflow_headings": "6 -> 9 headings",
+      "detected_mutation": "routing-specialization",
+      "text_diff_brief": [
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with strong product judgment, excellent accessibil",
+       "-## Ground it in the subject",
+       "+The user may ask for a component, page, full app, dashboard, marketing surface, or restyle. Before coding, understand the audience and pick a direction that fi",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+## Design Thinking",
+       "-## Design principles",
+       "+Before coding, decide:",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+- **Purpose**: What workflow does this surface make easier? What is the primary action?",
+       "+- **Audience**: Who will use it repeatedly, and what should feel fast, calm, playful, premium, editorial, technical, or utilitarian?",
+       "+- **Tone**: Choose a concrete aesthetic direction: refined minimal, dense operations console, editorial, playful, industrial, warm handmade, high-contrast data",
+       "+- **Information hierarchy**: What must be visible in the first five seconds, and what should be progressively disclosed?",
+       "+- **Differentiation**: What makes this feel designed for this exact domain?",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+Then implement working code that is cohesive, accessible, responsive, and polished in small details: typography, spacing, copy, motion, empty states, loading s",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+## Minimalism And Progressive Disclosure",
+       "-Leverage motion deliberately. Think about where and if animation can serve the subject: a page-load sequence, a scroll-triggered reveal, hover micro-interactio",
+       "+Default to Apple/Linear-level restraint: make the primary workflow obvious, then remove everything that does not help that workflow right now. A polished UI of",
+       "-Match complexity to the vision. Maximalist directions need elaborate execution; minimal directions need precision in spacing, type, and detail. Elegance is exe",
+       "+- **Start by subtracting**: Before adding a visible control, banner, toolbar row, card, or explanatory block, ask what can be removed, merged, renamed, or move",
+       "+- **One primary action**: Each surface should have one dominant next action. Secondary actions belong in menus, popovers, command palettes, disclosure rows, or",
+       "+- **Progressively disclose rare work**: Advanced options, diagnostics, metadata, settings, import/export, destructive actions, and inspection tools should stay"
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "Everfern-AI/Everfern",
+     "path": "main/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Everfern-AI/Everfern/blob/main/main/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.5499,
+       "char_ratio": 0.7232,
+       "heading_jaccard": 0.0769,
+       "description_similarity": 0.433,
+       "name_bonus": 0.32,
+       "score": 0.8161
+      },
+      "length_change": "-28%",
+      "workflow_headings": "6 -> 8 headings",
+      "detected_mutation": "workflow-specialization",
+      "text_diff_brief": [
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+Use this skill whenever the task touches frontend appearance or interaction: building UI, editing app screens, improving UX, styling components, creating web a",
+       "-## Ground it in the subject",
+       "+The goal is clean, intentional, production-grade UI that looks designed for the product, not generated from a generic template.",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+## Operating Rules",
+       "-## Design principles",
+       "+1. Read the existing app first. Match its framework, component patterns, spacing scale, state management, naming, and design system unless the user asks for a ",
+       "+2. Make the actual usable interface, not a marketing explanation of features. Avoid visible instructional copy unless the product genuinely needs it.",
+       "+3. Prefer conservative, durable UI for tools, SaaS, settings, dashboards, admin, CRM, and operational apps: dense enough to scan, restrained, predictable, and ",
+       "+4. For expressive sites, portfolios, games, and editorial pages, choose a clear visual direction tied to the subject. Distinctive is good; random decoration is",
+       "+5. Check responsive behavior. Text must fit inside buttons, cards, sidebars, tables, and compact controls at mobile and desktop sizes.",
+       "+6. Verify the result when possible with the browser/dev server/screenshot flow available in the environment.",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+## Anti-Slop Defaults",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+Do not default to:",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+- Purple, indigo, violet, or blue-purple gradients.",
+       "+- Beige/cream/tan monochrome pages, dark slate dashboards, or one-note color themes.",
+       "+- Giant rounded cards stacked on a gradient background.",
+       "+- Repeated feature cards, fake glassmorphism, glow blobs, gradient orbs, bokeh blobs, or decorative noise with no purpose.",
+       "+- Generic hero sections for apps or tools when the user asked for a usable product surface.",
+       "+- Overused font choices as the whole personality: Inter, Roboto, Arial, system fonts, Space Grotesk."
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "YosemiteCrew/Yosemite-Crew",
+     "path": ".claude/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/YosemiteCrew/Yosemite-Crew/blob/main/.claude/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.4512,
+       "char_ratio": 0.8115,
+       "heading_jaccard": 0.0,
+       "description_similarity": 0.5051,
+       "name_bonus": 0.32,
+       "score": 0.7836
+      },
+      "length_change": "-19%",
+      "workflow_headings": "6 -> 14 headings",
+      "detected_mutation": "routing-specialization",
+      "text_diff_brief": [
+       "-# Frontend Design",
+       "+# Frontend Design System - Yosemite Crew",
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+## Description",
+       "-## Ground it in the subject",
+       "+Use this skill when working on UI in apps/frontend. It teaches you how to use our custom design system, component library, and style conventions so you produce",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+TRIGGER: any task involving JSX, styling, layout, new components, or visual changes in apps/frontend.",
+       "-## Design principles",
+       "+---",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+## Core Rule: Reuse Before Creating",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+**Before writing any new UI element, search the existing component library.**",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+```",
+       "+src/app/ui/                 ← start here",
+       "+  Button.tsx                ← variants: primary | secondary | danger",
+       "+  Card.tsx                  ← variants: default | bordered | subtle",
+       "+  Badge.tsx                 ← non-status labels (status chips use StatusPill)",
+       "+  Input.tsx                 ← base input with token borders",
+       "+  Stack.tsx                 ← flex layout helper",
+       "+  Text.tsx                  ← typography variants",
+       "+  inputs/                   ← Datepicker, Dropdowns, Search, FileInput"
+      ]
+     },
+     "source_available": true
+    }
+   ]
+  },
+  {
+   "label": "add-evaluation-or-review-gate",
+   "display_name": "add evaluation or review gate",
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "behavior_signature": {
+    "trigger": "work produced",
+    "action": "evaluate/review against defined criteria",
+    "object": "produced output",
+    "outcome": "delivery only after gate passes"
+   },
+   "group_count": 4,
+   "repository_count": 4,
+   "what_changed": "Adds an explicit review/verification gate that output must pass before delivery.",
+   "interpretation": "Generated UI is rarely reviewed against intent without a forced pass.",
+   "tradeoff": "Checklists can become boilerplate.",
+   "representatives": [
+    {
+     "repository": "rongxinzy/RongxinAI",
+     "path": "SKILLs/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/rongxinzy/RongxinAI/blob/main/SKILLs/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.5578,
+       "char_ratio": 0.7551,
+       "heading_jaccard": 0.0,
+       "description_similarity": 0.485,
+       "name_bonus": 0.32,
+       "score": 0.8226
+      },
+      "length_change": "-24%",
+      "workflow_headings": "6 -> 5 headings",
+      "detected_mutation": "workflow-specialization",
+      "text_diff_brief": [
+       "-# Frontend Design",
+       "+This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with excep",
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or techni",
+       "-## Ground it in the subject",
+       "+## Visual direction workflow",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+1. Read [the design brief](references/design-brief.md). Extract audience, brand cues, content density, platform, accessibility needs, and one memorable interac",
+       "+2. Select three materially different directions from [design archetypes](references/design-archetypes.md). A direction changes composition, typography, color t",
+       "+3. Record the chosen direction in `design.md` before implementation: the discarded alternatives, anchor, palette roles, typography, spacing scale, component tr",
+       "+4. When screenshots or an approved site are supplied, use [reference mode](references/reference-mode.md) before selecting a direction. Extract a design system;",
+       "+5. Build the hero and one representative dense section first. Render desktop and mobile, review with [the visual rubric](references/visual-review.md), revise t",
+       "-## Design principles",
+       "+## Design Thinking",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+Before coding, understand the context and commit to a BOLD aesthetic direction:",
+       "+- **Purpose**: What problem does this interface solve? Who uses it?",
+       "+- **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, bruta",
+       "+- **Constraints**: Technical requirements (framework, performance, accessibility).",
+       "+- **Differentiation**: What makes this UNFORGETTABLE? What's the one thing someone will remember?",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+**CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, ",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:"
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "byerlikaya/claude-starter-kit",
+     "path": "plugin/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/byerlikaya/claude-starter-kit/blob/main/plugin/skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.4531,
+       "char_ratio": 0.508,
+       "heading_jaccard": 0.0,
+       "description_similarity": 0.4608,
+       "name_bonus": 0.32,
+       "score": 0.7172
+      },
+      "length_change": "-49%",
+      "workflow_headings": "6 -> 6 headings",
+      "detected_mutation": "workflow-specialization",
+      "text_diff_brief": [
+       "-# Frontend Design",
+       "+# Frontend Design (visual & UX quality)",
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+<!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside",
+       "+     Claude Code's budget (1% of the context window) — an overflowing listing gets descriptions",
+       "+     truncated or dropped, which strips the very keywords a match depends on. -->",
+       "+Trigger phrases: \"visual design\", \"design system\", \"make it look good\", \"UI polish\", \"page layout\", \"the layout is\", \"spacing\", \"typography\"",
+       "-## Ground it in the subject",
+       "+`frontend` decides how the code is structured; `a11y` decides whether everyone can use it; **this skill decides",
+       "+whether it looks considered and feels right.** The through-line: **a few consistent decisions, applied everywhere,",
+       "+read as \"designed\" — many one-off decisions read as \"assembled\".** Design is subtraction and rhythm, not adding flourish.",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+> **Kit adaptation (local, .claude/):** Stack-agnostic. **Detect and respect the project's existing design system**",
+       "+> (tokens, component library, brand) — never impose a personal aesthetic or a new library. Accessibility is a floor,",
+       "+> not a trade-off: apply `a11y` alongside (contrast, focus, motion). §4 Prohibitions apply.",
+       "-## Design principles",
+       "+## The six levers (order = impact; fix hierarchy before you touch color)",
+       "+1. **Hierarchy** — the eye must land on the one primary thing first. Establish it with size, weight, and space — not with more color. One primary action per vi",
+       "+2. **Spacing & rhythm** — consistent spacing from a single scale (e.g. 4/8px steps). Group related things with *less* space, separate groups with *more*. White",
+       "+3. **Typography** — one or two families, a small scale (≈4–6 steps), consistent line-height (~1.5 body). Limit weights. Measure ~45–75 chars per line. Type doe",
+       "+4. **Color** — a restrained system: 1 brand/accent, a neutral ramp, semantic states (success/warn/error). Accent is for *action and emphasis*, not decoration. ",
+       "+5. **Layout & composition** — align to a grid; consistent alignment edges. Respect proximity/similarity (Gestalt). Responsive by *intent* (reflow, not just shr",
+       "+6. **State & polish** — design loading / empty / error / disabled / hover / focus as first-class, not afterthoughts. Motion is restrained and purposeful (~150–",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag"
+      ]
+     },
+     "source_available": true
+    },
+    {
+     "repository": "zszz3/AgentRecall",
+     "path": "apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/zszz3/AgentRecall/blob/main/apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md",
+     "compare": {
+      "similarity": {
+       "name_match": true,
+       "token_set_ratio": 0.4441,
+       "char_ratio": 0.2452,
+       "heading_jaccard": 0.0909,
+       "description_similarity": 0.4904,
+       "name_bonus": 0.32,
+       "score": 0.6783
+      },
+      "length_change": "-75%",
+      "workflow_headings": "6 -> 6 headings",
+      "detected_mutation": "compact-rewrite",
+      "text_diff_brief": [
+       "-Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client ha",
+       "+Create interfaces with a clear point of view instead of assembling familiar defaults.",
+       "-## Ground it in the subject",
+       "+## Before coding",
+       "-If the brief does not pin down what the product or subject is, pin it yourself before designing: name one concrete subject, its audience, and the page's single",
+       "+1. Read the existing product and design conventions. Preserve an established system unless the task explicitly calls for a redesign.",
+       "+2. Name the audience, the screen's primary job, and one visual idea rooted in the product's subject matter.",
+       "+3. Define a compact system: 4-6 colors, type roles, spacing rhythm, layout constraints, and one signature element.",
+       "+4. Reject choices that could be pasted unchanged into an unrelated product.",
+       "-## Design principles",
+       "+## Build",
+       "-For web designs, the hero is a thesis. Open with the most characteristic thing in the subject's world, in whatever form makes sense for it: a headline, an imag",
+       "+- Make the real usable screen first, not a marketing page about the feature.",
+       "+- Match information density to the domain. Operational tools favor scanning, comparison, and repeated action.",
+       "+- Use established components and icon libraries already present in the repository.",
+       "+- Keep sections unframed unless an item genuinely needs a card. Do not nest cards.",
+       "+- Use responsive constraints for boards, toolbars, grids, and controls so content cannot resize or overlap them.",
+       "+- Treat copy as interface material: concrete labels, active commands, actionable errors, and useful empty states.",
+       "+- Respect keyboard focus, reduced motion, contrast, and mobile layouts.",
+       "-Typography carries the personality of the page. Pair the display and body faces deliberately, not the same families you would reach for on any other project, a",
+       "+## Visual discipline",
+       "-Structure is information. Structural devices, numbering, eyebrows, dividers, labels, should encode something true about the content, not decorate it. Many gene",
+       "+Spend visual emphasis in one place. Avoid decorative gradients, floating blobs, arbitrary oversized headings, and a palette dominated by one fashionable hue. T",
+       "-Leverage motion deliberately. Think about where and if animation can serve the subject: a page-load sequence, a scroll-triggered reveal, hover micro-interactio"
+      ]
+     },
+     "source_available": true
+    }
+   ]
+  }
+ ]
+}
