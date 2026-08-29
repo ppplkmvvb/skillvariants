@@ -1,0 +1,134 @@
+{
+ "accepted_count": 3,
+ "accepted": [
+  {
+   "label": "add-context-gathering-before-design",
+   "display_name": "add context gathering before design",
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "behavior_signature": {
+    "trigger": "task start",
+    "action": "gather or load project context first",
+    "object": "project context/conventions",
+    "outcome": "design decisions grounded in context"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 3,
+     "repository": "panin-glitch/EatLock",
+     "path": "general skills/.codebuddy/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/panin-glitch/EatLock/blob/main/general skills/.codebuddy/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 30,
+     "repository": "gvkhosla/compound-engineering-pi",
+     "path": "skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/gvkhosla/compound-engineering-pi/blob/main/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 10,
+     "repository": "quocthinhthan/Portfolio",
+     "path": ".agents/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/quocthinhthan/Portfolio/blob/main/.agents/skills/frontend-design/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-framework-specific-design-rules",
+   "display_name": "add framework specific design rules",
+   "invariant": "Adds design or implementation rules tied to a specific UI framework, stack, or design-token system.",
+   "behavior_signature": {
+    "trigger": "working within a named stack",
+    "action": "apply framework/stack-specific rules",
+    "object": "UI framework usage",
+    "outcome": "idiomatic, consistent output for that stack"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 4,
+   "repository_count": 4,
+   "supporting_groups": [
+    {
+     "group_id": 13,
+     "repository": "studio-jami/jami-studio",
+     "path": "templates/forms/.agents/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/studio-jami/jami-studio/blob/main/templates/forms/.agents/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 17,
+     "repository": "Everfern-AI/Everfern",
+     "path": "main/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Everfern-AI/Everfern/blob/main/main/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 29,
+     "repository": "YosemiteCrew/Yosemite-Crew",
+     "path": ".claude/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/YosemiteCrew/Yosemite-Crew/blob/main/.claude/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 57,
+     "repository": "duyet/skills",
+     "path": "frontend-design/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/duyet/skills/blob/master/frontend-design/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-evaluation-or-review-gate",
+   "display_name": "add evaluation or review gate",
+   "invariant": "Adds an explicit evaluation, review, or verification step/gate that work must pass before delivery.",
+   "behavior_signature": {
+    "trigger": "work produced",
+    "action": "evaluate/review against defined criteria",
+    "object": "produced output",
+    "outcome": "delivery only after gate passes"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 4,
+   "repository_count": 4,
+   "supporting_groups": [
+    {
+     "group_id": 15,
+     "repository": "rongxinzy/RongxinAI",
+     "path": "SKILLs/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/rongxinzy/RongxinAI/blob/main/SKILLs/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 48,
+     "repository": "byerlikaya/claude-starter-kit",
+     "path": "plugin/skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/byerlikaya/claude-starter-kit/blob/main/plugin/skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 58,
+     "repository": "zszz3/AgentRecall",
+     "path": "apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/zszz3/AgentRecall/blob/main/apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md"
+    },
+    {
+     "group_id": 62,
+     "repository": "OpenBMB/PilotDeck",
+     "path": "skills/frontend-design/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/OpenBMB/PilotDeck/blob/main/skills/frontend-design/SKILL.md"
+    }
+   ]
+  }
+ ],
+ "suppressed": []
+}

@@ -1,0 +1,12 @@
+{
+ "study_id": "systematic-debugging-9080c23",
+ "checks": {
+  "state_after_2_batches": true,
+  "resumed_next_is_pass_a": true,
+  "resumed_batch_is_third": true,
+  "idempotent_duplicate": true,
+  "malformed_rejected": true,
+  "state_not_advanced": true
+ },
+ "all_pass": true
+}

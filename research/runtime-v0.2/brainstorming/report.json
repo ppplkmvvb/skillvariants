@@ -1,0 +1,366 @@
+{
+ "schema_version": "1",
+ "study_id": "brainstorming-7de1fd7",
+ "target": {
+  "repository": "obra/superpowers",
+  "path": "skills/brainstorming/SKILL.md",
+  "ref": "main",
+  "direct_skill_url": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+  "name": "brainstorming",
+  "normalized_hash": "7de1fd7444541192260b3caf4ae248ef1508f7925ad9f1bebf7149e65c85f5e8"
+ },
+ "summary": {
+  "groups_total": 90,
+  "groups_analyzed": 90,
+  "motifs_proposed": 7,
+  "motifs_verified": 7,
+  "motifs_accepted": 7,
+  "sampling_applied": false
+ },
+ "accepted_motifs": [
+  {
+   "label": "add-explicit-hard-gate-implementation-lock",
+   "display_name": "add explicit hard gate implementation lock",
+   "invariant": "Adds an explicit, unavoidable prohibition on writing code or taking implementation action before approval.",
+   "behavior_signature": {
+    "trigger": "before explicit design approval",
+    "action": "block implementation",
+    "object": "code-writing/implementation",
+    "outcome": "implementation only after gate"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 6,
+   "repository_count": 6,
+   "supporting_groups": [
+    {
+     "group_id": 29,
+     "repository": "ahippelainen/claude-loadout",
+     "path": "claude/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/ahippelainen/claude-loadout/blob/main/claude/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 30,
+     "repository": "jh941213/my-cc-harness",
+     "path": "skills_en/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/jh941213/my-cc-harness/blob/main/skills_en/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 44,
+     "repository": "bharat3645/The-Ideal-Harness",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/bharat3645/The-Ideal-Harness/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 50,
+     "repository": "hnb-rabear/hnb-rabear.github.io",
+     "path": ".agents/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/hnb-rabear/hnb-rabear.github.io/blob/main/.agents/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 82,
+     "repository": "MaxFerAlten/tenderclaw",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/MaxFerAlten/tenderclaw/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 84,
+     "repository": "dxc-danny/superpowers-cn",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/dxc-danny/superpowers-cn/blob/main/skills/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-context-gathering-before-design",
+   "display_name": "add context gathering before design",
+   "invariant": "Adds a mandatory context-gathering or project-context loading step before design work begins.",
+   "behavior_signature": {
+    "trigger": "task start",
+    "action": "gather or load project context first",
+    "object": "project context/conventions",
+    "outcome": "design decisions grounded in context"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 52,
+     "repository": "manyrocks/venture",
+     "path": "templates/.claude/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/manyrocks/venture/blob/main/templates/.claude/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 31,
+     "repository": "AntonyKervazoCanut/gba_translator",
+     "path": ".ollama/skills/brainstorming/SKILL.md",
+     "ref": "unbound",
+     "direct_skill_url": "https://github.com/AntonyKervazoCanut/gba_translator/blob/unbound/.ollama/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 64,
+     "repository": "jttd3v/public-cms",
+     "path": ".claude/skills/brainstorming/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/jttd3v/public-cms/blob/master/.claude/skills/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-questioning-or-interaction-protocol",
+   "display_name": "add questioning or interaction protocol",
+   "invariant": "Prescribes a concrete questioning/interaction protocol (one question at a time, tool usage, or question-count rules).",
+   "behavior_signature": {
+    "trigger": "dialogue with user",
+    "action": "follow questioning protocol",
+    "object": "user interaction",
+    "outcome": "structured elicitation"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 7,
+   "repository_count": 7,
+   "supporting_groups": [
+    {
+     "group_id": 41,
+     "repository": "majiayu000/claude-skill-registry-data",
+     "path": "planning/brainstorming-datorresb-vibecoding-starter/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/planning/brainstorming-datorresb-vibecoding-starter/SKILL.md"
+    },
+    {
+     "group_id": 62,
+     "repository": "discountedcookie/10x-mapmaster",
+     "path": ".opencode/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/discountedcookie/10x-mapmaster/blob/main/.opencode/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 37,
+     "repository": "casius-connect/vibe-briefing-skills",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/casius-connect/vibe-briefing-skills/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 69,
+     "repository": "David-Li0406/meta-skill-evloving",
+     "path": "skill-flow/data/skills-refined-36k/skillsmp/brainstorming-55/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-36k/skillsmp/brainstorming-55/SKILL.md"
+    },
+    {
+     "group_id": 79,
+     "repository": "VinhHoang03/Handigo-Platform",
+     "path": ".agents/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/VinhHoang03/Handigo-Platform/blob/main/.agents/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 47,
+     "repository": "B4san/AC-framework",
+     "path": "framework/make_your_own/.amazonq/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/B4san/AC-framework/blob/main/framework/make_your_own/.amazonq/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 63,
+     "repository": "reidemeister94/development-skills",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/reidemeister94/development-skills/blob/main/skills/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-diverge-converge-phase-split",
+   "display_name": "add diverge converge phase split",
+   "invariant": "Structures the process as an explicit divergent-exploration phase followed by a convergent decision/presentation phase.",
+   "behavior_signature": {
+    "trigger": "ideation phase",
+    "action": "diverge then converge",
+    "object": "options/approaches",
+    "outcome": "explored spread before commitment"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 58,
+     "repository": "incubyte/ai-plugins",
+     "path": "bee/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/incubyte/ai-plugins/blob/main/bee/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 80,
+     "repository": "KpG782/3D_Portfolio",
+     "path": ".claude/skills/brainstorming/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/KpG782/3D_Portfolio/blob/master/.claude/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 49,
+     "repository": "myths-labs/muse",
+     "path": "skills/toolkit/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/myths-labs/muse/blob/main/skills/toolkit/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-greenfield-vs-existing-path-split",
+   "display_name": "add greenfield vs existing path split",
+   "invariant": "Adds a distinct path for greenfield work versus existing-codebase work.",
+   "behavior_signature": {
+    "trigger": "project type detected",
+    "action": "branch greenfield vs existing path",
+    "object": "context exploration",
+    "outcome": "appropriate exploration depth"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 9,
+     "repository": "derHaken/SuperAntigravity",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/derHaken/SuperAntigravity/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 15,
+     "repository": "kyaulabs/prism",
+     "path": "packages/prism-core/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/kyaulabs/prism/blob/main/packages/prism-core/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 21,
+     "repository": "Benkapner/claude-code-basecamp",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Benkapner/claude-code-basecamp/blob/main/skills/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-ownership-or-handoff-boundary",
+   "display_name": "add ownership or handoff boundary",
+   "invariant": "States what this skill owns versus what it delegates, or defines an explicit handoff boundary to another skill or pipeline stage.",
+   "behavior_signature": {
+    "trigger": "stage transition or scope question",
+    "action": "declare ownership/handoff",
+    "object": "stage responsibilities",
+    "outcome": "clean pipeline boundaries"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 7,
+   "repository_count": 7,
+   "supporting_groups": [
+    {
+     "group_id": 25,
+     "repository": "mengsi16/plan-for-all",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/mengsi16/plan-for-all/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 46,
+     "repository": "cheetahbyte/dotfiles",
+     "path": "agents/.agents/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/cheetahbyte/dotfiles/blob/main/agents/.agents/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 12,
+     "repository": "doviettung96/apk-tool",
+     "path": ".codex/skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/doviettung96/apk-tool/blob/main/.codex/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 20,
+     "repository": "coctostan/pi-superpowers-plus",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/coctostan/pi-superpowers-plus/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 76,
+     "repository": "Yassimba/loom",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Yassimba/loom/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 44,
+     "repository": "bharat3645/The-Ideal-Harness",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/bharat3645/The-Ideal-Harness/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 51,
+     "repository": "modimihir07/agentic-os",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/modimihir07/agentic-os/blob/main/skills/brainstorming/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-stop-or-fallback-condition",
+   "display_name": "add stop or fallback condition",
+   "invariant": "Adds explicit stop conditions or fallback behavior for when the process stalls or its assumptions fail.",
+   "behavior_signature": {
+    "trigger": "process stall or failed assumption",
+    "action": "stop or fall back",
+    "object": "brainstorming process",
+    "outcome": "documented fallback"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 35,
+     "repository": "apenlor/opencode-expert-mode",
+     "path": "skills/brainstorming/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/apenlor/opencode-expert-mode/blob/main/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 54,
+     "repository": "drbothen/vsdd-factory",
+     "path": "plugins/vsdd-factory/skills/brainstorming/SKILL.md",
+     "ref": "develop",
+     "direct_skill_url": "https://github.com/drbothen/vsdd-factory/blob/develop/plugins/vsdd-factory/skills/brainstorming/SKILL.md"
+    },
+    {
+     "group_id": 72,
+     "repository": "majiayu000/claude-skill-registry-data",
+     "path": "other/brainstorming-arbiterforge-codearbiter/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry-data/blob/main/other/brainstorming-arbiterforge-codearbiter/SKILL.md"
+    }
+   ]
+  }
+ ],
+ "suppressed_motifs": []
+}

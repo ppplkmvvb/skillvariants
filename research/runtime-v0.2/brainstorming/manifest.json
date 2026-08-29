@@ -1,0 +1,27 @@
+{
+ "schema_version": "1",
+ "runtime_version": "0.2",
+ "study_id": "brainstorming-7de1fd7",
+ "created_at": "2026-08-29T07:28:07+00:00",
+ "updated_at": "2026-08-29T07:28:25+00:00",
+ "target": {
+  "repository": "obra/superpowers",
+  "path": "skills/brainstorming/SKILL.md",
+  "ref": "main",
+  "direct_skill_url": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+  "name": "brainstorming",
+  "normalized_hash": "7de1fd7444541192260b3caf4ae248ef1508f7925ad9f1bebf7149e65c85f5e8"
+ },
+ "status": "COMPLETE",
+ "counts": {
+  "groups_total": 90,
+  "groups_analyzed": 90,
+  "motifs_proposed": 7,
+  "motifs_verified": 7,
+  "motifs_accepted": 7
+ },
+ "sampling_applied": false,
+ "semantic_groups_analyzed": 90,
+ "total_groups_available": 90,
+ "errors": []
+}

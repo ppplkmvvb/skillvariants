@@ -28,6 +28,7 @@ from .ranking import (
     representative_score,
     _archetype_signals,
 )
+from .study import tasks as T
 from .render import SimilarityRow, render_compare, render_inspect, render_mutations, render_related
 from .similarity import normalize_for_hash, score_similarity, sha256
 
@@ -282,105 +283,106 @@ def evidence(
     includes a direct SKILL.md URL so an agent can trace
     group -> representative file -> exact GitHub source.
     """
-    global _CACHE_DIR_STATE
-    _CACHE_DIR_STATE = cache_dir
-    import difflib
-
+    from .cli_helpers import build_evidence_payload
     err_console = Console(file=sys.stderr)
-
+    fetch_errors: list[str] = []
     try:
-        pool_data = _build_variant_pool(url, cache_dir, max_pages)
+        payload = build_evidence_payload(url, cache_dir, max_pages,
+                                         fetch_errors_out=fetch_errors)
     except (ValueError, GitHubError) as exc:
         _exit_usage(exc)
-
-    pool = pool_data["pool"]
-    target_ref = parse_github_url(url)
-    from .features import extract_features
-    from .similarity import normalize_for_hash, sha256
-
-    target_doc = pool_data["target_doc"]
-    target_hash = sha256(normalize_for_hash(target_doc.raw))
-
-    gated = [row for row in pool if row.relatedness >= MIN_RELATEDNESS]
-    groups = group_variants(gated)
-
-    from collections import Counter
-
-    archetype_counts = Counter(g.dominant_type() for g in groups)
-
-    group_rows = []
-    for gid, group in enumerate(groups, start=1):
-        rep = group.representative
-        mf = rep.mutation_features
-        row = {
-            "group_id": gid,
-            "repository": rep.repo,
-            "path": rep.path,
-            "ref": rep.ref,
-            "direct_skill_url": "",
-            "archetype": group.dominant_type(),
-            "relatedness": round(rep.relatedness, 3),
-            "member_count": len(group.members),
-            "occurrence_count": group.member_count,
-            "structural_signals": {
-                "length_delta": round(mf.length_delta_ratio, 3),
-                "headings_added": mf.headings_added_count,
-                "headings_removed": mf.headings_removed_count,
-                "commands_added": mf.command_set_added,
-                "commands_removed": mf.command_set_removed,
-                "cross_skill_ref_delta": mf.cross_skill_ref_delta,
-                "routing_signals": rep.feats.routing_signals[:6],
-                "wrapper_signals": rep.feats.wrapper_signals[:6],
-                "workflow_structure_delta": round(mf.workflow_structure_delta, 3),
-                "placeholder_signal": round(rep.feats.placeholder_signal, 3),
-            },
-            "added_excerpt": "",
-            "removed_excerpt": "",
-        }
-        diff = list(difflib.unified_diff(
-            target_doc.body.splitlines(), rep.doc.body.splitlines(),
-            lineterm="", n=0))
-        added = [line[1:].strip()[:160] for line in diff
-                 if line.startswith("+") and line[1:].strip()]
-        removed = [line[1:].strip()[:160] for line in diff
-                   if line.startswith("-") and line[1:].strip()]
-        row["added_excerpt"] = " | ".join(added[:3])[:900]
-        row["removed_excerpt"] = " | ".join(removed[:3])[:900]
-        group_rows.append(row)
-
-    _resolve_group_refs(group_rows)
-    for row in group_rows:
-        row["direct_skill_url"] = (
-            f"https://github.com/{row['repository']}/blob/"
-            f"{row['ref']}/{row['path']}"
-        )
-
-    payload = {
-        "schema_version": "1",
-        "target": {
-            "repository": target_ref.repo_slug,
-            "path": target_ref.path,
-            "ref": target_ref.ref,
-            "direct_skill_url": (
-                f"https://github.com/{target_ref.repo_slug}/blob/"
-                f"{target_ref.ref}/{target_ref.path}"
-            ),
-            "name": pool_data["target"]["name"],
-            "normalized_hash": target_hash,
-        },
-        "summary": {
-            "candidate_count": pool_data["counts"]["candidates_total"],
-            "related_variant_count": pool_data["counts"]["unique_variants"],
-            "exact_copy_count": pool_data["counts"]["exact_copies_of_target"],
-            "mutation_group_count": len(groups),
-            "broad_archetype_counts": dict(archetype_counts),
-        },
-        "groups": group_rows,
-    }
     emit_json(payload)
-    if pool_data["fetch_errors"]:
-        for error in pool_data["fetch_errors"][:5]:
-            err_console.print(f"[yellow]SKIPPED[/yellow] {error}")
+    for error in fetch_errors[:5]:
+        err_console.print(f"[yellow]SKIPPED[/yellow] {error}")
+
+
+# ---- study runtime commands (v0.2) ---------------------------------------------
+
+def _runtime(base_dir: Path | None = None, batch_size: int = 8) -> "StudyRuntime":
+    from .study.runtime import StudyRuntime
+    return StudyRuntime(base_dir=base_dir, batch_size=batch_size)
+
+
+def _study_emit(payload: dict) -> None:
+    emit_json(payload)
+
+
+@app.command()
+def study_start(
+    url: str = typer.Argument(..., help="GitHub SKILL.md URL"),
+    cache_dir: Path = typer.Option(DEFAULT_CACHE_DIR, "--cache-dir"),
+    base_dir: Path = typer.Option(Path(".skillvariants"), "--base-dir"),
+    json_output: bool = typer.Option(True, "--json"),
+) -> None:
+    """Start (or resume) a persistent study session for a Skill."""
+    try:
+        result = _runtime(base_dir=base_dir).start(url, cache_dir=cache_dir)
+    except (ValueError, GitHubError) as exc:
+        _exit_usage(exc)
+    _study_emit(result)
+
+
+@app.command()
+def study_status(
+    study_id: str = typer.Argument(...),
+    base_dir: Path = typer.Option(Path(".skillvariants"), "--base-dir"),
+) -> None:
+    """Show study manifest status and counts."""
+    try:
+        result = _runtime(base_dir=base_dir).status(study_id)
+    except FileNotFoundError as exc:
+        raise typer.Exit(str(exc), code=1)
+    _study_emit(result)
+
+
+@app.command()
+def study_next(
+    study_id: str = typer.Argument(...),
+    base_dir: Path = typer.Option(Path(".skillvariants"), "--base-dir"),
+    batch_size: int = typer.Option(8, "--batch-size", min=4, max=12),
+) -> None:
+    """Return the next semantic task for the agent (or COMPLETE)."""
+    try:
+        result = _runtime(base_dir=base_dir, batch_size=batch_size).next_task(study_id)
+    except FileNotFoundError as exc:
+        raise typer.Exit(str(exc), code=1)
+    _study_emit(result)
+
+
+@app.command()
+def study_submit(
+    study_id: str = typer.Argument(...),
+    task_result: Path = typer.Argument(..., help="Path to task-result JSON"),
+    force: bool = typer.Option(False, "--force", help="Override conflicting resubmission"),
+    base_dir: Path = typer.Option(Path(".skillvariants"), "--base-dir"),
+) -> None:
+    """Submit a validated semantic task result."""
+    try:
+        response = json.loads(task_result.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise typer.Exit(f"cannot read task result: {exc}", code=1)
+    try:
+        result = _runtime(base_dir=base_dir).submit(
+            study_id, response.get("task_id", ""), response, force=force)
+    except T.SubmissionError as exc:
+        raise typer.Exit(f"REJECTED: {exc}", code=1)
+    _study_emit(result)
+
+
+@app.command()
+def study_report(
+    study_id: str = typer.Argument(...),
+    base_dir: Path = typer.Option(Path(".skillvariants"), "--base-dir"),
+) -> None:
+    """Emit the deterministic report.json for a completed study."""
+    from .study.reporting import build_report_json
+    from .study.models import read_json
+    root = base_dir / ".skillvariants" / "studies" / study_id if False else Path(".skillvariants/studies") / study_id
+    manifest = read_json(root / "manifest.json")
+    motifs = read_json(root / "motifs.json")
+    report = build_report_json(study_id, manifest["target"], manifest["counts"],
+                               motifs, manifest.get("sampling_applied", False))
+    _study_emit(report)
 
 
 def _build_mutations_payload(pool_data: dict, limit: int) -> dict:

@@ -1,0 +1,44 @@
+{"at": "2026-08-29T07:27:04+00:00", "event": "STUDY_CREATED", "detail": {"target": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md", "groups": 85, "sampling_applied": false}}
+{"at": "2026-08-29T07:27:05+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-001", "groups": 8}}
+{"at": "2026-08-29T07:27:05+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-001", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:05+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-002", "groups": 8}}
+{"at": "2026-08-29T07:27:06+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-002", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:06+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-003", "groups": 8}}
+{"at": "2026-08-29T07:27:07+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-003", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:07+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-004", "groups": 8}}
+{"at": "2026-08-29T07:27:08+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-004", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:08+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-005", "groups": 8}}
+{"at": "2026-08-29T07:27:09+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-005", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:09+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-006", "groups": 8}}
+{"at": "2026-08-29T07:27:10+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-006", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:10+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-007", "groups": 8}}
+{"at": "2026-08-29T07:27:11+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-007", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:11+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-008", "groups": 8}}
+{"at": "2026-08-29T07:27:12+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-008", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:12+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-009", "groups": 8}}
+{"at": "2026-08-29T07:27:13+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-009", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:13+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-010", "groups": 8}}
+{"at": "2026-08-29T07:27:14+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-010", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:14+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-011", "groups": 5}}
+{"at": "2026-08-29T07:27:15+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-011", "groups": 5, "escalations": 0}}
+{"at": "2026-08-29T07:27:15+00:00", "event": "PASS_B_SUBMITTED", "detail": {"canonical_motifs": 9}}
+{"at": "2026-08-29T07:27:16+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-stop-or-escalation-after-repeated-failed-fixes", "decisions": 8}}
+{"at": "2026-08-29T07:27:16+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 1, "suppressed": 8}}
+{"at": "2026-08-29T07:27:16+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-project-or-product-specific-design-rules", "decisions": 6}}
+{"at": "2026-08-29T07:27:16+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 2, "suppressed": 7}}
+{"at": "2026-08-29T07:27:17+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "route-completion-verification-to-separate-skill", "decisions": 5}}
+{"at": "2026-08-29T07:27:17+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 3, "suppressed": 6}}
+{"at": "2026-08-29T07:27:17+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "require-reproduction-before-fixing", "decisions": 4}}
+{"at": "2026-08-29T07:27:17+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 4, "suppressed": 5}}
+{"at": "2026-08-29T07:27:18+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-feedback-loop-rule", "decisions": 3}}
+{"at": "2026-08-29T07:27:18+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 5, "suppressed": 4}}
+{"at": "2026-08-29T07:27:19+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-red-flags-and-anti-pattern-guard", "decisions": 4}}
+{"at": "2026-08-29T07:27:19+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 6, "suppressed": 3}}
+{"at": "2026-08-29T07:27:19+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-routing-boundary-use-case", "decisions": 4}}
+{"at": "2026-08-29T07:27:19+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 6, "suppressed": 3}}
+{"at": "2026-08-29T07:27:20+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "preserve-root-cause-first-while-compressing", "decisions": 5}}
+{"at": "2026-08-29T07:27:20+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 7, "suppressed": 2}}
+{"at": "2026-08-29T07:27:20+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "replace-with-named-methodology", "decisions": 4}}
+{"at": "2026-08-29T07:27:20+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 8, "suppressed": 1}}
+{"at": "2026-08-29T07:27:21+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 8, "suppressed": 1}}
+{"at": "2026-08-29T07:27:21+00:00", "event": "STUDY_COMPLETE", "detail": {}}

@@ -5,11 +5,12 @@ description: Study how a public Agent Skill has been adapted across GitHub using
 
 # SkillVariants — evidence-backed skill-variant studies
 
-SkillVariants Core (the `skillvariants` CLI) is the **authoritative
-evidence engine**: it discovers related `SKILL.md` files on GitHub, collapses
-copies, groups near-clones, and produces structural diffs with source links.
-You are the **semantic analyst**: you interpret that evidence into concrete,
-recurring mutation motifs. You never invent facts the engine did not produce.
+SkillVariants Core (the `skillvariants` CLI) is the **authoritative evidence
+engine and study runtime**: it discovers related `SKILL.md` files on GitHub,
+collapses copies, groups near-clones, batches semantic work, validates your
+submissions, enforces the consolidation guardrail, and computes recurrence.
+You are the **semantic analyst**: you perform exactly the task the runtime
+returns, then submit the result. You never manage study state yourself.
 
 ## Prerequisites & invocation rule
 
@@ -24,105 +25,82 @@ directly; otherwise use `uvx skillvariants ...`. The examples below use the
 GitHub authentication is required for code search: `GITHUB_TOKEN` env var or
 `gh auth login`.
 
-## Workflow (follow in order)
+## Workflow (six steps, loop-driven)
 
-1. **Collect evidence deterministically.** Run:
+1. **Start or resume a study**
 
    ```bash
-   uvx skillvariants evidence <SKILL.md-url> --json
+   uvx skillvariants study-start <SKILL.md-url> --json
    ```
 
-   Everything you need is in the JSON: `target`, `summary` (counts only),
-   and `groups[]` (one per mutation group, each with a `direct_skill_url`,
-   `structural_signals`, and short `added_excerpt`/`removed_excerpt`).
+   Returns `study_id` and whether an existing study was resumed.
 
-2. **Read the summary first.** Report candidate count, unique related
-   variants, exact-copy count, and mutation-group count as plain facts.
+2. **Call study-next**
 
-3. **Analyze groups independently.** For each group decide: is there a
-   meaningful behavioral change (YES/PARTIAL/NO)? Do not look at other
-   groups while deciding. Skip groups with no meaningful change.
+   ```bash
+   uvx skillvariants study-next <study-id> --json
+   ```
 
-4. **Identify concrete action motifs.** Phrase each motif as a concrete
-   action: "Add ...", "Remove ...", "Route ...", "Require ...",
-   "Preserve ... while ...". Never use vague labels ("shorter", "expanded",
-   "better workflow"). A group may have zero motifs.
+   Returns exactly one task: `PASS_A_BATCH`, `PASS_B_CONSOLIDATE`,
+   `VERIFY_MOTIF`, `FINAL_REPORT`, or `COMPLETE`.
 
-5. **Consolidate by behavior equivalence, not topic similarity.** After all
-   groups are labeled, merge proposed motifs ONLY when every supporting
-   group can be truthfully described by the same concrete behavioral
-   invariant — never because they are about the same general idea. Each
-   canonical motif must carry:
+3. **Perform exactly the returned task.**
 
-   - one strict invariant sentence, and
-   - a behavior signature: `trigger`, `action`, `object`, `outcome`.
+   - `PASS_A_BATCH`: for each group, decide
+     `meaningful_behavior_change` (YES/PARTIAL/NO) and propose 0-3 concrete
+     action motifs. Each motif needs an `action`, one strict `invariant`
+     sentence, and a `behavior_signature`
+     (`trigger`/`action`/`object`/`outcome`). Analyze groups independently.
+     If excerpts are insufficient, set `needs_source_escalation: true` with a
+     `reason` and use the provided `compare_command` or `direct_skill_url`.
+   - `PASS_B_CONSOLIDATE`: cluster the proposed motif actions by **behavior
+     equivalence, not topic similarity**. Every supporting group must be
+     truthfully described by the same behavioral invariant. One strict
+     invariant + behavior signature per canonical motif; list rejected
+     near-misses. Do not compute recurrence — the engine owns counts.
+   - `VERIFY_MOTIF`: for each group decide YES/NO/UNCERTAIN against the
+     motif's invariant. UNCERTAIN groups are excluded from recurrence.
+   - `FINAL_REPORT`: write `report_md` with the required sections
+     (Target Skill / Corpus summary / Recurring adaptations / Notable
+     one-offs / Caveats) using ONLY the accepted motifs provided.
 
-   VALID merge: "stop after 3 failed fixes" + "escalate after repeated
-   failed attempts" (one invariant: stop/escalation triggered by repeated
-   failure). INVALID merge: "add review checklist" + "require DESIGN.md
-   before implementation" (both about discipline, but different behaviors —
-   split them).
+4. **Submit the result.**
 
-6. **Verify every supporting group, then let deterministic counts establish
-   recurrence.** Re-check each supporting group against the invariant
-   (YES / NO / UNCERTAIN); NO and UNCERTAIN groups are removed from
-   recurrence counting. If more than 20% of a cluster's groups are NO or
-   UNCERTAIN, the cluster is UNSTABLE: split it once along behavior lines
-   or omit it — never broaden the invariant to rescue it. A motif is
-   recurring only when >= 3 verified-YES groups from >= 3 repositories with
-   no single repository providing more than half the groups, computed by
-   deterministic code, not by the model. Use the wording:
+   ```bash
+   uvx skillvariants study-submit <study-id> <task-result.json>
+   ```
 
-   > Observed across 6 mutation groups in 6 repositories.
+   The runtime validates schema, ids, enums, and group membership, then
+   advances state. Identical resubmissions are idempotent; conflicting ones
+   are rejected without advancing.
 
-   Never say "common", "widely adopted", or "independently invented".
+5. **Repeat from step 2 until the task type is `COMPLETE`.**
 
-7. **Present recurring motifs with source links.** For each motif: what
-   changed, why it may matter (labeled as interpretation), and 3+
-   representative implementations as `repo/path — direct_skill_url`.
+6. **Present the report.** Read
+   `.skillvariants/studies/<study-id>/report.md` (or run
+   `uvx skillvariants study-report <study-id> --json`) and answer the user
+   with the accepted motifs, counts, and source links.
 
-8. **Distinguish observation from interpretation.** Three levels, never
-   collapsed: (a) observed fact with counts, (b) interpretation ("this may
-   reflect a desire to ..."), (c) user-specific suggestion — only when asked.
+## Interpretation discipline (never collapse these levels)
 
-9. **Compare representative variants when useful.** Use
-   `uvx skillvariants compare <target-url> <variant-url> --json` for a
-   structural diff of two specific files.
-
-10. **Only discuss applicability to the user's own Skill when explicitly
-    asked**, and only after reading their actual Skill content.
-
-## Output shape
-
-```text
-Target Skill
-
-Corpus summary
-
-Recurring adaptations
-
-1. <motif>
-   Observed across N groups / N repositories
-   What changed
-   Why it may matter        (interpretation)
-   Tradeoff                 (interpretation)
-   Representative implementations:
-   - repo/path — https://github.com/...
-```
-
-No scores. No "best variant". No "best practices".
+1. **Observed fact** — "Observed across 6 mutation groups in 6 repositories."
+2. **Interpretation** — "This may reflect a desire to prevent implementation
+   before explicit design approval."
+3. **User-specific suggestion** — only when explicitly asked, and only after
+   reading the user's actual Skill.
 
 ## Hard rules
 
-- Never claim ancestry ("copied from", "original", "forked from") — hashes
-  prove identical bytes, nothing more.
+- Never claim ancestry ("copied from", "original", "forked from").
 - Never treat frequency as quality; a frequent motif can be shallow.
 - Never fabricate or guess a URL; use `direct_skill_url` from the payload.
 - Never present project-specific adaptations as general patterns.
+- Never merge motifs by topic; merge only by behavior equivalence under one
+  strict invariant, and split clusters that mix behaviors.
+- Never broaden an invariant to rescue an unstable cluster — omit it.
+- Never compute or present recurrence counts yourself; quote the runtime.
 - Never modify the user's Skill files; this skill is read-only analysis.
 
-Consolidation discipline in one line: PASS A is independent per group; PASS B clusters by behavior equivalence; every motif has one strict invariant; every supporting group is re-verified; uncertain groups do not count; recurrence comes from deterministic code; broad or unstable clusters are omitted, never rescued.
-
-Deep references: [evidence-schema.md](references/evidence-schema.md) and
-[interpretation-rules.md](references/interpretation-rules.md). A worked
-example is in [examples/systematic-debugging.md](examples/systematic-debugging.md).
+Deep references: [evidence-schema.md](references/evidence-schema.md),
+[interpretation-rules.md](references/interpretation-rules.md). Worked
+example: [examples/systematic-debugging.md](examples/systematic-debugging.md).

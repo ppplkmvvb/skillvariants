@@ -1,0 +1,28 @@
+{"at": "2026-08-29T07:27:42+00:00", "event": "STUDY_CREATED", "detail": {"target": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md", "groups": 68, "sampling_applied": false}}
+{"at": "2026-08-29T07:27:43+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-001", "groups": 8}}
+{"at": "2026-08-29T07:27:43+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-001", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:44+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-002", "groups": 8}}
+{"at": "2026-08-29T07:27:44+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-002", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:45+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-003", "groups": 8}}
+{"at": "2026-08-29T07:27:45+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-003", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:45+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-004", "groups": 8}}
+{"at": "2026-08-29T07:27:46+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-004", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:46+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-005", "groups": 8}}
+{"at": "2026-08-29T07:27:47+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-005", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:47+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-006", "groups": 8}}
+{"at": "2026-08-29T07:27:48+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-006", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:48+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-007", "groups": 8}}
+{"at": "2026-08-29T07:27:49+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-007", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:49+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-008", "groups": 8}}
+{"at": "2026-08-29T07:27:50+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-008", "groups": 8, "escalations": 0}}
+{"at": "2026-08-29T07:27:50+00:00", "event": "PASS_A_BATCH_DISPATCHED", "detail": {"batch_id": "pass-a-009", "groups": 4}}
+{"at": "2026-08-29T07:27:51+00:00", "event": "PASS_A_BATCH_SUBMITTED", "detail": {"batch_id": "pass-a-009", "groups": 4, "escalations": 0}}
+{"at": "2026-08-29T07:27:52+00:00", "event": "PASS_B_SUBMITTED", "detail": {"canonical_motifs": 3}}
+{"at": "2026-08-29T07:27:52+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-context-gathering-before-design", "decisions": 3}}
+{"at": "2026-08-29T07:27:52+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 1, "suppressed": 2}}
+{"at": "2026-08-29T07:27:53+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-framework-specific-design-rules", "decisions": 4}}
+{"at": "2026-08-29T07:27:53+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 2, "suppressed": 1}}
+{"at": "2026-08-29T07:27:53+00:00", "event": "VERIFIER_SUBMITTED", "detail": {"motif": "add-evaluation-or-review-gate", "decisions": 4}}
+{"at": "2026-08-29T07:27:53+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 3, "suppressed": 0}}
+{"at": "2026-08-29T07:27:54+00:00", "event": "MOTIFS_FINALIZED", "detail": {"accepted": 3, "suppressed": 0}}
+{"at": "2026-08-29T07:27:54+00:00", "event": "STUDY_COMPLETE", "detail": {}}

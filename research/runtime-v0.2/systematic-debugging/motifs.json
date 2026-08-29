@@ -1,0 +1,458 @@
+{
+ "accepted_count": 8,
+ "accepted": [
+  {
+   "label": "add-stop-or-escalation-after-repeated-failed-fixes",
+   "display_name": "add stop or escalation after repeated failed fixes",
+   "invariant": "Introduces an explicit termination, escalation, or reframing trigger tied to a counted number of failed fix attempts.",
+   "behavior_signature": {
+    "trigger": "a counted number of failed fix attempts",
+    "action": "stop or escalate the loop",
+    "object": "debugging/iteration loop",
+    "outcome": "agent stops or escalates instead of continuing"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 8,
+   "repository_count": 8,
+   "supporting_groups": [
+    {
+     "group_id": 19,
+     "repository": "aiskillstore/marketplace",
+     "path": "skills/codingcossack/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/codingcossack/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 25,
+     "repository": "RBraga01/a-team",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/RBraga01/a-team/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 31,
+     "repository": "jh941213/my-cc-harness",
+     "path": "skills_en/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/jh941213/my-cc-harness/blob/main/skills_en/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 43,
+     "repository": "majiayu000/spellbook",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/majiayu000/spellbook/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 45,
+     "repository": "erclx/aitk",
+     "path": "claude/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/erclx/aitk/blob/main/claude/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 67,
+     "repository": "ericbusboom/dotconfig",
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/ericbusboom/dotconfig/blob/master/.agents/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 56,
+     "repository": "jed72/compass",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/jed72/compass/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 33,
+     "repository": "Bbeierle12/Skill-MCP-Claude",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Bbeierle12/Skill-MCP-Claude/blob/main/skills/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-project-or-product-specific-design-rules",
+   "display_name": "add project or product specific design rules",
+   "invariant": "Adds design or debugging rules grounded in this specific repository, product, or its design language.",
+   "behavior_signature": {
+    "trigger": "working in the target repo/product",
+    "action": "apply repo/product-specific rules",
+    "object": "design and workflow decisions",
+    "outcome": "output matches the specific project"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 6,
+   "repository_count": 6,
+   "supporting_groups": [
+    {
+     "group_id": 3,
+     "repository": "eastreams/loong",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "rewrite",
+     "direct_skill_url": "https://github.com/eastreams/loong/blob/rewrite/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 15,
+     "repository": "LiGoldragon/Mentci-AI",
+     "path": ".pi/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/LiGoldragon/Mentci-AI/blob/main/.pi/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 24,
+     "repository": "Frostthejack/hermes-tailscale-rw",
+     "path": "profiles/orchestrator/skills/software-development/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Frostthejack/hermes-tailscale-rw/blob/main/profiles/orchestrator/skills/software-development/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 85,
+     "repository": "vamseeachanta/workspace-hub",
+     "path": ".claude/skills/_archive/development/systematic-debugging/error-handling/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/vamseeachanta/workspace-hub/blob/main/.claude/skills/_archive/development/systematic-debugging/error-handling/SKILL.md"
+    },
+    {
+     "group_id": 80,
+     "repository": "charlieviettq/awesome-agent-skill",
+     "path": ".claude/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/charlieviettq/awesome-agent-skill/blob/main/.claude/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 76,
+     "repository": "eng-cc/oasis7",
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/eng-cc/oasis7/blob/main/.agents/skills/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "route-completion-verification-to-separate-skill",
+   "display_name": "route completion verification to separate skill",
+   "invariant": "Delegates final completion/verification checking to another named skill or a separate verification step.",
+   "behavior_signature": {
+    "trigger": "fix implemented",
+    "action": "delegate verification to another skill/step",
+    "object": "completion/verification",
+    "outcome": "claims verified externally"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 5,
+   "repository_count": 5,
+   "supporting_groups": [
+    {
+     "group_id": 11,
+     "repository": "coctostan/pi-superpowers-plus",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/coctostan/pi-superpowers-plus/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 2,
+     "repository": "coco-research/coco",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/coco-research/coco/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 17,
+     "repository": "bg-szy/TOP-SKILLS",
+     "path": "skills/agent-skills/systematic-debugging/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/bg-szy/TOP-SKILLS/blob/master/skills/agent-skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 28,
+     "repository": "apenlor/opencode-expert-mode",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/apenlor/opencode-expert-mode/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 41,
+     "repository": "Threat-Vector-Security/guardian-agent",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/Threat-Vector-Security/guardian-agent/blob/main/skills/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "require-reproduction-before-fixing",
+   "display_name": "require reproduction before fixing",
+   "invariant": "Makes producing a reproduction (or explicit handling of non-reproducibility) a required, gated step before any fix.",
+   "behavior_signature": {
+    "trigger": "bug reported",
+    "action": "require reproduction first",
+    "object": "failure reproduction",
+    "outcome": "no fix without repro"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 4,
+   "repository_count": 4,
+   "supporting_groups": [
+    {
+     "group_id": 38,
+     "repository": "yimwoo/hotl-plugin",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/yimwoo/hotl-plugin/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 64,
+     "repository": "DDS-Solutions/AI-TadPole-OS",
+     "path": ".agent/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/DDS-Solutions/AI-TadPole-OS/blob/main/.agent/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 69,
+     "repository": "New1Direction/korgex",
+     "path": "src/skills_builtin/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/New1Direction/korgex/blob/main/src/skills_builtin/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 4,
+     "repository": "pratikrath126/ai-image-detector",
+     "path": ".agent/kit-skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/pratikrath126/ai-image-detector/blob/main/.agent/kit-skills/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-feedback-loop-rule",
+   "display_name": "add feedback loop rule",
+   "invariant": "Elevates building/validating a feedback loop (reproduction plus instrumentation) into a named, mandatory rule.",
+   "behavior_signature": {
+    "trigger": "investigation phase",
+    "action": "build/validate a feedback loop",
+    "object": "repro + instrumentation",
+    "outcome": "evidence loop before hypotheses"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 20,
+     "repository": "7757/Fan-Browser-Agent",
+     "path": "skills/software-development/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/7757/Fan-Browser-Agent/blob/main/skills/software-development/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 22,
+     "repository": "MezbahSaif/HermesBench",
+     "path": "Case1_Qwen/datasets/variants/tasks/skills/software-development/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/MezbahSaif/HermesBench/blob/main/Case1_Qwen/datasets/variants/tasks/skills/software-development/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 32,
+     "repository": "tranhieutt/software_development_department",
+     "path": ".claude/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/tranhieutt/software_development_department/blob/main/.claude/skills/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "add-red-flags-and-anti-pattern-guard",
+   "display_name": "add red flags and anti pattern guard",
+   "invariant": "Adds an explicit list of violation indicators or anti-patterns that signal the process itself is being violated.",
+   "behavior_signature": {
+    "trigger": "process under way",
+    "action": "check violation indicators",
+    "object": "own process",
+    "outcome": "self-correction on violation"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 4,
+   "repository_count": 4,
+   "supporting_groups": [
+    {
+     "group_id": 5,
+     "repository": "MadAppGang/claude-code",
+     "path": "plugins/dev/skills/discipline/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/MadAppGang/claude-code/blob/main/plugins/dev/skills/discipline/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 19,
+     "repository": "aiskillstore/marketplace",
+     "path": "skills/codingcossack/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/aiskillstore/marketplace/blob/main/skills/codingcossack/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 36,
+     "repository": "VidyaBodepudi/Code-Skills",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/VidyaBodepudi/Code-Skills/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 42,
+     "repository": "c-kick/hnl-agent-skills",
+     "path": "systematic-debugging/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/c-kick/hnl-agent-skills/blob/master/systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "preserve-root-cause-first-while-compressing",
+   "display_name": "preserve root cause first while compressing",
+   "invariant": "Substantially shortens the document while explicitly retaining the root-cause-first governing rule.",
+   "behavior_signature": {
+    "trigger": "compression edit",
+    "action": "shorten while keeping the iron law",
+    "object": "skill document",
+    "outcome": "brevity without losing the invariant"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 5,
+   "repository_count": 5,
+   "supporting_groups": [
+    {
+     "group_id": 53,
+     "repository": "GuicedEE/ai-rules",
+     "path": "skills/.curated/systematic-debugging/SKILL.md",
+     "ref": "master",
+     "direct_skill_url": "https://github.com/GuicedEE/ai-rules/blob/master/skills/.curated/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 35,
+     "repository": "PytaichukBohdan/AndriiPresentation",
+     "path": ".claude/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/PytaichukBohdan/AndriiPresentation/blob/main/.claude/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 55,
+     "repository": "hnb-rabear/RCore",
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/hnb-rabear/RCore/blob/main/.agents/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 43,
+     "repository": "majiayu000/spellbook",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/majiayu000/spellbook/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 34,
+     "repository": "majiayu000/claude-skill-registry",
+     "path": "skills/data/pop-systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/majiayu000/claude-skill-registry/blob/main/skills/data/pop-systematic-debugging/SKILL.md"
+    }
+   ]
+  },
+  {
+   "label": "replace-with-named-methodology",
+   "display_name": "replace with named methodology",
+   "invariant": "Replaces the four-phase method with a different named methodology or scientific framing.",
+   "behavior_signature": {
+    "trigger": "method redesign",
+    "action": "adopt a named methodology",
+    "object": "debugging method",
+    "outcome": "different but equivalent method"
+   },
+   "status": "ACCEPTED",
+   "rejection_rate": 0.0,
+   "group_count": 4,
+   "repository_count": 4,
+   "supporting_groups": [
+    {
+     "group_id": 59,
+     "repository": "sammcj/agentic-coding",
+     "path": "Skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/sammcj/agentic-coding/blob/main/Skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 46,
+     "repository": "CUBETIQ/cubis-foundry",
+     "path": "workflows/workflows/agent-environment-setup/platforms/claude/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/CUBETIQ/cubis-foundry/blob/main/workflows/workflows/agent-environment-setup/platforms/claude/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 5,
+     "repository": "MadAppGang/claude-code",
+     "path": "plugins/dev/skills/discipline/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/MadAppGang/claude-code/blob/main/plugins/dev/skills/discipline/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 60,
+     "repository": "David-Li0406/meta-skill-evloving",
+     "path": "skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-53/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/David-Li0406/meta-skill-evloving/blob/main/skill-flow/data/skills-refined-36k/skillsmp/systematic-debugging-53/SKILL.md"
+    }
+   ]
+  }
+ ],
+ "suppressed": [
+  {
+   "label": "add-routing-boundary-use-case",
+   "display_name": "add routing boundary use case",
+   "invariant": "Adds explicit boundaries declaring when the skill must not be used or when it must hand off.",
+   "behavior_signature": {
+    "trigger": "out-of-scope request",
+    "action": "decline or hand off",
+    "object": "skill applicability",
+    "outcome": "skill not used outside its boundary"
+   },
+   "status": "UNSTABLE",
+   "rejection_rate": 0.25,
+   "group_count": 3,
+   "repository_count": 3,
+   "supporting_groups": [
+    {
+     "group_id": 8,
+     "repository": "itseffi/agentic-os",
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/itseffi/agentic-os/blob/main/.agents/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 54,
+     "repository": "SethGammon/Citadel",
+     "path": "skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/SethGammon/Citadel/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+     "group_id": 26,
+     "repository": "FradSer/dotclaude",
+     "path": "superpowers/skills/systematic-debugging/SKILL.md",
+     "ref": "main",
+     "direct_skill_url": "https://github.com/FradSer/dotclaude/blob/main/superpowers/skills/systematic-debugging/SKILL.md"
+    }
+   ],
+   "uncertain": [
+    57
+   ],
+   "rejected": []
+  }
+ ]
+}

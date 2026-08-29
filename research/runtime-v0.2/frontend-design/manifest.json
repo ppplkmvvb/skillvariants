@@ -1,0 +1,27 @@
+{
+ "schema_version": "1",
+ "runtime_version": "0.2",
+ "study_id": "frontend-design-57cf113",
+ "created_at": "2026-08-29T07:27:42+00:00",
+ "updated_at": "2026-08-29T07:27:54+00:00",
+ "target": {
+  "repository": "anthropics/skills",
+  "path": "skills/frontend-design/SKILL.md",
+  "ref": "main",
+  "direct_skill_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+  "name": "frontend-design",
+  "normalized_hash": "57cf1134b36c816ac2fc52f6a194948ccee4cbe79fe780ab365b73641b2b467a"
+ },
+ "status": "COMPLETE",
+ "counts": {
+  "groups_total": 68,
+  "groups_analyzed": 68,
+  "motifs_proposed": 3,
+  "motifs_verified": 3,
+  "motifs_accepted": 3
+ },
+ "sampling_applied": false,
+ "semantic_groups_analyzed": 68,
+ "total_groups_available": 68,
+ "errors": []
+}
