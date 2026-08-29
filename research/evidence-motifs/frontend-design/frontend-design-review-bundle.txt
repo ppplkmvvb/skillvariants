@@ -1,0 +1,611 @@
+### G1 doordash-oss/agentic-orchestrator | skills/frontend-design/SKILL.md | [body-copy-with-metadata-change]
+  rel=1.00 sim=1.00 members=4 occ=15
+  len=+0.00 hdr(+0/-0) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Ground it in the subject', 'Design principles', 'Process: brainstorm, explore, plan, critique, build, critique again', 'Restraint and self-critique', 'More on writing in design']
+  routing=[] wrapper=[]
+  ADD: 
+  REM: 
+  body: # Frontend Design Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has already rejected proposals that felt temp
+
+### G2 Microck/ordinary-claude-skills | skills_all/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.50 members=44 occ=110
+  len=-0.50 hdr(+2/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G3 panin-glitch/EatLock | general skills/.codebuddy/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.52 sim=0.56 members=7 occ=10
+  len=+0.14 hdr(+13/-6) cmds(+0/-0) refs(+2)
+  headings=['Context Gathering Protocol', 'Design Direction', 'Frontend Aesthetics Guidelines', 'Typography', 'Color & Theme', 'Layout & Space', 'Visual Details']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | ## Context Gathering Protocol
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. #
+
+### G4 benjaminasterA/antigravity-awesome-skills | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.47 sim=0.46 members=7 occ=19
+  len=-0.20 hdr(+30/-6) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design (Distinctive, Production-Grade)', '1. Core Design Mandate', '2. Design Feasibility & Impact Index (DFII)', 'DFII Dimensions (1–5)', 'Scoring Formula', 'Interpretation', '3. Mandatory Design Thinking Phase']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design (Distinctive, Production-Grade) | You are a **frontend designer-engineer**, not a layout generator.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design (Distinctive, Production-Grade) You are a **frontend designer-engineer**, not a layout generator. Your goal is to create **memorable, high-craft interfaces** that: * Avoid generic “AI UI” patterns * Exp
+
+### G5 darthlinuxer/Agentic-Skills | .cursor/skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.44 sim=0.42 members=7 occ=10
+  len=+0.53 hdr(+44/-6) cmds(+1/-0) refs(+0)
+  headings=['Frontend Design System', '🎯 Selective Reading Rule (MANDATORY)', '🔧 Runtime Scripts', '⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY)', 'When User Prompt is Vague, ASK:', '⛔ DEFAULT TENDENCIES TO AVOID (ANTI-SAFE HARBOR):', '1. Constraint Analysis (ALWAYS FIRST)']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  ADD: ++ | # Frontend Design System | > **🛠️ MCP Tools Available**:
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design System > **🛠️ MCP Tools Available**: > - **Context7 / Tavily / BraveSearch / Serper.dev**: Prefer for documentation and search; fall back to **WebSearch** or **WebFetch** only if needed. > - **Sequentia
+
+### G6 diegosouzapw/awesome-omni-skills | skills/frontend-design-v5/SKILL.md | [no-label]
+  rel=0.36 sim=0.50 members=5 occ=5
+  len=+0.87 hdr(+51/-6) cmds(+0/-0) refs(+6)
+  headings=['Frontend Design (Distinctive, Production-Grade)', 'Overview', 'Frontend Design (Distinctive, Production-Grade) You are a frontend designer-engineer, not a layout generator. Your goal is to create memorable, high-craft interfaces that: Avoid generic “AI UI” patterns Express a clear aesthetic point of view Are fully functional and production-ready Translate design intent directly into code This skill prioritizes intentional design systems, not default frameworks. ---', 'When to Use This Skill', 'Operating Table', 'Workflow', 'Imported Workflow Notes']
+  routing=['heading: Related Skills', 'owns', 'related skills'] wrapper=[]
+  ADD: ++ | # Frontend Design (Distinctive, Production-Grade) | ## Overview
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design (Distinctive, Production-Grade) ## Overview This public intake copy packages `plugins/antigravity-bundle-web-designer/skills/frontend-design` from `https://github.com/sickn33/antigravity-awesome-skills`
+
+### G7 space-ast/ast | .claude/skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.48 members=2 occ=2
+  len=-0.51 hdr(+11/-5) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design', 'Design Thinking', 'Frontend Aesthetics Guidelines', 'Typography', 'Color & Theme', 'Motion', 'Spatial Composition']
+  routing=[] wrapper=[]
+  ADD: ++ | Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working | ## Design Thinking
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. ## Des
+
+### G8 archibate/dotfiles-opencode | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.48 sim=0.49 members=2 occ=3
+  len=-0.46 hdr(+14/-6) cmds(+0/-0) refs(+1)
+  headings=['Frontend Design Skill', 'When to Use', 'Inputs to Gather (or Assume)', 'Design Thinking (Required)', 'Implementation Principles', 'Aesthetic Guidelines', 'Typography']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | Design and implement memorable frontend interfaces with a clear, intentional aesthetic. The output must be real, working
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill Design and implement memorable frontend interfaces with a clear, intentional aesthetic. The output must be real, working code — not just mood boards. This skill is about **design thinking + execut
+
+### G9 rahulgupta2018/ai-software-factory | vendor-skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.80 sim=0.83 members=1 occ=1
+  len=+0.07 hdr(+4/-0) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Overview', 'When to Activate', 'Ground it in the subject', 'Design principles', 'Process: brainstorm, explore, plan, critique, build, critique again', 'Restraint and self-critique']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | ## Overview | Approach this as the design lead at a small studio known for giving every client a visual identity
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | If the brief does not pin down what the product or subject is, pin it yo
+  body: # Frontend Design ## Overview Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. The client has already rejected proposals tha
+
+### G10 quocthinhthan/Portfolio | .agents/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.60 sim=0.60 members=1 occ=1
+  len=-0.36 hdr(+3/-2) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Ground it in the subject', 'Project fit', 'Design principles', 'Process', 'Restraint and self-critique', 'Writing in design']
+  routing=[] wrapper=[]
+  ADD: ++ | Approach this as a careful design pass for an existing personal portfolio, not a blank-canvas rebrand. Make deliberate c | Read `.agents/PROJECT_CONTEXT.md` before making design changes. Treat this as a Vietnamese/English personal site for a b
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | If the brief does not pin down what the product or subject is, pin it yo
+  body: # Frontend Design Approach this as a careful design pass for an existing personal portfolio, not a blank-canvas rebrand. Make deliberate choices about spacing, hierarchy, motion, and component composition, but keep them 
+
+### G11 ecocee/skills | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.52 sim=0.57 members=1 occ=1
+  len=-0.02 hdr(+15/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Process', 'Step 1 — Understand the Context', 'Step 2 — Commit to an Aesthetic Direction', 'Step 3 — Design Decisions Before Code', 'Step 4 — Write Production-Grade Code', 'Aesthetic Rules']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | A skill for building distinctive, production-grade frontend interfaces with | genuine aesthetic direction. Every output is intentional, cohesive, and
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design A skill for building distinctive, production-grade frontend interfaces with genuine aesthetic direction. Every output is intentional, cohesive, and visually memorable — not generic. Compatible with: Cla
+
+### G12 mrobbys/growth-landing-page | .agents/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.55 members=1 occ=1
+  len=-0.14 hdr(+5/-6) cmds(+1/-0) refs(+0)
+  headings=['PERSONA & TEACHING STYLE (BASE SYSTEM)', 'MENTORSHIP RULES & BEHAVIOR', 'ENHANCED OUTPUT STRUCTURE', 'Design Thinking', 'Frontend Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | # PERSONA & TEACHING STYLE (BASE SYSTEM) | You are a Senior Software Engineer and an expert Technical Mentor. You strictly adhere to Clean Code, Software Architect
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # PERSONA & TEACHING STYLE (BASE SYSTEM) You are a Senior Software Engineer and an expert Technical Mentor. You strictly adhere to Clean Code, Software Architecture, Security, and industry Best Practices. The user is a p
+
+### G13 studio-jami/jami-studio | templates/forms/.agents/skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.51 sim=0.53 members=1 occ=1
+  len=+0.29 hdr(+8/-5) cmds(+2/-0) refs(+0)
+  headings=['Frontend Design', 'Design Thinking', 'Minimalism And Progressive Disclosure', 'Aesthetic Guidelines', 'Agent-Native UI Rules', 'shadcn/ui Design Rules', 'Anti-Patterns']
+  routing=['heading: Related Skills', 'owns', 'related skills'] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with strong | The user may ask for a component, page, full app, dashboard, marketing surface, or restyle. Before coding, understand th
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with strong product judgment, excellent accessibility, and a clear visual point of view. The 
+
+### G14 ediktedrnd/dataviz-plugin | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.53 members=1 occ=1
+  len=-0.19 hdr(+7/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Dashboard Best Practices', 'Color Palette & Accessibility', 'Trend Lines & Time Series', 'Graph Selection & Layout', 'Context & Labeling']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G15 rongxinzy/RongxinAI | SKILLs/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.56 members=1 occ=1
+  len=-0.24 hdr(+5/-6) cmds(+0/-0) refs(+0)
+  headings=['Visual direction workflow', 'Design Thinking', 'Frontend Aesthetics Guidelines', 'Evaluation suite', 'Delivery Gate']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. D
+
+### G16 majiayu000/claude-skill-registry | skills/data/mobile-fronted/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.52 members=1 occ=2
+  len=-0.22 hdr(+2/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G17 Everfern-AI/Everfern | main/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.55 members=1 occ=1
+  len=-0.28 hdr(+7/-5) cmds(+1/-0) refs(+0)
+  headings=['Frontend Design', 'Operating Rules', 'Anti-Slop Defaults', 'Visual Quality Checklist', 'React, Next.js, And JavaScript', 'HTML/CSS Artifacts', 'Data And Charts']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | Use this skill whenever the task touches frontend appearance or interaction: building UI, editing app screens, improving | The goal is clean, intentional, production-grade UI that looks designed for the product, not generated from a generic te
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Use this skill whenever the task touches frontend appearance or interaction: building UI, editing app screens, improving UX, styling components, creating web artifacts, React/Next.js work, HTML/CSS/JS p
+
+### G18 luongnv89/skills | skills/frontend-design/SKILL.md | [expanded-guidance]
+  rel=0.51 sim=0.54 members=1 occ=1
+  len=+0.42 hdr(+17/-5) cmds(+2/-0) refs(+0)
+  headings=['Frontend Design', 'When to Use', 'Instructions', 'Repo Sync Before Edits (mandatory)', 'Design Thinking', 'Default Style Guide', 'Usability Principles — "Don\'t Make Me Think"']
+  routing=[] wrapper=[]
+  ADD: ++ | Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working | ## When to Use
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. ## Whe
+
+### G19 thatrebeccarae/claude-marketing | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.47 sim=0.46 members=1 occ=1
+  len=-0.14 hdr(+23/-5) cmds(+3/-1) refs(+1)
+  headings=['Frontend Design', 'Install', 'Design Thinking Process', '1. Understand Context', '2. Commit to an Aesthetic Direction', '3. Identify the Memorable Thing', '4. Execute with Intentionality']
+  routing=[] wrapper=[]
+  ADD: ++ | Create distinctive, production-grade web interfaces that avoid generic AI aesthetics. | ## Install
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create distinctive, production-grade web interfaces that avoid generic AI aesthetics. ## Install ```bash git clone https://github.com/thatrebeccarae/claude-marketing.git && cp -r claude-marketing/skills
+
+### G20 tschuehly/lexware | .agents/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.52 members=1 occ=1
+  len=-0.26 hdr(+4/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Mobile-First Card Pattern', 'Safari-Compatible Images (see `docs/design-system.md` for full rules)']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G21 ShintaroaSuzuki/shintaroasuzuki-plugins | plugins/frontend-design/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.53 members=1 occ=1
+  len=-0.33 hdr(+2/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G22 lxyeternal/MalSkillBench | Dataset/Skills/malware/frontend-design__MIXED_B8/SKILL.md | [workflow-specialization]
+  rel=0.49 sim=0.51 members=1 occ=1
+  len=-0.30 hdr(+6/-6) cmds(+3/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Configuration and Resource Management', 'Setup Instructions', 'Configuration Details', 'Resource Monitoring']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G23 pavanchanduri/expense-tracker | .claude/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.44 sim=0.50 members=1 occ=1
+  len=+0.13 hdr(+12/-6) cmds(+0/-0) refs(+0)
+  headings=['Spendly UI Designer', "What Spendly's stack looks like", 'Before you design: check what already exists', 'The Spendly design language', 'Icons: Lucide', 'Output structure', '1. Short UI plan (2-5 bullets)']
+  routing=["don't use"] wrapper=[]
+  ADD: ++ | # Spendly UI Designer | You are designing frontend UI for **Spendly**, a personal expense tracker. Spendly is a Flask app with server-rendered J
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Spendly UI Designer You are designing frontend UI for **Spendly**, a personal expense tracker. Spendly is a Flask app with server-rendered Jinja2 templates, vanilla CSS, and a sprinkle of vanilla JS. The goal of this s
+
+### G24 julianoczkowski/designer-skills | frontend-design/SKILL.md | [expanded-guidance]
+  rel=0.49 sim=0.50 members=1 occ=1
+  len=+0.44 hdr(+14/-6) cmds(+0/-1) refs(+0)
+  headings=['Example prompts', 'Before You Write Any Code', 'Aesthetic Philosophies', 'Dieter Rams (Functionalist)', 'Swiss / International Typographic', 'Japanese Minimalism (Ma)', 'Brutalist / Raw']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with except | ## Example prompts
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces. Implement real working code with exceptional attention to aesthetic detail. ## Example prompts - "Build the hero section from the brief" - 
+
+### G25 Necaifia/RepublicOS | .skill-engine/store/agent-skills/cline/test/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.55 members=1 occ=1
+  len=-0.36 hdr(+6/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Prerequisites', 'Error Handling', 'Verification', 'Configuration']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G26 roerohan/skills | frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.46 sim=0.46 members=1 occ=1
+  len=-0.19 hdr(+12/-5) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design', 'Core Principles', 'Decision Tree', 'Quick Reference', 'Visual Hierarchy Checklist', 'Spacing System', 'The 60-30-10 Rule']
+  routing=[] wrapper=[]
+  ADD: ++ | UI/UX principles for building well-designed, accessible, maintainable React interfaces. | **Context:** This skill assumes React as the UI layer, typically with a meta-framework (TanStack Start, Next.js, Remix, 
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design UI/UX principles for building well-designed, accessible, maintainable React interfaces. **Context:** This skill assumes React as the UI layer, typically with a meta-framework (TanStack Start, Next.js, R
+
+### G27 julianromli/opencode-template | skill/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.53 members=1 occ=5
+  len=-0.35 hdr(+3/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Integration with Shadcn Projects']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G28 David-Li0406/meta-skill-evloving | skill-flow/data/skills-refined-autoskill-36k/skillsmp/frontend-design-69/SKILL.md | [workflow-specialization]
+  rel=0.49 sim=0.51 members=1 occ=1
+  len=-0.38 hdr(+9/-6) cmds(+0/-0) refs(+2)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines', 'Typography', 'Color & Theme', 'Motion', 'Spatial Composition', 'Backgrounds & Visual Details']
+  routing=[] wrapper=[]
+  ADD: ++ | <!-- Based on official Anthropic skill: https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skil | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: <!-- Based on official Anthropic skill: https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md --> This skill guides creation of distinctive, production-grade frontend
+
+### G29 YosemiteCrew/Yosemite-Crew | .claude/skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.45 sim=0.45 members=1 occ=1
+  len=-0.19 hdr(+14/-6) cmds(+1/-1) refs(+0)
+  headings=['Frontend Design System - Yosemite Crew', 'Description', 'Core Rule: Reuse Before Creating', 'Design Tokens', 'Styling Rules', 'Class ordering (Tailwind)', 'Typography']
+  routing=['do not use', 'owns'] wrapper=[]
+  ADD: ++ | # Frontend Design System - Yosemite Crew | ## Description
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design System - Yosemite Crew ## Description Use this skill when working on UI in apps/frontend. It teaches you how to use our custom design system, component library, and style conventions so you produce cons
+
+### G30 gvkhosla/compound-engineering-pi | skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.50 sim=0.54 members=1 occ=1
+  len=+0.73 hdr(+27/-5) cmds(+0/-1) refs(+3)
+  headings=['Frontend Design', 'Authority Hierarchy', 'Workflow', 'Layer 0: Context Detection', 'What to Look For', 'Mode Classification', 'Asking the User']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | Guide creation of distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. This skill covers  | ## Authority Hierarchy
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Guide creation of distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. This skill covers the full lifecycle: detect what exists, plan the design, build with intention, and
+
+### G31 tim-smart/cheffect | .agents/skills/frontend/SKILL.md | [workflow-specialization]
+  rel=0.49 sim=0.53 members=1 occ=1
+  len=-0.39 hdr(+2/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Thinking', 'Frontend Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. T
+
+### G32 majiayu000/claude-skill-registry | skills/design/frontend-design-smooth-operation-household-expense-tr/SKILL.md | [workflow-specialization]
+  rel=0.47 sim=0.44 members=1 occ=1
+  len=+0.38 hdr(+27/-5) cmds(+0/-1) refs(+3)
+  headings=['Frontend Design', 'Core Principle', 'When to Use This Skill', 'The Iron Laws', '1. UNDERSTAND CONTEXT BEFORE CODING', '2. COMMIT TO A BOLD AESTHETIC DIRECTION', '3. IMPLEMENT PRODUCTION-GRADE CODE']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Core Principle | When building frontend interfaces, create distinctive, production-grade designs with intentional aesthetic direction. Av
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design ## Core Principle When building frontend interfaces, create distinctive, production-grade designs with intentional aesthetic direction. Avoid generic "AI slop" aesthetics that lack character and context
+
+### G33 saberzou/agent-terrarium | skills/superdesign/SKILL.md | [workflow-specialization]
+  rel=0.45 sim=0.45 members=1 occ=1
+  len=+0.26 hdr(+13/-6) cmds(+1/-1) refs(+1)
+  headings=['Frontend Design Skill', 'Phase 0: Design Thinking (Do This First)', 'The Anti-Slop Manifesto', '❌ Never Do This', '✅ Do This Instead', 'Phase 1: Typography', 'Phase 2: Color & Theme']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | Use this skill when creating UI components, landing pages, dashboards, or any frontend design work.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill Use this skill when creating UI components, landing pages, dashboards, or any frontend design work. ## Phase 0: Design Thinking (Do This First) Before writing a single line of code, answer these: 
+
+### G34 TanNhatCMS/awesome-trae-agent | .trae/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.50 sim=0.52 members=1 occ=1
+  len=-0.47 hdr(+5/-6) cmds(+0/-0) refs(+2)
+  headings=['frontend-design', 'Workflow', 'Open Design Integration', 'Source', 'License']
+  routing=[] wrapper=[]
+  ADD: ++ | # frontend-design | > Adapted from Anthropic's official `frontend-design` skill for Open Design.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # frontend-design > Adapted from Anthropic's official `frontend-design` skill for Open Design. Use this skill when the user asks to build or improve a frontend interface: a website, landing page, dashboard, application s
+
+### G35 diegosouzapw/awesome-omni-skill | skills/development/frontend-design-play-makers/SKILL.md | [workflow-specialization]
+  rel=0.46 sim=0.47 members=1 occ=1
+  len=-0.35 hdr(+19/-6) cmds(+0/-1) refs(+1)
+  headings=['Frontend Design Skill', 'Core Principles', 'Aesthetic Direction', 'Visual Elements', 'Layout & Space', 'Atmosphere & Depth', 'Typography']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | This skill is invoked when building web components, pages, or applications. It focuses on generating creative, polished 
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill This skill is invoked when building web components, pages, or applications. It focuses on generating creative, polished code with attention to aesthetic details and creative choices. ## Core Princ
+
+### G36 samilozturk/agentlint | skills/frontend/SKILL.md | [workflow-specialization]
+  rel=0.45 sim=0.43 members=1 occ=1
+  len=-0.30 hdr(+24/-6) cmds(+3/-1) refs(+0)
+  headings=['Skill: Frontend Design', 'When to Use', 'Purpose', 'Scope', 'Included', 'Excluded', 'Inputs']
+  routing=["don't use"] wrapper=[]
+  ADD: ++ | # Skill: Frontend Design | ## When to Use
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Skill: Frontend Design ## When to Use Activate this skill when the user requests: - Building web components, pages, or full applications - Creating UI/UX interfaces with modern design - Converting designs to code - Bui
+
+### G37 Catsofsuffering/ccsm | templates/skills/domains/frontend-design/SKILL.md | [expanded-guidance]
+  rel=0.46 sim=0.50 members=1 occ=1
+  len=+0.58 hdr(+24/-6) cmds(+0/-0) refs(+2)
+  headings=['Frontend Design (Impeccable Fusion Edition)', 'Context Gathering Protocol', 'Design Direction', 'Frontend Aesthetics Guidelines', 'Typography', 'Color & Theme', 'Layout & Space']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design (Impeccable Fusion Edition) | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design (Impeccable Fusion Edition) This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. It fuses [Impeccable](https://github.com/pbakaus/impe
+
+### G38 xsefirosus/sefi-agents | plugins/sefi-core/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.48 sim=0.51 members=1 occ=1
+  len=-0.46 hdr(+3/-6) cmds(+0/-1) refs(+2)
+  headings=['Frontend Design -- anti-slop craft', 'Rule block', 'Workflow (four verbs)']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design -- anti-slop craft | Craft skill backing the ui-ux-designer and the software-engineer above the API seam.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design -- anti-slop craft Craft skill backing the ui-ux-designer and the software-engineer above the API seam. The goal is UI that looks decided, not generated. Deep material lives in three references, read on
+
+### G39 dangindev/antigravity-awesome-workspace-skill | skill_library/everything-claude-code/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.50 sim=0.50 members=1 occ=1
+  len=-0.55 hdr(+15/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'When To Use', 'Core Principle', 'Design Workflow', '1. Frame the interface first', '2. Build the visual system', '3. Compose with intention']
+  routing=[] wrapper=[]
+  ADD: ++ | Use this when the task is not just "make it work" but "make it look designed." | This skill is for product pages, dashboards, app shells, components, or visual systems that need a clear point of view i
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Use this when the task is not just "make it work" but "make it look designed." This skill is for product pages, dashboards, app shells, components, or visual systems that need a clear point of view inst
+
+### G40 mohitagw15856/pm-claude-skills | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.47 sim=0.51 members=1 occ=1
+  len=-0.44 hdr(+8/-6) cmds(+0/-0) refs(+1)
+  headings=['Frontend Design Skill', 'What This Skill Produces', 'Required Inputs', 'The System (build this first, then the UI)', 'The Craft Moves (what separates designed from default)', 'Output Format', 'Quality Checks']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | AI-generated UI has a recognisable smell: default blues, five different paddings, everything the same visual weight, no 
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill AI-generated UI has a recognisable smell: default blues, five different paddings, everything the same visual weight, no states. This skill produces interfaces that look *decided* — by making the d
+
+### G41 dawsonblock/agent_eval_skills_merged_clean | agent-skills-curated/skills/web-and-frontend-development/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.46 sim=0.48 members=1 occ=1
+  len=-0.44 hdr(+14/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Scope', 'Workflow', '1. Define Creative Direction', '2. Establish System Constraints', '3. Implement In Code', '4. Refine High-Impact Details']
+  routing=[] wrapper=[]
+  ADD: ++ | Create memorable interfaces with clear artistic direction and production-ready implementation. | ## Scope
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create memorable interfaces with clear artistic direction and production-ready implementation. ## Scope - In scope: UI direction, layout systems, typography, motion, design tokens, responsive implementa
+
+### G42 enbyaugust/zacs-claude-skills | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.47 sim=0.46 members=1 occ=1
+  len=-0.49 hdr(+12/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'When to Use', 'Design Thinking', 'Implementation Requirements', 'Frontend Aesthetics Guidelines', 'Typography', 'Color & Theme']
+  routing=[] wrapper=[]
+  ADD: ++ | > Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. | <when_to_use>
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design > Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics. <when_to_use> ## When to Use Invoke when user says: - "redesign this component" - "make this look better" - "
+
+### G43 projectious-work/aibox | context/templates/processkit/v0.26.18/context/skills/design/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.46 sim=0.45 members=1 occ=1
+  len=+0.76 hdr(+16/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Intro', 'Overview', 'Component architecture', 'Semantic HTML first', 'Accessibility (WCAG 2.2 AA)', 'State management']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Intro | Good frontend design starts with semantic HTML, small
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design ## Intro Good frontend design starts with semantic HTML, small single-responsibility components, and WCAG 2.2 AA accessibility, then layers on performance, state management, and rendering strategy as th
+
+### G44 Houseofmvps/ultraship | skills/frontend-design/SKILL.md | [expanded-guidance]
+  rel=0.47 sim=0.48 members=1 occ=1
+  len=+1.11 hdr(+8/-6) cmds(+1/-0) refs(+0)
+  headings=['Product Design Thinking', 'UX Design Discipline', 'Visual Design — The Aesthetic Direction', 'Frontend Aesthetics Guidelines', 'Industry-Specific Design Rules', 'Spacing & Layout System', 'Page-Specific UX Patterns']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | This skill combines three disciplines: **product design** (does it solve the right problem?), **UX design** (can users a | The user provides frontend requirements: a component, page, application, or interface to build. They may include context
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill combines three disciplines: **product design** (does it solve the right problem?), **UX design** (can users accomplish their goals without friction?), and **visual design** (is it distinctive and polished?). A
+
+### G45 dr4ken-soul/Mnemix | FRONTEND_SKILL.md | [routing-specialization]
+  rel=0.56 sim=0.65 members=1 occ=1
+  len=+21.11 hdr(+141/-6) cmds(+4/-0) refs(+1)
+  headings=['Frontend Design Skill', '⛔ MANDATORY: READ THIS BEFORE DOING ANYTHING', '§0: Brief Inference (Run Before Every Task)', 'Three Design Dials', 'Step 1: Design Thinking Before Any Code', 'Step 2: Aesthetic Direction', 'Tone Options']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | You are a senior frontend engineer and product designer. You build interfaces that feel premium, intentional and alive. 
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill You are a senior frontend engineer and product designer. You build interfaces that feel premium, intentional and alive. You never produce generic AI output. Every interface has a clear aesthetic i
+
+### G46 baralmanish/AI-Agent-Skills | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.47 sim=0.46 members=1 occ=1
+  len=-0.54 hdr(+4/-5) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design', 'Design Thinking', 'Frontend Aesthetics Guidelines', 'Implementation', 'Output Formats']
+  routing=[] wrapper=[]
+  ADD: ++ | Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working | ## Design Thinking
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. ## Des
+
+### G47 diegosouzapw/awesome-omni-skills | skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.47 sim=0.51 members=1 occ=1
+  len=+1.40 hdr(+37/-6) cmds(+0/-0) refs(+5)
+  headings=['frontend-design', 'Overview', 'When to Use This Skill', 'Operating Table', 'Workflow', 'Imported Workflow Notes', 'Imported: Design Direction']
+  routing=['heading: Related Skills', 'owns', 'related skills'] wrapper=[]
+  ADD: ++ | # frontend-design | ## Overview
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # frontend-design ## Overview This public intake copy packages `packages/skills-catalog/skills/(design)/frontend-design` from `https://github.com/tech-leads-club/agent-skills` into the native Omni Skills editorial shape 
+
+### G48 byerlikaya/claude-starter-kit | plugin/skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.44 sim=0.45 members=1 occ=1
+  len=-0.49 hdr(+6/-6) cmds(+0/-0) refs(+2)
+  headings=['Frontend Design (visual & UX quality)', 'The six levers (order = impact; fix hierarchy before you touch color)', 'Checklist', 'Tokens, scales, and a heuristic design review', 'Coordination', 'Invariant rules']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design (visual & UX quality) | <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design (visual & UX quality) <!-- routing-eval reads this line; it lives in the BODY so the always-on skill LISTING stays inside Claude Code's budget (1% of the context window) — an overflowing listing gets de
+
+### G49 ceilf6/FrontAgent | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.44 members=1 occ=2
+  len=-0.61 hdr(+5/-5) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design', 'Trigger', 'Do Not Use', 'Workflow', 'Output Contract', 'Guardrails']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | Use this skill to produce frontend work that feels intentionally designed rather than generic. The goal is not maximalis | ## Trigger
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Use this skill to produce frontend work that feels intentionally designed rather than generic. The goal is not maximalism by default. The goal is a clear visual point of view that matches the product co
+
+### G50 escoffier-labs/solos-cookbook | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.48 members=1 occ=1
+  len=-0.72 hdr(+13/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Goal', 'Before designing', 'Tone examples', 'Design rules', 'Typography', 'Color']
+  routing=[] wrapper=[]
+  ADD: ++ | > Attribution: inspired by Anthropic's `frontend-design` skill for Claude Code. This is a rewritten, trimmed-down varian | Do not ship default-looking UI.
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design > Attribution: inspired by Anthropic's `frontend-design` skill for Claude Code. This is a rewritten, trimmed-down variant, not the original. Do not ship default-looking UI. ## Goal Push the design towar
+
+### G51 time-ofourlife/OCEAN-OF-NMIXX | .codex_tmp/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.47 sim=0.46 members=1 occ=1
+  len=-0.66 hdr(+2/-6) cmds(+0/-0) refs(+0)
+  headings=['Design Direction', 'Frontend Guidance']
+  routing=[] wrapper=[]
+  ADD: ++ | Use this skill when the task is mainly frontend design, visual polish, or UI implementation quality. | The goal is to produce working code that feels deliberate and memorable rather than generic. Favor strong aesthetic choi
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: Use this skill when the task is mainly frontend design, visual polish, or UI implementation quality. The goal is to produce working code that feels deliberate and memorable rather than generic. Favor strong aesthetic cho
+
+### G52 dlwlgus9125/EZPowers | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.44 sim=0.41 members=1 occ=1
+  len=-0.58 hdr(+3/-5) cmds(+2/-1) refs(+0)
+  headings=['Frontend Design', 'Ground the work', 'Produce the paired contract', 'Handoff']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | Settle the UI contract before implementation. Produce a broad frontend artifact | and, for each independent visual brand, a machine-readable `DESIGN.md`.
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Settle the UI contract before implementation. Produce a broad frontend artifact and, for each independent visual brand, a machine-readable `DESIGN.md`. Do not implement product UI code. ## Ground the wo
+
+### G53 xenitV1/claude-code-maestro | skills/frontend-design/SKILL.md | [workflow-specialization]
+  rel=0.41 sim=0.43 members=1 occ=1
+  len=-0.47 hdr(+5/-6) cmds(+1/-0) refs(+0)
+  headings=['Frontend Design System', '⚠️ Core Protocols & Standards', '🎬 Core Animation Principles', '🔗 Related & Required Skills', '🛠️ Automation Scripts']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | <domain_overview> | # Frontend Design System
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: <domain_overview> # Frontend Design System > **Philosophy:** Minimize cognitive load and make interactions intuitive. Every design decision should respect human psychology, behavioral patterns, and cognitive limitations.
+
+### G54 benshapyro/cadre-devkit-claude | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.45 sim=0.40 members=1 occ=1
+  len=-0.67 hdr(+11/-5) cmds(+0/-1) refs(+1)
+  headings=['Frontend Design Skill', 'Pre-Implementation Planning', 'Design Principles', 'Typography', 'Color & Theme', 'Motion & Animation', 'Spatial Composition']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | Create distinctive, memorable user interfaces that avoid generic AI aesthetics.
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill Create distinctive, memorable user interfaces that avoid generic AI aesthetics. ## Pre-Implementation Planning Before writing code, establish: 1. **Purpose & Audience** - What problem does this so
+
+### G55 anphuc2005/ImageSharpenAI | ImageSharpenAI/.agents/skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.50 sim=0.53 members=1 occ=1
+  len=+10.02 hdr(+122/-6) cmds(+6/-0) refs(+1)
+  headings=['Frontend Design — Anti-Slop Web UI', '0. BRIEF INFERENCE (Read the Room Before Anything Else)', '0.A Read these signals first', '0.B Output a one-line "Design Read" before generating', '0.C If the brief is ambiguous, ask one question, do not guess', '0.D Anti-Default Discipline', '1. THE THREE DIALS (Core Configuration)']
+  routing=['do not use', 'owns'] wrapper=[]
+  ADD: ++ | > **Style variants & tools** — read the matching file only when the brief calls for it: | >
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: > **Style variants & tools** — read the matching file only when the brief calls for it: > > | File | When to read | > |------|--------------| > | [style-minimalist.md](style-minimalist.md) | Clean, editorial, monochrome 
+
+### G56 rahmanqolbi/portofolio-rhmnq | .agents/skills/frontend-design/SKILL.md | [routing-specialization]
+  rel=0.43 sim=0.40 members=1 occ=1
+  len=-0.61 hdr(+6/-6) cmds(+0/-1) refs(+1)
+  headings=['Flagship Frontend Design Skill (Official Blueprint)', '1. Typography (The Character of UI)', '2. Committed Colors & Palette Control', '3. Depth & Atmospheric Backgrounds', '4. Motion & High-Impact Page Transitions', '5. Absolute Anti-AI Slop Checklist']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | # Flagship Frontend Design Skill (Official Blueprint) | This skill guides the creation of distinctive, production-grade web interfaces that completely avoid the generic, boring
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Flagship Frontend Design Skill (Official Blueprint) This skill guides the creation of distinctive, production-grade web interfaces that completely avoid the generic, boring, and sterile "AI slop" aesthetics. When writi
+
+### G57 duyet/skills | frontend-design/SKILL.md | [routing-specialization]
+  rel=0.43 sim=0.40 members=1 occ=1
+  len=+1.54 hdr(+39/-6) cmds(+2/-0) refs(+0)
+  headings=['When to Invoke This Skill', 'Design Thinking', 'Technology Stack Preferences', 'Component Libraries (Priority Order)', 'Data Visualization', 'Styling', 'Animation']
+  routing=["don't use", 'owns'] wrapper=[]
+  ADD: ++ | This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. | ## When to Invoke This Skill
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices. #
+
+### G58 zszz3/AgentRecall | apps/main-2.0/src/automation/engine/shared/bundled-skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.44 members=1 occ=1
+  len=-0.75 hdr(+5/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Before coding', 'Build', 'Visual discipline', 'Verify', 'Output']
+  routing=[] wrapper=[]
+  ADD: ++ | Create interfaces with a clear point of view instead of assembling familiar defaults. | ## Before coding
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Create interfaces with a clear point of view instead of assembling familiar defaults. ## Before coding 1. Read the existing product and design conventions. Preserve an established system unless the task
+
+### G59 Abdullahmohammadaref/acar | .agents/skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.41 sim=0.40 members=1 occ=1
+  len=-0.58 hdr(+8/-6) cmds(+0/-1) refs(+0)
+  headings=['Design Thinking for Finance', 'Frontend Aesthetics for Data Density', '1. Typography & Numerics', '2. Semantic Color Theory', '3. Financial Component Patterns', '4. Motion & Feedback', 'Spatial Composition']
+  routing=[] wrapper=[]
+  ADD: ++ | This skill guides the creation of production-grade financial interfaces that avoid "generic dashboard" aesthetics. It pr | ## Design Thinking for Finance
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This skill guides the creation of production-grade financial interfaces that avoid "generic dashboard" aesthetics. It prioritizes data density, mathematical legibility, and interactive visualization. ## Design Thinking f
+
+### G60 Marcus-Mok-GH/Summachat-V2 | .cursor/skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.48 sim=0.51 members=1 occ=1
+  len=-0.97 hdr(+3/-5) cmds(+0/-0) refs(+0)
+  headings=['Frontend Design', 'Overview', 'When to Use', 'Instructions']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Make the AI very good in frontend design, making it user, mobile, desktop and device friendly
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design ## Overview Make the AI very good in frontend design, making it user, mobile, desktop and device friendly ## When to Use Use this skill when: - [Describe trigger scenarios] ## Instructions [Add step-by-
+
+### G61 IncomeStreamSurfer/claude-skills-collection | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.42 sim=0.37 members=1 occ=1
+  len=-0.71 hdr(+9/-6) cmds(+0/-0) refs(+1)
+  headings=['Frontend Design Skill', 'Core Principle', 'Focus Areas', 'Typography', 'Color & Theme', 'Motion', 'Backgrounds']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Skill | ## Core Principle
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Skill ## Core Principle You tend to converge toward generic, "on distribution" outputs. In frontend design, this creates what users call the "AI slop" aesthetic. Avoid this: make creative, distinctive f
+
+### G62 OpenBMB/PilotDeck | skills/frontend-design/SKILL.md | [compact-rewrite]
+  rel=0.36 sim=0.44 members=1 occ=1
+  len=-0.86 hdr(+3/-5) cmds(+0/-1) refs(+1)
+  headings=['Frontend Design', 'Workflow', 'Review Checklist', 'PilotDeck Migration Note']
+  routing=[] wrapper=[]
+  ADD: ++ | Use this skill when creating or reviewing frontend UI where visual quality matters. | ## Workflow
+  REM: -- | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis | ## Ground it in the subject
+  body: # Frontend Design Use this skill when creating or reviewing frontend UI where visual quality matters. ## Workflow 1. Clarify the product context, target user, and page goal. 2. Establish visual hierarchy before writing c
+
+### G63 Rain120/qq-music-api | skills/frontend-design/SKILL.md | [compatibility-wrapper]
+  rel=0.45 sim=0.22 members=1 occ=1
+  len=-0.97 hdr(+0/-6) cmds(+0/-1) refs(+3)
+  headings=[]
+  routing=[] wrapper=['canonical skill', 'compatibility wrapper', 'frontmatter: canonical_skill']
+  ADD: ++ | This is a project-facing compatibility wrapper. | - Canonical skill: `../../.skills/frontend-design/SKILL.md`
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: This is a project-facing compatibility wrapper. - Canonical skill: `../../.skills/frontend-design/SKILL.md` - Canonical base directory: `../../.skills/frontend-design/` Resolve the canonical path above before loading the
+
+### G64 matteocervelli/llms | .archive/frontend-design-system/skills/_archive/frontend-design-fix-vue/SKILL.md | [no-label]
+  rel=0.34 sim=0.45 members=1 occ=1
+  len=-0.07 hdr(+26/-6) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design Fix - Vue', 'Overview', 'Core Workflow', '1. Analysis Phase', '2. Assessment Phase', '3. Dimension-Based Fixes', 'Typography']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Fix - Vue | ## Overview
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Fix - Vue ## Overview Transform bland, generic Vue component designs into visually distinctive interfaces by systematically applying the 5 design dimensions from Anthropic's design framework. ## Core Wo
+
+### G65 phoroth/AGENTIC | plugins/ecc/skills/frontend-design-direction/SKILL.md | [no-label]
+  rel=0.40 sim=0.52 members=1 occ=2
+  len=-0.49 hdr(+6/-6) cmds(+0/-0) refs(+1)
+  headings=['Frontend Design Direction', 'When to Use', 'Design Direction', 'Implementation Guidance', 'Anti-Patterns', 'Review Checklist']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | # Frontend Design Direction | Use this skill when the work is not just making UI function, but making it feel
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Direction Use this skill when the work is not just making UI function, but making it feel purposeful, polished, and appropriate to the product domain. Source: salvaged from stale community PR #1659 by `
+
+### G66 zangxin75/openclaw-skills | frontend-design-ultimate/SKILL.md | [no-label]
+  rel=0.33 sim=0.44 members=1 occ=3
+  len=+0.27 hdr(+39/-6) cmds(+4/-1) refs(+0)
+  headings=['Frontend Design Ultimate', 'Quick Start', 'Design Thinking (Do This First)', '1. Understand Context', '2. Choose an Extreme Tone', '3. Define the Unforgettable Element', 'Aesthetics Guidelines']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Ultimate | Create distinctive, production-grade static sites from text requirements alone. No mockups, no Figma — just describe wha
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Ultimate Create distinctive, production-grade static sites from text requirements alone. No mockups, no Figma — just describe what you want and get bold, memorable designs. **Stack**: React 18 + TypeScr
+
+### G67 majiayu000/claude-skill-registry-data | data/frontend-design-review/SKILL.md | [no-label]
+  rel=0.34 sim=0.47 members=1 occ=3
+  len=+0.49 hdr(+19/-6) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design Review', 'Overview', 'Core Capabilities', '1. UI/UX Design Quality Review', '2. Design System Validation', '3. Accessibility Compliance', '4. Responsive Design Review']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Review | ## Overview
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Review ## Overview This skill provides expert guidance for conducting thorough frontend design reviews, covering UI/UX design quality, design system consistency, accessibility compliance, and responsive
+
+### G68 CUBETIQ/cubis-foundry | workflows/workflows/agent-environment-setup/platforms/antigravity/skills/frontend-design-style-selector/SKILL.md | [no-label]
+  rel=0.33 sim=0.42 members=1 occ=1
+  len=-0.83 hdr(+5/-6) cmds(+0/-1) refs(+0)
+  headings=['Frontend Design Style Selector', 'Purpose', 'When to Use', 'Instructions', 'Output Format']
+  routing=[] wrapper=[]
+  ADD: ++ | # Frontend Design Style Selector | ## Purpose
+  REM: -- | # Frontend Design | Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mis
+  body: # Frontend Design Style Selector ## Purpose Choose the visual direction before any screen or component work starts so the result has a deliberate point of view instead of a generic app-template look. ## When to Use - Sta

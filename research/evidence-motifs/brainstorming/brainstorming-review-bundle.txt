@@ -1,0 +1,809 @@
+### G1 stefaniuk/loadout | .github/skills/brainstorming/SKILL.md | [no-label]
+  rel=0.98 sim=1.00 members=1 occ=1
+  len=+0.03 hdr(+1/-0) cmds(+1/-0) refs(+0)
+  headings=['Workflow Mode Guard', 'Brainstorming Ideas Into Designs', 'Three Paths', 'Anti-Pattern: "Too Simple To Need Approval"', 'Red Flags', 'Checklist', 'Process Flow']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Workflow Mode Guard | Use this skill only when the active local workflow mode is `superpowers`.
+  REM: --
+  body: ## Workflow Mode Guard Use this skill only when the active local workflow mode is `superpowers`. Before proceeding: - Run `./scripts/hooks/workflow-mode.sh status`. - If the active mode is `speckit`, stop and tell the us
+
+### G2 ivfarias/ceo | .ai/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.79 sim=0.85 members=29 occ=63
+  len=-0.85 hdr(+3/-7) cmds(+0/-0) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'After the Design', 'Key Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a t
+
+### G3 artubss/SKILLS-CLAUDE-CODE | favorites/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.88 sim=0.94 members=22 occ=55
+  len=-0.32 hdr(+3/-4) cmds(+0/-0) refs(+0)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'The Process', 'After the Design', 'Key Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until yo
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G4 Number-Pii/organisation | Teams/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.47 sim=0.46 members=9 occ=20
+  len=-0.68 hdr(+18/-7) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Purpose', 'Operating Mode', 'The Process', '1️⃣ Understand the Current Context (Mandatory First Step)', '2️⃣ Understanding the Idea (One Question at a Time)', '3️⃣ Non-Functional Requirements (Mandatory)']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Purpose | Turn raw ideas into **clear, validated designs and specifications**
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Purpose Turn raw ideas into **clear, validated designs and specifications** through structured dialogue **before any implementation begins**. This skill exists to prevent: - prematur
+
+### G5 gabrielmoreira/agent-skills-mirror | mirrors/repos/beita6969@ScienceClaw/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.85 sim=0.92 members=8 occ=12
+  len=-0.71 hdr(+4/-5) cmds(+0/-0) refs(-1)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'The Process', 'After the Design']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a t
+
+### G6 aAAaqwq/AGI-Super-Team | skills/sp-brainstorming/SKILL.md | [routing-specialization]
+  rel=0.40 sim=0.56 members=3 occ=3
+  len=-0.83 hdr(+9/-7) cmds(+0/-0) refs(+3)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'Phase 1: Understanding', 'Phase 2: Exploration', 'Phase 3: Design Presentation', 'Phase 4: Worktree Setup (for implementation)']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  ADD: ++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Transform rough ideas into fully-formed designs through structured questioning and alternative exploration. **Core principle:** Ask questions to understand, explore alternat
+
+### G7 diegosouzapw/awesome-omni-skills | skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.50 sim=0.55 members=2 occ=2
+  len=-0.17 hdr(+38/-8) cmds(+0/-1) refs(+0)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Brainstorming Ideas Into Designs', 'When to Use This Skill', 'Operating Table', 'Workflow', 'Imported Workflow Notes']
+  routing=['heading: Related Skills', 'owns', 'related skills'] wrapper=[]
+  ADD: ++ | ## Overview | This public intake copy packages `plugins/antigravity-awesome-skills-claude/skills/brainstorming` from `https://github.c
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview This public intake copy packages `plugins/antigravity-awesome-skills-claude/skills/brainstorming` from `https://github.com/sickn33/antigravity-awesome-skills` into the nativ
+
+### G8 galyarderlabs/galyarder-design | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.45 sim=0.47 members=2 occ=2
+  len=-0.95 hdr(+5/-9) cmds(+1/-3) refs(-5)
+  headings=['brainstorming', 'What it does', 'Source', 'How to use', 'Inspect the upstream README for exact paths']
+  routing=[] wrapper=[]
+  ADD: ++ | # brainstorming | > Curated from @obra.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # brainstorming > Curated from @obra. ## What it does Transform rough ideas into fully-formed designs through structured questioning and alternative exploration. Useful early in concept work. ## Source - Upstream: https:
+
+### G9 derHaken/SuperAntigravity | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.80 sim=0.83 members=1 occ=1
+  len=-0.62 hdr(+5/-5) cmds(+1/-0) refs(-1)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Greenfield Projects', 'Checklist', 'Process Flow', 'The Process']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a t
+
+### G10 openteams-lab/openteams | assets/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.85 sim=0.92 members=1 occ=1
+  len=-0.43 hdr(+4/-5) cmds(+0/-1) refs(-2)
+  headings=['Brainstorming Ideas Into Designs', 'OpenTeams-only availability', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'The Process', 'After the Design']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | ## OpenTeams-only availability | This skill is part of the OpenTeams workflow and is only available when the current input prompt starts with:
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## OpenTeams-only availability This skill is part of the OpenTeams workflow and is only available when the current input prompt starts with: ```text [OPENTEAMS_SOURCE=openteams] ``` If 
+
+### G11 denolfe/dotfiles | pi/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.74 sim=0.74 members=1 occ=1
+  len=-0.32 hdr(+6/-5) cmds(+0/-1) refs(-3)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Rationalizations That Defeat This Gate', 'Post-Violation Recovery', 'Checklist', 'Process Flow', 'The Process']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until yo
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G12 doviettung96/apk-tool | .codex/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.80 sim=0.80 members=1 occ=2
+  len=-0.29 hdr(+3/-4) cmds(+0/-1) refs(-2)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'The Process', 'Planner Handoff', 'Key Principles']
+  routing=['do not use', 'owns'] wrapper=[]
+  ADD: ++ | Help turn ideas into an approved Beads-ready design through natural collaborative dialogue. | In this template, `brainstorming` is the primary discuss stage. Use it to lock intent, separate decisions from assumptio
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Help turn ideas into an approved Beads-ready design through natural collaborative dialogue. In this template, `brainstorming` is the primary discuss stage. Use it to lock intent, separa
+
+### G13 mrkhachaturov/rkstack | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.70 sim=0.76 members=1 occ=1
+  len=+0.30 hdr(+24/-5) cmds(+6/-0) refs(+0)
+  headings=['Preamble (run first)', '=== RKstack Preamble (brainstorming) ===', 'Read detection cache (written by session-start via rkstack detect)', 'Session-volatile checks (can change mid-session)', 'AskUserQuestion Format', 'Completeness Principle', 'Completion Status']
+  routing=[] wrapper=[]
+  ADD: ++ | <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly --> | <!-- Regenerate: just build -->
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly --> <!-- Regenerate: just build --> ## Preamble (run first) ```bash # === RKstack Preamble (brainstorming) === # Read detection cache (written by session-star
+
+### G14 hainamchung/agent-assistant | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.76 sim=0.89 members=1 occ=1
+  len=-0.56 hdr(+4/-5) cmds(+0/-0) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'The Process', 'After the Design', 'Key Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until yo
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G15 kyaulabs/prism | packages/prism-core/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.65 sim=0.66 members=1 occ=1
+  len=-0.10 hdr(+7/-6) cmds(+2/-0) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-pattern: "This is too simple to need a design"', 'Checklist', 'Strict-greenfield bootstrap path', 'The process', 'Domain language', 'After the design']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | Turn ideas into fully formed designs through natural collaborative dialogue. | Start by understanding the current project context, then ask questions one at a
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn ideas into fully formed designs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refine the idea. Onc
+
+### G16 djwmobley/pipeline | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.64 sim=0.64 members=1 occ=1
+  len=-0.08 hdr(+4/-6) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Checklist', 'The Process', 'Open Questions (TBDs)', 'After the Design', 'Key Principles', 'Reporting Model']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine | the idea. Once you understand what you're building, present the design and get user approval.
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G17 ericgandrade/claude-superskills | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.74 sim=0.82 members=1 occ=1
+  len=-0.62 hdr(+10/-5) cmds(+0/-0) refs(-1)
+  headings=['Brainstorming Ideas Into Designs', 'Purpose', 'When to Use', 'Progress Tracking', 'Workflow', 'Overview', 'Anti-Pattern: "This Is Too Simple To Need A Design"']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Purpose | ## When to Use
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## Purpose Help turn ideas into fully formed designs and specs through natural collaborative dialogue. ## When to Use Use this skill when: - The request involves creating or changing be
+
+### G18 Fattastic/khawi-s-companion-2a2808cd | .agent/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.75 sim=0.81 members=1 occ=1
+  len=-0.71 hdr(+10/-7) cmds(+0/-0) refs(-3)
+  headings=['Brainstorming Ideas Into Designs', 'When to use this skill', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'How to use it', 'Process Flow', 'How to use it', '1. Understanding the Idea']
+  routing=[] wrapper=[]
+  ADD: ++ | ## When to use this skill | Help turn ideas into fully formed designs and specs through natural
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## When to use this skill Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questi
+
+### G19 semaes111/PROYECTO-SKILLS | 09-SKILLS-UTILIDADES/brainstorming-diseno-colaborativo-SKILL.md | [workflow-specialization]
+  rel=0.74 sim=0.94 members=1 occ=1
+  len=-0.87 hdr(+1/-7) cmds(+0/-3) refs(-3)
+  headings=['Brainstorming Ideas Into Designs', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until yo
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G20 coctostan/pi-superpowers-plus | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.73 sim=0.75 members=1 occ=1
+  len=-0.79 hdr(+4/-7) cmds(+0/-0) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Boundaries', 'The Process', 'After the Design', 'Key Principles']
+  routing=['related skills'] wrapper=[]
+  ADD: ++ | > **Related skills:** Consider `/skill:using-git-worktrees` to set up an isolated workspace, then `/skill:writing-plans` | ## Overview
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: > **Related skills:** Consider `/skill:using-git-worktrees` to set up an isolated workspace, then `/skill:writing-plans` for implementation planning. # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fu
+
+### G21 Benkapner/claude-code-basecamp | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.74 sim=0.89 members=1 occ=3
+  len=-0.88 hdr(+4/-8) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Process', 'Design Principles', 'Working in Existing Codebases', 'After Design Approval']
+  routing=[] wrapper=[]
+  ADD: ++ | Help turn ideas into fully formed designs through collaborative dialogue. | When this skill activates, present a design before writing code. The design can be short (a few sentences for simple pro
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs through collaborative dialogue. When this skill activates, present a design before writing code. The design can be short (a few sentences for s
+
+### G22 majiayu000/claude-skill-registry | skills/creative/brainstormiong/SKILL.md | [workflow-specialization]
+  rel=0.70 sim=0.68 members=1 occ=1
+  len=-0.75 hdr(+3/-7) cmds(+0/-0) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'After the Design', 'Key Principles']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | ## Overview | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a t
+
+### G23 lidge-jun/cli-jaw-skills | brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.73 sim=0.84 members=1 occ=1
+  len=-0.92 hdr(+4/-7) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Goal', 'Design Review', 'Checklist', 'Guidelines', 'After Approval']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Goal | Clarify requirements and produce a design before jumping to code. Reduces wasted work from unexamined assumptions.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Goal Clarify requirements and produce a design before jumping to code. Reduces wasted work from unexamined assumptions. ## Design Review Present a design and get user feedback before
+
+### G24 brunob54/superpowers-orchestrator | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.55 sim=0.64 members=1 occ=1
+  len=+0.20 hdr(+11/-7) cmds(+2/-0) refs(-2)
+  headings=['Brainstorming', 'Hard Gate', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'Checklist', 'Process Flow', 'Research Gate', 'Spec Self-Review']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Turn rough requests into an approved design before implementation.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Turn rough requests into an approved design before implementation. ## Hard Gate Do not write code, edit files, or invoke implementation skills until design approval is explicit. One carve-out: writes unde
+
+### G25 mengsi16/plan-for-all | skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.57 sim=0.62 members=1 occ=1
+  len=-0.28 hdr(+15/-5) cmds(+0/-1) refs(+0)
+  headings=['Brainstorming Ideas Into Designs', 'What This Skill Owns', 'Required Output', 'Checklist', 'Process Flow', 'The Process', 'Understanding The Request']
+  routing=['owns', 'route to'] wrapper=[]
+  ADD: ++ | Help turn ideas into an approved product/design specification through natural collaborative dialogue. | This skill is the customer-facing convergence layer. It plays the role that a strong product manager or solution designe
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Help turn ideas into an approved product/design specification through natural collaborative dialogue. This skill is the customer-facing convergence layer. It plays the role that a stron
+
+### G26 itseffi/agentic-os | .agents/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.69 sim=0.82 members=1 occ=1
+  len=-0.86 hdr(+5/-7) cmds(+0/-1) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'After the Design', 'Key Principles', 'When to Use', 'When Not to Use']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | Use this before any creative work - creating features, building components, adding functionality, or modifying behavior. | ## Overview
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Use this before any creative work - creating features, building components, adding functionality, or modifying behavior. ## Overview Turn ideas into fully formed designs through collabo
+
+### G27 JsonLee12138/prompts | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.67 sim=0.66 members=1 occ=1
+  len=-0.73 hdr(+7/-6) cmds(+0/-2) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Anti-Pattern: "This Is Too Simple To Need Design"', 'Checklist', 'Process Flow', 'Save Location Rule (Required)', 'Questioning Rules']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Turn ideas into clear, approved brainstorming documents through collaborative dialogue.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Turn ideas into clear, approved brainstorming documents through collaborative dialogue. Always support role-based brainstorming: - If the user specifies a role, follow that 
+
+### G28 himmelreich-it/agent-skill-converter | out/junie/skills/superpowers/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.68 sim=0.72 members=1 occ=1
+  len=-0.85 hdr(+9/-7) cmds(+1/-2) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'The Process', 'Phase 1: Context Exploration', 'Phase 2: Clarifying Questions', 'Phase 3: Propose Approaches', 'Phase 4: Present Design', 'Phase 5: Design Documentation']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | ### Phase 1: Context Exploration
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G29 ahippelainen/claude-loadout | claude/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.67 sim=0.85 members=1 occ=1
+  len=-0.90 hdr(+3/-8) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Process', 'Guidelines', 'Key Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | Turn ideas into a clear design through focused dialogue before any implementation. | Do NOT write any code or take any implementation action until you have presented a design and the user has approved it.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn ideas into a clear design through focused dialogue before any implementation. <HARD-GATE> Do NOT write any code or take any implementation action until you have presented a design 
+
+### G30 jh941213/my-cc-harness | skills_en/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.67 sim=0.76 members=1 occ=1
+  len=-0.87 hdr(+3/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming (design before code)', 'Process', 'Design principles']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming (design before code) | Turn ideas into a settled design through natural dialogue, and only then implement.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming (design before code) Turn ideas into a settled design through natural dialogue, and only then implement. **HARD GATE: no code, no scaffolding, no implementation until a design has been presented and appro
+
+### G31 AntonyKervazoCanut/gba_translator | .ollama/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.62 sim=0.70 members=1 occ=1
+  len=-0.79 hdr(+4/-7) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Checklist', 'Process', 'Project Conventions to Apply in Design', 'After the Design', 'Key Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you unders | Do NOT write any code, create any script, or modify any file until you have presented a design and the user has approved
+  REM: -- | Start by classifying how much process the request needs, then work | through your path: understand the context, refine the idea, present a
+  body: # Brainstorming Ideas Into Designs Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to refin
+
+### G32 Vpr99/agent-setup | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.60 sim=0.71 members=1 occ=1
+  len=-0.76 hdr(+10/-7) cmds(+0/-1) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'After the Design', 'Problem Statement', 'Solution', 'User Stories']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Help turn ideas into fully formed designs and specs through natural
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through natural collaborative dialogue. Start by understanding the current project context, then ask questions one at a t
+
+### G33 golfballnut/mcmforge | companies/mcm-forge/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.67 sim=0.69 members=1 occ=1
+  len=-0.99 hdr(+0/-9) cmds(+0/-3) refs(-4)
+  headings=[]
+  routing=[] wrapper=[]
+  ADD: ++ | Explores user intent, requirements and design before implementation. Referenced from Anthropic's superpowers skill set.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: Explores user intent, requirements and design before implementation. Referenced from Anthropic's superpowers skill set.
+
+### G34 Allura-Ecosystem/Allura_Memory | .opencode/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.61 sim=0.61 members=1 occ=1
+  len=-0.78 hdr(+12/-8) cmds(+0/-3) refs(-3)
+  headings=['Brainstorming Ideas Into Designs', 'Process', '1. Hydrate Context', '2. Ask Clarifying Questions', '3. Propose 2-3 Approaches', '4. Present Design', '5. F# Traceability (MANDATORY)']
+  routing=[] wrapper=[]
+  ADD: ++ | Turn ideas into fully formed designs through collaborative dialogue. Produce specs that trace to the Blueprint's B#/F# r | Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until yo
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn ideas into fully formed designs through collaborative dialogue. Produce specs that trace to the Blueprint's B#/F# requirements. <HARD-GATE> Do NOT invoke any implementation skill, 
+
+### G35 apenlor/opencode-expert-mode | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.61 sim=0.73 members=1 occ=1
+  len=-0.85 hdr(+6/-7) cmds(+0/-1) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'When to Use', 'The Process', 'After the Design', 'Stop Conditions', 'Fallbacks']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Turn ideas into fully formed designs through collaborative dialogue. Understand the project context, ask clarifying ques
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Turn ideas into fully formed designs through collaborative dialogue. Understand the project context, ask clarifying questions, explore approaches, and present a validated de
+
+### G36 letitbk/claude-academic-setup | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.59 sim=0.50 members=1 occ=2
+  len=-0.72 hdr(+12/-7) cmds(+0/-0) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'Phase 1: Interactive Questioning (MANDATORY)', 'Question Categories', 'AskUserQuestion Tool Usage', 'Typical Flow']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Help turn ideas into fully formed designs and specs through structured, interactive questioning using the **AskUserQuest
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Help turn ideas into fully formed designs and specs through structured, interactive questioning using the **AskUserQuestion tool**. Start by understanding the current projec
+
+### G37 casius-connect/vibe-briefing-skills | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.62 sim=0.75 members=1 occ=1
+  len=-0.94 hdr(+4/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming: ideas into designs', 'Process', 'When the design is agreed', 'Principles']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming: ideas into designs | ## Process
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming: ideas into designs ## Process 1. Understand first. Look at what already exists in the project. Then ask questions ONE at a time. Prefer multiple choice. Never more than one question per message. Focus on
+
+### G38 truongnat/rnui | .agents/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.42 sim=0.45 members=1 occ=1
+  len=+0.10 hdr(+58/-9) cmds(+0/-3) refs(-2)
+  headings=['Brainstorming', 'Mục Đích', 'Khi Dùng', 'Khi Không Dùng', 'Inputs', 'Outputs', 'Lite Output']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Mục Đích
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Mục Đích Biến yêu cầu ban đầu thành một hướng làm rõ ràng trước khi planning hoặc implementation. Skill này tập trung vào: - Làm rõ goal và expected outcome. - Tách facts, assumptions và unknowns. - Xá
+
+### G39 xiaocai-admin-2001/SkillForest-opencode | skills/sp-brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.58 sim=0.65 members=1 occ=1
+  len=-0.83 hdr(+10/-7) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Core Rule', 'When To Use', 'Workflow', 'Clarifying Questions', 'Design Output Sections', 'Scale Guard']
+  routing=[] wrapper=[]
+  ADD: ++ | Turn rough requests into approved design decisions and a concrete spec. | ## Core Rule
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn rough requests into approved design decisions and a concrete spec. ## Core Rule Do not start implementation until the user has approved the design. ## When To Use - new feature req
+
+### G40 xenitV1/claude-code-maestro | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.49 sim=0.49 members=1 occ=1
+  len=-0.49 hdr(+30/-9) cmds(+1/-0) refs(-5)
+  headings=['💡 BRAINSTORMING: DESIGN BEFORE CODE', '📋 WHEN TO USE', '🔄 THE PROCESS', 'Phase 1: Understanding the Idea', 'Phase 2: Exploring Approaches', 'Phase 3: Presenting the Design', 'Phase 4: Documentation']
+  routing=['related skills'] wrapper=[]
+  ADD: ++ | <domain_overview> | # 💡 BRAINSTORMING: DESIGN BEFORE CODE
+  REM: -- | # Brainstorming Ideas Into Designs | Start by classifying how much process the request needs, then work
+  body: <domain_overview> # 💡 BRAINSTORMING: DESIGN BEFORE CODE > **Philosophy:** Understanding comes before implementation. A well-designed solution is half-implemented. Never code without a clear design. **HALLUCINATION FIREWA
+
+### G41 majiayu000/claude-skill-registry-data | planning/brainstorming-datorresb-vibecoding-starter/SKILL.md | [compact-rewrite]
+  rel=0.50 sim=0.50 members=1 occ=1
+  len=-0.54 hdr(+12/-7) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'Interactive Questions with `ask_questions` Tool', 'Tool Parameters', 'Rules', 'Example: Multiple Choice']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Turn rough ideas into a validated design/spec through short, collaborative dialogue.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Turn rough ideas into a validated design/spec through short, collaborative dialogue. Start by understanding the current project context, then ask questions one at a time to 
+
+### G42 sthiermann/stn-skills | skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.46 sim=0.49 members=1 occ=1
+  len=+0.69 hdr(+25/-9) cmds(+1/-1) refs(+1)
+  headings=['Brainstorming', 'Overview', 'Mandatory Skill Chain', 'The Iron Law', 'Modernization Mandate', 'Session Resumption Protocol', 'When to Use']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Overview
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Overview Structured exploration that converts ambiguous requests into validated design specs. Surfaces assumptions, generates genuinely distinct approaches through multi-lens cognitive frameworks, scor
+
+### G43 tenecsson/playbooks | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.57 sim=0.66 members=1 occ=1
+  len=-0.92 hdr(+0/-9) cmds(+0/-3) refs(-5)
+  headings=[]
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | Turn an open request into an approved design before coding. | Use this when:
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: Turn an open request into an approved design before coding. Use this when: - success criteria, constraints, or tradeoffs are still unclear - the user wants help choosing architecture, behavior, or scope Do not use this w
+
+### G44 bharat3645/The-Ideal-Harness | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.56 sim=0.67 members=1 occ=1
+  len=-0.93 hdr(+4/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Process', 'Why the gate', 'Hand-off']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Do NOT write code, scaffold a project, or edit files during this skill. The only output is an agreed design. Implementat
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming <HARD-GATE> Do NOT write code, scaffold a project, or edit files during this skill. The only output is an agreed design. Implementation begins only after the user explicitly approves. </HARD-GATE> ## Proc
+
+### G45 redpanda-data/ui-harness | brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.56 sim=0.65 members=1 occ=1
+  len=-0.94 hdr(+4/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Design Mode (default)', 'Challenge Mode', 'When to Use']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | **GATE: no code, no files, no impl until design presented and approved.**
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming **GATE: no code, no files, no impl until design presented and approved.** ## Design Mode (default) 1. Explore context -- read files, docs, recent commits 2. Clarify -- one question at time, not list 3. Pr
+
+### G46 cheetahbyte/dotfiles | agents/.agents/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.50 sim=0.49 members=1 occ=1
+  len=-0.64 hdr(+3/-8) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Core Principle', 'Scope Gate', 'Workflow']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | Turn feature ideas into implementable technical designs without duplicating requirements elicitation. | **Brainstorming owns:** exploring the existing system, separating facts from decisions, delegating user-owned decisions 
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn feature ideas into implementable technical designs without duplicating requirements elicitation. **Brainstorming owns:** exploring the existing system, separating facts from decisi
+
+### G47 B4san/AC-framework | framework/make_your_own/.amazonq/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.46 sim=0.46 members=1 occ=2
+  len=-0.48 hdr(+27/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming - Comprehensive Question Generation', 'When to Use This Skill', 'Instructions', 'Step 1: Analyze the Context', 'Step 2: Generate Comprehensive Brainstorming Questions', '🧠 Brainstorming Analysis: [Feature/Project Name]', 'Context Summary']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming - Comprehensive Question Generation | Surface unknowns, challenge assumptions, and explore the problem space BEFORE committing to a solution.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming - Comprehensive Question Generation Surface unknowns, challenge assumptions, and explore the problem space BEFORE committing to a solution. ## When to Use This Skill Use this skill when: - Starting a new 
+
+### G48 JetBrains/thinkrail | packages/pi-thinkrail-workflow/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.50 sim=0.50 members=1 occ=1
+  len=-0.65 hdr(+5/-9) cmds(+0/-0) refs(-3)
+  headings=['Brainstorming', 'Brainstorm before you build', 'Anti-pattern: "this is too small to need this"', 'The workflow', 'What a good task-spec looks like']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Brainstorm before you build
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Brainstorm before you build - Before starting any creative or feature work — a new feature, added functionality, a behavioral change, a nontrivial design decision — stop and run this workflow before wr
+
+### G49 myths-labs/muse | skills/toolkit/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.53 sim=0.46 members=1 occ=1
+  len=-0.78 hdr(+16/-8) cmds(+0/-1) refs(-5)
+  headings=['Brainstorming — Reframe Before You Build', 'Overview', 'The Process', 'Phase 1: Reframe the Problem', 'Phase 2: Explore Approaches', 'Phase 3: Present the Design', 'Phase 4: Output Design Doc']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming — Reframe Before You Build | *Inspired by gstack's /office-hours. Upgraded to output standardized design docs.*
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming — Reframe Before You Build *Inspired by gstack's /office-hours. Upgraded to output standardized design docs.* ## Overview Don't just ask "what do you want to build?" Ask "what pain are you solving?" This 
+
+### G50 hnb-rabear/hnb-rabear.github.io | .agents/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.52 sim=0.55 members=1 occ=1
+  len=-0.82 hdr(+9/-6) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'The Iron Rule', 'Anti-Pattern: "This Is Too Simple To Need A Design"', 'The Process', '1. Understand the Request', '2. Ask Clarifying Questions', '3. Explore Alternatives']
+  routing=[] wrapper=[]
+  ADD: ++ | > Adapted from [superpowers:brainstorming](https://github.com/obra/superpowers) | ## The Iron Rule
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs > Adapted from [superpowers:brainstorming](https://github.com/obra/superpowers) ## The Iron Rule ``` NEVER start coding before the design is approved. ``` Even "simple" changes benefit 
+
+### G51 modimihir07/agentic-os | skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.55 sim=0.67 members=1 occ=1
+  len=-0.95 hdr(+6/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Description', 'When to Use', 'Process', 'Output', 'Agent Assignment']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Description
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Description Socratic brainstorming session that refines rough ideas through structured questions, explores alternatives, and produces a validated design document. ## When to Use - Starting a new projec
+
+### G52 manyrocks/venture | templates/.claude/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.54 sim=0.62 members=1 occ=1
+  len=-0.90 hdr(+3/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming', 'Process', 'Hard rules']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Help the user turn an idea into a clear design spec through collaborative dialogue. Stay strategic. Do not write product
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Help the user turn an idea into a clear design spec through collaborative dialogue. Stay strategic. Do not write production code. ## Process 1. Read `DESIGN.md`, `docs/PRD.md`, and `docs/GOAL.md` if they 
+
+### G53 aiskillstore/marketplace | skills/dyai2025/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.45 members=1 occ=2
+  len=-0.58 hdr(+12/-7) cmds(+0/-0) refs(-1)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'Quick Reference', 'The Process', 'Phase 1: Understanding', 'Phase 2: Exploration', 'Phase 3: Design Presentation']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Transform rough ideas into fully-formed designs through structured questioning and alternative exploration. **Core principle:** Ask questions to understand, explore alternat
+
+### G54 drbothen/vsdd-factory | plugins/vsdd-factory/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.49 members=1 occ=1
+  len=-0.55 hdr(+18/-9) cmds(+1/-2) refs(-4)
+  headings=['Hard Gate', 'Brainstorming: Guided Ideation', 'When This Skill Runs', 'Your Role', 'Anti-Pattern: "This Is Too Simple To Need Brainstorming"', 'Red Flags — Thoughts That Mean STOP', 'Visual Tooling']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Hard Gate | Do NOT skip to brief creation, spec writing, or any implementation activity. The brainstorming report MUST be written an
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: ## Hard Gate Do NOT skip to brief creation, spec writing, or any implementation activity. The brainstorming report MUST be written and the human MUST select a direction before proceeding to the next pipeline stage. # Bra
+
+### G55 mraakashshah/oro | .claude/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.52 sim=0.51 members=1 occ=1
+  len=-0.81 hdr(+7/-7) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Workflow', '1. Research Proportionally', '2. Frame the Decision', '3. Compare Approaches', '4. Premortem Load-Bearing Choices', '5. Present the Design']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | Develop an evidence-based design through focused dialogue. Match the depth of the process to the decision's scope and re | ## Workflow
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Develop an evidence-based design through focused dialogue. Match the depth of the process to the decision's scope and reversibility. ## Workflow ### 1. Research Proportionally Before pr
+
+### G56 majiayu000/claude-skill-registry-data | planning/brainstorming-mattjefferson-agents/SKILL.md | [compact-rewrite]
+  rel=0.47 sim=0.48 members=1 occ=1
+  len=-0.63 hdr(+19/-9) cmds(+0/-1) refs(-5)
+  headings=['Brainstorming', 'When to Use This Skill', 'Core Process', 'Phase 0: Assess Requirement Clarity', 'Phase 1: Understand the Idea', 'Phase 2: Explore Approaches', 'Approach A: [Name]']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | This skill provides detailed process knowledge for effective brainstorming sessions that clarify **WHAT** to build befor
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming This skill provides detailed process knowledge for effective brainstorming sessions that clarify **WHAT** to build before diving into **HOW** to build it. ## When to Use This Skill Brainstorming is valuab
+
+### G57 qq1030655828/modhanhui | .opencode/skills/brainstorming/SKILL.md | [workflow-specialization]
+  rel=0.54 sim=0.63 members=1 occ=1
+  len=-0.96 hdr(+3/-9) cmds(+0/-3) refs(-5)
+  headings=['Use when', 'Process', 'Output format']
+  routing=[] wrapper=[]
+  ADD: ++ | ## Use when | Use this when requirements are incomplete, ambiguous, or need to be turned into an implementable design.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: ## Use when Use this when requirements are incomplete, ambiguous, or need to be turned into an implementable design. ## Process 1. Restate the goal in one paragraph. 2. Identify missing constraints, input/output contract
+
+### G58 incubyte/ai-plugins | bee/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.45 sim=0.49 members=1 occ=1
+  len=-0.57 hdr(+15/-9) cmds(+1/-1) refs(-5)
+  headings=['Brainstorming', 'Two Phases', 'Build context incrementally', 'Brainstorm Decisions', 'Phase 1: Diverge — Generate Options', 'Phase 2: Converge — Narrow Down', 'Capturing Decisions']
+  routing=['do not use', 'owns'] wrapper=[]
+  ADD: ++ | # Brainstorming | **Deferred Tool Loading:** If deferred tools have not been loaded yet, call `ToolSearch` with query `"select:AskUserQues
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming **Deferred Tool Loading:** If deferred tools have not been loaded yet, call `ToolSearch` with query `"select:AskUserQuestion,WebSearch,WebFetch"` to load them. These are deferred tools and will fail if ca
+
+### G59 RudyB3N8/antigravity-skills | brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.45 sim=0.44 members=1 occ=1
+  len=-0.57 hdr(+6/-9) cmds(+0/-3) refs(-5)
+  headings=['Générer des idées vers des Designs (Brainstorming)', 'Anti-Pattern : "C\'est trop simple pour nécessiter un design"', 'Checklist (Étapes obligatoires)', 'Arbre de Décision Global', 'Bonnes Pratiques', 'Assistant Visuel (Visual Companion)']
+  routing=[] wrapper=[]
+  ADD: ++ | # Générer des idées vers des Designs (Brainstorming) | Cette compétence permet de transformer des idées vagues en designs complets et en spécifications grâce à un dialogue col
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Générer des idées vers des Designs (Brainstorming) Cette compétence permet de transformer des idées vagues en designs complets et en spécifications grâce à un dialogue collaboratif naturel avec l'utilisateur. Commence 
+
+### G60 stvhay/pi-setup | pi/agent/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.46 sim=0.47 members=1 occ=1
+  len=-0.65 hdr(+17/-8) cmds(+1/-2) refs(-4)
+  headings=['Brainstorming Ideas Into Designs', 'Hard gate', 'Filesystem-first context', 'Recommended workflow', 'Design doc template', 'Design: <topic>', 'Goal']
+  routing=['do not use', 'owns'] wrapper=[]
+  ADD: ++ | Turn an idea into an approved design before implementation. Scale ceremony to risk; do not skip the approval gate. | At start, read shared conventions if needed:
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Turn an idea into an approved design before implementation. Scale ceremony to risk; do not skip the approval gate. At start, read shared conventions if needed: ```text ~/.pi/agent/skill
+
+### G61 krone9/pi-superpowers | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.52 sim=0.54 members=1 occ=1
+  len=-0.93 hdr(+4/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Process', 'Anti-patterns', 'Handoff']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Use this when the user's request is open-ended ("build X", "design Y", "what should we do about Z") and the requirements
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Use this when the user's request is open-ended ("build X", "design Y", "what should we do about Z") and the requirements are not yet pinned down. ## Process 1. **Restate the goal in one sentence.** Confir
+
+### G62 discountedcookie/10x-mapmaster | .opencode/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.50 sim=0.54 members=1 occ=1
+  len=-0.83 hdr(+14/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Iron Law', 'Process', 'Phase 1: Understand Context', 'Phase 2: Clarify Requirements', 'Phase 3: Explore Approaches', 'Approach A: [Name]']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Refine rough ideas into concrete designs through iterative questioning.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Refine rough ideas into concrete designs through iterative questioning. > **Announce:** "I'm using brainstorming to explore and clarify this idea before implementation." ## Iron Law ``` ONE QUESTION AT A 
+
+### G63 reidemeister94/development-skills | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.52 sim=0.56 members=1 occ=1
+  len=-0.92 hdr(+1/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Interview the user relentlessly about every aspect of this until we reach a shared understanding. Walk down each branch 
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Interview the user relentlessly about every aspect of this until we reach a shared understanding. Walk down each branch of the decision tree, resolving dependencies between decisions one-by-one. For each 
+
+### G64 jttd3v/public-cms | .claude/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.45 sim=0.45 members=1 occ=1
+  len=-0.63 hdr(+26/-9) cmds(+0/-2) refs(-4)
+  headings=['Brainstorming & Planning — CAMII CMS', 'Purpose', 'When This Skill Triggers', 'Phase 1: Understand (Do NOT Skip)', '1A. Domain Check', '1B. Architecture Check', '1C. Security Check']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming & Planning — CAMII CMS | ## Purpose
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming & Planning — CAMII CMS ## Purpose Prevent rework by running a structured discovery process before implementation. Surfaces missing data, security requirements, architectural decisions, and edge cases — th
+
+### G65 tomevault-io/tomes | sandgardenhq--sgai/skills/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.45 sim=0.45 members=1 occ=1
+  len=-0.66 hdr(+9/-7) cmds(+0/-1) refs(-1)
+  headings=['Brainstorming Ideas Into Designs', 'Overview', 'The Process', 'Phase 1: Understanding', 'Phase 2: Exploration', 'Phase 3: Design Presentation', 'Phase 4: Validation Criteria']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  ADD: ++ | ## Overview | Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs ## Overview Transform rough ideas into fully-formed designs through structured questioning and alternative exploration. **Core principle:** Ask questions to understand, explore alternat
+
+### G66 korallis/Droidz | droidz_installer/payloads/droid_cli/default/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.51 sim=0.56 members=1 occ=1
+  len=-0.94 hdr(+4/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming - Idea Refinement', 'When to use this skill', 'When to use this skill', 'Process', 'Resources']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming - Idea Refinement | ## When to use this skill
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming - Idea Refinement ## When to use this skill - Starting new projects or features - Designing system architecture - Exploring multiple solution approaches - Evaluating tradeoffs and alternatives - Challengi
+
+### G67 bg-szy/TOP-SKILLS | skills/marketplace/brainstorming__skills-dmjgilbert-brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.48 sim=0.51 members=1 occ=1
+  len=-0.81 hdr(+24/-9) cmds(+0/-2) refs(-4)
+  headings=['Brainstorming & Design Refinement', 'When to Use', 'The Workflow', 'Phase 1: Understanding', 'Phase 2: Exploring Options', 'Option A: [Name] (Recommended)', 'Option B: [Name]']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming & Design Refinement | Transform rough ideas into validated designs through structured Socratic dialogue before any implementation begins.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming & Design Refinement Transform rough ideas into validated designs through structured Socratic dialogue before any implementation begins. ## When to Use - Starting a new feature with unclear requirements - 
+
+### G68 yywmrz/antigravity-superpowers | skills-en/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.55 members=1 occ=1
+  len=-0.92 hdr(+8/-9) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming Skill', 'Trigger Conditions', 'Workflow', '1. Understand Requirements', '2. Clarify Questions', '3. Explore Solutions', '4. Validate in Sections']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming Skill | Conduct design discussions and requirement clarification before any coding work.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Skill Conduct design discussions and requirement clarification before any coding work. ## Trigger Conditions - User proposes new feature requirements - Starting a new project - Need to refactor existing c
+
+### G69 David-Li0406/meta-skill-evloving | skill-flow/data/skills-refined-36k/skillsmp/brainstorming-55/SKILL.md | [compact-rewrite]
+  rel=0.48 sim=0.48 members=1 occ=1
+  len=-0.84 hdr(+10/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming: Conversation Techniques', 'Purpose', 'When to Use', 'Core Techniques', 'Technique 1: One Question at a Time', 'Technique 2: Multiple Choice Preferred', 'Technique 3: Incremental Validation']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming: Conversation Techniques | ## Purpose
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming: Conversation Techniques ## Purpose Guide users through requirement exploration and design decisions using structured dialogue techniques. This skill focuses on **how to have effective conversations**, no
+
+### G70 majiayu000/spellbook | skills/brainstorming.SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.46 members=1 occ=1
+  len=-0.78 hdr(+16/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming', 'Purpose', 'The Three Phases', 'Phase 1: Understanding the Idea', 'Phase 2: Exploring Approaches', 'Approach A: Event-Driven (Recommended)', 'Approach B: Direct Integration']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | > From [obra/superpowers](https://github.com/obra/superpowers)
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming > From [obra/superpowers](https://github.com/obra/superpowers) ## Purpose Turn rough ideas into fully-formed designs through collaborative dialogue, NOT immediate implementation. **Use for:** Exploring id
+
+### G71 vamseeachanta/workspace-hub | .claude/skills/_internal/workflows/brainstorming/SKILL.md | [routing-specialization]
+  rel=0.45 sim=0.44 members=1 occ=1
+  len=-0.73 hdr(+22/-9) cmds(+0/-3) refs(-4)
+  headings=['Brainstorming', 'Overview', 'Quick Start', 'When to Use', 'The Brainstorming Process', 'Phase 1: Understanding', 'Phase 2: Exploration']
+  routing=['heading: Related Skills', 'related skills'] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Overview
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Overview This skill guides collaborative dialogue to transform ideas into detailed design specifications before implementation begins. Through Socratic questioning and iterative refinement, it ensures 
+
+### G72 majiayu000/claude-skill-registry-data | other/brainstorming-arbiterforge-codearbiter/SKILL.md | [compact-rewrite]
+  rel=0.41 sim=0.42 members=1 occ=1
+  len=-0.61 hdr(+7/-9) cmds(+0/-3) refs(-5)
+  headings=['brainstorming', 'Pre-flight', 'Phase 1 — Frame the problem · gate: BLOCK', 'Phase 2 — Socratic refinement loop · gate: BLOCK', 'Phase 3 — Write the spec · gate: BLOCK', 'Phase 4 — Approval & handoff · gate: STOP', 'Hard rules']
+  routing=['route to'] wrapper=[]
+  ADD: ++ | # brainstorming | Refine the idea before it touches code. Routed to by `/feature` (before `tdd`) and by `/sprint` (the planning front).
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # brainstorming Refine the idea before it touches code. Routed to by `/feature` (before `tdd`) and by `/sprint` (the planning front). ## Pre-flight Read these, or STOP and surface the gap — never guess scope or stack: - 
+
+### G73 majiayu000/claude-skill-registry | skills/creative/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.51 members=1 occ=2
+  len=-0.93 hdr(+6/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Overview', 'When to Use', 'Distinction from Research', 'Process', 'Tool Use']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Overview
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Overview When requirements are vague and "what to build" is unclear, brainstorming clarifies the problem space through structured questioning and option generation. ## When to Use - Requirements lack c
+
+### G74 LucaDominici/arbiter | src/templates/claude/skills/brainstorming/SKILL.md.ejs | [compact-rewrite]
+  rel=0.47 sim=0.51 members=1 occ=1
+  len=-0.87 hdr(+10/-9) cmds(+2/-2) refs(-4)
+  headings=['Brainstorming Skill', 'Entry', 'Process', 'Step 1 — Frame the problem', 'Step 2 — Generate options (minimum 3)', 'Step 3 — Recommend', 'Step 4 — Design doc']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming Skill | Activate when the user asks to brainstorm, explore options, think through a design, or gather ideas before implementatio
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Skill Activate when the user asks to brainstorm, explore options, think through a design, or gather ideas before implementation. ## Entry When this skill is invoked: 1. Write `.arbiter/brainstorm-active` 
+
+### G75 ArchieIndian/openclaw-superpowers | skills/core/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.49 sim=0.52 members=1 occ=2
+  len=-0.96 hdr(+5/-8) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'The Process', 'Step 1: Restate the Goal', 'Step 2: Generate Options (minimum 3)', 'Step 3: Evaluate', 'Step 4: Pick and Commit']
+  routing=['owns'] wrapper=[]
+  ADD: ++ | # Brainstorming | Before implementing anything non-trivial, brainstorm first.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Before implementing anything non-trivial, brainstorm first. ## The Process ### Step 1: Restate the Goal Write what you are actually trying to achieve in 1-2 sentences. ### Step 2: Generate Options (minimu
+
+### G76 Yassimba/loom | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.47 sim=0.49 members=1 occ=1
+  len=-0.85 hdr(+4/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming', 'Diverge', 'Converge', 'Idea brief']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Turn a fuzzy idea into a clear direction through conversation. Brainstorming answers **what are we trying to do?** — *ho
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Turn a fuzzy idea into a clear direction through conversation. Brainstorming answers **what are we trying to do?** — *how will we build it?* belongs to `grill-with-docs`, so when the conversation drifts t
+
+### G77 majiayu000/claude-skill-registry | skills/design/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.46 sim=0.46 members=1 occ=2
+  len=-0.81 hdr(+31/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming', 'Core Principle', 'The Brainstorming Process', 'Step 1: Understand the Goal', 'Step 2: Explore the Space', 'Step 3: Propose Alternatives', 'Option A: [Name]']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Core Principle
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Core Principle **Design before code. Always.** Don't jump into implementation. Tease out the spec through conversation first. ## The Brainstorming Process ### Step 1: Understand the Goal Ask clarifying
+
+### G78 tapway/tapway-superpowers | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.44 sim=0.45 members=1 occ=1
+  len=-0.79 hdr(+12/-9) cmds(+1/-2) refs(-5)
+  headings=['Skill: Brainstorming', 'Purpose', 'Protocol', '0. Deep Research (optional — unfamiliar domains only)', '1. Restate the Problem', '2. Name Your Confusion', '3. Generate Options (minimum 3)']
+  routing=[] wrapper=[]
+  ADD: ++ | # Skill: Brainstorming | **When to invoke:** Before writing any code for a new feature, architecture decision, or complex bug. If there's even a 
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Skill: Brainstorming **When to invoke:** Before writing any code for a new feature, architecture decision, or complex bug. If there's even a 1% chance this applies, invoke it. --- ## Purpose Explore the problem space t
+
+### G79 VinhHoang03/Handigo-Platform | .agents/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.41 sim=0.35 members=1 occ=1
+  len=-0.71 hdr(+19/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming & Communication Protocol', '🛑 SOCRATIC GATE (ENFORCEMENT)', 'When to Trigger', '🚫 MANDATORY: 3 Questions Before Implementation', '🧠 Dynamic Question Generation', 'Core Principles', 'Question Generation Process']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming & Communication Protocol | > **MANDATORY:** Use for complex/vague requests, new features, updates.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming & Communication Protocol > **MANDATORY:** Use for complex/vague requests, new features, updates. --- ## 🛑 SOCRATIC GATE (ENFORCEMENT) ### When to Trigger | Pattern | Action | |---------|--------| | "Build
+
+### G80 KpG782/3D_Portfolio | .claude/skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.44 sim=0.43 members=1 occ=1
+  len=-0.88 hdr(+9/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'When to use', 'Method', '1. Frame', '2. Diverge (quantity first)', '3. Pressure-test (converge)', '4. Recommend']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | Generate a real spread of options, stress-test them, and converge on a
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Generate a real spread of options, stress-test them, and converge on a recommendation — instead of jumping to the first idea. ## When to use Invoke when the user asks for ideas, concepts, directions, alte
+
+### G81 IHiter-2026-Wheeled-Bipedal-Soldier/Wheeled_Bipedal_Shared_CC_Config | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.45 sim=0.47 members=1 occ=1
+  len=-0.97 hdr(+3/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming', 'Workflow', 'Completion Hint']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming | ## Workflow
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming ## Workflow 1. Clarify goals, constraints, interfaces, and safety boundaries. 2. Ask for relevant control-theory reference if needed. 3. Use `name-symbol` for naming proposals. 4. Output design note: - `R
+
+### G82 MaxFerAlten/tenderclaw | skills/brainstorming/SKILL.md | [compact-rewrite]
+  rel=0.41 sim=0.44 members=1 occ=1
+  len=-0.85 hdr(+7/-9) cmds(+0/-2) refs(-5)
+  headings=['Brainstorming — Design-First HARD-GATE', 'HARD-GATE RULE', 'Flow', 'Gates', 'Rules', 'Anti-Patterns', 'Agents']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming — Design-First HARD-GATE | ## HARD-GATE RULE
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming — Design-First HARD-GATE ## HARD-GATE RULE **NO CODE MAY BE WRITTEN until ALL of the following gates are passed.** This is non-negotiable. Any attempt to write, edit, or generate implementation code befor
+
+### G83 modbender/skill-library-mcp | data/brainstorming-2/SKILL.md | [compact-rewrite]
+  rel=0.42 sim=0.41 members=1 occ=1
+  len=-0.88 hdr(+16/-9) cmds(+0/-2) refs(-3)
+  headings=['Brainstorming Skill', 'When to Use', 'Workflow', 'Step 1: Understand Intent', 'Step 2: Explore Alternatives', 'Step 3: Design Document', 'Feature: [Name]']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming Skill | ## When to Use
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Skill ## When to Use Trigger BEFORE writing code when: - User request is vague ("make it better", "add feature X") - Complex feature with multiple approaches - Design decisions impact multiple components 
+
+### G84 dxc-danny/superpowers-cn | skills/brainstorming/SKILL.md | [no-label]
+  rel=0.37 sim=0.18 members=1 occ=1
+  len=-0.72 hdr(+8/-9) cmds(+0/-2) refs(-4)
+  headings=['将想法 brainstorming 成设计', '反模式："这太简单了，不需要设计"', '检查清单', '流程图', '这个过程', '设计之后', '关键原则']
+  routing=[] wrapper=[]
+  ADD: ++ | # 将想法 brainstorming 成设计 | 通过自然协作对话帮助将想法转化为完全形成的设计和规格。
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # 将想法 brainstorming 成设计 通过自然协作对话帮助将想法转化为完全形成的设计和规格。 首先了解当前项目上下文，然后一次一个地提问来完善想法。一旦理解了你正在构建的内容，呈现设计并获得用户批准。 <HARD-GATE> 在呈现设计并获得用户批准之前，**不要**调用任何实施技能、编写任何代码、搭建任何项目或采取任何实施行动。这适用于**每个**项目，无论感知到的简单性如何。 </HARD-GATE> ## 反模式："这太
+
+### G85 majiayu000/claude-skill-registry | skills/analysis/brainstorming-research-ideas-ihatesea69-hieunghi-ai-skills/SKILL.md | [no-label]
+  rel=0.37 sim=0.51 members=1 occ=2
+  len=+0.23 hdr(+20/-9) cmds(+0/-1) refs(-5)
+  headings=['Research Idea Brainstorming', 'When to Use This Skill', 'Core Ideation Frameworks', '1. Problem-First vs. Solution-First Thinking', '2. The Abstraction Ladder', '3. Tension and Contradiction Hunting', '4. Cross-Pollination (Analogy Transfer)']
+  routing=['do not use'] wrapper=[]
+  ADD: ++ | # Research Idea Brainstorming | Structured frameworks for discovering the next research idea. This skill provides ten complementary ideation lenses that
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Research Idea Brainstorming Structured frameworks for discovering the next research idea. This skill provides ten complementary ideation lenses that help researchers move from vague curiosity to concrete, defensible re
+
+### G86 Agentic-Engineering-Agency/agentic-pm-kit | skills/pm-kit/brainstorming-lab/SKILL.md | [no-label]
+  rel=0.36 sim=0.50 members=1 occ=1
+  len=-0.21 hdr(+5/-9) cmds(+0/-1) refs(-4)
+  headings=['When to use', 'Summon the SME', 'Facilitation script', 'Languages', 'Acceptance gate']
+  routing=[] wrapper=[]
+  ADD: ++ | > Adapted from bmad-method:bmad-brainstorming (MIT, © 2025 BMad Code, LLC). See THIRD_PARTY_NOTICES.md. | ## When to use
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: > Adapted from bmad-method:bmad-brainstorming (MIT, © 2025 BMad Code, LLC). See THIRD_PARTY_NOTICES.md. ## When to use Use this skill as a meta-skill entry point when the user wants structured creative facilitation but h
+
+### G87 CellCog/skills | skills/brainstorming-strategy-cellcog/SKILL.md | [no-label]
+  rel=0.37 sim=0.51 members=1 occ=1
+  len=-0.41 hdr(+18/-9) cmds(+3/-3) refs(-5)
+  headings=['Brainstorming & Strategy - Your Alfred for Complex Ideas', 'How to Use', 'Why Think-Cog Exists', 'How It Works', 'Start the thinking session', 'Continue the conversation — each exchange deepens understanding', 'When to Use Think-Cog']
+  routing=["don't use"] wrapper=[]
+  ADD: ++ | # Brainstorming & Strategy - Your Alfred for Complex Ideas | **Complex ideas need iteration, not conversation.** Think → Do → Review → Repeat.
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming & Strategy - Your Alfred for Complex Ideas **Complex ideas need iteration, not conversation.** Think → Do → Review → Repeat. CellCog is the thinking partner that completes the full loop — reasons with you
+
+### G88 majiayu000/claude-skill-registry | skills/data/brainstorming-ideas/SKILL.md | [no-label]
+  rel=0.35 sim=0.44 members=1 occ=1
+  len=-0.33 hdr(+27/-8) cmds(+1/-1) refs(-5)
+  headings=['Brainstorming Ideas Into Designs', 'Core Principles', 'Phase 1: Understand the Idea', '1a. Initial Question', '1b. Follow-up (based on response)', 'Phase 2: Explore Requirements (Starbursting)', 'Question Framework (5WH)']
+  routing=[] wrapper=[]
+  ADD: ++ | Transform vague ideas into fully-formed designs through structured collaborative dialogue. | **Use TodoWrite** to track these 7 phases:
+  REM: -- | Help turn ideas into fully formed designs and specs through natural collaborative dialogue. | Start by classifying how much process the request needs, then work
+  body: # Brainstorming Ideas Into Designs Transform vague ideas into fully-formed designs through structured collaborative dialogue. **Use TodoWrite** to track these 7 phases: 1. Understand the idea (dialogue first, no agents) 
+
+### G89 lemieux/rfc-skills | skills/brainstorming-rfc/SKILL.md | [no-label]
+  rel=0.38 sim=0.51 members=1 occ=1
+  len=-0.50 hdr(+21/-8) cmds(+0/-2) refs(-4)
+  headings=['RFC Ideation', 'Overview', 'When to Use', 'The Process', 'Starting from PRD', 'Discovery Questions', 'Output Format']
+  routing=[] wrapper=[]
+  ADD: ++ | # RFC Ideation | ## Overview
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # RFC Ideation ## Overview Transform rough ideas into RFC-ready thinking through collaborative dialogue. This skill is for *before* you open the RFC template: discovering what you're actually proposing and why. Start by 
+
+### G90 majiayu000/claude-skill-registry-data | product/brainstorming-features/SKILL.md | [no-label]
+  rel=0.35 sim=0.46 members=1 occ=1
+  len=-0.39 hdr(+25/-9) cmds(+0/-3) refs(-5)
+  headings=['Brainstorming Features', 'Overview', 'When to Use', 'Brainstorming Workflow', '1. Context Gathering', '2. Idea Generation Methods', '3. Feature Structure Template']
+  routing=[] wrapper=[]
+  ADD: ++ | # Brainstorming Features | ## Overview
+  REM: -- | # Brainstorming Ideas Into Designs | Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+  body: # Brainstorming Features ## Overview This skill helps generate, explore, and structure feature ideas for mobile and web applications through systematic ideation workflows. It produces actionable, well-organized feature c
