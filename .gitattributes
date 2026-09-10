@@ -1,0 +1,16 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.toml text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Provenance hashes identify exact upstream bytes, including original whitespace.
+tests/fixtures/** -text -whitespace
+tests/fixtures/SOURCES.json text eol=lf

@@ -1,3 +1,6 @@
+HISTORICAL CAPTURE: old implementation output, not current counts or validated findings.
+See examples/approval-gate/README.md and docs/evaluation.md.
+
 
 SYSTEMATIC-DEBUGGING
 Candidate matches found: 272

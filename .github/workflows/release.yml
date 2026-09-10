@@ -1,40 +1,61 @@
-name: Release to PyPI
+name: Publish verified release
 
 on:
   push:
     tags: ["v*"]
 
+permissions:
+  contents: read
+
 jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
+  verify:
+    uses: ./.github/workflows/ci.yml
     permissions:
-      # Required for PyPI Trusted Publishing (OIDC). If you instead use an
-      # API token secret, see the alternative in the publish step.
+      contents: read
+
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      contents: read
       id-token: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Install build tooling
+          python-version: "3.13"
+      - uses: actions/download-artifact@v4
+        with:
+          name: verified-release-artifacts
+          path: verified-dist
+      - name: Require tag and tested artifact versions to match
         run: |
-          python -m pip install --upgrade pip
-          pip install build twine
-      - name: Build distributions
-        run: python -m build
-      - name: Twine metadata check
-        run: python -m twine check dist/*
-      # Preferred path: Trusted Publishing. One-time setup on pypi.org —
-      # account settings → publishing → add a *pending publisher* with:
-      #   owner: ppplkmvvb   repository: skillvariants
-      #   workflow: release.yml    environment left empty (or set both sides)
-      - name: Publish (Trusted Publishing)
+          python - <<'PY'
+          import email.parser, os, pathlib, shutil, tarfile, tomllib, zipfile
+          version = tomllib.loads(pathlib.Path('pyproject.toml').read_text())['project']['version']
+          assert os.environ['GITHUB_REF_NAME'] == 'v' + version, 'Tag must match package version'
+          wheels = list(pathlib.Path('verified-dist').glob('*.whl'))
+          sdists = list(pathlib.Path('verified-dist').glob('*.tar.gz'))
+          assert len(wheels) == len(sdists) == 1, 'Expected exact tested distributions'
+          with zipfile.ZipFile(wheels[0]) as z:
+              names = [n for n in z.namelist() if n.endswith('.dist-info/METADATA')]
+              assert len(names) == 1
+              metadata = email.parser.BytesParser().parsebytes(z.read(names[0]))
+              assert metadata['Version'] == version and metadata['Name'] == 'skillvariants'
+          with tarfile.open(sdists[0], 'r:gz') as archive:
+              names = [m for m in archive.getmembers() if m.name.count('/') == 1 and m.name.endswith('/PKG-INFO')]
+              assert len(names) == 1
+              metadata = email.parser.BytesParser().parsebytes(archive.extractfile(names[0]).read())
+              assert metadata['Version'] == version and metadata['Name'] == 'skillvariants'
+          pathlib.Path('publish-dist').mkdir()
+          for artifact in wheels + sdists:
+              shutil.copyfile(artifact, pathlib.Path('publish-dist') / artifact.name)
+          PY
+      - name: Publish the exact verified wheel and sdist
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
+          packages-dir: publish-dist/
           skip-existing: false
-      # Alternative path without Trusted Publishing: store an API token as the
-      # repository secret PYPI_API_TOKEN, then replace the step above with:
-      #   env:
-      #     TWINE_USERNAME: __token__
-      #     TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-      #   run: twine upload --non-interactive dist/*

@@ -1,35 +1,19 @@
-# Web Explorer
+# Example explorer
 
-A static, precomputed-data explorer over the three validated studies:
-`systematic-debugging`, `frontend-design`, `brainstorming`.
+The static explorer contains three original approval-checkpoint examples: added, preserved and reversed. It is a reading aid with paired hunks, complete sources, a unified diff, source hashes and reproducible CLI commands. The annotations are authored interpretations, not sampled GitHub behavior.
 
-## Data flow
+From an installed checkout:
 
-```text
-research/runtime-v0.2/<family>/{manifest,motifs}.json
-  ↓  scripts/export_web_data.py (deterministic)
-web/data/<family>.json
-  ↓  web/index.html + app.js (hash routing, no build step)
-home → study → motif → compare
+```bash
+python scripts/export_web_data.py
+python scripts/export_web_data.py --check
+python -m http.server 8769 --bind 127.0.0.1 --directory web
 ```
 
-- Counts, invariants, behavior signatures, and source URLs come from the
-  runtime artifacts — never hand-entered in UI code.
-- Interpretation/tradeoff text comes from the frozen family studies and is
-  labeled as interpretation.
-- Compare payloads (target vs representative: similarity, length change,
-  mutation, brief diff) are precomputed with the deterministic compare
-  pipeline at export time.
+Open `http://127.0.0.1:8769`. No backend, authentication, remote fonts or model service is required.
 
-## Constraints
+Edit the sources in `examples/approval-gate/` and the explicit example annotations in `scripts/export_web_data.py`; regenerate the export. The exporter calls the production comparison engine and rejects missing/out-of-range citations or truncated examples. CI rejects stale exports and leftover legacy study data.
 
-Static frontend only: no backend, no database, no auth, no secrets, no
-hosted LLM calls, no live arbitrary-URL analysis. Deployable to GitHub
-Pages or any static host.
+Browser review on 2026-09-10 covered homepage-to-comparison navigation, complete-source and unified-diff controls, desktop rendering and a 390px mobile layout. No horizontal page overflow or captured console errors were observed.
 
-## Wording rules
-
-Never shown: "best practice", "recommended", "widely adopted",
-"independently invented", recommendation scores, or "best variant".
-Shown: observed facts (counts + sources), interpretation (labeled), and
-tradeoffs (labeled).
+`scripts/deploy_gh_pages.py` publishes only the web directory. It updates an existing reference with PATCH and refuses a forced branch update. Run it only for a reviewed build; tests mock remote mutations. Website availability is separate from local validation.

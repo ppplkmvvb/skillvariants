@@ -111,6 +111,16 @@ class TestClusterSizeRules:
 
 
 class TestAcceptanceRules:
+    @pytest.mark.parametrize("gids, decisions", [
+        ([], []),
+        ([1, 1, 2], _decisions([1, 2], "YES")),
+        ([1, 2], _decisions([1, 2, 2], "YES")),
+        ([1, 2], _decisions([1, 2, 3], "YES")),
+    ])
+    def test_invalid_membership_rejected(self, gids, decisions):
+        with pytest.raises(ValueError, match="member|decision|group"):
+            accept_cluster(_cluster(gids), decisions, {1: "a/x", 2: "b/y", 3: "c/z"})
+
     def test_accepted_recurring(self) -> None:
         result = accept_cluster(
             _cluster([1, 2, 3, 4]),

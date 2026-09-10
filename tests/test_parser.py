@@ -12,6 +12,12 @@ from skillvariants.parser import (
 
 
 class TestParseGitHubUrl:
+    def test_encoded_ref_slash_is_not_mistaken_for_path(self) -> None:
+        ref = parse_github_url("https://github.com/a/b/blob/feature%2Fsafe/skills/SKILL.md")
+        assert ref.ref == "feature/safe"
+        assert ref.path == "skills/SKILL.md"
+        assert "ref=feature%2Fsafe" in ref.api_contents_url
+
     def test_blob_url(self) -> None:
         ref = parse_github_url(
             "https://github.com/obra/superpowers/blob/main/"

@@ -1,3 +1,5 @@
+> Historical artifact — retained for traceability, not current release validation. Old replay/stability metrics and unpaired semantic claims must not be presented as independent accuracy or adoption evidence. See the [current evaluation protocol](../../../../docs/evaluation.md).
+
 # SkillVariants study — frontend-design
 
 Target: [anthropics/skills/skills/frontend-design/SKILL.md](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md) (ref `main`)

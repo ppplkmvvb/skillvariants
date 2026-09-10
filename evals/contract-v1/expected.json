@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "dataset_id": "contract-v1",
+  "provenance": "Author-defined expected contract outcomes.",
+  "expected": {
+    "c001": {
+      "label": "VALID",
+      "rationale": "Both exact line citations and source hashes match."
+    },
+    "c002": {
+      "label": "INVALID",
+      "rationale": "The candidate quote introduces words absent from the cited source line."
+    },
+    "c003": {
+      "label": "INVALID",
+      "rationale": "The candidate citation carries the target hash instead of its own source hash."
+    },
+    "c004": {
+      "label": "INVALID",
+      "rationale": "A paired citation is missing the candidate side."
+    },
+    "c005": {
+      "label": "INCOMPLETE",
+      "rationale": "Dispatched group 3 has no result."
+    },
+    "c006": {
+      "label": "INCOMPLETE",
+      "rationale": "Group 3 is duplicated; each member must appear exactly once."
+    },
+    "c007": {
+      "label": "COMPLETE",
+      "rationale": "Every dispatched group appears exactly once and no extra group appears."
+    },
+    "c008": {
+      "label": "INCOMPLETE",
+      "rationale": "Unrequested group 9 makes the response membership invalid."
+    }
+  }
+}

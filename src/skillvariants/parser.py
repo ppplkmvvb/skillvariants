@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlencode, urlsplit
 
 import yaml
 
@@ -18,6 +18,8 @@ class GitHubRef:
     repo: str
     ref: str
     path: str
+    # The undecided URL tail is resolved using repository refs before fetching.
+    url_tail: str | None = field(default=None, compare=False, repr=False)
 
     @property
     def repo_slug(self) -> str:
@@ -31,14 +33,14 @@ class GitHubRef:
     def raw_url(self) -> str:
         return (
             f"https://raw.githubusercontent.com/"
-            f"{self.owner}/{self.repo}/{self.ref}/{self.path}"
+            f"{self.owner}/{self.repo}/{quote(self.ref, safe='')}/{quote(self.path, safe='/')}"
         )
 
     @property
     def api_contents_url(self) -> str:
         return (
             f"https://api.github.com/repos/{self.owner}/{self.repo}/"
-            f"contents/{self.path}?ref={self.ref}"
+            f"contents/{quote(self.path, safe='/')}?{urlencode({'ref': self.ref})}"
         )
 
 
@@ -70,17 +72,19 @@ def parse_github_url(url: str) -> GitHubRef:
             f"Not a valid GitHub URL: {url!r}. Expected an https URL."
         )
     host = parts.netloc.lower()
-    path = unquote(parts.path).lstrip("/")
+    path = parts.path.lstrip("/")
     candidate = f"{host}/{path}"
 
     for pattern in (_BLOB_URL_RE, _RAW_URL_RE):
         match = pattern.match(candidate)
         if match:
             return GitHubRef(
-                owner=match["owner"],
-                repo=match["repo"],
-                ref=match["ref"],
-                path=match["path"],
+                owner=unquote(match["owner"]),
+                repo=unquote(match["repo"]),
+                ref=unquote(match["ref"]),
+                path=unquote(match["path"]),
+                url_tail=(unquote(match["ref"] + "/" + match["path"])
+                          if "%2f" not in match["ref"].lower() else None),
             )
 
     raise ValueError(
@@ -97,6 +101,7 @@ class SkillDoc:
     raw: str
     source: GitHubRef | None = None
     parse_errors: list[str] = field(default_factory=list)
+    source_metadata: dict = field(default_factory=dict)
 
     @property
     def name(self) -> str | None:

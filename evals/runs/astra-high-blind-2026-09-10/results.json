@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "dataset_id": "direction-v1",
+  "evaluation_kind": "author_labeled_synthetic_cases",
+  "run": {
+    "producer": "cli_contract",
+    "mode": "blind-declared",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "notes": "Actual restrictions: only inputs.json read; prior implementation context exists; same-model synthetic exercise, not external validation."
+  },
+  "inputs_sha256": "e87d456dfe9995c23795d6ec684cb58996b17768af081e9aa07b38c3acce04a8",
+  "expected_sha256": "9b38d2ce1aa5859951cca72c7acc3035037fd0e2c8430fb3988de479cd4b7314",
+  "predictions_sha256": "691bc7de88e5112f0672ce1bc80d368c392fbe886510cc0b1db3e169f1ff277d",
+  "summary": {
+    "total_cases": 16,
+    "returned_cases": 16,
+    "membership_complete": true,
+    "answered_cases": 14,
+    "abstained_cases": 2,
+    "correct_decisions": 16,
+    "incorrect_decisions": 0,
+    "coverage": 0.875,
+    "accuracy_on_answered": 1.0,
+    "decision_accuracy": 1.0,
+    "required_abstention_cases": 2,
+    "required_abstention_accuracy": 1.0,
+    "unsupported_answers_on_incomplete_sources": 0
+  },
+  "metric_definitions": {
+    "coverage": "Non-ABSTAIN predictions / all cases; missing responses are rejected, not treated as abstentions.",
+    "accuracy_on_answered": "Correct non-ABSTAIN predictions / non-ABSTAIN predictions; null if none answered.",
+    "decision_accuracy": "All labels matching authored gold / all cases, including correct required abstentions.",
+    "confusion_by_task": "Rows are expected labels; columns are predicted labels, including ABSTAIN."
+  },
+  "confusion_by_task": {
+    "change_direction": {
+      "ADDED": {
+        "ADDED": 3,
+        "REMOVED": 0,
+        "MODIFIED": 0,
+        "UNCHANGED": 0,
+        "ABSTAIN": 0
+      },
+      "REMOVED": {
+        "ADDED": 0,
+        "REMOVED": 3,
+        "MODIFIED": 0,
+        "UNCHANGED": 0,
+        "ABSTAIN": 0
+      },
+      "MODIFIED": {
+        "ADDED": 0,
+        "REMOVED": 0,
+        "MODIFIED": 4,
+        "UNCHANGED": 0,
+        "ABSTAIN": 0
+      },
+      "UNCHANGED": {
+        "ADDED": 0,
+        "REMOVED": 0,
+        "MODIFIED": 0,
+        "UNCHANGED": 4,
+        "ABSTAIN": 0
+      },
+      "ABSTAIN": {
+        "ADDED": 0,
+        "REMOVED": 0,
+        "MODIFIED": 0,
+        "UNCHANGED": 0,
+        "ABSTAIN": 2
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "d001",
+      "task_type": "change_direction",
+      "expected": "UNCHANGED",
+      "predicted": "UNCHANGED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d002",
+      "task_type": "change_direction",
+      "expected": "ADDED",
+      "predicted": "ADDED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d003",
+      "task_type": "change_direction",
+      "expected": "MODIFIED",
+      "predicted": "MODIFIED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d004",
+      "task_type": "change_direction",
+      "expected": "REMOVED",
+      "predicted": "REMOVED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d005",
+      "task_type": "change_direction",
+      "expected": "UNCHANGED",
+      "predicted": "UNCHANGED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d006",
+      "task_type": "change_direction",
+      "expected": "ADDED",
+      "predicted": "ADDED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d007",
+      "task_type": "change_direction",
+      "expected": "MODIFIED",
+      "predicted": "MODIFIED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d008",
+      "task_type": "change_direction",
+      "expected": "UNCHANGED",
+      "predicted": "UNCHANGED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d009",
+      "task_type": "change_direction",
+      "expected": "REMOVED",
+      "predicted": "REMOVED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d010",
+      "task_type": "change_direction",
+      "expected": "ABSTAIN",
+      "predicted": "ABSTAIN",
+      "correct": true,
+      "abstained": true
+    },
+    {
+      "case_id": "d011",
+      "task_type": "change_direction",
+      "expected": "MODIFIED",
+      "predicted": "MODIFIED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d012",
+      "task_type": "change_direction",
+      "expected": "UNCHANGED",
+      "predicted": "UNCHANGED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d013",
+      "task_type": "change_direction",
+      "expected": "ADDED",
+      "predicted": "ADDED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d014",
+      "task_type": "change_direction",
+      "expected": "REMOVED",
+      "predicted": "REMOVED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d015",
+      "task_type": "change_direction",
+      "expected": "MODIFIED",
+      "predicted": "MODIFIED",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "d016",
+      "task_type": "change_direction",
+      "expected": "ABSTAIN",
+      "predicted": "ABSTAIN",
+      "correct": true,
+      "abstained": true
+    }
+  ],
+  "errors": [],
+  "limitations": "Small author-labeled synthetic cases are not a representative sample of real Skills. Self-tests or oracle replay are not independent model accuracy evidence. A declared blind run is a procedural assertion, not verified by this scorer. Quote integrity does not establish semantic entailment or independent adoption."
+}

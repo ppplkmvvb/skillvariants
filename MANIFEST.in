@@ -1,0 +1,17 @@
+include LICENSE README.md pyproject.toml
+recursive-include src/skillvariants *.py
+prune tests
+prune evaluation
+prune evals
+prune research
+prune .cache
+prune .skillvariants
+prune .venv
+prune .venv-dev
+prune web
+prune skills
+prune examples
+prune docs
+prune scripts
+prune .github
+global-exclude __pycache__ *.py[cod] .env .env.* credentials.json secrets.json

@@ -101,12 +101,14 @@ class TestPackageMetadata:
     def test_name_version_and_script(self) -> None:
         project = self._pyproject()
         assert project["name"] == "skillvariants"
-        assert project["version"] == "0.2.0"
+        from skillvariants import __version__
+        assert project["version"] == __version__
         assert project["scripts"] == {"skillvariants": "skillvariants.cli:app"}
 
     def test_license_python_and_keywords(self) -> None:
         project = self._pyproject()
-        assert "Apache" in project["license"]["text"]
+        assert project["license"] == "Apache-2.0"
+        assert project["license-files"] == ["LICENSE"]
         assert project["requires-python"] == ">=3.11"
         for keyword in ("agent-skills", "claude-code", "skill-md"):
             assert keyword in project["keywords"]

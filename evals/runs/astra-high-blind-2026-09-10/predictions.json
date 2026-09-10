@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "dataset_id": "direction-v1",
+  "run": {
+    "producer": "cli_contract",
+    "mode": "blind-declared",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "notes": "Actual restrictions: only inputs.json read; prior implementation context exists; same-model synthetic exercise, not external validation."
+  },
+  "predictions": {
+    "d001": {
+      "label": "UNCHANGED",
+      "reason": "The same private-note removal prerequisite appears under a different heading; its timing and required action are preserved."
+    },
+    "d002": {
+      "label": "ADDED",
+      "reason": "The complete target requires only package name and version; the variant additionally requires source retrieval time."
+    },
+    "d003": {
+      "label": "MODIFIED",
+      "reason": "On the same timeout condition, stopping is replaced by continuing with recorded versions and reporting their age."
+    },
+    "d004": {
+      "label": "REMOVED",
+      "reason": "The preview prerequisite disappears from the complete variant, with no replacement preview instruction."
+    },
+    "d005": {
+      "label": "UNCHANGED",
+      "reason": "Both formulations prohibit granting write access until a dry run has succeeded."
+    },
+    "d006": {
+      "label": "ADDED",
+      "reason": "The variant introduces logging each retry before sending it; that requirement is absent from the complete target."
+    },
+    "d007": {
+      "label": "MODIFIED",
+      "reason": "The migration prerequisite changes from two successful sample reads to three."
+    },
+    "d008": {
+      "label": "UNCHANGED",
+      "reason": "The focused requirement to retain the original filename is identical in both documents; output line count is a separate addition."
+    },
+    "d009": {
+      "label": "REMOVED",
+      "reason": "The audit-entry requirement is absent from the complete variant while synchronization and final-status printing remain."
+    },
+    "d010": {
+      "label": "ABSTAIN",
+      "reason": "The target is only an excerpt, so omitted sections could already require unit tests before publication."
+    },
+    "d011": {
+      "label": "MODIFIED",
+      "reason": "The stale-lock response changes from removing the lock and retrying to preserving the lock and stopping."
+    },
+    "d012": {
+      "label": "UNCHANGED",
+      "reason": "Both wordings require exactly one log entry after synchronization completes."
+    },
+    "d013": {
+      "label": "ADDED",
+      "reason": "The variant adds a requirement that the troubleshooting note retain the final error code."
+    },
+    "d014": {
+      "label": "REMOVED",
+      "reason": "The complete variant no longer specifies rejecting files above one megabyte and supplies no replacement size rule."
+    },
+    "d015": {
+      "label": "MODIFIED",
+      "reason": "The integration-blocking condition broadens from failed tests to failure of any test, lint, or formatting check."
+    },
+    "d016": {
+      "label": "ABSTAIN",
+      "reason": "The variant is only an excerpt; destination-path recording could remain in an omitted section."
+    }
+  }
+}

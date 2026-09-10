@@ -1,148 +1,131 @@
-"""Tests for the stable agent-facing evidence contract (spec sections 4-5, 18)."""
+"""Production evidence assembly, exercised with deterministic transport inputs."""
 from __future__ import annotations
 
 import json
 
-from typer.testing import CliRunner
+from skillvariants.cli_helpers import build_evidence_payload
+from skillvariants.github import CodeHit, GitHubError
+from skillvariants.parser import GitHubRef, parse_skill_md
 
-from skillvariants.cli import app
-
-from conftest import LOOPKIT_SD, SUPERPOWERS_SD, VIBESKILLS_SD, fixture_text
-from skillvariants.github import CodeHit
-import io
-import sys
-from pathlib import Path
-from contextlib import redirect_stdout
-
-TARGET_URL = ("https://github.com/obra/superpowers/blob/main/"
-              "skills/systematic-debugging/SKILL.md")
+TARGET_URL = 'https://github.com/example/target/blob/main/skills/sample/SKILL.md'
+BASE = ('---\nname: sample\ndescription: Diagnose software problems with evidence\n---\n'
+        '# Debugging\nRead the failure and reproduce it before proposing any changes.\n'
+        'Trace the cause, record evidence, and validate the smallest correction.\n'
+        'Ask approval before deployment.\nReview tests and explain the result.\n')
+VARIANT = BASE.replace('Ask approval', 'Request explicit approval')
+OPPOSITE = BASE.replace('Ask approval', 'Do not ask approval')
 
 
-def _evidence_payload() -> dict:
-    """Invoke the evidence command against a fake client via the pool builder."""
-    from skillvariants.cli import _build_variant_pool, _CACHE_DIR_STATE, _resolve_group_refs
-    from skillvariants.features import extract_features
-    from skillvariants.similarity import normalize_for_hash, sha256
-    from skillvariants.ranking import MIN_RELATEDNESS, group_variants
-    import difflib
-    from collections import Counter
-    from skillvariants.parser import parse_github_url
+class EvidenceClient:
+    def __init__(self):
+        self.files = {'target': BASE, 'variant': VARIANT, 'copy': VARIANT,
+                      'opposite': OPPOSITE, 'exact': BASE,
+                      'unrelated': '---\nname: sample\n---\nPomegranates bananas avocados cherries figs.'}
 
-    files = {
-        SUPERPOWERS_SD: fixture_text("systematic_debugging/reference_superpowers.md"),
-        LOOPKIT_SD: fixture_text("systematic_debugging/variant_loopkit.md"),
-        VIBESKILLS_SD: fixture_text("systematic_debugging/variant_vibeskills.md"),
-    }
-    hits = [
-        CodeHit(repo=LOOPKIT_SD[0], path=LOOPKIT_SD[1], default_branch=LOOPKIT_SD[2], sha="", api_url=""),
-        CodeHit(repo=VIBESKILLS_SD[0], path=VIBESKILLS_SD[1], default_branch=VIBESKILLS_SD[2], sha="", api_url=""),
-    ]
-    from conftest import FakeGitHubClient
-    client = FakeGitHubClient(files=files, hits=hits)
-    pool_data = _build_variant_pool(TARGET_URL, cache_dir=None, max_pages=1, client=client)
-    pool = pool_data["pool"]
-    target_ref = parse_github_url(TARGET_URL)
-    target_doc = pool_data["target_doc"]
-    target_hash = sha256(normalize_for_hash(target_doc.raw))
-    gated = [row for row in pool if row.relatedness >= 0.33]
-    groups = group_variants(gated)
+    def code_search(self, query, max_pages=3):
+        return [CodeHit(f'example/{name}', 'skills/sample/SKILL.md', 'main', '', '')
+                for name in [*self.files, 'unavailable']]
 
-    group_rows = []
-    for gid, group in enumerate(groups, start=1):
-        rep = group.representative
-        mf = rep.mutation_features
-        group_rows.append({
-            "group_id": gid,
-            "repository": rep.repo,
-            "path": rep.path,
-            "ref": rep.ref or LOOPKIT_SD[2],
-            "direct_skill_url": f"https://github.com/{rep.repo}/blob/{rep.ref or LOOPKIT_SD[2]}/{rep.path}",
-            "archetype": group.dominant_type(),
-            "relatedness": round(rep.relatedness, 3),
-            "member_count": len(group.members),
-            "occurrence_count": group.member_count,
-            "structural_signals": {
-                "length_delta": round(mf.length_delta_ratio, 3),
-                "headings_added": mf.headings_added_count,
-                "headings_removed": mf.headings_removed_count,
-                "commands_added": mf.command_set_added,
-                "commands_removed": mf.command_set_removed,
-                "cross_skill_ref_delta": mf.cross_skill_ref_delta,
-                "routing_signals": rep.feats.routing_signals[:6],
-                "wrapper_signals": rep.feats.wrapper_signals[:6],
-                "workflow_structure_delta": round(mf.workflow_structure_delta, 3),
-                "placeholder_signal": round(rep.feats.placeholder_signal, 3),
-            },
-            "added_excerpt": "a",
-            "removed_excerpt": "b",
-        })
-
-    return {
-        "schema_version": "1",
-        "target": {
-            "repository": target_ref.repo_slug,
-            "path": target_ref.path,
-            "ref": target_ref.ref,
-            "direct_skill_url": f"https://github.com/{target_ref.repo_slug}/blob/{target_ref.ref}/{target_ref.path}",
-            "name": pool_data["target"]["name"],
-            "normalized_hash": target_hash,
-        },
-        "summary": {
-            "candidate_count": pool_data["counts"]["candidates_total"],
-            "related_variant_count": pool_data["counts"]["unique_variants"],
-            "exact_copy_count": pool_data["counts"]["exact_copies_of_target"],
-            "mutation_group_count": len(groups),
-            "broad_archetype_counts": dict(Counter(g.dominant_type() for g in groups)),
-        },
-        "groups": group_rows,
-    }
+    def fetch_text(self, ref):
+        if ref.repo not in self.files:
+            raise GitHubError('Not found')
+        return self.files[ref.repo]
 
 
-class TestEvidenceContract:
-    def test_schema_shape(self) -> None:
-        payload = _evidence_payload()
-        assert payload["schema_version"] == "1"
-        assert set(payload["target"]) == {
-            "repository", "path", "ref", "direct_skill_url", "name", "normalized_hash",
-        }
-        assert set(payload["summary"]) == {
-            "candidate_count", "related_variant_count", "exact_copy_count",
-            "mutation_group_count", "broad_archetype_counts",
-        }
-        assert payload["groups"], "expected at least one mutation group"
+def payload(monkeypatch):
+    monkeypatch.setattr('skillvariants.cli_helpers.GitHubClient', lambda **kwargs: EvidenceClient())
+    return build_evidence_payload(TARGET_URL)
 
-    def test_every_group_has_direct_skill_md_url(self) -> None:
-        payload = _evidence_payload()
-        for group in payload["groups"]:
-            url = group["direct_skill_url"]
-            assert url.startswith("https://github.com/")
-            assert "/blob/" in url
-            assert url.endswith("SKILL.md")
-            assert "github.com/" + group["repository"] + "/" in url + "/"
 
-    def test_structural_signals_present(self) -> None:
-        payload = _evidence_payload()
-        for group in payload["groups"]:
-            signals = group["structural_signals"]
-            for key in ("length_delta", "headings_added", "headings_removed",
-                        "commands_added", "commands_removed",
-                        "cross_skill_ref_delta", "routing_signals",
-                        "wrapper_signals", "workflow_structure_delta",
-                        "placeholder_signal"):
-                assert key in signals
+def test_counts_use_explicit_denominators_after_relatedness_gate(monkeypatch):
+    summary = payload(monkeypatch)['summary']
+    assert summary['candidate_count'] == 6
+    assert summary['related_variant_count'] == 3
+    assert summary['fetched_count'] == 5
+    assert summary['fetch_error_count'] == 1
+    assert summary['unique_variant_count'] == 4
+    assert summary['exact_copy_count'] == 1
+    assert summary['mutation_group_count'] == 3
 
-    def test_normalized_hash_is_digest(self) -> None:
-        import re
-        payload = _evidence_payload()
-        assert re.fullmatch(r"[0-9a-f]{64}", payload["target"]["normalized_hash"])
 
-    def test_payload_is_json_serializable_and_deterministic(self) -> None:
-        a = json.dumps(_evidence_payload(), sort_keys=True)
-        b = json.dumps(_evidence_payload(), sort_keys=True)
-        assert a == b
+def test_opposite_rules_are_not_hidden_in_fuzzy_group(monkeypatch):
+    groups = payload(monkeypatch)['groups']
+    assert len(groups) == 3
+    assert {g['repository'] for g in groups} == {'example/variant', 'example/opposite', 'example/exact'}
+    assert all(g['member_count'] == 1 for g in groups)
 
-    def test_evidence_cli_registered(self) -> None:
-        from typer.testing import CliRunner
-        result = CliRunner().invoke(app, ["--help"])
-        assert result.exit_code == 0
-        assert "evidence" in result.output
+
+def test_both_sources_line_evidence_hashes_and_occurrences_survive(monkeypatch):
+    evidence = payload(monkeypatch)
+    assert evidence['schema_version'] == '2'
+    variant = next(g for g in evidence['groups'] if g['repository'] == 'example/variant')
+    assert variant['occurrence_count'] == 2
+    assert {o['repository'] for o in variant['occurrences']} == {'example/variant', 'example/copy'}
+    comparison = variant['comparison']
+    assert comparison['sources']['a']['raw_sha256']
+    assert comparison['sources']['b']['raw_sha256']
+    assert 'Ask approval before deployment.' in [line['text'] for h in comparison['hunks'] for line in h['a']['lines']]
+    assert 'Request explicit approval before deployment.' in [line['text'] for h in comparison['hunks'] for line in h['b']['lines']]
+    assert not evidence['target']['source']['immutable']
+    assert 'absence' in comparison['evidence_policy']
+    assert evidence['fetch_errors']
+    json.dumps(evidence)
+
+
+def test_excerpt_does_not_include_unified_diff_headers(monkeypatch):
+    client = EvidenceClient()
+    client.files = {'target': BASE, 'variant': VARIANT}
+    monkeypatch.setattr('skillvariants.cli_helpers.GitHubClient', lambda **kwargs: client)
+    for group in build_evidence_payload(TARGET_URL)['groups']:
+        assert not group['added_excerpt'].startswith('++')
+        assert not group['removed_excerpt'].startswith('--')
+
+
+def test_production_builder_does_not_import_cli_state(monkeypatch):
+    import builtins
+    original = builtins.__import__
+    def guarded(name, *args, **kwargs):
+        assert name not in ('cli', 'skillvariants.cli'), 'evidence builder must not import CLI state'
+        return original(name, *args, **kwargs)
+    monkeypatch.setattr(builtins, '__import__', guarded)
+    payload(monkeypatch)
+
+
+def test_production_builder_carries_authenticated_http_snapshots(tmp_path, monkeypatch):
+    import httpx
+    from pathlib import Path
+    from skillvariants.github import GitHubClient
+    monkeypatch.setenv('GITHUB_TOKEN', 'test-only-token')
+    client = GitHubClient(tmp_path)
+    client._http.close()
+    def transport(request):
+        assert request.headers['Authorization'] == 'Bearer test-only-token'
+        if request.url.path == '/search/code':
+            return httpx.Response(200, json={'items': [{
+                'repository': {'full_name': 'example/variant'},
+                'path': 'skills/sample/SKILL.md', 'sha': 'c' * 40,
+            }]})
+        if request.url.path == '/repos/example/variant':
+            return httpx.Response(200, json={'default_branch': 'release/safe'})
+        if '/commits/' in request.url.path:
+            if request.url.path.endswith('/commits/main'):
+                return httpx.Response(200, json={'sha': 'a' * 40})
+            if request.url.path.endswith('/commits/release/safe'):
+                return httpx.Response(200, json={'sha': 'b' * 40})
+            return httpx.Response(404)
+        assert '/contents/skills/sample/SKILL.md' in request.url.path
+        if '/target/' in request.url.path:
+            assert request.url.params['ref'] == 'a' * 40
+            return httpx.Response(200, text=BASE)
+        assert request.url.params['ref'] == 'b' * 40
+        return httpx.Response(200, text=VARIANT)
+    client._http = httpx.Client(transport=httpx.MockTransport(transport),
+                                headers={'Authorization': 'Bearer test-only-token'})
+    monkeypatch.setattr('skillvariants.cli_helpers.GitHubClient', lambda **kwargs: client)
+    result = build_evidence_payload(TARGET_URL, cache_dir=tmp_path)
+    assert result['target']['ref'] == 'a' * 40
+    group = result['groups'][0]
+    assert group['ref'] == 'b' * 40
+    assert group['comparison']['sources']['b']['requested_ref'] == 'release/safe'
+    assert Path(group['comparison']['sources']['a']['snapshot_path']).read_bytes() == BASE.encode()
+    assert Path(group['comparison']['sources']['b']['snapshot_path']).read_bytes() == VARIANT.encode()

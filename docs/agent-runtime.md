@@ -1,93 +1,57 @@
-# Agent Study Runtime (v0.2)
+# Experimental study runtime
 
-The Agent Study Runtime turns the validated research protocol into a
-resumable, agent-driven workflow. The user asks one question; the agent
-drives the runtime; the runtime owns state, validation, counts, and
-recovery.
+Package 0.3 development; evidence schema 2; internal runtime protocol 0.4. Protocol and package versions are separate. Older studies remain readable but cannot resume under the new validation contract; start a new study instead.
 
-## Architecture
+## Dispatch loop
 
-```text
-Agent Skill (SKILL.md)
-  ↓  study-start / study-next / study-submit / study-report
-Study Runtime (state machine, atomic persistence, guardrail)
-  ↓
-SkillVariants Core (deterministic evidence + recurrence)
-  ↓  semantic tasks: PASS A batches / PASS B consolidation / verifier
-Agent (your coding agent) performs exactly one task at a time
-  ↓
-Accepted recurring motifs → final study report
-```
+`study-start` collects evidence and starts/resumes an identical corpus. `study-next` returns one task. Submit every dispatched group exactly once in that response, then continue. The runtime makes no model calls.
 
-The runtime is model-agnostic: no hosted LLM calls, no API keys. The
-user's own agent provides all reasoning.
-
-## Study session layout
-
-```text
-.skillvariants/studies/<study-id>/
-├── manifest.json        # status, counts, target, sampling info
-├── evidence.json        # deterministic evidence payload
-├── batches.json         # PASS A batch dispatch/submission state
-├── pass-a/batch-NNN.json
-├── pass-a-merged.json
-├── pass-b-proposed.json
-├── verification/motif-*.json
-├── motifs.json          # accepted + suppressed motifs (engine-computed)
-├── report.json / report.md
-└── events.jsonl         # local-only audit log
-```
-
-Study id: `<skill-name>-<hash7>` derived from target URL, normalized content
-hash, and runtime version. A changed content hash creates a new study
-(`TARGET_CHANGED`); the old study is preserved.
-
-## CLI
-
-```bash
-uvx skillvariants study-start <SKILL.md-url> --json
-uvx skillvariants study-status <study-id> --json
-uvx skillvariants study-next  <study-id> --json
-uvx skillvariants study-submit <study-id> <task-result.json>
-uvx skillvariants study-report <study-id> --json
-```
-
-`study-next` returns exactly one task type:
-`PASS_A_BATCH` | `PASS_B_CONSOLIDATE` | `VERIFY_MOTIF` | `FINAL_REPORT` |
-`COMPLETE`.
-
-`study-submit` validates task/study ids, group membership, enums, invariants
-(vague invariants rejected), behavior signatures, and duplicate/conflicting
-submissions. Identical resubmission is idempotent; conflicting resubmission
-requires `--force`.
-
-## Guardrail integration
-
-The runtime enforces the consolidation guardrail deterministically:
-
-- vague invariants rejected at submission time
-- behavior-signature verb-family conflicts flagged before verification
-- clusters >8 groups: mandatory verifier; >15: mandatory split proposal
-- verifier NO/UNCERTAIN removes groups from recurrence
-- rejection rate (NO+UNCERTAIN)/proposed > 20% → `UNSTABLE`: one split
-  iteration allowed, otherwise suppressed as unresolved
-- only ACCEPTED clusters appear in `motifs.json` as recurring
-
-## Limits and sampling
-
-Defaults: 8 groups per PASS A batch (4-12), max 250 semantic groups per
-study, max 8 groups per verifier task, 1 split iteration. Above 250 groups
-the runtime deterministically samples and discloses
-`sampling_applied: true` with `semantic_groups_analyzed` vs
-`total_groups_available`.
-
-## Failure recovery
-
-| Failure | Behavior |
+| Task | Required work |
 |---|---|
-| GitHub/network failure during start | `FAILED_RECOVERABLE`; rerun study-start |
-| Malformed submission | rejected; state does not advance |
-| Identical duplicate submission | idempotent (`IDEMPOTENT`) |
-| Conflicting duplicate | rejected unless `--force` |
-| Target content changed | new study; old preserved |
-| No motif passes the guardrail | `COMPLETE` with empty motif list |
+| PASS_A_BATCH | Analyze each group independently; propose 0–3 typed, paired observations or mark source escalation |
+| PASS_B_CONSOLIDATE | Consolidate compatible changed proposals; preserve ADDED/REMOVED/MODIFIED direction |
+| VERIFY_MOTIF | Decide YES/NO/UNCERTAIN for every dispatched member; YES supplies its own checked pair |
+| FINAL_REPORT | Submit optional analyst notes; the runtime generates the authoritative report |
+| COMPLETE | Read generated artifacts and disclose unresolved coverage |
+
+Exact task ids and payload bindings matter. An identical resubmission is idempotent. A conflicting answer is rejected unless deliberately replaced with `--force`; validated upstream replacement invalidates dependent results and changes downstream task generations. Previously dispatched stale answers are rejected.
+
+## Coverage and guardrails
+
+Pass A defaults to 8 groups per batch (configurable 4–12), persisted at creation. At most 250 evidence groups are selected deterministically; the manifest reports sampling and the original available count.
+
+A semantic group contains one distinct normalized candidate, plus duplicate occurrences. It is not a fuzzy browsing cluster. Missing comparison evidence or a truncated diff cannot count as analyzed through an unsupported NO response. Read both full snapshots and provide review citations, or submit explicit source escalation.
+
+Recurring proposals require at least three verified YES groups across at least three representative repositories, with no one repository contributing more than half the groups. Every proposed member is verified in chunks of at most eight. NO/UNCERTAIN count toward the rejection share; over 20% is suppressed. Above fifteen proposed members, the proposal is suppressed as SPLIT_REQUIRED. Automatic split iterations are not implemented.
+
+These are corpus guardrails, not proof of semantic accuracy or independent adoption.
+
+## Persistence
+
+```text
+<workspace>/.skillvariants/studies/<study-id>/
+  manifest.json             target, corpus fingerprint, protocol, counts, dispatches
+  evidence.json             selected paired comparisons and occurrences
+  snapshots/<raw-sha>.md     owned raw sources when available and hash-verified
+  batches.json
+  pass-a/                   submitted batches
+  pass-a-merged.json
+  pass-b-proposed.json
+  verification/             per-motif member decisions
+  motifs.json               accepted and suppressed proposals
+  report.json / report.md   engine-generated artifacts
+  analyst-notes.md          optional unverified agent prose
+  events.jsonl
+```
+
+The study id binds target/source content, selected candidate content and occurrence provenance, and validation protocol. Changing only capture time or cache path does not create a new corpus. Changed content or corpus creates a new study and preserves the old one.
+
+Creation is staged and atomically published. A per-study process lock serializes transitions; a rollback journal restores mutable artifacts after a failed or interrupted transition. A busy study fails with an actionable message rather than racing another writer. The transaction protects local process interruption; it is not a backup against disk loss or manual tampering.
+
+## Completion and errors
+
+COMPLETE requires readable report artifacts. If completed artifacts are missing, the runtime raises an integrity error. A no-motif study still writes an explicit empty report.
+
+`groups_submitted`, `groups_analyzed`, `groups_unresolved` and `groups_pending` distinguish submitted responses, source-resolved analysis, unresolved source material and missing submissions. Completion can include unresolved sources and does not imply full GitHub coverage.
+
+Acquisition errors fail before publishing a partial study. Retry with the same cache settings after resolving the error. Use `--offline` before the command to read cached data only. Use `--refresh` before the command to capture current sources. Both options together are rejected.

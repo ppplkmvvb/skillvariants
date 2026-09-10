@@ -38,11 +38,10 @@ WRAPPER_FLOOR = 0.45
 # mutation neighborhood, not independent results.
 GROUP_SIMILARITY_THRESHOLD = 0.90
 
-# Rows whose computed mutation magnitude falls below this are treated as one
-# near-copy neighborhood regardless of mutual drift: GitHub clone fields are
-# star-shaped (each copy is ~95%+ similar to the reference, but copies drift
-# apart from EACH OTHER), so pairwise-only union-find never merges them.
+# A browsing neighborhood needs both low structural change and high ordered
+# text similarity. It is not evidence that members have the same behavior.
 NEAR_COPY_MAGNITUDE = 0.15
+NEAR_COPY_TEXT_SIMILARITY = 0.95
 
 # MMR body-overlap penalty is retired with the global leaderboard view.
 # Archetype-first ordering replaces it (third spike).
@@ -154,7 +153,8 @@ def build_mutation_features(
             len(target.body), len(candidate.body)
         ),
         heading_count_delta=len(cand_headings) - len(target_headings),
-        heading_set_distance=1.0 - sim.heading_jaccard,
+        heading_set_distance=(1.0 - sim.heading_jaccard
+                              if target_headings or cand_headings else 0.0),
         heading_turnover=len(removed) + len(added),
         headings_added_count=len(added),
         headings_removed_count=len(removed),
@@ -242,6 +242,9 @@ def mutation_magnitude(mf: MutationFeatures) -> tuple[float, list[str]]:
     """
     signals: list[str] = []
 
+    text_term = (1.0 - mf.full_text_coherence) * 0.25
+    if mf.full_text_coherence < 1.0:
+        signals.append(f"ordered body text differs ({mf.full_text_coherence:.0%} similarity)")
     length_term = mf.symmetric_length_change * 0.25
     if abs(mf.length_delta_ratio) >= 0.25:
         direction = "decreased" if mf.length_delta_ratio < 0 else "increased"
@@ -275,7 +278,8 @@ def mutation_magnitude(mf: MutationFeatures) -> tuple[float, list[str]]:
     url_term = min(abs(mf.url_delta) / 4.0, 1.0) * 0.05
 
     magnitude = (
-        length_term
+        text_term
+        + length_term
         + structure_term
         + command_term
         + ref_term
@@ -457,12 +461,18 @@ def pairwise_body_similarity(left: VariantRow, right: VariantRow) -> float:
     return fuzz.ratio(left.doc.body, right.doc.body) / 100.0
 
 
+def is_near_copy(row: VariantRow) -> bool:
+    """A heuristic browsing neighborhood, not behavioral equivalence."""
+    return (row.magnitude < NEAR_COPY_MAGNITUDE
+            and row.mutation_features.full_text_coherence >= NEAR_COPY_TEXT_SIMILARITY)
+
+
 def group_variants(rows: list[VariantRow]) -> list[MutationGroup]:
     """Two-stage grouping (spec section 14).
 
-    Stage 1 -- hub partition: rows whose mutation magnitude is below
-    NEAR_COPY_MAGNITUDE are one near-copy neighborhood. They cluster around the
-    reference, not around each other, so magnitude is the honest grouping key.
+    Stage 1 -- hub partition: low-change rows with high ordered text similarity
+    to the reference form a browsing neighborhood. Distinct bodies must still
+    be analyzed individually before making any semantic claim.
 
     Stage 2 -- union-find over pairwise body similarity >=
     GROUP_SIMILARITY_THRESHOLD within the materially-changed remainder.
@@ -470,8 +480,8 @@ def group_variants(rows: list[VariantRow]) -> list[MutationGroup]:
     Representative = medoid-like member with the highest summed within-group
     body similarity; for the hub group it is the most-related member.
     """
-    near_copies = [row for row in rows if row.magnitude < NEAR_COPY_MAGNITUDE]
-    rest = [row for row in rows if row.magnitude >= NEAR_COPY_MAGNITUDE]
+    near_copies = [row for row in rows if is_near_copy(row)]
+    rest = [row for row in rows if not is_near_copy(row)]
 
     n = len(rest)
     parent = list(range(n))
@@ -768,7 +778,7 @@ def build_archetype_map(
     for group in groups:
         primary = group.dominant_type()
         is_hub = group.members and all(
-            m.magnitude < NEAR_COPY_MAGNITUDE for m in group.members
+            is_near_copy(m) for m in group.members
         ) and len(group.members) > 1
         if primary == "no-label":
             unclassified_groups += 1
