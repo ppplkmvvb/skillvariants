@@ -1,10 +1,12 @@
 # 0.3 release readiness
 
-Prepared on 2026-09-10. This records checks of the revised checkout; it is not a claim that PyPI or the public Pages site already serves this revision.
+Prepared on 2026-09-10. The source changes are merged and the example site is deployed. PyPI 0.3 has not been published.
 
 ## Engineering checks
 
 - Final frozen Windows/Python 3.13 suite: 313 tests passed.
+- [PR #1](https://github.com/ppplkmvvb/skillvariants/pull/1) merged after all four [PR CI jobs](https://github.com/ppplkmvvb/skillvariants/actions/runs/34460582486) passed on Linux Python 3.11, 3.12, 3.13 and Windows Python 3.13. The [merged source CI](https://github.com/ppplkmvvb/skillvariants/actions/runs/34460889352) also passed. Every job ran the full suite, built distributions, checked provenance/export freshness and tested the installed wheel.
+- Human-readable CLI assertions were verified with forced ANSI color after the first remote run exposed color-dependent failures. JSON output checks remain unmodified.
 - Fault-injection tests cover process exit during Pass A, Pass B and finalization; conflicting writers are serialized.
 - Runtime and source implementations received separate reviews. Findings and resolutions are retained in [runtime review](reviews/2026-09-10-runtime-review.md) and [source review](reviews/2026-09-10-source-review.md).
 - Original example export is current; eight contract cases and sixteen direction cases pass corpus-integrity checks. The separate annotation exercise is described with its limitations in [evaluation.md](evaluation.md).
@@ -33,7 +35,7 @@ The reusable CI workflow verifies Linux 3.11–3.13 and Windows 3.13, builds the
 
 The repository currently has a `github-pages` environment. The revised PyPI job names `pypi`; that environment and the matching PyPI Trusted Publisher configuration must be established before a release tag is pushed. Creating a GitHub environment alone does not register a PyPI publisher. No release tag or PyPI upload is part of this readiness record.
 
-The existing Pages site serves `gh-pages`. A future deployment must use a reviewed export whose source links exist on the default branch. The revised deployment script publishes only the web tree and refuses forced ref updates.
+The [public example site](https://ppplkmvvb.github.io/skillvariants/) serves `gh-pages` revision `37c2dd044f6f36971b301f5466d06948befd00f8`, deployed after the source changes reached the default branch. GitHub Pages reported this exact revision built successfully, and the public homepage was opened in a browser and showed the new paired-source examples. Full interaction and responsive checks above were performed on the identical local web source. The revised deployment script publishes only the web tree and refuses forced ref updates.
 
 ## Remaining product evidence
 
