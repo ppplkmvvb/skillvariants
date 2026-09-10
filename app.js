@@ -1,174 +1,236 @@
-/* SkillVariants explorer — static, precomputed data only. */
-const FAMILIES = ["systematic-debugging", "frontend-design", "brainstorming"];
-const FAMILY_TITLES = {
-  "systematic-debugging": "systematic-debugging",
-  "frontend-design": "frontend-design",
-  "brainstorming": "brainstorming",
-};
-const $app = document.getElementById("app");
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
-  (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+/* Original examples only. All diffs come from the Python comparison engine. */
+"use strict";
+const app = document.getElementById("app");
+const repo = "https://github.com/ppplkmvvb/skillvariants";
+const esc = (value) => String(value ?? "").replace(/[&<>"']/g,
+  (char) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[char]));
+let dataPromise;
+let routeVersion = 0;
+let activeExample = null;
+let view = "paired";
 
-async function loadFamily(family) {
-  const res = await fetch(`data/${family}.json`);
-  if (!res.ok) throw new Error(`data load failed: ${family}`);
-  return res.json();
+function sourceUrl(path) {
+  const url = new URL(`${repo}/blob/main/${path.split("/").map(encodeURIComponent).join("/")}`);
+  if (url.protocol !== "https:") throw new Error("Unsupported source URL");
+  return url.href;
 }
 
-function home() {
-  $app.innerHTML = `
-    <div class="hero">
-      <h1>SkillVariants</h1>
-      <p class="sub">See recurring ways developers adapt Agent Skills —
-      backed by real GitHub implementations.</p>
-      <div class="ctas">
-        <a class="btn primary" href="#studies">Explore real Skill studies</a>
-        <a class="btn" href="https://github.com/ppplkmvvb/skillvariants/blob/main/skills/skillvariants/SKILL.md">Use from your Agent</a>
-        <a class="btn" href="https://github.com/ppplkmvvb/skillvariants#try-the-cli">Use the CLI</a>
-      </div>
-      <p class="muted">Deterministic GitHub evidence · agent-powered analysis ·
-      no LLM in the engine.</p>
+function validateData(data) {
+  if (data?.schema_version !== "2" || data.provenance?.kind !== "original_illustrative_examples"
+      || !Array.isArray(data.examples) || data.examples.length === 0) {
+    throw new Error("The example export has an unsupported format.");
+  }
+  const ids = new Set();
+  for (const example of data.examples) {
+    if (!/^[a-z-]+$/.test(example.id) || ids.has(example.id)
+        || !["ADDED", "PRESERVED", "REVERSED"].includes(example.direction)
+        || ![example.title, example.short_title, example.observation, example.interpretation,
+          example.maintainer_question].every((s) => typeof s === "string" && s.length > 0)
+        || !Array.isArray(example.citations) || !Array.isArray(example.comparison?.hunks)
+        || typeof example.comparison.unified_diff !== "string"
+        || example.comparison.truncation?.truncated !== false) {
+      throw new Error("The example export is incomplete. Regenerate it from the original sources.");
+    }
+    ids.add(example.id);
+    for (const side of ["a", "b"]) {
+      const source = example.sources?.[side];
+      if (typeof source?.content !== "string" || !/^[a-f0-9]{64}$/.test(source.raw_sha256)
+          || typeof source.path !== "string" || !source.path.startsWith("examples/approval-gate/")) {
+        throw new Error("Source identity is missing from an example.");
+      }
+    }
+    for (const hunk of example.comparison.hunks) {
+      if (!/^hunk-\d+$/.test(hunk.hunk_id) || !Array.isArray(hunk.changes)) throw new Error("Invalid evidence hunk.");
+      for (const side of ["a", "b"]) {
+        if (!Array.isArray(hunk[side]?.lines) || !hunk[side].lines.every((line) =>
+          Number.isInteger(line.line_number) && line.line_number > 0 && typeof line.text === "string")) {
+          throw new Error("Invalid source line in paired evidence.");
+        }
+      }
+    }
+    if (example.citations.length === 0) throw new Error("An example has no source citation.");
+    for (const citation of example.citations) {
+      const hunk = example.comparison.hunks.find((entry) => entry.hunk_id === citation?.hunk_id);
+      if (!hunk) throw new Error("A citation points to missing evidence.");
+      for (const side of ["a", "b"]) {
+        const numbers = citation[`${side}_lines`];
+        const available = new Set(hunk[side].lines.map((line) => line.line_number));
+        if (!Array.isArray(numbers) || numbers.length === 0 || !numbers.every((n) =>
+          Number.isInteger(n) && available.has(n))) {
+          throw new Error("A source citation has missing or invalid line numbers.");
+        }
+      }
+    }
+  }
+  return data;
+}
+
+function loadData() {
+  if (!dataPromise) dataPromise = fetch("data/examples.json", {cache: "no-cache"}).then((response) => {
+    if (!response.ok) throw new Error(`Example data could not be loaded (HTTP ${response.status}).`);
+    return response.json();
+  }).then(validateData);
+  return dataPromise;
+}
+
+function badge(example) {
+  return `<span class="badge ${example.id === "reversed" ? "reversed" : ""}">${esc(example.direction)}</span>`;
+}
+
+function home(data) {
+  const reversed = data.examples.find((example) => example.id === "reversed") || data.examples[0];
+  const citation = reversed.citations[0];
+  const proofLine = (side) => reversed.sources[side].content.split(/\r?\n/)[citation[`${side}_lines`][0] - 1];
+  return `<section class="hero">
+    <div><p class="eyebrow">A reading tool for Skill maintainers</p>
+      <h1>See the rule.<br><em>Read the difference.</em></h1>
+      <p class="hero-copy">Compare Agent Skills before adapting them. Find what changed, check both sources, and decide which instructions belong in your workflow.</p>
+      <div class="actions"><a class="button primary" href="#/example/reversed">Inspect an example <span aria-hidden="true">→</span></a>
+        <a class="button" href="${repo}#quickstart">Compare your Skills</a></div>
     </div>
-    <h2 class="sec" id="studies">Real Skill studies</h2>
-    <div class="cards" id="cards"><p class="muted">Loading studies…</p></div>`;
-  const cards = document.getElementById("cards");
-  Promise.all(FAMILIES.map(loadFamily)).then((studies) => {
-    cards.innerHTML = studies.map((s) => `
-      <div class="card">
-        <h3><a href="#study/${s.family}">${esc(FAMILY_TITLES[s.family])}</a></h3>
-        <p class="stats">
-          ${s.summary.related_variant_count} related variants ·
-          ${s.summary.mutation_group_count} mutation groups ·
-          ${s.summary.accepted_motif_count} recurring adaptations
-        </p>
-        <p class="muted" style="font-size:13.5px">Target:
-          <a href="${esc(s.target.direct_skill_url)}">${esc(s.target.repository)}/${esc(s.target.path)}</a></p>
-        <a class="btn" href="#study/${s.family}">Open study</a>
-      </div>`).join("");
-  }).catch(() => { cards.innerHTML = "<p>Failed to load study data.</p>"; });
+    <div class="hero-proof"><div class="proof-heading"><span>SKILL.md <span aria-hidden="true">↔</span> SKILL.md</span><span>ILLUSTRATIVE EXAMPLE</span></div>
+      <div class="proof-body"><h2>One short edit.<br>A different approval order.</h2>
+        <div class="proof-line before"><small>A / Target · line ${citation.a_lines[0]}</small><code>${esc(proofLine("a"))}</code></div>
+        <div class="proof-line after"><small>B / Variant · line ${citation.b_lines[0]}</small><code>${esc(proofLine("b"))}</code></div>
+        <p class="proof-note">Similar wording can hide a consequential change. Read the pair.</p></div>
+    </div>
+  </section>
+  <section aria-labelledby="examples-title"><div class="section-heading"><h2 id="examples-title">Three changes. Three different readings.</h2><p>Original examples · complete source evidence</p></div>
+    <div class="example-list">${data.examples.map((example, index) => `<a class="example-card" href="#/example/${example.id}">
+      <div class="case-top"><span class="case-number">CASE 0${index + 1}</span>${badge(example)}</div>
+      <h3>${esc(example.short_title)}</h3><p>${esc(example.observation)}</p>
+      <span class="card-cta">Read the comparison <span aria-hidden="true">↗</span></span></a>`).join("")}</div>
+  </section>
+  <section class="method" aria-labelledby="method-title"><div><p class="eyebrow">How to read a comparison</p><h2 id="method-title">Evidence first.<br>Interpretation second.</h2>
+    <p>These small Skills were authored for this project. They demonstrate a method; they are not sampled GitHub adaptations or adoption statistics.</p></div>
+    <ol><li><strong>Start with the actual change.</strong><br>Paired lines show the target and variant together. Complete sources and the full diff are one click away.</li>
+    <li><strong>Keep claims separate from observations.</strong><br>Our editorial interpretation explains a possible meaning. It is not a measurement of agent behavior.</li>
+    <li><strong>Reproduce it on your files.</strong><br>The CLI computes differences and source hashes. You decide whether the adaptation is useful.</li></ol></section>`;
 }
 
-function study(family) {
-  $app.innerHTML = "<p class='muted'>Loading…</p>";
-  loadFamily(family).then((s) => {
-    const t = s.target;
-    $app.innerHTML = `
-      <a class="back" href="#/">← All studies</a>
-      <div class="hero"><h1>${esc(t.name)}</h1>
-        <p class="sub">Source:
-          <a href="${esc(t.direct_skill_url)}">${esc(t.repository)}/${esc(t.path)}</a>
-          (ref <code>${esc(t.ref)}</code>)</p></div>
-      <div class="card"><p class="stats">
-        ${s.summary.related_variant_count} related variants ·
-        ${s.summary.mutation_group_count} mutation groups ·
-        ${s.summary.exact_copy_count} exact copies collapsed ·
-        ${s.summary.accepted_motif_count} recurring adaptations</p>
-        <p class="muted" style="font-size:13px">${esc(s.capture_note)}</p></div>
-      <h2 class="sec">Recurring adaptations</h2>
-      ${s.accepted_motifs.map((m, i) => `
-        <div class="motif-card">
-          <h3><a href="#motif/${family}/${i}">${esc(m.display_name)}</a></h3>
-          <p class="counts">Observed across ${m.group_count} mutation groups
-            in ${m.repository_count} repositories ·
-            ${m.representatives.length} representative implementations shown</p>
-          <p>${esc(m.what_changed)}</p>
-          <p class="muted">(interpretation) ${esc(m.interpretation)}</p>
-          <span class="label">${esc(m.label)}</span>
-          <a class="btn" href="#motif/${family}/${i}">Explore</a>
-        </div>`).join("")}`;
-  }).catch(() => { $app.innerHTML = "<p>Failed to load study.</p>"; });
+function lineRange(numbers) {
+  return numbers.length === 1 ? `L${numbers[0]}` : `L${numbers[0]}–${numbers[numbers.length - 1]}`;
 }
 
-function motifDetail(family, index) {
-  $app.innerHTML = "<p class='muted'>Loading…</p>";
-  loadFamily(family).then((s) => {
-    const m = s.accepted_motifs[index];
-    if (!m) { $app.innerHTML = "<p>Motif not found.</p>"; return; }
-    const sig = m.behavior_signature || {};
-    $app.innerHTML = `
-      <a class="back" href="#study/${family}">← ${esc(FAMILY_TITLES[family])}</a>
-      <div class="hero"><h1>${esc(m.display_name)}</h1>
-        <p class="sub">Observed across ${m.group_count} mutation groups in
-        ${m.repository_count} repositories.</p></div>
-      <h2 class="sec">Strict invariant</h2>
-      <div class="invariant">${esc(m.invariant)}</div>
-      <h2 class="sec">Behavior signature</h2>
-      <p>
-        <span class="label">trigger: ${esc(sig.trigger ?? "—")}</span>
-        <span class="label">action: ${esc(sig.action ?? "—")}</span>
-        <span class="label">object: ${esc(sig.object ?? "—")}</span>
-        <span class="label">outcome: ${esc(sig.outcome ?? "—")}</span>
-      </p>
-      <h2 class="sec">What changed</h2><p>${esc(m.what_changed)}</p>
-      <h2 class="sec">Why it may matter</h2>
-      <div class="note">(interpretation) ${esc(m.interpretation)}</div>
-      <h2 class="sec">Tradeoff</h2>
-      <div class="note">(interpretation) ${esc(m.tradeoff)}</div>
-      <h2 class="sec">Representative implementations</h2>
-      <ol class="reps">
-        ${m.representatives.map((r, ri) => `
-          <li>
-            <a href="${esc(r.direct_skill_url)}">${esc(r.repository)}/${esc(r.path)}</a>
-            ${r.source_available === false
-              ? `<span class="label">source changed since capture</span>`
-              : `<a class="btn" href="#compare/${family}/${index}/${ri}">Compare with target</a>`}
-            ${r.compare ? compareSummary(r.compare) : ""}
-          </li>`).join("")}
-      </ol>`;
-  });
+function changedLine(hunk, side, lineNumber) {
+  return hunk.changes.some((change) => change.tag !== "equal"
+    && lineNumber >= change[`${side}_start_line`]
+    && lineNumber < change[`${side}_start_line`] + change[`${side}_line_count`]);
 }
 
-function compareSummary(compare) {
-  const sim = compare?.similarity;
-  if (!sim) return "";
-  return `<p class="counts">similarity ${Math.round((sim.score ?? 0) * 100)}% ·
-    length ${esc(compare.length_change ?? "")} ·
-    mutation: ${esc(compare.detected_mutation ?? "n/a")}</p>`;
+function sourcePane(example, side, lines, hunk = null) {
+  return `<section class="source-pane" aria-label="${side === "a" ? "Target" : "Variant"} source">
+    <div class="source-title"><strong>${side === "a" ? "A / Target" : "B / Variant"}</strong><span>SKILL.md</span></div>
+    <div class="source-lines">${lines.map((line) => `<div class="source-line ${hunk && changedLine(hunk, side, line.line_number) ? `changed-${side}` : ""}">
+      <span class="line-number" aria-label="line ${line.line_number}">${line.line_number}</span><span class="line-content">${esc(line.text) || " "}</span></div>`).join("")}</div></section>`;
 }
 
-function compareView(family, motifIndex, repIndex) {
-  $app.innerHTML = "<p class='muted'>Loading…</p>";
-  loadFamily(family).then((s) => {
-    const m = s.accepted_motifs[motifIndex];
-    const rep = m?.representatives?.[repIndex];
-    const cmp = rep?.compare;
-    if (!m || !rep || !cmp) { $app.innerHTML = "<p>Compare data not found.</p>"; return; }
-    const targetUrl = s.target.direct_skill_url;
-    const lines = (cmp.text_diff_brief || []);
-    $app.innerHTML = `
-      <a class="back" href="#motif/${family}/${motifIndex}">← ${esc(m.display_name)}</a>
-      <div class="hero"><h1>Compare with target</h1>
-        <p class="sub">
-          Target: <a href="${esc(targetUrl)}">${esc(s.target.repository)}/${esc(s.target.path)}</a><br>
-          Variant: <a href="${esc(rep.direct_skill_url)}">${esc(rep.repository)}/${esc(rep.path)}</a></p></div>
-      <div class="card"><p class="stats">
-        similarity ${Math.round((cmp.similarity?.score ?? 0) * 100)}% ·
-        length ${esc(cmp.length_change ?? "")} ·
-        headings ${esc(cmp.workflow_headings ?? "")} ·
-        mutation: ${esc(cmp.detected_mutation ?? cmp.primary ?? "n/a")}</p></div>
-      <h2 class="sec">Text diff (brief)</h2>
-      <div class="diff">${lines.map((l) => {
-        const cls = l.startsWith("+") ? "add" : l.startsWith("-") ? "del" : "";
-        return `<div class="line ${cls}">${esc(l)}</div>`;
-      }).join("")}</div>
-      <h2 class="sec">Sources</h2>
-      <ul class="reps">
-        <li>Target: <a href="${esc(targetUrl)}">${esc(targetUrl)}</a></li>
-        <li>Variant: <a href="${esc(rep.direct_skill_url)}">${esc(rep.direct_skill_url)}</a></li>
-      </ul>`;
-  });
+function evidence(example) {
+  if (view === "diff") return `<pre class="unified" aria-label="Complete unified diff">${esc(example.comparison.unified_diff) || "No textual differences."}</pre>`;
+  if (view === "sources") {
+    return `<div class="source-pair">${["a", "b"].map((side) => {
+      const lines = example.sources[side].content.split(/\r?\n/);
+      if (lines[lines.length - 1] === "") lines.pop();
+      return sourcePane(example, side, lines.map((text, index) => ({text, line_number: index + 1})));
+    }).join("")}</div>`;
+  }
+  return example.comparison.hunks.map((hunk) => `<div class="hunk"><div class="hunk-caption">${esc(hunk.hunk_id)} · paired context from both sources</div>
+    <div class="source-pair">${["a", "b"].map((side) => sourcePane(example, side, hunk[side].lines, hunk)).join("")}</div></div>`).join("") || "<p>No textual differences.</p>";
 }
 
-function route() {
-  const hash = location.hash.replace(/^#/, "") || "/";
-  const parts = hash.split("/").filter(Boolean);
-  if (parts.length === 0 || parts[0] === "studies") return home();
-  if (parts[0] === "study" && parts[1]) return study(parts[1]);
-  if (parts[0] === "motif" && parts[2] !== undefined)
-    return motifDetail(parts[1], Number(parts[2]));
-  if (parts[0] === "compare" && parts[3] !== undefined)
-    return compareView(parts[1], Number(parts[2]), Number(parts[3]));
-  return home();
+function detail(data, example) {
+  const command = `skillvariants compare ${example.sources.a.path} ${example.sources.b.path} --json`;
+  return `<div class="workspace"><aside class="sidebar"><a class="back" href="#/">← All examples</a><p class="eyebrow">The approval checkpoint</p>
+    <nav class="case-nav" aria-label="Comparison examples">${data.examples.map((entry, i) => `<a href="#/example/${entry.id}" ${entry.id === example.id ? 'aria-current="page"' : ""}><span class="case-number">0${i + 1}</span><span>${esc(entry.short_title)}</span></a>`).join("")}</nav>
+    <p class="sidebar-note">Original illustrative examples.<br><br>Both full sources are included. The explanation is an editorial reading, not an automated semantic score.</p></aside>
+    <article class="detail"><p class="eyebrow">Original illustrative example / ${esc(example.direction.toLowerCase())}</p><h1>${esc(example.title)}</h1>
+      <p class="observation">${esc(example.observation)}</p>
+      <div class="citation-row"><span>Evidence:</span>${example.citations.map((c) => `<button type="button" class="citation" data-citation="${esc(c.hunk_id)}">Target ${lineRange(c.a_lines)} ↔ Variant ${lineRange(c.b_lines)}</button>`).join("")}</div>
+      <div class="annotation"><span>INTERPRETATION</span><p>${esc(example.interpretation)}</p></div>
+      <div class="annotation question"><span>YOUR DECISION</span><p>${esc(example.maintainer_question)}</p></div>
+      <section aria-labelledby="evidence-title"><div class="evidence-heading"><h2 id="evidence-title">Inspect the source</h2><span>All hunks included · no truncation</span></div>
+        <div class="view-switch" role="group" aria-label="Evidence view">${[["paired", "Paired evidence"], ["sources", "Complete sources"], ["diff", "Unified diff"]].map(([key, title]) => `<button type="button" data-view="${key}" aria-pressed="${view === key}">${title}</button>`).join("")}</div>
+        <div id="evidence-panel">${evidence(example)}</div>
+        <p class="legend"><span class="swatch red" aria-hidden="true"></span>Target text removed or replaced <span class="swatch green" aria-hidden="true"></span>Variant text inserted or replaced</p>
+      </section>
+      <details class="hashes"><summary>Source identity &amp; reproducibility</summary><p>SHA-256 identifies the exact UTF-8 source contents. These examples are generated offline using the same comparison engine as the CLI.</p>
+        <dl>${["a", "b"].map((side) => `<dt>${side === "a" ? "A / Target" : "B / Variant"}</dt><dd><a href="${esc(sourceUrl(example.sources[side].path))}">${esc(example.sources[side].path)}</a><code>SHA-256 ${example.sources[side].raw_sha256}</code></dd>`).join("")}</dl>
+        <p><a href="data/examples.json" download>Download the complete example evidence (JSON)</a></p></details>
+      <section class="reproduce" aria-labelledby="reproduce-title"><h2 id="reproduce-title">Try this comparison yourself</h2>
+        <p>From a checkout of the repository with SkillVariants installed. No GitHub token needed for these local files.</p>
+        <div class="command"><code id="compare-command">${esc(command)}</code><button type="button" class="copy" data-copy>Copy</button></div><div class="copy-status" role="status"></div>
+        <p><a href="${repo}#quickstart">Install the CLI and compare your own Skills ↗</a></p></section>
+    </article></div>`;
 }
-window.addEventListener("hashchange", route);
+
+function errorPage(title, message, retry = false) {
+  return `<section class="error-page"><p class="eyebrow">Comparison explorer</p><h1>${esc(title)}</h1><p>${esc(message)}</p>
+    <div class="actions"><a class="button" href="#/">Back to examples</a>${retry ? '<button type="button" class="button primary" data-retry>Retry loading</button>' : ""}</div></section>`;
+}
+
+async function route() {
+  const version = ++routeVersion;
+  const hash = window.location.hash;
+  if (hash === "#main-content") { document.getElementById("main-content").focus(); return; }
+  activeExample = null;
+  const path = hash.replace(/^#\/?/, "");
+  const match = /^example\/([a-z-]+)$/.exec(path);
+  if (path && !match) {
+    app.innerHTML = errorPage("This page is not available", "Choose one of the current illustrative examples. Historical study and motif links are no longer presented as validated evidence.");
+    document.title = "Page not found — SkillVariants";
+    return;
+  }
+  app.innerHTML = '<p class="loading">Loading comparison evidence…</p>';
+  try {
+    const data = await loadData();
+    if (version !== routeVersion) return;
+    if (!match) {
+      app.innerHTML = home(data);
+      document.title = "SkillVariants — inspect the difference";
+    } else {
+      const example = data.examples.find((entry) => entry.id === match[1]);
+      if (!example) {
+        app.innerHTML = errorPage("Example not found", "This example does not exist in the current export. Choose an example from the index.");
+        document.title = "Example not found — SkillVariants";
+        return;
+      }
+      activeExample = example;
+      view = "paired";
+      app.innerHTML = detail(data, example);
+      document.title = `${example.short_title} — SkillVariants`;
+    }
+  } catch (error) {
+    if (version !== routeVersion) return;
+    app.innerHTML = errorPage("We couldn't load the examples", error instanceof Error ? error.message : "The example data is unavailable.", true);
+    document.title = "Examples unavailable — SkillVariants";
+  }
+}
+
+app.addEventListener("click", async (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  if (button.hasAttribute("data-retry")) { dataPromise = null; await route(); return; }
+  if (button.dataset.view && activeExample) {
+    view = button.dataset.view;
+    app.querySelectorAll("[data-view]").forEach((control) => control.setAttribute("aria-pressed", String(control.dataset.view === view)));
+    document.getElementById("evidence-panel").innerHTML = evidence(activeExample);
+  }
+  if (button.dataset.citation && activeExample) {
+    view = "paired";
+    app.querySelectorAll("[data-view]").forEach((control) => control.setAttribute("aria-pressed", String(control.dataset.view === view)));
+    document.getElementById("evidence-panel").innerHTML = evidence(activeExample);
+    document.getElementById("evidence-title").scrollIntoView({block: "start"});
+  }
+  if (button.hasAttribute("data-copy")) {
+    const status = app.querySelector(".copy-status");
+    try {
+      await navigator.clipboard.writeText(document.getElementById("compare-command").textContent);
+      status.textContent = "Command copied.";
+    } catch (error) {
+      status.textContent = "Clipboard is unavailable. Select and copy the command above.";
+    }
+  }
+});
+
+window.addEventListener("hashchange", () => { window.scrollTo(0, 0); route(); });
 route();
