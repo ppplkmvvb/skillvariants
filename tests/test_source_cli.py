@@ -5,6 +5,7 @@ import json
 
 import httpx
 import pytest
+from rich.text import Text
 from typer.testing import CliRunner
 
 from skillvariants import cli, cli_helpers
@@ -55,14 +56,16 @@ def test_conflicting_modes_fail_before_any_client_creation(monkeypatch):
     monkeypatch.setattr(cli, 'GitHubClient', lambda **kw: pytest.fail('must validate first'))
     result = runner.invoke(cli.app, ['--refresh', '--offline', 'inspect', URL, '--json'])
     assert result.exit_code == 2
-    assert '--refresh' in result.output and '--offline' in result.output
-    assert 'cannot' in result.output.lower()
+    output = Text.from_ansi(result.output).plain
+    assert '--refresh' in output and '--offline' in output
+    assert 'cannot' in output.lower()
 
 
 def test_negative_cache_age_is_rejected():
     result = runner.invoke(cli.app, ['--cache-max-age', '-1', 'inspect', URL])
     assert result.exit_code == 2
-    assert '0' in result.output and '--cache-max-age' in result.output
+    output = Text.from_ansi(result.output).plain
+    assert '0' in output and '--cache-max-age' in output
 
 
 def test_options_do_not_leak_between_invocations(monkeypatch):

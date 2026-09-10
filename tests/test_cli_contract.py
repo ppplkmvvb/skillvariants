@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 import pytest
+from rich.text import Text
 from typer.testing import CliRunner
 
 from skillvariants import cli
@@ -32,7 +33,7 @@ def create_study(base: Path):
 def test_json_is_a_documented_flag(command):
     result = runner.invoke(cli.app, [command, "--help"], color=False)
     assert result.exit_code == 0
-    assert "--json" in result.stdout
+    assert "--json" in Text.from_ansi(result.stdout).plain
 
 
 def test_default_study_base_is_current_workspace(tmp_path, monkeypatch):
