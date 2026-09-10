@@ -24,71 +24,45 @@ from conftest import (
 from skillvariants.github import CodeHit
 
 
+SYNTHETIC_BEFORE = "---\nname: synthetic-debugging\n---\n# Debugging\nContinue investigating after failed fixes.\nUse this skill for bug reports and test-first requests.\n"
+SYNTHETIC_AFTER = "---\nname: synthetic-debugging\n---\n# Debugging\nAfter repeated failed fixes, stop or escalate the debugging loop.\nFor test-first requests, decline and hand off to a dedicated skill.\n"
+
+
+def _test_comparison():
+    from skillvariants.comparison import compare_documents
+    from skillvariants.parser import parse_skill_md
+    return compare_documents(parse_skill_md(SYNTHETIC_BEFORE), parse_skill_md(SYNTHETIC_AFTER))
+
+
+def _test_evidence(line=5):
+    comparison = _test_comparison()
+    return {side: {"hunk_id": "hunk-001", "start_line": line, "end_line": line,
+                   "quote": raw.splitlines()[line - 1],
+                   "raw_sha256": comparison["sources"][side]["raw_sha256"]}
+            for side, raw in (("a", SYNTHETIC_BEFORE), ("b", SYNTHETIC_AFTER))}
+
+
 def _fake_evidence(n_extra_groups: int = 6) -> dict:
-    """Small deterministic evidence payload: 2 real fixture groups + N synthetic."""
-    base = {
-        "schema_version": "1",
-        "target": {
-            "repository": "obra/superpowers",
-            "path": "skills/systematic-debugging/SKILL.md",
-            "ref": "main",
-            "direct_skill_url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
-            "name": "systematic-debugging",
-            "normalized_hash": "a" * 64,
-        },
-        "summary": {"candidate_count": 3, "related_variant_count": 2 + n_extra_groups,
-                    "exact_copy_count": 0, "mutation_group_count": 2 + n_extra_groups,
-                    "broad_archetype_counts": {"compact-rewrite": 1,
-                                               "routing-specialization": 1}},
-        "groups": [],
+    """Synthetic task memberships for state-machine tests, not a discovery benchmark."""
+    from skillvariants.similarity import sha256, normalize_for_hash
+    count = 2 + n_extra_groups
+    target_url = "https://github.com/example/reference/blob/main/SKILL.md"
+    return {
+        "schema_version": "2",
+        "target": {"repository": "example/reference", "path": "SKILL.md", "ref": "main",
+                   "direct_skill_url": target_url, "name": "synthetic-debugging",
+                   "normalized_hash": sha256(normalize_for_hash(SYNTHETIC_BEFORE))},
+        "summary": {"candidate_count": count, "related_variant_count": count,
+                    "exact_copy_count": 0, "mutation_group_count": count,
+                    "broad_archetype_counts": {}},
+        "groups": [{"group_id": i, "repository": f"example{i}/variant", "path": "SKILL.md",
+                    "ref": "main", "direct_skill_url": f"https://github.com/example{i}/variant/blob/main/SKILL.md",
+                    "archetype": "workflow-specialization", "relatedness": .8,
+                    "member_count": 1, "occurrence_count": 1, "structural_signals": {},
+                    "added_excerpt": "Synthetic fixture", "removed_excerpt": "Synthetic fixture",
+                    "comparison": _test_comparison()}
+                   for i in range(1, count + 1)],
     }
-    real = [
-        {"group_id": 1, "repository": "Archive228/loopkit",
-         "path": "skills/systematic-debugging/SKILL.md", "ref": "main",
-         "direct_skill_url": "https://github.com/Archive228/loopkit/blob/main/skills/systematic-debugging/SKILL.md",
-         "archetype": "compact-rewrite", "relatedness": 0.54,
-         "member_count": 1, "occurrence_count": 1,
-         "structural_signals": {"length_delta": -0.85, "headings_added": 3,
-                                "headings_removed": 14, "commands_added": [],
-                                "commands_removed": ["bash"],
-                                "cross_skill_ref_delta": 0, "routing_signals": [],
-                                "wrapper_signals": [], "workflow_structure_delta": 0.9,
-                                "placeholder_signal": 0.0},
-         "added_excerpt": "The loop 1. Read the whole error",
-         "removed_excerpt": "## Overview"},
-        {"group_id": 2, "repository": "foryourhealth111-pixel/Vibe-Skills",
-         "path": "bundled/skills/systematic-debugging/SKILL.md", "ref": "main",
-         "direct_skill_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills/blob/main/bundled/skills/systematic-debugging/SKILL.md",
-         "archetype": "routing-specialization", "relatedness": 0.86,
-         "member_count": 1, "occurrence_count": 1,
-         "structural_signals": {"length_delta": 1.1, "headings_added": 2,
-                                "headings_removed": 0, "commands_added": [],
-                                "commands_removed": [], "cross_skill_ref_delta": 3,
-                                "routing_signals": ["routing boundary"], "wrapper_signals": [],
-                                "workflow_structure_delta": 0.1, "placeholder_signal": 0.0},
-         "added_excerpt": "## Routing Boundary Do not use for test-first work",
-         "removed_excerpt": ""},
-    ]
-    synthetic = []
-    for i in range(n_extra_groups):
-        gid = 3 + i
-        synthetic.append({
-            "group_id": gid, "repository": f"repo{i}/clone",
-            "path": f"s{i}/SKILL.md", "ref": "main",
-            "direct_skill_url": f"https://github.com/repo{i}/clone/blob/main/s{i}/SKILL.md",
-            "archetype": "compact-rewrite", "relatedness": 0.4,
-            "member_count": 1, "occurrence_count": 1,
-            "structural_signals": {"length_delta": -0.5, "headings_added": 2,
-                                   "headings_removed": 3, "commands_added": [],
-                                   "commands_removed": [], "cross_skill_ref_delta": 0,
-                                   "routing_signals": [], "wrapper_signals": [],
-                                   "workflow_structure_delta": 0.2,
-                                   "placeholder_signal": 0.0},
-            "added_excerpt": f"compact loop variant {i}",
-            "removed_excerpt": "## Overview",
-        })
-    base["groups"] = real + synthetic
-    return base
 
 
 @pytest.fixture
@@ -108,6 +82,7 @@ GOOD_GROUP_RESPONSE = {
     "meaningful_behavior_change": "YES",
     "motifs": [{
         "action": "Add stop conditions after failed attempts",
+        "change_type": "ADDED", "evidence": _test_evidence(5),
         "invariant": "Introduces a stop condition triggered by repeated failed fix attempts.",
         "behavior_signature": {"trigger": "repeated failed fixes", "action": "stop or escalate",
                                "object": "debugging loop", "outcome": "bounded loop"},
@@ -123,6 +98,7 @@ ROUTING_RESPONSE = {
     "meaningful_behavior_change": "YES",
     "motifs": [{
         "action": "Add routing boundary for test-first work",
+        "change_type": "ADDED", "evidence": _test_evidence(6),
         "invariant": "Adds a boundary declaring when the skill must not be used.",
         "behavior_signature": {"trigger": "test-first request", "action": "decline",
                                "object": "skill activation", "outcome": "handoff"},
@@ -186,11 +162,11 @@ class TestStudyLifecycle:
                 {"label": "add-stop-conditions", "display_name": "Add stop conditions",
                  "invariant": "Introduces a stop condition triggered by repeated failed fix attempts.",
                  "behavior_signature": GOOD_GROUP_RESPONSE["motifs"][0]["behavior_signature"],
-                 "supporting_groups": [1], "rejected_near_misses": []},
+                 "change_type": "ADDED", "supporting_groups": [1], "rejected_near_misses": []},
                 {"label": "add-routing-boundary", "display_name": "Add routing boundary",
                  "invariant": "Adds a boundary declaring when the skill must not be used.",
                  "behavior_signature": ROUTING_RESPONSE["motifs"][0]["behavior_signature"],
-                 "supporting_groups": [2], "rejected_near_misses": []},
+                 "change_type": "ADDED", "supporting_groups": [2], "rejected_near_misses": []},
             ],
         }
         result = runtime.submit(sid, pass_b["task_id"], pass_b)
@@ -226,7 +202,7 @@ class TestStudyLifecycle:
                  "display_name": "Add stop conditions",
                  "invariant": "Introduces a stop condition triggered by repeated failed fix attempts.",
                  "behavior_signature": stop_sig,
-                 "supporting_groups": [1, 3, 4, 5, 6, 7, 8],
+                 "change_type": "ADDED", "supporting_groups": [1, 3, 4, 5, 6, 7, 8],
                  "rejected_near_misses": [2]},
             ],
         }
@@ -234,7 +210,7 @@ class TestStudyLifecycle:
         task = runtime.next_task(sid)
         assert task["task_type"] == "VERIFY_MOTIF"
         decisions = [{"group_id": g["group_id"], "decision": "YES",
-                      "reason": "stop conditions present", "confidence": 0.95}
+                      "reason": "Paired change checked", "confidence": 0.95, "evidence": _test_evidence(5)}
                      for g in task["groups"]]
         runtime.submit(sid, task["task_id"],
                        {"task_id": task["task_id"], "motif_label": task["motif_label"],

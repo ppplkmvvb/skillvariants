@@ -1,0 +1,34 @@
+{
+  "examples": [
+    {
+      "id": "added",
+      "title": "An approval checkpoint is added",
+      "short_title": "Added checkpoint",
+      "direction": "ADDED",
+      "observation": "The target moves from writing a plan to implementing it. The variant inserts a request for approval and says to implement only after approval.",
+      "interpretation": "The variant adds a condition that can delay implementation until the user approves. This describes the written instructions, not measured agent behavior.",
+      "maintainer_question": "Does your workflow need the user to approve the plan before work starts?",
+      "citations": [{"hunk_id": "hunk-001", "a_lines": [8, 9, 10], "b_lines": [8, 9, 10, 11]}]
+    },
+    {
+      "id": "preserved",
+      "title": "New wording preserves the checkpoint",
+      "short_title": "Preserved checkpoint",
+      "direction": "PRESERVED",
+      "observation": "Both versions require the user's approval before implementation. Only the phrasing of that instruction changes.",
+      "interpretation": "This wording change preserves the approval order. Calling it an added gate would overstate the difference.",
+      "maintainer_question": "Does the new wording make the existing rule easier for your team to understand?",
+      "citations": [{"hunk_id": "hunk-001", "a_lines": [9], "b_lines": [9]}]
+    },
+    {
+      "id": "reversed",
+      "title": "A short edit reverses the approval order",
+      "short_title": "Reversed checkpoint",
+      "direction": "REVERSED",
+      "observation": "The target forbids implementation before approval. The variant tells the agent to implement before asking for user approval.",
+      "interpretation": "The two instructions put approval on opposite sides of implementation. Similar names and document lengths do not establish equivalent behavior.",
+      "maintainer_question": "Would implementing first violate the approval process you intend to preserve?",
+      "citations": [{"hunk_id": "hunk-001", "a_lines": [9], "b_lines": [9]}]
+    }
+  ]
+}

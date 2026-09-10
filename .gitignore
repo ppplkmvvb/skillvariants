@@ -5,10 +5,13 @@ __pycache__/
 build/
 dist/
 .venv/
+.venv-dev/
 venv/
 
 # caches
 .cache/
+.skillvariants/
+.test-tmp*
 
 # tooling
 .pytest_cache/

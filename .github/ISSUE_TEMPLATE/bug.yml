@@ -32,4 +32,4 @@ body:
     attributes:
       label: Environment check
       options:
-        - label: I ran the latest version and removed `.cache/skillvariants/` before retrying
+        - label: I recorded my installed version and whether I used --refresh or --offline

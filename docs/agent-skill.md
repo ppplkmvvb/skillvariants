@@ -1,62 +1,31 @@
-# Using SkillVariants from your agent
+# Use SkillVariants from an agent
 
-SkillVariants Core finds and structures the evidence. The Skill lets your
-agent interpret it.
+Install the CLI from the same revision as the Agent Skill. Copy the complete `skills/skillvariants/` directory, including its references and example, into your agent's supported skills directory. The Python wheel installs the command; the separate Skill ZIP installs instructions.
 
-The repository ships an installable Agent Skill (`skills/skillvariants/`)
-that teaches a coding agent to run the deterministic pipeline and then
-perform semantic motif analysis on top of it — with strict guardrails
-against fabrication, ancestry claims, and frequency-as-quality reasoning.
+Start with a specific comparison request. A full study is useful only when you need to analyze a bounded corpus for recurring adaptations.
 
-## Install
+Example prompt:
 
-Copy or symlink `skills/skillvariants/` into your agent's skills directory
-(for example `.claude/skills/skillvariants/`, `.agents/skills/skillvariants/`,
-or the equivalent for your tool), or point your agent at the folder directly.
+> Find relevant adaptations of this Skill. Show a small shortlist and compare the instruction changes against the target. Cite both sources. If evidence is incomplete, say what is missing.
 
-Requirements for the agent's environment:
+For a full study:
 
-- Python 3.11+
-- `uvx skillvariants` (or `pipx install skillvariants`) on PATH
-- GitHub authentication: `GITHUB_TOKEN` or `gh auth login`
+> Study the recurring behavioral changes to this Skill. Use SkillVariants task dispatch and source snapshots, preserve unresolved evidence, and separate observations from interpretations.
 
-## Example prompt
-
-```text
-Study how this Skill has been adapted across GitHub:
-https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md
-Identify recurring concrete adaptations, show supporting implementations,
-and distinguish evidence from interpretation.
-```
-
-The agent will run `skillvariants evidence <url> --json`, analyze the
-mutation groups, consolidate motifs under strict invariants, verify
-recurrence counts deterministically, and present an evidence-backed study.
-A real output of this workflow is preserved in
-`research/agent-benchmark/v1/runs/systematic-debugging-study.md` and
-summarized in `skills/skillvariants/examples/systematic-debugging.md`.
-
-## Direct CLI alternative
-
-If you do not want an Agent Skill, everything is available from the terminal:
+The agent uses the CLI already on PATH. Do not silently run an old PyPI version for a newer task schema.
 
 ```bash
-skillvariants related <url>                  # archetype map
-skillvariants evidence <url> --json          # machine-readable evidence
-skillvariants compare <url-a> <url-b> --json # structural diff of two skills
+skillvariants study-start <SKILL.md-url> --json
+skillvariants study-next <study-id> --json
+skillvariants study-submit <study-id> <task-result.json> --json
+skillvariants study-status <study-id> --json
+skillvariants study-report <study-id> --json
 ```
 
-## Validation status
+Repeat next → perform task → submit until COMPLETE. `--base-dir` is a workspace root, appended once with `.skillvariants/studies`; use the same root for all study commands.
 
-The semantic layer was benchmarked against a frozen 243-group human baseline
-across three skill families, then hardened with a consolidation guardrail
-(behavior-signature clustering + independent verifier + deterministic
-acceptance rules).
+The runtime validates ids, exact task membership, source hashes, quoted lines and enums. The agent must still decide whether a passage supports the interpretation. A full-source citation requires reading the dispatched, hash-checked snapshot. Incomplete material must remain unresolved if it cannot be recovered.
 
-Final guarded benchmark
-([report](research/agent-benchmark/v1/semantic-guardrail-report.md)):
-over-merge 0% (was 26%), evidence faithfulness 100% with 0 fabricated
-sources, high-confidence motif retention 89%, two-run stability 100%.
-Verdict: `SEMANTIC_GUARDRAIL_GO` — product-facing recurring motifs come only
-from clusters whose every supporting group passed the invariant verification;
-UNSTABLE or UNRESOLVED clusters are omitted, never broadened.
+Pass B clusters by behavioral equivalence and change direction. Every proposed recurring member receives a separate verifier decision; YES needs its own paired citations. You may assign verification to another model or reviewer, but the runtime does not enforce reviewer independence.
+
+The engine generates report.json and report.md. The final task can accept optional analyst notes saved separately; it cannot replace generated counts or evidence. See the [runtime contract](agent-runtime.md) and [bundled Skill](../skills/skillvariants/SKILL.md).

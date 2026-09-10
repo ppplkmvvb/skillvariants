@@ -233,7 +233,15 @@ def accept_cluster(
     UNCERTAIN groups are excluded from recurrence. Rejection rate
     (NO + UNCERTAIN) / proposed > 20% marks the cluster UNSTABLE.
     """
+    members = proposed.member_group_ids
+    if not members or len(set(members)) != len(members):
+        raise ValueError("proposed member groups must be non-empty and unique")
     by_group = {d.group_id: d for d in decisions}
+    if len(by_group) != len(decisions):
+        raise ValueError("duplicate verifier decisions for a group")
+    unknown = set(by_group) - set(members)
+    if unknown:
+        raise ValueError(f"verifier decisions contain unknown groups: {sorted(unknown)}")
     missing = [gid for gid in proposed.member_group_ids if gid not in by_group]
     if missing:
         raise ValueError(f"missing verifier decisions for groups: {missing}")

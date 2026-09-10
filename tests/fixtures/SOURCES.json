@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-10",
+  "scope": "Historical offline test fixtures. Raw hashes identify bundled bytes; capture commits are unknown. Repository license texts and Vibe-Skills notice were fetched on checked_at.",
+  "fixtures": [
+    {
+      "path": "systematic_debugging/reference_superpowers.md",
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "license": "MIT",
+      "source_url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/obra-superpowers.txt"
+      ]
+    },
+    {
+      "path": "brainstorming/reference_superpowers.md",
+      "sha256": "74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608",
+      "license": "MIT",
+      "source_url": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/obra-superpowers.txt"
+      ]
+    },
+    {
+      "path": "verification_before_completion/reference_superpowers.md",
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "license": "MIT",
+      "source_url": "https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/obra-superpowers.txt"
+      ]
+    },
+    {
+      "path": "systematic_debugging/variant_loopkit.md",
+      "sha256": "74722b62f2529b8a47d4a621fdb4ee7ab96168a805e1b0144cd92b5358e6c157",
+      "license": "MIT",
+      "source_url": "https://github.com/Archive228/loopkit/blob/main/skills/systematic-debugging/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/Archive228-loopkit.txt"
+      ]
+    },
+    {
+      "path": "frontend_design/variant_qqmusicapi.md",
+      "sha256": "4cc9cd8f47f2db9b395d691636f066e3105a3145ea0a6f6b6317518d3d112ac5",
+      "license": "MIT",
+      "source_url": "https://github.com/Rain120/qq-music-api/blob/next/skills/frontend-design/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/Rain120-qq-music-api.txt"
+      ]
+    },
+    {
+      "path": "brainstorming/variant_superantigravity.md",
+      "sha256": "6707c6cb76ab77cace0635df28562df05ce89ea4eb6a5acc89b0e5cdc5b688c0",
+      "license": "MIT",
+      "source_url": "https://github.com/derHaken/SuperAntigravity/blob/main/skills/brainstorming/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/derHaken-SuperAntigravity.txt"
+      ]
+    },
+    {
+      "path": "verification_before_completion/variant_superantigravity.md",
+      "sha256": "254be1aedd9457441ab45310544e2252532b188463fa3be8dabdb208db0d3171",
+      "license": "MIT",
+      "source_url": "https://github.com/derHaken/SuperAntigravity/blob/main/skills/verification-before-completion/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/derHaken-SuperAntigravity.txt"
+      ]
+    },
+    {
+      "path": "systematic_debugging/variant_vibeskills.md",
+      "sha256": "b5464c64bf6577c3bbcbe5a24b161181dc4efcfc70eaa2e2bd6f94fbb1288c37",
+      "license": "MIT AND Apache-2.0",
+      "source_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills/blob/main/bundled/skills/systematic-debugging/SKILL.md",
+      "capture_commit": null,
+      "license_files": [
+        "tests/fixtures/licenses/foryourhealth111-pixel-Vibe-Skills.txt",
+        "tests/fixtures/licenses/obra-superpowers.txt",
+        "tests/fixtures/licenses/foryourhealth111-pixel-Vibe-Skills-NOTICE.txt"
+      ]
+    },
+    {
+      "path": "frontend_design/reference_synthetic.md",
+      "sha256": "7ea5840f68637f0c102b3a13aa6be3e194e49f342fd4ccc74dcc0c8384c7a109",
+      "license": "CC0-1.0",
+      "source_url": null,
+      "capture_commit": null,
+      "license_files": []
+    },
+    {
+      "path": "frontend_design/variant_compact_rewrite_synthetic.md",
+      "sha256": "17b77ab3f2ccb2873452bb1736f553f4c85c2b5f082f7fa939edf6021edcc08a",
+      "license": "CC0-1.0",
+      "source_url": null,
+      "capture_commit": null,
+      "license_files": []
+    },
+    {
+      "path": "negative/unrelated_offtopic_synthetic.md",
+      "sha256": "4811ddd1dcb5d2a4aaa1bb8ed794d9fb93a579a72252c5effe0ffc4a1087844c",
+      "license": "CC0-1.0",
+      "source_url": null,
+      "capture_commit": null,
+      "license_files": []
+    }
+  ],
+  "upstream_licenses": [
+    {
+      "path": "tests/fixtures/licenses/obra-superpowers.txt",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "source_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+      "blob_sha": "abf0390320aa14406af7a520b9b0739fdda9bf08"
+    },
+    {
+      "path": "tests/fixtures/licenses/Archive228-loopkit.txt",
+      "sha256": "b133a9557e88053a60351a889259af9dfbd1908afb2439294c137e73b9356a9b",
+      "source_url": "https://github.com/Archive228/loopkit/blob/main/LICENSE",
+      "blob_sha": "060ed99a43aac56f3508cd9b4535d6f3b20af151"
+    },
+    {
+      "path": "tests/fixtures/licenses/Rain120-qq-music-api.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+      "source_url": "https://github.com/Rain120/qq-music-api/blob/next/LICENSE",
+      "blob_sha": "8b23445f4a55ae5f9e38055dec94b27ef2b14150"
+    },
+    {
+      "path": "tests/fixtures/licenses/derHaken-SuperAntigravity.txt",
+      "sha256": "bb17a4c6db3a21bcd02cd18d4dbaa302c24076809d70d40d6fd6f0cd610f2476",
+      "source_url": "https://github.com/derHaken/SuperAntigravity/blob/main/LICENSE",
+      "blob_sha": "70cc1b3b8042284d0245912a39feab517a4d369f"
+    },
+    {
+      "path": "tests/fixtures/licenses/foryourhealth111-pixel-Vibe-Skills.txt",
+      "sha256": "c91896da341b5b88aa8c8454e1824a299d9a6822355153c73aae98b65bdbc2af",
+      "source_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills/blob/main/LICENSE",
+      "blob_sha": "a9c3e2f54f01bdc8d98234a043354e72dd819f84"
+    },
+    {
+      "path": "tests/fixtures/licenses/foryourhealth111-pixel-Vibe-Skills-NOTICE.txt",
+      "sha256": "9d730085bd83b9d80dbe927548806479cd4a93a25163d35d02fe55efb34f7cae",
+      "source_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills/blob/main/NOTICE"
+    }
+  ]
+}

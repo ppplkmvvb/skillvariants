@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "dataset_id": "contract-v1",
+  "provenance": "Original synthetic quote-integrity and task-membership traps. Deterministic contract checks, not semantic model accuracy evidence.",
+  "instructions": "For citation_integrity return VALID only if both quotes and source hashes match the cited lines. For task_coverage return COMPLETE only when every dispatched group is returned exactly once and there are no extra groups. Otherwise use INVALID or INCOMPLETE respectively. ABSTAIN is permitted for external predictions.",
+  "cases": [
+    {
+      "case_id": "c001",
+      "task_type": "citation_integrity",
+      "a": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in plain text.\n",
+        "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa",
+        "coverage": "full_document"
+      },
+      "b": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in JSON with a status field.\n",
+        "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd",
+        "coverage": "full_document"
+      },
+      "change_type": "MODIFIED",
+      "citation": {
+        "a": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in plain text.",
+          "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa"
+        },
+        "b": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in JSON with a status field.",
+          "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd"
+        }
+      }
+    },
+    {
+      "case_id": "c002",
+      "task_type": "citation_integrity",
+      "a": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in plain text.\n",
+        "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa",
+        "coverage": "full_document"
+      },
+      "b": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in JSON with a status field.\n",
+        "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd",
+        "coverage": "full_document"
+      },
+      "change_type": "MODIFIED",
+      "citation": {
+        "a": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in plain text.",
+          "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa"
+        },
+        "b": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result as an encrypted archive.",
+          "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd"
+        }
+      }
+    },
+    {
+      "case_id": "c003",
+      "task_type": "citation_integrity",
+      "a": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in plain text.\n",
+        "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa",
+        "coverage": "full_document"
+      },
+      "b": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in JSON with a status field.\n",
+        "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd",
+        "coverage": "full_document"
+      },
+      "change_type": "MODIFIED",
+      "citation": {
+        "a": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in plain text.",
+          "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa"
+        },
+        "b": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in JSON with a status field.",
+          "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa"
+        }
+      }
+    },
+    {
+      "case_id": "c004",
+      "task_type": "citation_integrity",
+      "a": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in plain text.\n",
+        "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa",
+        "coverage": "full_document"
+      },
+      "b": {
+        "text": "---\nname: citation-helper\n---\n# Results\nRecord the result in JSON with a status field.\n",
+        "raw_sha256": "57c3347db0c1c95173f70fa65a1c1113e5f99691eb3e24603dc3e35cbacd3acd",
+        "coverage": "full_document"
+      },
+      "change_type": "MODIFIED",
+      "citation": {
+        "a": {
+          "hunk_id": "hunk-001",
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "Record the result in plain text.",
+          "raw_sha256": "042c6f851f74476f7791e7a4b86b5170a324c891811327c70d32ba43ded996aa"
+        }
+      }
+    },
+    {
+      "case_id": "c005",
+      "task_type": "task_coverage",
+      "dispatched_group_ids": [
+        2,
+        3,
+        5
+      ],
+      "returned_group_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "case_id": "c006",
+      "task_type": "task_coverage",
+      "dispatched_group_ids": [
+        2,
+        3,
+        5
+      ],
+      "returned_group_ids": [
+        2,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "case_id": "c007",
+      "task_type": "task_coverage",
+      "dispatched_group_ids": [
+        2,
+        3,
+        5
+      ],
+      "returned_group_ids": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "case_id": "c008",
+      "task_type": "task_coverage",
+      "dispatched_group_ids": [
+        2,
+        3,
+        5
+      ],
+      "returned_group_ids": [
+        2,
+        3,
+        5,
+        9
+      ]
+    }
+  ]
+}

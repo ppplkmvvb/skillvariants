@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SkillVariants — see how Agent Skills change across GitHub</title>
-<meta name="description" content="Evidence-backed studies of how Agent Skills are adapted across GitHub. Deterministic counts, real source implementations.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="Compare Agent Skill instructions before adapting them. Inspect original examples with paired source lines, complete diffs, and reproducible hashes.">
+  <title>SkillVariants — inspect the difference</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="#/">SkillVariants</a>
-  <nav>
-    <a href="#/">Studies</a>
-    <a href="https://github.com/ppplkmvvb/skillvariants/blob/main/skills/skillvariants/SKILL.md">Agent Skill</a>
-    <a href="https://github.com/ppplkmvvb/skillvariants#try-the-cli">CLI</a>
-    <a href="https://github.com/ppplkmvvb/skillvariants">GitHub</a>
-  </nav>
-</header>
-<main id="app"></main>
-<footer>
-  <p>Deterministic counts from GitHub Code Search at capture time; results change over time.
-     Recurrence is not quality and no ancestry is claimed.
-     <a href="https://github.com/ppplkmvvb/skillvariants/blob/main/docs/limitations.md">Limitations</a>.</p>
-</footer>
-<script src="app.js"></script>
+  <a class="skip" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="SkillVariants home"><span class="brand-mark" aria-hidden="true">sv</span>SkillVariants</a>
+    <nav aria-label="Main navigation">
+      <a href="#/">Examples</a>
+      <a href="https://github.com/ppplkmvvb/skillvariants#quickstart">CLI quickstart</a>
+      <a href="https://github.com/ppplkmvvb/skillvariants/blob/main/skills/skillvariants/SKILL.md">Agent Skill</a>
+      <a class="repo-link" href="https://github.com/ppplkmvvb/skillvariants">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main-content" tabindex="-1"><div id="app" aria-live="polite"><p class="loading">Loading comparison examples…</p></div></main>
+  <noscript><p class="noscript">Enable JavaScript to explore the paired examples, or use the <a href="https://github.com/ppplkmvvb/skillvariants#quickstart">CLI quickstart</a>.</p></noscript>
+  <footer class="site-footer">
+    <p><strong>Read the evidence. Keep your judgment.</strong><br>These original examples illustrate textual changes. They are not evidence of adoption, quality, or measured agent behavior.</p>
+    <a href="https://github.com/ppplkmvvb/skillvariants/blob/main/docs/limitations.md">Scope &amp; limitations <span aria-hidden="true">↗</span></a>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>

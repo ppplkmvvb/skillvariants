@@ -1,66 +1,49 @@
-# Third-Party Skill Text Fixture Audit
+# Offline fixture provenance audit
 
-Status: **complete** (v0.1.0). Every bundled `tests/fixtures/` file was traced
-to its source, its license checked, and its redistribution decided explicitly.
+As of 2026-09-10, the offline suite contains **11 Skill text fixtures**: eight historical third-party captures and three original synthetic fixtures. Supporting manifests, license files and notice text are additional files, not part of that count.
 
-## Bundled fixtures
+The current inventory and raw-byte SHA-256 values are recorded in [`tests/fixtures/SOURCES.json`](../tests/fixtures/SOURCES.json). License texts and the Vibe-Skills notice are retained under [`tests/fixtures/licenses/`](../tests/fixtures/licenses/). This audit describes those repository records; no fresh remote license lookup was performed while writing this correction.
 
-| Fixture | Source repo | Upstream license | Redistributed? | Action |
-|---|---|---|---|---|
-| `frontend_design/reference_synthetic.md` | none — original synthetic text written for this repo (structure informed by the public *shape* of common frontend skills) | n/a (CC0 declared in-file) | Yes (ours) | Kept |
-| `frontend_design/variant_compact_rewrite_synthetic.md` | none — original synthetic text | n/a (CC0) | Yes (ours) | Kept |
-| `negative/unrelated_offtopic_synthetic.md` | none — original synthetic text | n/a (CC0) | Yes (ours) | Kept |
-| all other `tests/fixtures/**` files (systematic-debugging family: reference / loopkit variant / Vibe-Skills variant; brainstorming family: SuperAntigravity variant; verification-before-completion pair; docx negative control) | see table below | MIT or Apache-2.0 (verified per repo) | Yes, with attribution below | Kept |
+## Retained fixture inventory
 
-## Redistribution-audited upstream sources
+| Fixture under `tests/fixtures/` | Recorded source | Recorded license context |
+|---|---|---|
+| `systematic_debugging/reference_superpowers.md` | `obra/superpowers` | MIT |
+| `brainstorming/reference_superpowers.md` | `obra/superpowers` | MIT |
+| `verification_before_completion/reference_superpowers.md` | `obra/superpowers` | MIT |
+| `systematic_debugging/variant_loopkit.md` | `Archive228/loopkit` | MIT |
+| `frontend_design/variant_qqmusicapi.md` | `Rain120/qq-music-api`, branch `next` | MIT |
+| `brainstorming/variant_superantigravity.md` | `derHaken/SuperAntigravity` | MIT |
+| `verification_before_completion/variant_superantigravity.md` | `derHaken/SuperAntigravity` | MIT |
+| `systematic_debugging/variant_vibeskills.md` | `foryourhealth111-pixel/Vibe-Skills` | MIT AND Apache-2.0; both license texts and the recorded notice retained |
+| `frontend_design/reference_synthetic.md` | Original synthetic text | CC0-1.0 declared in fixture |
+| `frontend_design/variant_compact_rewrite_synthetic.md` | Original synthetic text | CC0-1.0 declared in fixture |
+| `negative/unrelated_offtopic_synthetic.md` | Original synthetic text | CC0-1.0 declared in fixture |
 
-During the feasibility spikes these live repositories' `SKILL.md` files were
-fetched and stored as offline test fixtures. License verification commands:
-`gh api repos/<owner>/<repo> --jq .license.spdx_id`.
+The QQ Music compatibility-wrapper fixture is bundled. Earlier statements that it existed only as URL metadata were incorrect. The Vibe-Skills notice is a separate retained notice file; this prose audit is not a substitute for that notice.
 
-| Source repository | Upstream license at audit time | Fixture role | Notes |
-|---|---|---|---|
-| `obra/superpowers` | MIT | systematic-debugging + brainstorming + verification-before-completion references | Attribution preserved via source URL in fixture filename/research notes |
-| `Archive228/loopkit` | MIT | systematic-debugging compact-rewrite anchor | |
-| `foryourhealth111-pixel/Vibe-Skills` | Apache-2.0 | routing-specialization anchor | Apache-2.0 requires license/notice propagation on redistribution; NOTICE preserved in this file |
-| `Rain120/qq-music-api` | MIT | frontend-design compatibility-wrapper analysis target | File itself **not** bundled; only referenced by URL (branch `next`) in live-URL metadata |
-| `derHaken/SuperAntigravity` | MIT | brainstorming workflow-specialization anchor | |
+## What the records establish and what is missing
 
-## Removed for licensing reasons
+The manifest identifies the exact bundled bytes, their recorded source URLs and the license/notice files retained for those sources. It records license retrieval on 2026-09-10, raw hashes for the retained license texts and available Git blob identifiers.
 
-| Fixture | Source repo | License | Reason removed |
-|---|---|---|---|
-| `reference_anthropics.md` | `anthropics/skills` | **none** (no LICENSE file found at audit time) | All-rights-reserved default; redistribution not permitted |
-| `variant_pilotdeck.md` | `OpenBMB/PilotDeck` | **AGPL-3.0** | Strong copyleft incompatible with bundling skill prose into an Apache-2.0 test suite without dual-licensing the project |
-| `unrelated_docx_anthropics.md` | `anthropics/skills` | **none** | Same as above |
+All historical Skill captures have `capture_commit: null`. Their original capture commits are unavailable. A mutable branch URL and a later repository license retrieval cannot reconstruct the historical per-file state with certainty. Accordingly, this audit does **not** claim that every fixture was traced to an immutable capture or that historical provenance is complete. The local raw hashes permit reproducible tests against the bundled bytes, not reconstruction of unknown upstream capture commits.
 
-Each removed file was replaced by a purpose-built synthetic fixture that
-preserves the structural property the tests need (same-name compact rewrite
-with paraphrased wording; same-name off-topic negative control), so no
-coverage was lost.
+Preserve the manifest and applicable license/notice material when retaining these captures. For future captures, record the immutable source commit, exact path, raw content hash, retrieval time and applicable file-level license/notice context at capture time.
 
-## Anchor URLs kept as references, not copies
+## Removed unused historical captures
 
-The five validation anchors are documented as live GitHub URLs
-(`tests/tests_helpers.py::LIVE_REFERENCE_URLS` / `LIVE_VARIANT_URLS`) rather
-than redistributed bytes wherever the upstream license did not clearly permit
-bundling. Live evaluation fetches them at run time under the user's own
-GitHub authentication.
+The hardening change removes these three unused raw fixtures:
 
-## Caveat
+- `frontend_design/reference_anthropics.md`
+- `frontend_design/variant_pilotdeck.md`
+- `negative/unrelated_docx_anthropics.md`
 
-Upstream licenses can change. Re-run the audit before any major release:
-fetch each repo's `.license.spdx_id`, compare against this table, and re-check
-the upstream files if a fixture's content needs updating.
+The previous audit gave unsupported or oversimplified license explanations for these files. Those explanations are withdrawn. Their removal is a repository provenance and fixture-maintenance decision; this document does not infer a repository-wide license from missing historical metadata or assert blanket incompatibility between license families.
 
-## v0.2 re-audit (web data)
+The three retained synthetic fixtures exercise the current compact-rewrite and unrelated-content controls. Their existence does not demonstrate that every historical behavior of the removed files has equivalent coverage. Current coverage is established by the tests that actually run.
 
-The Web explorer bundles metadata only: motif invariants (authored by this
-project), behavior signatures, deterministic counts, repository/path/ref
-strings, exact GitHub URLs, and short diff excerpts (≤3 lines per side,
-≤160 chars per line) captured from public repos at study time. No
-third-party Skill body is redistributed in `web/` or in the Python package.
-The upstream licensing facts from the table above were re-checked and are
-unchanged. If any upstream repo changes or deletes a file (one observed
-case: `eastreams/loong` deleted its `rewrite` branch after capture), the
-explorer marks the source as changed rather than shipping stale content.
+## Evaluation and distribution scope
+
+Historical upstream fixtures are regression inputs, not an independently sampled benchmark. The new original synthetic evaluation corpus has separate provenance and answer handling, documented in [`docs/evaluation.md`](../docs/evaluation.md).
+
+This audit concerns `tests/fixtures/`. It makes no blanket claim about the provenance of historical research exports, current explorer content, or built package contents; those artifacts require their own checks. In particular, old research metrics should not be promoted as independent accuracy evidence merely because the underlying fixture bytes have a recorded hash.

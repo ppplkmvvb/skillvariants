@@ -1,10 +1,9 @@
-# Spike research notes (historical)
+# Research archive
 
-SkillVariants was built through three internal feasibility spikes before this
-public repository was created. This folder preserves the condensed, publishable
-outcome of that research:
+This folder preserves historical feasibility studies, benchmark replays and release records. Historical reports are not acceptance evidence for the current runtime.
 
-- [`validation-summary.md`](validation-summary.md) — three-spike evolution and final metrics
-- [`fixture-audit.md`](fixture-audit.md) — third-party Skill text licensing audit
+The 2026-09-10 review found that the semantic benchmark reused existing annotations and the stability run copied prior results. Some showcased “added” requirements already existed in the target. Cached known-anchor retrieval is useful regression evidence, but not a fresh live recall measurement.
 
-The raw spike repositories are throwaway prototypes and are not published.
+Read the current [evaluation protocol](../docs/evaluation.md), [product contract](../docs/product-contract.md) and [corrected validation summary](validation-summary.md) before interpreting old numbers. The [fixture audit](fixture-audit.md) documents retained licenses and missing legacy capture provenance.
+
+Older artifacts remain for traceability. They must not be relabeled as independent human/model validation or republished as current recommendations.

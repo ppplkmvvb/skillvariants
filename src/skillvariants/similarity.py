@@ -46,7 +46,7 @@ def sha256(text: str) -> str:
 class ScoreBreakdown:
     name_match: bool
     token_set_ratio: float  # 0..1
-    char_ratio: float  # 0..1
+    char_ratio: float  # ordered character similarity, 0..1 (not length ratio)
     heading_jaccard: float  # 0..1
     description_similarity: float  # 0..1
     name_bonus: float  # 0..1
@@ -82,10 +82,7 @@ def score_similarity(
     token_set_ratio = (
         fuzz.token_set_ratio(target.body, candidate.body) / 100.0
     )
-    max_len = max(len(target.body), len(candidate.body))
-    char_ratio = (
-        min(len(target.body), len(candidate.body)) / max_len if max_len else 1.0
-    )
+    char_ratio = fuzz.ratio(target.body, candidate.body) / 100.0
     heading_jaccard = jaccard(
         {h.lower() for h in target_feats.headings},
         {h.lower() for h in candidate_feats.headings},
@@ -105,7 +102,16 @@ def score_similarity(
         + WEIGHTS["heading_jaccard"] * heading_jaccard
         + WEIGHTS["description"] * desc_sim
     )
-    score = min(1.0, raw + name_bonus)
+    # Missing optional features are not disagreements. Exclude their weights
+    # without turning two absent headings/descriptions into relation evidence.
+    active_weight = sum(WEIGHTS.values())
+    if not target_feats.headings and not candidate_feats.headings:
+        active_weight -= WEIGHTS["heading_jaccard"]
+    if not target.description and not candidate.description:
+        active_weight -= WEIGHTS["description"]
+    # A bonus must not saturate different bodies at 1.0: keep the score a
+    # weighted mean. This remains textual affinity, never behavior equivalence.
+    score = min(1.0, (raw + name_bonus) / (active_weight + name_bonus))
     return ScoreBreakdown(
         name_match=name_match,
         token_set_ratio=token_set_ratio,

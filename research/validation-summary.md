@@ -1,64 +1,13 @@
-# Validation Summary — SkillVariants
+# Validation status and historical correction
 
-Condensed from three internal feasibility spikes; full methodology lived in
-throwaway spike repos and only conclusions ship here.
+Updated 2026-09-10. This replaces the former summary of historical success metrics.
 
-## What was validated
+The deterministic core has offline fixtures and targeted regressions for discovery, ranking, paired evidence, runtime integrity and installed commands. Five known adaptation anchors were found in a replay of the original cached corpus during review. This is a known-anchor cached result, not measured recall over GitHub or a fresh acquisition.
 
-The premise under test across all phases:
+The earlier semantic benchmark driver consumed existing annotated rows: the 243 replayed labels/actions matched those rows. A later stability run copied the first output with a few edits. Thus the prior “0% over-merge,” “100% stability” and “human-audited groups” descriptions do not establish independent model quality.
 
-> A developer-facing tool can automatically surface the meaningful ways an
-> Agent Skill has been adapted across GitHub, without relying on an LLM.
+A recurring stop/escalation rule was also described as ADDED even though the target already contained it. This demonstrated a missing direction-of-change check. Schema 2 now requires paired exact citations and an explicit direction; independent semantic accuracy still needs evaluation.
 
-## Three-spike evolution
+An earlier audit inferred nineteen default-YES verifier results. On reinspection those nineteen entries were in clusters below the recurring threshold and skipped by that historical script; zero such default-YES fallbacks were reached in the frozen recurring clusters. The fallback was a code hazard, not evidence that those nineteen groups were accepted.
 
-| Spike | Question | Outcome |
-|---|---|---|
-| 1. Data spike | Can retrieval → dedupe → classify work at all? | All 5 known variants found & classified; but similarity ranking showed clone walls burying interesting mutations → REDESIGN |
-| 2. Ranking redesign | Can a better global ranking surface diverse mutations? | Clone domination fixed (121 clones → 1 group); precision 90-100%; but magnitude-score bias let single archetypes fill top lists → archetype-first rethink |
-| 3. Archetype-first | Is a map better than a leaderboard? | Replaced global ranking with per-archetype sections + intra-bucket scoring; all final gates passed |
-
-The decisive lesson of spike 2/3: **"most similar" and "most interestingly
-different" are different objectives**, and compressing all mutations into one
-scalar list is the wrong product shape. The fix was structural (archetype map),
-not another tuning round.
-
-## Final metrics (spike 3, three families)
-
-| Metric | Result |
-|---|---:|
-| Known-anchor recall | 5/5 |
-| Known-anchor archetype accuracy | 5/5 |
-| Displayed representative precision (correct/arguable) | 100% (34 reviewed) |
-| Meaningful archetype coverage | 86% overall |
-| Representative quality YES | 85% overall |
-| Screenshot-story test (≥3 distinct stories/screen) | 3/3 families |
-| Determinism | byte-identical JSON reruns |
-
-## Families and anchors
-
-- `frontend-design` — anchors: OpenBMB/PilotDeck (compact rewrite), Rain120/qq-music-api (compatibility wrapper)
-- `systematic-debugging` (obra/superpowers) — anchors: Archive228/loopkit (compact rewrite), foryourhealth111-pixel/Vibe-Skills (routing specialization)
-- `brainstorming` (obra/superpowers) — anchor: derHaken/SuperAntigravity (workflow specialization)
-
-Manual labeling protocol: every displayed representative judged
-correct/arguable/wrong for its section and yes/partial/no as a story, from
-description, headings, signals, and excerpt — never from the tool's own score.
-
-## Methodology constraints held throughout
-
-- deterministic only (regex + RapidFuzz), no LLM/embeddings/vector DB
-- BYO GitHub auth; filesystem cache; no telemetry
-- no threshold tuned specifically to promote any anchor after the calibration pass
-- anchors were regression checks, never ranking targets, once the map shipped
-
-## Known limitations carried into v0.1
-
-taxonomy overlap (workflow vs project), GitHub search coverage, placeholder
-template edge cases, heuristic relatedness, no ancestry inference. Full list:
-[docs/limitations.md](../docs/limitations.md).
-
-## Fixtures licensing note
-
-License-restricted upstream texts were replaced with synthetic fixtures before
-release; see [fixture-audit.md](fixture-audit.md).
+The current [evaluation protocol](../docs/evaluation.md) separates inputs, expected answers and predictions, publishes abstentions and errors, and states the limitations of the small same-model synthetic exercise. New source/runtime/CLI regressions and installed-wheel checks are engineering evidence. None of these establishes user value, model performance across arbitrary skills, independent adoption or best practices.

@@ -1,3 +1,5 @@
+> Historical artifact — retained for traceability, not current release validation. Old replay/stability metrics and unpaired semantic claims must not be presented as independent accuracy or adoption evidence. See the [current evaluation protocol](../../../../docs/evaluation.md).
+
 # SkillVariants study — systematic-debugging
 
 Target: [obra/superpowers/skills/systematic-debugging/SKILL.md](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md) (ref `main`)

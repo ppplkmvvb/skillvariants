@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "dataset_id": "direction-v1",
+  "provenance": "Author-defined evaluator answers for original synthetic cases; these are not independent human adjudications. Keep this file out of annotator context.",
+  "expected": {
+    "d001": {
+      "label": "UNCHANGED",
+      "rationale": "The explicit before-export condition is retained verbatim under another heading."
+    },
+    "d002": {
+      "label": "ADDED",
+      "rationale": "A retrieval-time requirement is newly imposed; it is absent from the complete target."
+    },
+    "d003": {
+      "label": "MODIFIED",
+      "rationale": "The same timeout condition now permits continuing instead of requiring a stop."
+    },
+    "d004": {
+      "label": "REMOVED",
+      "rationale": "The preview requirement is removed without a replacement condition."
+    },
+    "d005": {
+      "label": "UNCHANGED",
+      "rationale": "Positive and negative phrasings express the same successful-dry-run prerequisite."
+    },
+    "d006": {
+      "label": "ADDED",
+      "rationale": "Per-attempt logging is newly required; the retry bound remains unchanged."
+    },
+    "d007": {
+      "label": "MODIFIED",
+      "rationale": "The existing prerequisite changes its required count from two to three."
+    },
+    "d008": {
+      "label": "UNCHANGED",
+      "rationale": "The focused filename requirement is preserved; a different output-count requirement is added."
+    },
+    "d009": {
+      "label": "REMOVED",
+      "rationale": "The audit-entry step is absent from the complete variant, with no substitute."
+    },
+    "d010": {
+      "label": "ABSTAIN",
+      "rationale": "The target is only an excerpt; the prerequisite could exist in omitted sections."
+    },
+    "d011": {
+      "label": "MODIFIED",
+      "rationale": "The same trigger now requires the opposite lock-handling and continuation behavior."
+    },
+    "d012": {
+      "label": "UNCHANGED",
+      "rationale": "The trigger, action and single-entry count are preserved through paraphrase."
+    },
+    "d013": {
+      "label": "ADDED",
+      "rationale": "The final-error-code requirement is new in the complete variant."
+    },
+    "d014": {
+      "label": "REMOVED",
+      "rationale": "The size-rejection rule is removed; the remaining operation is unchanged."
+    },
+    "d015": {
+      "label": "MODIFIED",
+      "rationale": "The existing gate expands from failed tests to any named check; it is not a wholly new gate."
+    },
+    "d016": {
+      "label": "ABSTAIN",
+      "rationale": "The variant is an excerpt, so omission of the rule cannot establish its removal."
+    }
+  }
+}

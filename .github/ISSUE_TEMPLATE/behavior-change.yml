@@ -1,0 +1,31 @@
+name: Incorrect behavioral comparison
+description: An instruction is called added, removed, modified or unchanged incorrectly.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version and command
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Both sources
+      description: Include immutable URLs, raw hashes, or a small original local example. Do not include private material or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: instruction
+    attributes:
+      label: Focused instruction and expected direction
+      description: Quote both passages and explain whether the rule was added, removed, changed, or preserved. Mention missing context.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output and impact
+      description: Include the incorrect claim and how it affected your maintenance decision.
+    validations:
+      required: true

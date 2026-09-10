@@ -1,53 +1,29 @@
 # Limitations
 
-Be skeptical of any single result. This list is the honest contract of v0.1.
+## Discovery and ranking
 
-## Search coverage
+Search is a bounded GitHub Code Search query for a frontmatter name, not an exhaustive census. Renamed skills, private repositories, unindexed content and failures can be absent. Search order and coverage change over time. Counts disclose candidates, successful fetches, unique normalized contents, gated results and occurrences separately.
 
-- GitHub Code Search is **not a complete census**: indexing skips some forks,
-  newly-pushed repos, and non-default branches. Result counts change over time
-  as GitHub re-indexes.
-- Candidate discovery is same-name based (`"name: <x>" filename:SKILL.md`).
-  A fork that renamed the skill is invisible to discovery in v0.1.
-- Pagination caps at ~1000 search results per query per run.
+Similarity combines text and structural heuristics. It cannot reliably detect opposite meanings, behavioral equivalence or relevance in every domain. Archetypes help browsing; they are neither a quality score nor a recommendation. The reversal regression prevents one known text change from being hidden, not all possible semantic mistakes.
 
-## Classification & scoring
+Normalization can collapse raw formatting differences. Occurrences retain separate raw hashes. Shared content or repositories do not prove independent adoption, influence or ancestry.
 
-- **Archetypes overlap by design** — especially `workflow-specialization` vs
-  `project-specialization`. One deterministic primary label is chosen; treat
-  it as a strong hint, not ground truth. (Backlog item #1 refines this.)
-- Relatedness is heuristic (token overlap + heading Jaccard + description
-  similarity). Same-name collisions with unrelated content are capped below
-  the gate but not eliminated.
-- Placeholder/template skeletons are penalized in representative ranking but
-  still occupy slots when few better candidates exist in an archetype.
-- Absorber resistance uses raw-text coherence; a well-edited absorber could
-  evade it.
-- All thresholds were calibrated on three high-copy families (see
-  `research/validation-summary.md`). Behavior on sparse families (few or zero
-  variants) is unvalidated beyond smoke tests.
+## Source evidence
 
-## Semantics
+Line-numbered hunks contain limited context. Truncation is explicit; omitted context must be read from hash-checked snapshots or left unresolved. Even a complete quote cannot establish that an interpretation is correct. Full-source review is an agent assertion backed by checked excerpts; the engine cannot prove that the agent considered every line.
 
-- **No ancestry proof** — never read output as "original", "copied from", or
-  "forked from". Hash identity proves identical bytes, nothing more.
-- Results describe repositories at fetch time; upstream edits change future
-  runs (determinism holds only per cached candidate set).
-- Private repositories are outside default public code-search behavior.
+A study stores available raw snapshots independently of the general cache. Offline operation requires previously cached inputs. Local full-file inspection and comparison do not use the network.
 
-## Not security tooling
+## Experimental semantics
 
-SkillVariants reports structure and text deltas. It does not audit, sandbox,
-or rate the safety of any Skill, command, URL, or author, and must not be used
-as a trust signal.
+The engine does not call an LLM. Your agent supplies proposals, consolidation and verification. A separate task may use the same model and context; independence is not guaranteed by the runtime. NO and UNCERTAIN verifier decisions are excluded from recurring counts.
 
-## Deferred (v0.1 backlog)
+All proposed members must be verified in chunks of at most eight. Fewer than three supporting groups cannot recur. Clusters above fifteen are suppressed as SPLIT_REQUIRED; automated iterative splitting is not implemented. A rejection share above 20% is suppressed rather than broadened into acceptance.
 
-1. taxonomy refinement (workflow vs project)
-2. larger blind validation set
-3. GitSkills/offline index exploration
-4. historical / earliest-observed metadata
-5. shareable static reports
-6. optional semantic explanation
-7. web explorer only if the CLI gets traction
-8. stronger placeholder detection if users report cases
+Reports distinguish initial observations, reviewed interpretations, deterministic counts and unresolved sources. Optional analyst prose is stored separately. COMPLETE means the workflow ended and artifacts exist; it does not imply complete corpus coverage, correct semantics or useful advice.
+
+## Validation and use
+
+Historical benchmark scripts replayed existing annotations and partially copied stability runs. Their metrics are not independent model-quality evidence. New synthetic cases test a defined protocol and include a separately submitted annotation exercise, but do not establish performance on representative GitHub data.
+
+No representative maintainer study or measured time saving has been completed. Do not infer security, best practices or real agent execution from text comparisons. Read unfamiliar source content as untrusted data.
